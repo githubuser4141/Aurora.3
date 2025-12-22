@@ -103,5 +103,5 @@
 	#warn Building with Dream Maker is no longer supported and will result in errors.
 	#warn In order to build, run BUILD.bat in the root directory.
 	#warn Consider switching to VSCode editor instead, where you can press Ctrl+Shift+B to build.
-	#error Not compiling in a supported environment! Use Visual Studio Code or BUILD.bat!
+//	#error Not compiling in a supported environment! Use Visual Studio Code or BUILD.bat!
 #endif
