@@ -877,7 +877,7 @@
 			var/target_angle = get_angle(owner, A)
 			var/move_target = get_ranged_target_turf(A, angle2dir(target_angle), 2)
 			A.throw_at(move_target, 3, 3)
-			A.visible_message(span_warning("[A] gets thrown back by the force of the shockwave !"), span_warning("The shockwave sends you flying!"))
+			A.visible_message(SPAN_WARNING("[A] gets thrown back by the force of the shockwave !"), SPAN_WARNING("The shockwave sends you flying!"))
 			if(isliving(A))
 				var/mob/living/liver = A
 				liver.Knockdown(3 SECONDS, ignore_canstun = FALSE)

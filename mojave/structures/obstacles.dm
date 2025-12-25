@@ -238,7 +238,7 @@
 	if(.)
 		return
 	if(ms13_flags_1 & LOCKABLE_1 && lock_locked)
-		to_chat(user, span_warning("The [name] is locked."))
+		to_chat(user, SPAN_WARNING("The [name] is locked."))
 		playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 50, TRUE)
 		return
 	return TryToSwitchState(user)

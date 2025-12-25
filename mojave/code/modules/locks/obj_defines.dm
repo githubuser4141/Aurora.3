@@ -26,7 +26,7 @@
 	if(.)
 		return
 	if(ms13_flags_1 & LOCKABLE_1 && lock_locked)
-		to_chat(user, span_warning("The [name] is locked."))
+		to_chat(user, SPAN_WARNING("The [name] is locked."))
 		return
 	. = ..()
 
@@ -34,13 +34,13 @@
 /obj/attackby(obj/item/I, mob/living/user, params)
 	if(I.item_flags & LOCKING_ITEM && ms13_flags_1 & LOCKABLE_1)
 		if(lock_locked)
-			to_chat(user, span_warning("The [name] already has a lock."))
+			to_chat(user, SPAN_WARNING("The [name] already has a lock."))
 			return
 		if(!can_be_picked)
 			return
 		var/obj/item/ms13/lock/L = I
 		if(!L.lock_open)
-			to_chat(user, span_warning("The [name] is closed."))
+			to_chat(user, SPAN_WARNING("The [name] is closed."))
 			return
 		if(!user.transferItemToLoc(L, src))
 			return

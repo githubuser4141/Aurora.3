@@ -43,7 +43,7 @@
 				return
 		if(hairchoice == "Facial")
 			if(H.facial_hairstyle == "Shaved")
-				to_chat(user, span_warning("You have no facial hair!"))
+				to_chat(user, SPAN_WARNING("You have no facial hair!"))
 				return
 			else
 				new_facial_hair = tgui_input_list(usr, "What facial hair style do you want?", "Facial hair style choice", GLOB.facial_hairstyles_list)

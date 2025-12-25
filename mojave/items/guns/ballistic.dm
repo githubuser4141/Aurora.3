@@ -288,7 +288,7 @@
 				unjam_chance = 10
 			else
 				unjam_chance += 10
-				to_chat(user, span_warning("[src] is jammed!"))
+				to_chat(user, SPAN_WARNING("[src] is jammed!"))
 				playsound(user,'sound/weapons/jammed.ogg', 75, TRUE)
 				return FALSE
 	..()

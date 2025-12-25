@@ -23,7 +23,7 @@
 		return
 
 	M.maxHealth -= 50 // Every time you start to overdose on this crap, you lose out on 50 max health points. Good luck after that. Better off sticking to bar RP buddy.
-	to_chat(M, span_warning("You're rushed with a wave of fatigue... Something doesn't feel right, and the world seemingly gets a lot heavier." ))
+	to_chat(M, SPAN_WARNING("You're rushed with a wave of fatigue... Something doesn't feel right, and the world seemingly gets a lot heavier." ))
 
 /datum/reagent/ms13/buffout/overdose_process(mob/living/M)
 	if(M.maxHealth <= 0) // If they're already a vegetable, just start putting them out of their misery I guess.
@@ -56,7 +56,7 @@
 /datum/reagent/ms13/calmex/overdose_process(mob/living/M)
 	switch(current_cycle)
 		if(11)
-			to_chat(M, span_warning("You start to feel tired..." ))
+			to_chat(M, SPAN_WARNING("You start to feel tired..." ))
 		if(12 to 24)
 			M.drowsyness += 1
 		if(24 to INFINITY)
@@ -141,7 +141,7 @@
 
 /datum/reagent/ms13/cateye/on_mob_add(mob/living/carbon/M, delta_time, times_fired)
 	. = ..()
-	to_chat(M, span_warning("Your eyes slightly ache as everything seemingly begins to brighten."))
+	to_chat(M, SPAN_WARNING("Your eyes slightly ache as everything seemingly begins to brighten."))
 	M.add_quirk(/datum/quirk/night_vision)
 	return ..()
 
@@ -407,7 +407,7 @@
 	M.adjustToxLoss(0.5, 1)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -5*REM)
 	if(prob(50))
-		to_chat(M, span_warning("<[pick("Your head hurts a lot.", "Your head pounds incessantly.")]"))
+		to_chat(M, SPAN_WARNING("<[pick("Your head hurts a lot.", "Your head pounds incessantly.")]"))
 	else if(prob(33))
 		to_chat(M, span_userdanger("[pick("Your head hurts!", "You feel a burning knife inside your brain!", "A wave of pain fills your head!")]"))
 		M.Stun(35)

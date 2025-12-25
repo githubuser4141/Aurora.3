@@ -78,7 +78,7 @@
 				smell_string = "The unmistakable [dominant_vapours.descriptor] of [dominant_vapours.scent] bombards your nostrils."
 
 	if(dominant_vapours.descriptor == SCENT_DESC_ODOR)
-		to_chat(sniffer, span_warning(smell_string))
+		to_chat(sniffer, SPAN_WARNING(smell_string))
 	else
 		to_chat(sniffer, SPAN_NOTICE(smell_string))
 

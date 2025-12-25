@@ -61,14 +61,14 @@
 		breaking = TRUE
 		if(do_after(C, 5, interaction_key = DOAFTER_SOURCE_WINDOWBASH))
 			if(C.gloves && armor.melee < 50)
-				visible_message(span_warning("[C] bashes against the [src], cracking it!"))
+				visible_message(SPAN_WARNING("[C] bashes against the [src], cracking it!"))
 				take_damage(15, BRUTE, MELEE)
 				update_appearance()
 				playsound(loc, 'mojave/sound/ms13effects/glass_hit.ogg', 25, 1, -1)
 				breaking = FALSE
 				return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 			else
-				visible_message(span_warning("[C] bashes against the [src] with their bare arm."))
+				visible_message(SPAN_WARNING("[C] bashes against the [src] with their bare arm."))
 				take_damage(10, BRUTE, MELEE)
 				update_appearance()
 				playsound(loc, 'mojave/sound/ms13effects/glass_hit.ogg', 25, 1, -1)
@@ -124,7 +124,7 @@
 	if(!breaking)
 		breaking = TRUE
 		if(do_after(C, 5, interaction_key = DOAFTER_SOURCE_WINDOWBASH))
-			visible_message(span_warning("[C] bashes against the [src] with their bare arm, seemingly only hurting themselves!"))
+			visible_message(SPAN_WARNING("[C] bashes against the [src] with their bare arm, seemingly only hurting themselves!"))
 			take_damage(5, BRUTE, MELEE)
 			update_appearance()
 			playsound(loc, 'mojave/sound/ms13effects/glass_hit.ogg', 25, 1, -1)

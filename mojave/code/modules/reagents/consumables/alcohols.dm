@@ -556,7 +556,7 @@
 /datum/reagent/consumable/ethanol/ms13/nukashine/on_mob_metabolize(mob/living/L)
 	..()
 	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/ephedrine)
-	to_chat(L, (span_warning("Your stomach burns with pain as you drink the Nukashine, your heart beating faster.")))
+	to_chat(L, (SPAN_WARNING("Your stomach burns with pain as you drink the Nukashine, your heart beating faster.")))
 
 /datum/reagent/consumable/ethanol/ms13/nukashine/on_mob_end_metabolize(mob/living/L)
 	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/ephedrine)

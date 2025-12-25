@@ -65,7 +65,7 @@
 
 /obj/item/reagent_containers/ms13/inhaler/attack(mob/living/affected_mob, mob/user)
 	if(!reagents.total_volume)
-		to_chat(user, span_warning("[src] is empty!"))
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return
 
 	else if(do_after(user, 0.65 SECONDS))
@@ -74,7 +74,7 @@
 ///Handles all inhaling checks, inhaling and logging.
 /obj/item/reagent_containers/ms13/inhaler/proc/inhale(mob/living/affected_mob, mob/user)
 	if(!reagents.total_volume)
-		to_chat(user, span_warning("[src] is empty!"))
+		to_chat(user, SPAN_WARNING("[src] is empty!"))
 		return FALSE
 	if(!iscarbon(affected_mob))
 		return FALSE
@@ -87,7 +87,7 @@
 
 	if(reagents.total_volume)
 		update_icon_state()
-		to_chat(affected_mob, span_warning("You feel the vapor hit your lungs!"))
+		to_chat(affected_mob, SPAN_WARNING("You feel the vapor hit your lungs!"))
 		to_chat(user, SPAN_NOTICE("You make [affected_mob] inhale off the [src]."))
 		playsound(src, use_sound, 40, TRUE)
 		var/fraction = min(amount_per_transfer_from_this/reagents.total_volume, 1)

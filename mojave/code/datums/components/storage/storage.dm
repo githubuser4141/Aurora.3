@@ -215,7 +215,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	SIGNAL_HANDLER
 
 	if(locked)
-		to_chat(M, span_warning("[parent] seems to be locked!"))
+		to_chat(M, SPAN_WARNING("[parent] seems to be locked!"))
 		return FALSE
 	if((M.get_active_held_item() == parent) && allow_quick_empty)
 		INVOKE_ASYNC(src, PROC_REF(quick_empty), M)
@@ -227,7 +227,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 		return FALSE
 	. = COMPONENT_CANCEL_ATTACK_CHAIN
 	if(locked)
-		to_chat(M, span_warning("[parent] seems to be locked!"))
+		to_chat(M, SPAN_WARNING("[parent] seems to be locked!"))
 		return FALSE
 	var/obj/item/I = O
 	if(collection_mode == COLLECT_ONE)
@@ -245,7 +245,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 		things = typecache_filter_list(things, typecacheof(attack_item.type))
 	var/len = length(things)
 	if(!len)
-		to_chat(pre_attack_mob, span_warning("You failed to pick up anything with [parent]!"))
+		to_chat(pre_attack_mob, SPAN_WARNING("You failed to pick up anything with [parent]!"))
 		return
 	var/datum/progressbar/progress = new(pre_attack_mob, len, attack_item.loc)
 	var/list/rejections = list()
@@ -300,7 +300,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	if(!M.canUseStorage() || !A.Adjacent(M) || M.incapacitated())
 		return
 	if(locked)
-		to_chat(M, span_warning("[parent] seems to be locked!"))
+		to_chat(M, SPAN_WARNING("[parent] seems to be locked!"))
 		return FALSE
 	A.add_fingerprint(M)
 	to_chat(M, SPAN_NOTICE("You start dumping out [parent]."))
@@ -532,7 +532,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	var/atom/dump_destination = get_dumping_location(dest_object)
 	if(M.CanReach(A) && dump_destination && M.CanReach(dump_destination))
 		if(locked)
-			to_chat(M, span_warning("[parent] seems to be locked!"))
+			to_chat(M, SPAN_WARNING("[parent] seems to be locked!"))
 			return FALSE
 		if(dump_destination.storage_contents_dump_act(src, M))
 			playsound(A, pick(rustle_sounds), 50, TRUE, -5) //MOJAVE SUN EDIT - Rustle Sounds
@@ -628,7 +628,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 		return FALSE
 	A.add_fingerprint(M)
 	if(locked && !force)
-		to_chat(M, span_warning("[parent] seems to be locked!"))
+		to_chat(M, SPAN_WARNING("[parent] seems to be locked!"))
 		return FALSE
 	if(force || M.CanReach(parent, view_only = TRUE))
 		show_to(M)
@@ -658,47 +658,47 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	if(locked)
 		if(M && !stop_messages)
 			host.add_fingerprint(M)
-			to_chat(M, span_warning("[host] seems to be locked!"))
+			to_chat(M, SPAN_WARNING("[host] seems to be locked!"))
 		return FALSE
 	if(real_location.contents.len >= max_items)
 		if(!stop_messages)
-			to_chat(M, span_warning("[host] is full, make some space!"))
+			to_chat(M, SPAN_WARNING("[host] is full, make some space!"))
 		return FALSE //Storage item is full
 	if(length(can_hold))
 		if(!is_type_in_typecache(I, can_hold))
 			if(!stop_messages)
-				to_chat(M, span_warning("[host] cannot hold [I]!"))
+				to_chat(M, SPAN_WARNING("[host] cannot hold [I]!"))
 			return FALSE
 	if(is_type_in_typecache(I, cant_hold) || HAS_TRAIT(I, TRAIT_NO_STORAGE_INSERT) || (can_hold_trait && !HAS_TRAIT(I, can_hold_trait))) //Items which this container can't hold.
 		if(!stop_messages)
-			to_chat(M, span_warning("[host] cannot hold [I]!"))
+			to_chat(M, SPAN_WARNING("[host] cannot hold [I]!"))
 		return FALSE
 	if(I.w_class > max_w_class && !is_type_in_typecache(I, exception_hold))
 		if(!stop_messages)
-			to_chat(M, span_warning("[I] is too big for [host]!"))
+			to_chat(M, SPAN_WARNING("[I] is too big for [host]!"))
 		return FALSE
 	var/datum/component/storage/biggerfish = real_location.loc.GetComponent(/datum/component/storage)
 	if(biggerfish && biggerfish.max_w_class < max_w_class) //return false if we are inside of another container, and that container has a smaller max_w_class than us (like if we're a bag in a box)
 		if(!stop_messages)
-			to_chat(M, span_warning("[I] can't fit in [host] while [real_location.loc] is in the way!"))
+			to_chat(M, SPAN_WARNING("[I] can't fit in [host] while [real_location.loc] is in the way!"))
 		return FALSE
 	var/sum_w_class = I.w_class
 	for(var/obj/item/_I in real_location)
 		sum_w_class += _I.w_class //Adds up the combined w_classes which will be in the storage item if the item is added to it.
 	if(sum_w_class > max_combined_w_class)
 		if(!stop_messages)
-			to_chat(M, span_warning("[I] won't fit in [host], make some space!"))
+			to_chat(M, SPAN_WARNING("[I] won't fit in [host], make some space!"))
 		return FALSE
 	if(isitem(host))
 		var/obj/item/IP = host
 		var/datum/component/storage/STR_I = I.GetComponent(/datum/component/storage)
 		if((I.w_class >= IP.w_class) && STR_I && !allow_big_nesting)
 			if(!stop_messages)
-				to_chat(M, span_warning("[IP] cannot hold [I] as it's a storage item of the same size!"))
+				to_chat(M, SPAN_WARNING("[IP] cannot hold [I] as it's a storage item of the same size!"))
 			return FALSE //To prevent the stacking of same sized storage items.
 	if(HAS_TRAIT(I, TRAIT_NODROP)) //SHOULD be handled in unEquip, but better safe than sorry.
 		if(!stop_messages)
-			to_chat(M, span_warning("\the [I] is stuck to your hand, you can't put it in \the [host]!"))
+			to_chat(M, SPAN_WARNING("\the [I] is stuck to your hand, you can't put it in \the [host]!"))
 		return FALSE
 	var/datum/component/storage/concrete/master = master()
 	if(!istype(master))
@@ -845,7 +845,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	if(A.loc == user)
 		. = COMPONENT_CANCEL_ATTACK_CHAIN
 		if(locked)
-			to_chat(user, span_warning("[parent] seems to be locked!"))
+			to_chat(user, SPAN_WARNING("[parent] seems to be locked!"))
 		else
 			show_to(user)
 
@@ -882,7 +882,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	if(!isliving(user) || user.incapacitated())
 		return FALSE
 	if(locked)
-		to_chat(user, span_warning("[parent] seems to be locked!"))
+		to_chat(user, SPAN_WARNING("[parent] seems to be locked!"))
 		return FALSE
 
 	. = TRUE
@@ -922,7 +922,7 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 	if(!user.put_in_hands(to_remove))
 		to_chat(user, SPAN_NOTICE("You fumble for [to_remove] and it falls on the floor."))
 		return
-	user.visible_message(span_warning("[user] draws [to_remove] from [parent]!"), SPAN_NOTICE("You draw [to_remove] from [parent]."))
+	user.visible_message(SPAN_WARNING("[user] draws [to_remove] from [parent]!"), SPAN_NOTICE("You draw [to_remove] from [parent]."))
 
 /datum/component/storage/proc/action_trigger(datum/signal_source, datum/action/source)
 	SIGNAL_HANDLER

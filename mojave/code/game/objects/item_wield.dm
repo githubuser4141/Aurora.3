@@ -4,7 +4,7 @@
 	// I know using getcomponent for something rather common is not exactly poggers but turning this into signals is not viable
 	var/datum/component/two_handed/wield_comp = get_wield_component()
 	if(!wield_comp)
-		to_chat(user, span_warning("\The [src] cannot be wielded in any way!"))
+		to_chat(user, SPAN_WARNING("\The [src] cannot be wielded in any way!"))
 		return
 	if(wield_comp.wielded)
 		return wield_comp.unwield(user)

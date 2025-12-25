@@ -172,7 +172,7 @@
 					W.use(1)
 					qdel(src)
 				else
-					to_chat(user, span_warning("There is not enough alcohol in [src] to make a molotov cocktail."))
+					to_chat(user, SPAN_WARNING("There is not enough alcohol in [src] to make a molotov cocktail."))
 					return ..()
 
 	return ..()

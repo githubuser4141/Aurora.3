@@ -35,7 +35,7 @@
 	if(.)
 		return
 	if(flags_1 & LOCKABLE_1 && lock_locked)
-		to_chat(M, span_warning("The [name] is locked."))
+		to_chat(M, SPAN_WARNING("The [name] is locked."))
 		playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 50, TRUE)
 		return
 	. = ..()

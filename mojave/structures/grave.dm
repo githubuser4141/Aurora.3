@@ -231,8 +231,8 @@
 	var/turf/T = get_turf(src)
 	var/list/targets = list(O, src)
 	add_fingerprint(user)
-	user.visible_message(span_warning("[user] [actuallyismob ? "tries to ":""]stuff [O] into [src]."), \
-		span_warning("You [actuallyismob ? "try to ":""]stuff [O] into [src]."), \
+	user.visible_message(SPAN_WARNING("[user] [actuallyismob ? "tries to ":""]stuff [O] into [src]."), \
+		SPAN_WARNING("You [actuallyismob ? "try to ":""]stuff [O] into [src]."), \
 		span_hear("You hear dirt crumbling."))
 	if(actuallyismob)
 		if(do_after_mob(user, targets, 40))
@@ -258,12 +258,12 @@
 		return
 
 	if(abs(dirt_level - dug_level) > 2)
-		to_chat(user, span_warning("You struggle in vain under the weight of the soil above you!"))
+		to_chat(user, SPAN_WARNING("You struggle in vain under the weight of the soil above you!"))
 	else
 		// You can try to get out if there is not too much soil on you
 		user.changeNext_move(CLICK_CD_BREAKOUT)
 		user.last_special = world.time + CLICK_CD_BREAKOUT
-		user.visible_message(span_warning("The soil of [src] begins to rumble!"), \
+		user.visible_message(SPAN_WARNING("The soil of [src] begins to rumble!"), \
 			SPAN_NOTICE("You struggle and start digging your way out upwards... (this will take about [DisplayTimeText(abs(dirt_level - dug_level) * breakout_time)].)"), \
 			span_hear("You hear soil rumbling."))
 		if(do_after(user,(abs(dirt_level - dug_level) * breakout_time), target = src))
@@ -275,7 +275,7 @@
 			bust_open()
 		else
 			if(user.loc == src) // so we do not get the message if we resisted multiple times and succeeded.
-				to_chat(user, span_warning("You fail to dig your way out of [src]!"))
+				to_chat(user, SPAN_WARNING("You fail to dig your way out of [src]!"))
 
 // TODO Use signal for falling into grave
 
@@ -312,7 +312,7 @@
 	. = ..()
 	if(inscription)
 		if(!in_range(user, src) && !issilicon(user) && !isobserver(user))
-			. += span_warning("You are too far away to properly read the inscription on [src]!")
+			. += SPAN_WARNING("You are too far away to properly read the inscription on [src]!")
 		else
 			. += SPAN_NOTICE("The inscription reads:")
 			. += inscription

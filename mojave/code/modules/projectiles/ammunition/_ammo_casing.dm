@@ -39,7 +39,7 @@
 				ammo_stack.update_ammo_count()
 				to_chat(user, SPAN_NOTICE("You collect [boolets] shell\s. [ammo_stack] now contains [length(ammo_stack.stored_ammo)] shell\s."))
 			else
-				to_chat(user, span_warning("You fail to collect anything!"))
+				to_chat(user, SPAN_WARNING("You fail to collect anything!"))
 		return
 	else if(istype(attacking_item, /obj/item/ammo_casing))
 		try_stacking(attacking_item, user)
@@ -59,27 +59,27 @@
 		add_fingerprint(user)
 	if(!other_casing.stack_type)
 		if(user)
-			to_chat(user, span_warning("[other_casing] can't be stacked."))
+			to_chat(user, SPAN_WARNING("[other_casing] can't be stacked."))
 		return
 	if(!stack_type)
 		if(user)
-			to_chat(user, span_warning("[src] can't be stacked."))
+			to_chat(user, SPAN_WARNING("[src] can't be stacked."))
 		return
 	if(caliber != other_casing.caliber)
 		if(user)
-			to_chat(user, span_warning("I can't stack different calibers."))
+			to_chat(user, SPAN_WARNING("I can't stack different calibers."))
 		return
 	if(stack_type != other_casing.stack_type)
 		if(user)
-			to_chat(user, span_warning("I can't stack [other_casing] with [src]."))
+			to_chat(user, SPAN_WARNING("I can't stack [other_casing] with [src]."))
 		return
 	if(!loaded_projectile || !other_casing.loaded_projectile)
 		if(user)
-			to_chat(user, span_warning("I can't stack empty casings."))
+			to_chat(user, SPAN_WARNING("I can't stack empty casings."))
 		return
 	if((item_flags & IN_STORAGE) || (other_casing.item_flags & IN_STORAGE))
 		if(user)
-			to_chat(user, span_warning("Can't stack while casings while they are inside storage."))
+			to_chat(user, SPAN_WARNING("Can't stack while casings while they are inside storage."))
 		return
 	var/obj/item/ammo_box/magazine/ammo_stack/ammo_stack = other_casing.stack_with(src)
 	if(user)

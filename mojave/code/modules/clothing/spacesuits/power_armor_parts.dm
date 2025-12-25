@@ -39,7 +39,7 @@
 			part_to_zone[PA.name] = i
 
 		if(!radial_options.len)
-			to_chat(user, span_warning("\the [I] don't have modules!"))
+			to_chat(user, SPAN_WARNING("\the [I] don't have modules!"))
 			return
 
 		var/radial_result = part_to_zone[show_radial_menu(user, src, radial_options, require_near = TRUE, tooltips = TRUE)]
@@ -58,10 +58,10 @@
 	else if(istype(I, /obj/item/ms13/pa_module))
 		var/obj/item/ms13/pa_module/module = I
 		if(!module.zone == zone)
-			to_chat(user, span_warning("You can't install this module to [src]."))
+			to_chat(user, SPAN_WARNING("You can't install this module to [src]."))
 			return
 		if(modules[module.class_type])
-			to_chat(user, span_warning("[src] already have module there."))
+			to_chat(user, SPAN_WARNING("[src] already have module there."))
 			return
 		if(do_after(user, 5 SECONDS, user) && user.transferItemToLoc(module, src))
 			modules[module.class_type] = module
@@ -74,7 +74,7 @@
 	else if(I.iswelder())
 		var/obj/item/weldingtool/WT = I
 		if(!(atom_integrity <= max_integrity - 10))
-			to_chat(user, span_warning("The [src] doesn't need repairs."))
+			to_chat(user, SPAN_WARNING("The [src] doesn't need repairs."))
 			return
 
 

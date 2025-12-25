@@ -153,19 +153,19 @@
 	if(!C.combat_mode)
 		return
 	if(!breaking)
-		visible_message(span_warning("[C] is attempting to bash down the [src]!"))
+		visible_message(SPAN_WARNING("[C] is attempting to bash down the [src]!"))
 		to_chat(C, SPAN_NOTICE("You attempt to bash the [src] with your elbow!"))
 		breaking = TRUE
 		if(do_after(C, 5 SECONDS))
 			if(C.gloves && armor.melee < 50)
-				visible_message(span_warning("[C] bashes against the [src], cracking it!"))
+				visible_message(SPAN_WARNING("[C] bashes against the [src], cracking it!"))
 				take_damage(10, BRUTE, MELEE)
 				update_appearance()
 				playsound(loc, 'mojave/sound/ms13effects/glass_hit.ogg', 25, 1, -1)
 				breaking = FALSE
 				return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 			else
-				visible_message(span_warning("[C] bashes against the [src] with their bare arm, ouch!"))
+				visible_message(SPAN_WARNING("[C] bashes against the [src] with their bare arm, ouch!"))
 				C.emote("scream")
 				take_damage(5, BRUTE, MELEE)
 				update_appearance()

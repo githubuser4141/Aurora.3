@@ -44,7 +44,7 @@
 		if(CLOTHING_SHREDDED)
 			var/obj/item/stack/cloth_repair = W
 			if(cloth_repair.amount < 3)
-				to_chat(user, span_warning("You require 3 [cloth_repair.name] to repair [src]."))
+				to_chat(user, SPAN_WARNING("You require 3 [cloth_repair.name] to repair [src]."))
 				return TRUE
 			to_chat(user, SPAN_NOTICE("You begin fixing the damage to [src] with [cloth_repair]..."))
 			if(!do_after(user, 3.5 SECONDS, src) || !cloth_repair.use(3))

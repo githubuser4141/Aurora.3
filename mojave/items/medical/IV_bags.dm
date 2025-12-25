@@ -85,10 +85,10 @@
 /obj/item/reagent_containers/blood/ms13/proc/field_transfusion(mob/living/target, mob/user)
 	if(!usr.Adjacent(target) || !locate(/obj/item/reagent_containers/blood/ms13) in usr.held_items)
 		return
-	loc.visible_message(span_warning("[usr] begins attaching [src] to [target]..."), span_warning("You begin attaching [src] to [target]."))
+	loc.visible_message(SPAN_WARNING("[usr] begins attaching [src] to [target]..."), SPAN_WARNING("You begin attaching [src] to [target]."))
 	balloon_alert_to_viewers("[usr] begins attaching [src] to [target]...", "You begin attaching [src] to [target].")
 	if(do_after(usr, 1 SECONDS, target))
-		usr.visible_message(span_warning("[usr] attaches [src] to [target]."), SPAN_NOTICE("You attach [src] to [target]."))
+		usr.visible_message(SPAN_WARNING("[usr] attaches [src] to [target]."), SPAN_NOTICE("You attach [src] to [target]."))
 		balloon_alert_to_viewers("[usr] attaches [src] to [target].", "You attach [src] to [target].")
 		log_combat(usr, target, "attached", src, "containing: ([reagents.log_list()])")
 		add_fingerprint(usr)

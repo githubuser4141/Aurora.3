@@ -25,9 +25,9 @@
 			to_chat(src, SPAN_NOTICE("Your DR armor absorbs the blow!"))
 	else
 		if(soften_text)
-			to_chat(src, span_warning("[soften_text]"))
+			to_chat(src, SPAN_WARNING("[soften_text]"))
 		else
-			to_chat(src, span_warning("Your DR armor softens the blow!"))
+			to_chat(src, SPAN_WARNING("Your DR armor softens the blow!"))
 	return armor
 
 /mob/living/proc/run_subarmor_check(def_zone = null, \
@@ -74,9 +74,9 @@
 			to_chat(src, SPAN_NOTICE("Your armor fully absorbs the blow!"))
 	else
 		if(soften_text)
-			to_chat(src, span_warning("[soften_text]"))
+			to_chat(src, SPAN_WARNING("[soften_text]"))
 		else
-			to_chat(src, span_warning("Your armor softens the blow!"))
+			to_chat(src, SPAN_WARNING("Your armor softens the blow!"))
 
 	return max(0, armor - armour_penetration)
 

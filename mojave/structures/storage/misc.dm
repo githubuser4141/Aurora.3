@@ -119,7 +119,7 @@
 	if(user.stat == DEAD)
 		return
 	if(busy)
-		to_chat(user, span_warning("[src] is currently in use."))
+		to_chat(user, SPAN_WARNING("[src] is currently in use."))
 		return
 	if(closed)
 		if(do_after(user, 0.5 SECONDS, interaction_key = DOAFTER_SOURCE_DOORS))
@@ -138,13 +138,13 @@
 	if(user.stat == DEAD)
 		return
 	if(!working)
-		to_chat(user, span_warning("You press the on button and nothing happens."))
+		to_chat(user, SPAN_WARNING("You press the on button and nothing happens."))
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
 	if(busy)
-		to_chat(user, span_warning("[src] is currently in use."))
+		to_chat(user, SPAN_WARNING("[src] is currently in use."))
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
 	if(!closed)
-		to_chat(user, span_warning("Close the door first!"))
+		to_chat(user, SPAN_WARNING("Close the door first!"))
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
 	busy = TRUE
 	to_chat(user, SPAN_NOTICE("You press the on button and [src] kicks to life."))

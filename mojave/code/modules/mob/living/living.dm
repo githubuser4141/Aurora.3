@@ -11,7 +11,7 @@
 	if(istype(active))
 		return active.wield_act(src)
 	else
-		to_chat(src, span_warning("You have nothing to wield!"))
+		to_chat(src, SPAN_WARNING("You have nothing to wield!"))
 		return FALSE
 
 /mob/living/proc/wield_ui_update(active = FALSE)

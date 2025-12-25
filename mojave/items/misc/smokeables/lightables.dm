@@ -393,10 +393,10 @@
 	. = ..()
 	if(istype(I, /obj/item/reagent_containers/ms13/lighterfluid) && is_open)
 		if(!I.reagents.has_reagent(/datum/reagent/fuel))
-			to_chat(user, span_warning("[src] is out of fluid!"))
+			to_chat(user, SPAN_WARNING("[src] is out of fluid!"))
 			return
 		if(reagents.has_reagent(/datum/reagent/fuel, max_fuel))
-			to_chat(user, span_warning("Your [name] is already full!"))
+			to_chat(user, SPAN_WARNING("Your [name] is already full!"))
 			return
 		I.reagents.trans_to(src, max_fuel, transfered_by = user)
 		user.visible_message(SPAN_NOTICE("[user] refills [user.p_their()] [name]."), SPAN_NOTICE("You refill [name]."))

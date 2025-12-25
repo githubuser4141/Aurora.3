@@ -83,7 +83,7 @@
 				to_chat(user, SPAN_NOTICE("You do not have enough [I] to repair [src]!"))
 			else
 				if(do_after(user, 3 SECONDS, target = src))
-					user.visible_message(span_warning("[user] repairs [src]."),\
+					user.visible_message(SPAN_WARNING("[user] repairs [src]."),\
 							SPAN_NOTICE("You use 2 [I] to repair [src].")) // for "wood planks"
 					S.use(2)
 					repair_bridge()
@@ -92,7 +92,7 @@
 				to_chat(user, SPAN_NOTICE("You do not have enough [I] to repair [src]!"))
 			else
 				if(do_after(user, 3 SECONDS, target = src))
-					user.visible_message(span_warning("[user] repairs [src]."),\
+					user.visible_message(SPAN_WARNING("[user] repairs [src]."),\
 							SPAN_NOTICE("You use 4 pieces of [I] to repair [src]."))  // for "scrap wood"
 					S.use(4)
 					repair_bridge()

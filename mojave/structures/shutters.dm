@@ -31,7 +31,7 @@
 
 /obj/machinery/door/poddoor/shutters/ms13/crush()
 	for(var/mob/living/L in get_turf(src))
-		L.visible_message(span_warning("[src] closes on [L], crushing [L.p_them()]!"), span_userdanger("[src] closes on you and crushes you!"))
+		L.visible_message(SPAN_WARNING("[src] closes on [L], crushing [L.p_them()]!"), span_userdanger("[src] closes on you and crushes you!"))
 		SEND_SIGNAL(L, COMSIG_LIVING_DOORCRUSHED, src)
 		if(ishuman(L)) //For humans
 			L.adjustBruteLoss(50)

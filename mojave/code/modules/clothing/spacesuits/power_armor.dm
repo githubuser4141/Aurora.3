@@ -274,7 +274,7 @@
 	. += "Alt+left click this power armor to get into and out of it."
 	var/mob/living/carbon/carbon_user = user
 	if(istype(carbon_user) && (carbon_user.fatness == FATNESS_OBESE))
-		. += span_warning("Your fat ass probably won't fit inside.")
+		. += SPAN_WARNING("Your fat ass probably won't fit inside.")
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning, bypass_equip_delay_self)
 	if((slot == ITEM_SLOT_OCLOTHING) && no_fatties && iscarbon(M))
@@ -294,13 +294,13 @@
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/attackby(obj/item/I, mob/user, params)
 	if(I.item_flags & LOCKING_ITEM && ms13_flags_1 & LOCKABLE_1)
 		if(lock_locked)
-			to_chat(user, span_warning("The [name] already has a lock."))
+			to_chat(user, SPAN_WARNING("The [name] already has a lock."))
 			return
 		if(!can_be_picked)
 			return
 		var/obj/item/ms13/lock/L = I
 		if(!L.lock_open)
-			to_chat(user, span_warning("The [name] is closed."))
+			to_chat(user, SPAN_WARNING("The [name] is closed."))
 			return
 		if(!user.transferItemToLoc(L, src))
 			return
@@ -313,7 +313,7 @@
 		return
 	else if(cell_cover_open && istype(I, /obj/item/cell))
 		if(cell)
-			to_chat(user, span_warning("[src] already has a cell installed."))
+			to_chat(user, SPAN_WARNING("[src] already has a cell installed."))
 			return
 		if(user.transferItemToLoc(I, src))
 			cell = I
@@ -321,14 +321,14 @@
 			return
 	else if(istype(I, /obj/item/light) && helmettype)
 		if(src == user.get_item_by_slot(ITEM_SLOT_OCLOTHING))
-			to_chat(user, span_warning("You cannot replace the bulb in the helmet of [src] while wearing it."))
+			to_chat(user, SPAN_WARNING("You cannot replace the bulb in the helmet of [src] while wearing it."))
 			return
 		if(helmet)
-			to_chat(user, span_warning("The helmet of [src] does not require a new bulb."))
+			to_chat(user, SPAN_WARNING("The helmet of [src] does not require a new bulb."))
 			return
 		var/obj/item/light/L = I
 		if(L.status)
-			to_chat(user, span_warning("This bulb is too damaged to use as a replacement!"))
+			to_chat(user, SPAN_WARNING("This bulb is too damaged to use as a replacement!"))
 			return
 		if(do_after(user, 5 SECONDS, src))
 			qdel(I)
@@ -338,11 +338,11 @@
 			return
 	else if(istype(I, /obj/item/ms13/power_armor))
 		if(!link_to)
-			to_chat(user, span_warning("You need connect power armor to a jack to modify!"))
+			to_chat(user, SPAN_WARNING("You need connect power armor to a jack to modify!"))
 			return
 		var/obj/item/ms13/power_armor/PA = I
 		if(module_armor[PA.zone])
-			to_chat(user, span_warning("This module power armor is already in power armor!"))
+			to_chat(user, SPAN_WARNING("This module power armor is already in power armor!"))
 			return
 		playsound(src, 'mojave/sound/ms13effects/crafting/wrenchturn.ogg', 25, TRUE)
 		if(do_after(user, 5 SECONDS, target = user) && user.transferItemToLoc(I, src))
@@ -363,7 +363,7 @@
 		return
 	else if(I.tool_behaviour == TOOL_WRENCH)
 		if(!link_to)
-			to_chat(user, span_warning("You need connect the power armor to a jack to modify!"))
+			to_chat(user, SPAN_WARNING("You need connect the power armor to a jack to modify!"))
 			return
 
 		var/list/radial_options = list()
@@ -376,7 +376,7 @@
 			part_to_zone[PA.name] = PA.zone
 
 		if(!radial_options.len)
-			to_chat(user, span_warning("The Power armor doesn't have modules!"))
+			to_chat(user, SPAN_WARNING("The Power armor doesn't have modules!"))
 			return
 
 		var/radial_result = part_to_zone[show_radial_menu(user, src, radial_options, require_near = TRUE, tooltips = TRUE)]
@@ -405,7 +405,7 @@
 				to_chat(user, SPAN_NOTICE("You need to remove all armour from the [src]."))
 				return
 		if(!(atom_integrity <= max_integrity - 10))
-			to_chat(user, span_warning("The [src] doesn't need repairs."))
+			to_chat(user, SPAN_WARNING("The [src] doesn't need repairs."))
 			return
 		if(!I.tool_start_check(user, amount=1))
 			return
@@ -534,7 +534,7 @@
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/proc/reject_pulls(datum/source, mob/living/puller)
 	SIGNAL_HANDLER
 	if(puller != loc) // != the wearer
-		to_chat(puller, span_warning("The power armor resists your attempt at pulling it!"))
+		to_chat(puller, SPAN_WARNING("The power armor resists your attempt at pulling it!"))
 		return COMSIG_ATOM_CANT_PULL
 
 //No helmet toggles for now when helmet is up
@@ -546,7 +546,7 @@
 //Let's get into the power armor (or not)
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/AltClick(mob/living/carbon/human/user)
 	if(ms13_flags_1 & LOCKABLE_1 && lock_locked)
-		to_chat(user, span_warning("The [name] is locked."))
+		to_chat(user, SPAN_WARNING("The [name] is locked."))
 		playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 50, TRUE)
 		return
 	if(!istype(user))
@@ -562,7 +562,7 @@
 	if(!CheckEquippedClothing(user) || get_dist(user, src) > 1 || link_to)
 		return FALSE
 	if(user.fatness == FATNESS_OBESE)
-		to_chat(user, span_warning("Your fat ass is too huge to fit in."))
+		to_chat(user, SPAN_WARNING("Your fat ass is too huge to fit in."))
 		return FALSE
 	to_chat(user, "You begin entering the [src].")
 	if(do_after(user, 8 SECONDS, user) && CheckEquippedClothing(user) && density)
@@ -573,7 +573,7 @@
 //A proc that checks if the user is already wearing clothing that obstructs the equipping of the power armor
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/proc/CheckEquippedClothing(mob/living/carbon/human/user)
 	if(helmet && user.head && (user.head != helmet) || user.wear_suit && (user.wear_suit != src) || user.back || user.belt || user.ears)
-		to_chat(user, span_warning("You're unable to climb into the [src] due to already having a helmet, backpack, belt, ear accessories or outer suit equipped!"))
+		to_chat(user, SPAN_WARNING("You're unable to climb into the [src] due to already having a helmet, backpack, belt, ear accessories or outer suit equipped!"))
 		return FALSE
 	return TRUE
 

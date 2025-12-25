@@ -109,7 +109,7 @@
 		occupied_turfs += density_handler_turf
 	for(var/turf/occupied_turf as anything in occupied_turfs)
 		for(var/mob/living/L in occupied_turf)
-			L.visible_message(span_warning("[src] closes on [L], crushing [L.p_them()]!"), span_userdanger("Oh fu-"))
+			L.visible_message(SPAN_WARNING("[src] closes on [L], crushing [L.p_them()]!"), span_userdanger("Oh fu-"))
 			SEND_SIGNAL(L, COMSIG_LIVING_DOORCRUSHED, src)
 			if(ishuman(L)) //For humans
 				L.emote("scream")
@@ -147,7 +147,7 @@
 
 /obj/machinery/button/ms13/vault_door/attack_hand(mob/user, list/modifiers)
 	if(!COOLDOWN_FINISHED(src, vaultdoor_cooldown))
-		user.visible_message(span_warning("The switch is locked, and the indicator light remains red..."))
+		user.visible_message(SPAN_WARNING("The switch is locked, and the indicator light remains red..."))
 		return
 
 	COOLDOWN_START(src, vaultdoor_cooldown, 25 SECONDS)

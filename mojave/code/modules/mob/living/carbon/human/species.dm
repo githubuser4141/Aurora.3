@@ -10,10 +10,10 @@
 	var/obj/item/bodypart/chest = victim.get_bodypart(BODY_ZONE_CHEST)
 	if(!chest?.meat_type)
 		return
-	user.visible_message(span_warning("[user] begins to butcher [victim]..."),\
+	user.visible_message(SPAN_WARNING("[user] begins to butcher [victim]..."),\
 			SPAN_NOTICE("You begin to butcher [victim]..."))
 	if(do_mob(user, FLOOR(butchering_component.speed, 1), target = victim))
-		user.visible_message(span_warning("[user] butchers [victim]."),\
+		user.visible_message(SPAN_WARNING("[user] butchers [victim]."),\
 				SPAN_NOTICE("You butcher [victim]."))
 		playsound(victim, 'mojave/sound/ms13gore/dissection.ogg', 80, FALSE)
 		new chest.meat_type(victim.drop_location())

@@ -53,7 +53,7 @@
 
 /obj/item/food/ms13/prewar/canned/attack(mob/living/target, mob/user, def_zone)
 	if (!canned_open)
-		to_chat(user, span_warning("[src]'s lid hasn't been opened!"))
+		to_chat(user, SPAN_WARNING("[src]'s lid hasn't been opened!"))
 		return FALSE
 	return ..()
 
@@ -79,7 +79,7 @@
 
 /obj/item/food/ms13/prewar/boxed/attack(mob/living/target, mob/user, def_zone)
 	if (!boxed_open)
-		to_chat(user, span_warning("The box hasn't been opened!"))
+		to_chat(user, SPAN_WARNING("The box hasn't been opened!"))
 		return FALSE
 	return ..()
 

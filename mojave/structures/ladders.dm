@@ -33,7 +33,7 @@
 		return
 
 	if(obstructed)
-		to_chat(user, span_warning("It's blocked, you'll have to find a way to change that."))
+		to_chat(user, SPAN_WARNING("It's blocked, you'll have to find a way to change that."))
 		return
 
 	var/list/tool_list = list()
@@ -42,7 +42,7 @@
 	if (down)
 		tool_list["Down"] = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = SOUTH)
 	if (!length(tool_list))
-		to_chat(user, span_warning("[src] doesn't seem to lead anywhere!"))
+		to_chat(user, SPAN_WARNING("[src] doesn't seem to lead anywhere!"))
 		return
 
 	var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, PROC_REF(check_menu), user, is_ghost), require_near = !is_ghost, tooltips = TRUE)
@@ -51,7 +51,7 @@
 	switch(result)
 		if("Up")
 			if(up.obstructed)
-				to_chat(user, span_warning("[src] is obstructed!"))
+				to_chat(user, SPAN_WARNING("[src] is obstructed!"))
 				return
 			else
 				travel(TRUE, user, is_ghost, up)
@@ -109,7 +109,7 @@
 
 	else
 		if(obstructed)
-			to_chat(user, span_warning("It's so heavy! Surely there's a better way of doing this."))
+			to_chat(user, SPAN_WARNING("It's so heavy! Surely there's a better way of doing this."))
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				obstructed = FALSE
 				down.obstructed = FALSE
@@ -248,7 +248,7 @@
 		if(up.locked)
 			to_chat(user, SPAN_NOTICE("The bunker hatch is locked from above!"))
 		else
-			to_chat(user, span_warning("You start to slowly [up.obstructed ? "open" : "close"] the bunker hatch from below."))
+			to_chat(user, SPAN_WARNING("You start to slowly [up.obstructed ? "open" : "close"] the bunker hatch from below."))
 			if(do_after(user, 12 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				obstructed = !obstructed
 				up.obstructed = obstructed
@@ -258,7 +258,7 @@
 		if(locked)
 			to_chat(user, SPAN_NOTICE("[src] must be unlocked first."))
 		else
-			to_chat(user, span_warning("You start to slowly [obstructed ? "open" : "close"] [src]."))
+			to_chat(user, SPAN_WARNING("You start to slowly [obstructed ? "open" : "close"] [src]."))
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				obstructed = !obstructed
 				down.obstructed = obstructed
@@ -275,7 +275,7 @@
 		return
 	else
 		if(obstructed)
-			to_chat(user, span_warning("You start spinning the metal hand-wheel to [locked ? "unlock" : "lock"] [src]."))
+			to_chat(user, SPAN_WARNING("You start spinning the metal hand-wheel to [locked ? "unlock" : "lock"] [src]."))
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				locked = !locked
 				down.locked = locked
@@ -337,14 +337,14 @@
 	. = SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 	if(!down)
-		to_chat(user, span_warning("You start to slowly [up.obstructed ? "open" : "close"] the Enclave bunker hatch from below."))
+		to_chat(user, SPAN_WARNING("You start to slowly [up.obstructed ? "open" : "close"] the Enclave bunker hatch from below."))
 		if(do_after(user, 12 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 			obstructed = !obstructed
 			up.obstructed = obstructed
 			up.icon_state = up.obstructed ? "enclave_closed" : "enclave_open"
 			to_chat(user, SPAN_NOTICE("You [up.obstructed ? "closed" : "opened"] the Enclave bunker hatch from below."))
 	else
-		to_chat(user, span_warning("You start to slowly [obstructed ? "open" : "close"] [src]."))
+		to_chat(user, SPAN_WARNING("You start to slowly [obstructed ? "open" : "close"] [src]."))
 		if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 			obstructed = !obstructed
 			down.obstructed = obstructed

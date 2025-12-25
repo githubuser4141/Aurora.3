@@ -161,7 +161,7 @@
 			adjust_waterlevel(rand(1,2) * delta_time * 0.5)
 		else
 			set_self_sustaining(FALSE)
-			visible_message(span_warning("[name]'s auto-grow functionality shuts off!"))
+			visible_message(SPAN_WARNING("[name]'s auto-grow functionality shuts off!"))
 
 	if(world.time > (lastcycle + cycledelay))
 		lastcycle = world.time
@@ -431,11 +431,11 @@
 	if(myseed)
 		. += span_info("It has [span_name("[myseed.plantname]")] planted.")
 		if (plant_status == HYDROTRAY_PLANT_DEAD)
-			. += span_warning("It's dead!")
+			. += SPAN_WARNING("It's dead!")
 		else if (plant_status == HYDROTRAY_PLANT_HARVESTABLE)
 			. += span_info("It's ready to harvest.")
 		else if (plant_health <= (myseed.endurance / 2))
-			. += span_warning("It looks unhealthy.")
+			. += SPAN_WARNING("It looks unhealthy.")
 	else
 		. += span_info("It's empty.")
 
@@ -468,7 +468,7 @@
 	set_plant_health(myseed.endurance, update_icon = FALSE)
 	lastcycle = world.time
 
-	var/message = span_warning("[oldPlantName] suddenly mutates into [myseed.plantname]!")
+	var/message = SPAN_WARNING("[oldPlantName] suddenly mutates into [myseed.plantname]!")
 	addtimer(CALLBACK(src, PROC_REF(after_mutation), message), 0.5 SECONDS)
 
 /**
@@ -507,7 +507,7 @@
 		var/obj/item/reagent_containers/reagent_source = O
 
 		if(!reagent_source.reagents.total_volume)
-			to_chat(user, span_warning("[reagent_source] is empty!"))
+			to_chat(user, SPAN_WARNING("[reagent_source] is empty!"))
 			return 1
 
 		if(reagents.total_volume >= reagents.maximum_volume && (!reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/unfiltered) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/dirty)))
@@ -569,7 +569,7 @@
 			lastcycle = world.time
 			return
 		else
-			to_chat(user, span_warning("[src] already has seeds in it!"))
+			to_chat(user, SPAN_WARNING("[src] already has seeds in it!"))
 			return
 
 	else if(istype(O, /obj/item/storage/bag/plants))
@@ -583,7 +583,7 @@
 
 	else if(istype(O, /obj/item/shovel/ms13/spade))
 		if(!myseed)
-			to_chat(user, span_warning("[src] doesn't have any plants!"))
+			to_chat(user, SPAN_WARNING("[src] doesn't have any plants!"))
 			return
 		user.visible_message(SPAN_NOTICE("[user] starts digging out [src]'s plants..."),
 			SPAN_NOTICE("You start digging out [src]'s plants..."))
@@ -602,7 +602,7 @@
 
 /obj/machinery/ms13/agriculture/attackby_secondary(obj/item/weapon, mob/user, params)
 	if (istype(weapon, /obj/item/reagent_containers/syringe))
-		to_chat(user, span_warning("You can't get any extract out of this plant."))
+		to_chat(user, SPAN_WARNING("You can't get any extract out of this plant."))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return SECONDARY_ATTACK_CALL_NORMAL
 
@@ -635,7 +635,7 @@
 	if(!user.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
 		return
 	if(!powered())
-		to_chat(user, span_warning("[name] has no power."))
+		to_chat(user, SPAN_WARNING("[name] has no power."))
 		update_use_power(NO_POWER_USE)
 		return
 	if(!anchored)
@@ -658,7 +658,7 @@
 	if(istype(myseed, /obj/item/seeds/replicapod))
 		to_chat(user, SPAN_NOTICE("You harvest from the [myseed.plantname]."))
 	else if(product_count <= 0)
-		to_chat(user, span_warning("You fail to harvest anything useful!"))
+		to_chat(user, SPAN_WARNING("You fail to harvest anything useful!"))
 	else
 		to_chat(user, SPAN_NOTICE("You harvest [product_count] items from the [myseed.plantname]."))
 	if(!myseed.get_gene(/datum/plant_gene/trait/repeated_harvest))
