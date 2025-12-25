@@ -11,10 +11,10 @@
 	if(!chest?.meat_type)
 		return
 	user.visible_message(span_warning("[user] begins to butcher [victim]..."),\
-			span_notice("You begin to butcher [victim]..."))
+			SPAN_NOTICE("You begin to butcher [victim]..."))
 	if(do_mob(user, FLOOR(butchering_component.speed, 1), target = victim))
 		user.visible_message(span_warning("[user] butchers [victim]."),\
-				span_notice("You butcher [victim]."))
+				SPAN_NOTICE("You butcher [victim]."))
 		playsound(victim, 'mojave/sound/ms13gore/dissection.ogg', 80, FALSE)
 		new chest.meat_type(victim.drop_location())
 		// new /obj/effect/gibspawner/generic(get_turf(victim)) // Disabled until we get a better gib sprite

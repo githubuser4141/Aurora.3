@@ -560,7 +560,7 @@
 
 /datum/reagent/consumable/ethanol/ms13/nukashine/on_mob_end_metabolize(mob/living/L)
 	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/ephedrine)
-	to_chat(L, (span_danger("Against it all odds, it looks like the pain faded...")))
+	to_chat(L, (SPAN_DANGER("Against it all odds, it looks like the pain faded...")))
 	..()
 
 /datum/reagent/consumable/ethanol/ms13/nukashine/on_mob_life(mob/living/carbon/M, delta_time, times_fired)

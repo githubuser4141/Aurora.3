@@ -66,7 +66,7 @@
 		if(HAS_TRAIT(user, TRAIT_IN_POWERARMOUR))
 			user.visible_message( \
 				"[user] stomps on the [src].", \
-				span_notice("You stomp on the [src]."),
+				SPAN_NOTICE("You stomp on the [src]."),
 				span_hear("You hear heavy armour impacting wood."))
 			src.take_damage(rand(10,35))
 			if(burning && prob(50))
@@ -79,7 +79,7 @@
 		if((user.shoes?.body_parts_covered) & FEET)
 			user.visible_message( \
 				"[user] kicks at the [src], trying to put it out.", \
-				span_notice("You kick at the [src]. trying to extinguish it"),
+				SPAN_NOTICE("You kick at the [src]. trying to extinguish it"),
 				span_hear("You hear wood shuffling about, with the sound of flames flickering."))
 			if(burning && prob(15))
 				extinguish()
@@ -88,7 +88,7 @@
 		else
 			user.visible_message( \
 				"[user] tries to extinguish [src] by kicking it with no shoes!", \
-				span_notice("You kick at the [src] without any shoes!"),
+				SPAN_NOTICE("You kick at the [src] without any shoes!"),
 				span_hear("You hear wood shuffling about, with the sound of flames flickering."))
 			var/picked_def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 			user.apply_damage(rand(5,10), BURN, picked_def_zone, wound_bonus = 5)
@@ -119,7 +119,7 @@
 /obj/structure/bonfire/ms13/fire_barrel/examine(mob/user)
 	. = ..()
 	if(!grill)
-		. += span_notice("You could add a grill to [src] with some <b>scrap metal</b>.")
+		. += SPAN_NOTICE("You could add a grill to [src] with some <b>scrap metal</b>.")
 
 /obj/structure/bonfire/ms13/fire_barrel/process(delta_time)
 	. = ..()
@@ -142,7 +142,7 @@
 		var/obj/item/stack/sheet/ms13/scrap/scrap = used_item
 		if(do_after(user, 4 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_ADDGRILL))
 			grill = TRUE
-			to_chat(user, span_notice("You add a grill to \the [src]."))
+			to_chat(user, SPAN_NOTICE("You add a grill to \the [src]."))
 			add_overlay("barrel_grill")
 			scrap.use(1)
 		else

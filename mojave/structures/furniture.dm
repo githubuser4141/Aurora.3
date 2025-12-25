@@ -48,7 +48,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/tv/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/tv/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -178,7 +178,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/pay_phone/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>wrench</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>wrench</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/pay_phone/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -229,7 +229,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/phone/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/phone/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -486,7 +486,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/jukebox/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>wrench</b> to carefully take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>wrench</b> to carefully take apart [src] for parts.")
 
 /obj/structure/ms13/jukebox/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -564,7 +564,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/deli/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>wrench</b> to take apart [src] for scrap.")
+	return SPAN_NOTICE("You could use a <b>wrench</b> to take apart [src] for scrap.")
 
 /obj/structure/ms13/deli/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -586,9 +586,9 @@
 
 /obj/structure/ms13/fruit_empty/attackby(obj/item/W, mob/user, params)
 	if(W.sharpness & SHARP_AXE)
-		user.show_message(span_notice("You begin chopping \the [src] into scraps of wood!"), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You begin chopping \the [src] into scraps of wood!"), MSG_VISUAL)
 		if(do_after(user, 10 SECONDS * W.toolspeed, target = src, interaction_key = DOAFTER_SOURCE_MAKEPLANKS))
-			user.show_message(span_notice("You make wood scraps out of \the [src]!"), MSG_VISUAL)
+			user.show_message(SPAN_NOTICE("You make wood scraps out of \the [src]!"), MSG_VISUAL)
 			new /obj/item/stack/sheet/ms13/wood/scrap_wood(loc, 4)
 			qdel(src)
 
@@ -597,7 +597,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/fruit_empty/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use an <b>axe</b> to chop up [src] for wood.")
+	return SPAN_NOTICE("You could use an <b>axe</b> to chop up [src] for wood.")
 
 /obj/structure/ms13/fruit_empty/fake
 	name = "fruit stand"

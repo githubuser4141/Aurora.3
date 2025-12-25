@@ -21,7 +21,7 @@
 		var/new_facial_hair
 
 		if(HAS_TRAIT(H, TRAIT_BALD))
-			to_chat(H, span_notice("If only growing back hair were that easy for you..."))
+			to_chat(H, SPAN_NOTICE("If only growing back hair were that easy for you..."))
 			return
 
 		//handle facial hair (if necessary)

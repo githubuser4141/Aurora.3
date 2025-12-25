@@ -45,7 +45,7 @@
 	var/mob/living/victim = AM
 
 	// Inspired by /mob/living/proc/ZImpactDamage
-	victim.visible_message(span_danger("[victim] falls into [src] with a sickening noise!"), \
+	victim.visible_message(SPAN_DANGER("[victim] falls into [src] with a sickening noise!"), \
 					       span_userdanger("You fall into [src] with a sickening noise!"))
 	victim.adjustBruteLoss(30) // Ouch
 	if(istype(src, /mob/living/carbon/human))
@@ -72,14 +72,14 @@
 /obj/structure/closet/ms13/grave/examine(mob/user)
 	. = ..()
 	if(length(contents))
-		. += span_notice("There is something buried here!")
+		. += SPAN_NOTICE("There is something buried here!")
 
 /obj/structure/closet/ms13/grave/can_close(mob/living/user)
 	var/turf/T = get_turf(src)
 	for(var/mob/living/L in T)
 		if(L.anchored || horizontal && L.mob_size > MOB_SIZE_TINY && L.density)
 			if(user)
-				to_chat(user, span_danger("There is something too large in [src] to be buried."))
+				to_chat(user, SPAN_DANGER("There is something too large in [src] to be buried."))
 			return FALSE
 	return TRUE
 
@@ -100,7 +100,7 @@
 		ADD_TRAIT(inserted, TRAIT_MAGIC_CHOKE, STATUS_EFFECT_TRAIT)
 		var/mob/living/living_target = inserted
 		living_target.RegisterSignal(living_target, COMSIG_MOB_SAY, TYPE_PROC_REF(/mob/living, handle_buried_speech))
-		to_chat(living_target, span_danger("You have trouble breathing under the weight of the dirt!"))
+		to_chat(living_target, SPAN_DANGER("You have trouble breathing under the weight of the dirt!"))
 
 /obj/structure/closet/ms13/grave/dump_contents()
 	var/atom/L = drop_location()
@@ -146,12 +146,12 @@
 		return
 	if(W.tool_behaviour == TOOL_SHOVEL)
 		if(dirt_level == dug_level)
-			to_chat(user, span_notice("[src] is already completely dug out."))
+			to_chat(user, SPAN_NOTICE("[src] is already completely dug out."))
 		else
-			to_chat(user, span_notice("You start digging with \the [W]."))
+			to_chat(user, SPAN_NOTICE("You start digging with \the [W]."))
 			if(do_after(user, 4 SECONDS * W.toolspeed, target = src))
-				user.visible_message(span_notice("[user] removes some soil with \the [W] and set it aside."),
-											span_notice("You remove some soil with \the [W] and set it aside."),
+				user.visible_message(SPAN_NOTICE("[user] removes some soil with \the [W] and set it aside."),
+											SPAN_NOTICE("You remove some soil with \the [W] and set it aside."),
 											span_hear("You hear soil crumbling."))
 				// Digging toward "dug_level"
 				dirt_level += (dirt_level < dug_level) ? 1 : -1
@@ -171,7 +171,7 @@
 			W.pixel_y = clamp(text2num(LAZYACCESS(modifiers, ICON_Y)) - 16, -(world.icon_size/2), world.icon_size/2)
 			return
 	else
-		to_chat(user, span_notice("[src] needs to be fully dug before burying items."))
+		to_chat(user, SPAN_NOTICE("[src] needs to be fully dug before burying items."))
 
 /obj/structure/closet/ms13/grave/shovel_act_secondary(mob/living/user, obj/item/tool)
 	. = TRUE
@@ -180,21 +180,21 @@
 		return
 	if(tool.tool_behaviour == TOOL_SHOVEL)
 		if(dirt_level == 0)
-			to_chat(user, span_notice("You start leveling the ground with \the [tool]."))
+			to_chat(user, SPAN_NOTICE("You start leveling the ground with \the [tool]."))
 			if(do_after(user, 3 SECONDS * tool.toolspeed, target = src))
-				user.visible_message(span_notice("[user] levels the ground with \the [tool]."),
-											span_notice("You level the ground with \the [tool]."))
+				user.visible_message(SPAN_NOTICE("[user] levels the ground with \the [tool]."),
+											SPAN_NOTICE("You level the ground with \the [tool]."))
 				deconstruct(TRUE)
 				return
 		else if(dirt_level == max_level)
-			to_chat(user, span_notice("The grave is already completely filled."))
+			to_chat(user, SPAN_NOTICE("The grave is already completely filled."))
 		else
 			if(dirt_level == dug_level && !can_close(user))
 				return  // Stop here if there is something in the way
-			to_chat(user, span_notice("You start filling [src] with \the [tool]."))
+			to_chat(user, SPAN_NOTICE("You start filling [src] with \the [tool]."))
 			if(do_after(user, 3 SECONDS * tool.toolspeed, target = src))
-				user.visible_message(span_notice("[user] fills [src] with some soil using \the [tool]."),
-											span_notice("You fill [src] with some soil using \the [tool]."),
+				user.visible_message(SPAN_NOTICE("[user] fills [src] with some soil using \the [tool]."),
+											SPAN_NOTICE("You fill [src] with some soil using \the [tool]."),
 											span_hear("You hear soil crumbling."))
 				if(dirt_level == dug_level)
 					if(!close(user))
@@ -236,8 +236,8 @@
 		span_hear("You hear dirt crumbling."))
 	if(actuallyismob)
 		if(do_after_mob(user, targets, 40))
-			user.visible_message(span_notice("[user] stuffs [O] into [src]."), \
-				span_notice("You stuff [O] into [src]."), \
+			user.visible_message(SPAN_NOTICE("[user] stuffs [O] into [src]."), \
+				SPAN_NOTICE("You stuff [O] into [src]."), \
 				span_hear("You hear dirt crumbling."))
 			var/mob/living/L = O
 			if(!issilicon(L))
@@ -264,14 +264,14 @@
 		user.changeNext_move(CLICK_CD_BREAKOUT)
 		user.last_special = world.time + CLICK_CD_BREAKOUT
 		user.visible_message(span_warning("The soil of [src] begins to rumble!"), \
-			span_notice("You struggle and start digging your way out upwards... (this will take about [DisplayTimeText(abs(dirt_level - dug_level) * breakout_time)].)"), \
+			SPAN_NOTICE("You struggle and start digging your way out upwards... (this will take about [DisplayTimeText(abs(dirt_level - dug_level) * breakout_time)].)"), \
 			span_hear("You hear soil rumbling."))
 		if(do_after(user,(abs(dirt_level - dug_level) * breakout_time), target = src))
 			// Checking after a while whether there is a point of resisting anymore and whether the user is capable of resisting
 			if(!user || user.stat != CONSCIOUS || user.loc != src || opened)
 				return
-			user.visible_message(span_danger("[user] successfully break out of [src]!"),
-								span_notice("You successfully break out of [src]!"))
+			user.visible_message(SPAN_DANGER("[user] successfully break out of [src]!"),
+								SPAN_NOTICE("You successfully break out of [src]!"))
 			bust_open()
 		else
 			if(user.loc == src) // so we do not get the message if we resisted multiple times and succeeded.
@@ -314,7 +314,7 @@
 		if(!in_range(user, src) && !issilicon(user) && !isobserver(user))
 			. += span_warning("You are too far away to properly read the inscription on [src]!")
 		else
-			. += span_notice("The inscription reads:")
+			. += SPAN_NOTICE("The inscription reads:")
 			. += inscription
 
 /obj/structure/ms13/tombstone/slab/Initialize()
@@ -334,9 +334,9 @@
 	if(!user.combat_mode && W.tool_behaviour == TOOL_KNIFE)
 		var/input = tgui_input_text(user, "What do you want to engrave?", "Inscription", max_length = 200, multiline = TRUE)
 		if(user.canUseTopic(src, BE_CLOSE) && input)
-			user.visible_message(span_notice("[user] starts carving [src]."), span_notice("You start carving [src]."))
+			user.visible_message(SPAN_NOTICE("[user] starts carving [src]."), SPAN_NOTICE("You start carving [src]."))
 			if(do_after(user, 15 SECONDS * W.toolspeed, target = src))
-				user.visible_message(span_notice("[user] carved an inscription on [src]."), span_notice("You carved an inscription on [src]."))
+				user.visible_message(SPAN_NOTICE("[user] carved an inscription on [src]."), SPAN_NOTICE("You carved an inscription on [src]."))
 				inscription = input
 	else
 		. = ..()

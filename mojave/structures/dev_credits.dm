@@ -1,6 +1,6 @@
-/// THIS FILE HOSTS THE SNOWFLAKE STRUCTURES USED TO CREDITING DEVS. /// 
-/// NOT TO BE USED ANYWHERE BUT MOJAVECOM /// 
-/// TO WHOMEVER IT MAY CONCERN- IF YOU REMOVE THESE YOU'RE NOT A VERY GOOD PERSON. /// 
+/// THIS FILE HOSTS THE SNOWFLAKE STRUCTURES USED TO CREDITING DEVS. ///
+/// NOT TO BE USED ANYWHERE BUT MOJAVECOM ///
+/// TO WHOMEVER IT MAY CONCERN- IF YOU REMOVE THESE YOU'RE NOT A VERY GOOD PERSON. ///
 
 /obj/structure/ms13/developer_credit
 	icon = 'mojave/icons/structure/ms_devs.dmi'
@@ -9,8 +9,8 @@
 
 /obj/structure/ms13/developer_credit/examine(mob/user)
 	. = ..()
-	. += span_notice("Known for: [known_for]")
-	. += span_danger("Root of Demise: [cause_of_death]")
+	. += SPAN_NOTICE("Known for: [known_for]")
+	. += SPAN_DANGER("Root of Demise: [cause_of_death]")
 
 /obj/structure/ms13/developer_credit/infrared_baron
 	name = "INFRARED_BARON"
@@ -46,7 +46,7 @@
 	desc = "Took matters into their own hands and pulled up the bootstraps, aiding in some balancing issues/oversights and adding silly features."
 	cause_of_death = "Poked a shotgun with a screwdriver while it was loaded"
 	known_for = "Aspiring balancetainer"
-	
+
 /obj/structure/ms13/developer_credit/uzbekdime
 	name = "{Uzbek}Dime"
 	icon_state = "Dime"
@@ -210,7 +210,7 @@
 	cause_of_death = "Hit by a nuke"
 	known_for = "Taking initiative to make something 'okay' feel great."
 
-/// BONUS CONTENT: little versions of things we like /// 
+/// BONUS CONTENT: little versions of things we like ///
 
 /obj/item/toy/plush/ms13
 	icon = 'mojave/icons/structure/ms_devs.dmi'
@@ -236,7 +236,7 @@
 	desc = "The terror of the streets. This beast shook Snowcrest countless times- and it never got old. Not once."
 
 /obj/item/toy/plush/ms13/koban/use(used)
-	to_chat(usr, span_notice("You squeeze the [src]"))
+	to_chat(usr, SPAN_NOTICE("You squeeze the [src]"))
 	playsound(src, 'mojave/sound/ms13npc/hellpig_attack1.ogg', 90, TRUE)
 
 /obj/item/ms13/nonsense
@@ -269,7 +269,7 @@
 	to_chat(usr, span_narsie("NOT WORTHY."))
 	user.gib()
 
-/// MOJAVECOM AREAS/TRACKS /// 
+/// MOJAVECOM AREAS/TRACKS ///
 
 #define FATTY_ATMOSPHERE list('mojave/sound/ms13music/lobby/droughtsong.ogg', \
 							'mojave/sound/ms13music/lobby/the_west.ogg', \
@@ -285,7 +285,7 @@
 	outdoors = TRUE
 	atmosphere_sound = BUILDING_ATMOSPHERE
 
-/area/ms13/start_area/museum 
+/area/ms13/start_area/museum
 	name = "Museum of the Fallen"
 	icon_state = "mojavemuseum"
 	outdoors = FALSE
@@ -293,21 +293,21 @@
 
 #undef FATTY_ATMOSPHERE
 
-/// NOTES BY ORIGINAL IDEA: TO WHOMEVER IT MAY CONCERN /// 
+/// NOTES BY ORIGINAL IDEA: TO WHOMEVER IT MAY CONCERN ///
 
-/* 
+/*
 
 This server started with basically nothing. It's possible to make anything you want to- you just need to do it.
-Pull up those bootstraps and make what you want to, other people aren't going to just make all of your ideas for you. 
-If we did it, you can too. Make the server of your dreams and truly care for it and put in effort. 
-So little people care for quality not. Not to say we shat sunshine but our community was one that truly cared about making something we all liked and cared for. 
-Be whatever change you want to be. Don't take shit seriously. Go have whatever fun you can muster- it's just a game. 
+Pull up those bootstraps and make what you want to, other people aren't going to just make all of your ideas for you.
+If we did it, you can too. Make the server of your dreams and truly care for it and put in effort.
+So little people care for quality not. Not to say we shat sunshine but our community was one that truly cared about making something we all liked and cared for.
+Be whatever change you want to be. Don't take shit seriously. Go have whatever fun you can muster- it's just a game.
 
-Smile because it happened. 
+Smile because it happened.
 
-P.S: Don't descecrate these graves. These are all people that put in vast amounts of efforts and deserve to be recognized. Include this shit, dummy. 
+P.S: Don't descecrate these graves. These are all people that put in vast amounts of efforts and deserve to be recognized. Include this shit, dummy.
 
-P.P.S: Sorry about the runtimes if you're trying to host this shit. We know. It's not incredible. The proc errors especially- shoutout to upstream changes am i right? 
+P.P.S: Sorry about the runtimes if you're trying to host this shit. We know. It's not incredible. The proc errors especially- shoutout to upstream changes am i right?
 
 P.P.P.S: On the same hand, i'm not sharing any of the shortcomings we discoverered or the ultra-niche intricacies we had to work around. Good fkin luck lmao.
 

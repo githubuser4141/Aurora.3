@@ -42,10 +42,10 @@
 	register_context()
 
 /obj/item/ms13/fluff/typewriter/wrench_act_secondary(mob/living/user, obj/item/weapon)
-	user.show_message(span_notice("You begin disassembling \the [src]."), MSG_VISUAL)
+	user.show_message(SPAN_NOTICE("You begin disassembling \the [src]."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
 		var/drop_location = user.drop_location()
-		user.show_message(span_notice("You disassemble \the [src] into scrap."), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You disassemble \the [src] into scrap."), MSG_VISUAL)
 		new /obj/item/stack/sheet/ms13/scrap(drop_location, 3)
 		new /obj/item/stack/sheet/ms13/scrap_parts(drop_location, 3)
 		qdel(src)
@@ -55,7 +55,7 @@
 	. += deconstruction_hints(user)
 
 /obj/item/ms13/fluff/typewriter/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>wrench</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>wrench</b> to take apart [src] for parts.")
 
 /obj/item/ms13/fluff/typewriter/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -77,10 +77,10 @@
 	register_context()
 
 /obj/item/ms13/fluff/microscope/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
-	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
+	user.show_message(SPAN_NOTICE("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
 		var/drop_location = user.drop_location()
-		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
 		new /obj/item/stack/sheet/ms13/glass(drop_location, 3)
 		new /obj/item/stack/sheet/ms13/scrap(drop_location, 2)
 		new /obj/item/stack/sheet/ms13/scrap_electronics(drop_location, 2)
@@ -91,7 +91,7 @@
 	. += deconstruction_hints(user)
 
 /obj/item/ms13/fluff/microscope/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/item/ms13/fluff/microscope/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -164,10 +164,10 @@
 	register_context()
 
 /obj/item/ms13/fluff/alarmclock/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
-	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
+	user.show_message(SPAN_NOTICE("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
 		var/drop_location = user.drop_location()
-		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
 		new /obj/item/stack/sheet/ms13/glass(drop_location, 1)
 		new /obj/item/stack/sheet/ms13/scrap(drop_location, 2)
 		new /obj/item/stack/sheet/ms13/scrap_electronics(drop_location, 1)
@@ -179,7 +179,7 @@
 	. += deconstruction_hints(user)
 
 /obj/item/ms13/fluff/alarmclock/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/item/ms13/fluff/alarmclock/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -203,10 +203,10 @@
 	register_context()
 
 /obj/item/ms13/fluff/trifoldflag/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
-	user.show_message(span_notice("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
+	user.show_message(SPAN_NOTICE("You begin disassembling \the [src] into scrap."), MSG_VISUAL)
 	if(do_after(user, 8 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
 		var/drop_location = user.drop_location()
-		user.show_message(span_notice("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You disassemble \the [src] into scrap and parts."), MSG_VISUAL)
 		new /obj/item/stack/sheet/ms13/cloth(drop_location, 3)
 		new /obj/item/stack/sheet/ms13/wood/scrap_wood(drop_location, 2)
 		qdel(src)
@@ -216,7 +216,7 @@
 	. += deconstruction_hints(user)
 
 /obj/item/ms13/fluff/trifoldflag/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/item/ms13/fluff/trifoldflag/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()

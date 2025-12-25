@@ -74,7 +74,7 @@
 
 /datum/reagent/ms13/medx/on_mob_add(mob/living/carbon/M, delta_time, times_fired)
 	. = ..()
-	to_chat(M, span_noticealien("Your whole body begins to feel numb, and a wave of calmness washes over you."))
+	to_chat(M, SPAN_NOTICEalien("Your whole body begins to feel numb, and a wave of calmness washes over you."))
 	ADD_TRAIT(M, TRAIT_NOSOFTCRIT, TRAUMA_TRAIT)
 	ADD_TRAIT(M, TRAIT_STUNIMMUNE, TRAUMA_TRAIT)
 	return ..()
@@ -210,7 +210,7 @@
 
 /datum/reagent/ms13/hydra/on_mob_metabolize(mob/living/M, amount)
 	. = ..()
-	to_chat(M, span_notice("Your insides start tingling slightly. You can feel things shifting."))
+	to_chat(M, SPAN_NOTICE("Your insides start tingling slightly. You can feel things shifting."))
 	return ..()
 
 /datum/reagent/ms13/hydra/on_mob_life(mob/living/carbon/M, datum/reagent/chem, delta_time, times_fired) // This needs to be unscuffed before we can use it. It WORKS. Just too well. Instant healing of wounds for as long as it's in your blood. I'm not qualified for this! help!
@@ -227,7 +227,7 @@
 /datum/reagent/ms13/hydra/on_mob_delete(mob/living/carbon/human/M)
 	. = ..()
 	if(isliving(M))
-		to_chat(M, span_notice("Everything seems back to normal now."))
+		to_chat(M, SPAN_NOTICE("Everything seems back to normal now."))
 
 // Jet //
 
@@ -298,7 +298,7 @@
 		animate(size = 0, time = 6 SECONDS, easing = JUMP_EASING|EASE_IN)
 	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/ms13/rocket)
 	if(isliving(M))
-		to_chat(M, span_green("You feel an incredible high! But feel very focused..."))
+		to_chat(M, SPAN_GREEN("You feel an incredible high! But feel very focused..."))
 	return ..()
 
 /datum/reagent/ms13/rocket/on_mob_delete(mob/living/carbon/human/M)
@@ -356,7 +356,7 @@
 	M.add_movespeed_modifier(/datum/movespeed_modifier/reagent/ms13/turbo)
 	M.sound_environment_override = SOUND_ENVIRONMENT_DRUGGED
 	if(isliving(M))
-		to_chat(M, span_notice("The world around you begins to slow down."))
+		to_chat(M, SPAN_NOTICE("The world around you begins to slow down."))
 	return ..()
 
 /datum/reagent/ms13/turbo/on_mob_delete(mob/living/carbon/human/M)
@@ -367,7 +367,7 @@
 	M.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/ms13/turbo)
 	M.sound_environment_override = NONE
 	if(isliving(M))
-		to_chat(M, span_notice("The world around you starts speeding up again."))
+		to_chat(M, SPAN_NOTICE("The world around you starts speeding up again."))
 	return ..()
 
 /datum/reagent/ms13/turbo/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
@@ -434,7 +434,7 @@
 		rage = new()
 		C.gain_trauma(rage, TRAUMA_RESILIENCE_ABSOLUTE)
 	M.overlay_fullscreen("psycho", /atom/movable/screen/fullscreen/color_vision/red)
-	M.visible_message(span_danger("[M]'s eyes go empty, with their face quickly shifting to a scorn"), span_narsiesmall("Your mind suddenly begins to drift- you begin to feel ANGRY."))
+	M.visible_message(SPAN_DANGER("[M]'s eyes go empty, with their face quickly shifting to a scorn"), span_narsiesmall("Your mind suddenly begins to drift- you begin to feel ANGRY."))
 	ADD_TRAIT(M, TRAIT_SLEEPIMMUNE, type)
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "gone_psycho", /datum/mood_event/stimulant_heavy, name)
 	M.throw_alert_text(/atom/movable/screen/alert/text, "You feel a burning urge to harm.", override = FALSE)
@@ -536,7 +536,7 @@
 /datum/reagent/ms13/overdrive/proc/heartsplosion(mob/living/carbon/M)
 	var/obj/item/organ/heart/our_heart = M.getorganslot(ORGAN_SLOT_HEART)
 	qdel(our_heart) // jhkljl;;....jlhlj;.
-	M.visible_message(span_notice("[M] looks faint and begins to close their eyes."), span_alert("This doesn't feel good at all..."))
+	M.visible_message(SPAN_NOTICE("[M] looks faint and begins to close their eyes."), span_alert("This doesn't feel good at all..."))
 	M.throw_alert_text(/atom/movable/screen/alert/text/cry, "You feel the area where your heart should be get a lot sloshier.", override = FALSE)
 
 /datum/reagent/ms13/overdrive/on_mob_life(mob/living/M)
@@ -560,7 +560,7 @@
 	if(M.mind)
 		for(var/addiction_type in subtypesof(/datum/addiction))
 			M.mind.remove_addiction_points(addiction_type, MAX_ADDICTION_POINTS) //Remove addictions
-	to_chat(M, span_green("Your head feels a lot more clear now!"))
+	to_chat(M, SPAN_GREEN("Your head feels a lot more clear now!"))
 
 /*/datum/reagent/ms13/addictol/overdose_start(mob/living/carbon/M) This is busted, probably. Let's not for now.
 	..()
@@ -631,7 +631,7 @@
 
 		if(bloodiest_wound)
 			if(!was_working)
-				to_chat(M, span_green("I can already feel my wounds closing!"))
+				to_chat(M, SPAN_GREEN("I can already feel my wounds closing!"))
 				was_working = TRUE
 			bloodiest_wound.blood_flow = max(0, bloodiest_wound.blood_flow - (clot_rate * REM * delta_time))
 		else if(was_working)
@@ -745,7 +745,7 @@
 		M.losebreath += rand(2, 4)
 		M.adjustOxyLoss(rand(2, 5))
 		if(prob(30))
-			to_chat(M, span_danger("You can feel your blood clotting up in your veins!"))
+			to_chat(M, SPAN_DANGER("You can feel your blood clotting up in your veins!"))
 		else if(prob(10))
 			to_chat(M, span_userdanger("You feel like your blood has stopped moving!"))
 			M.adjustOxyLoss(rand(8, 12))
@@ -902,7 +902,7 @@
 			our_heart.applyOrganDamage(2)
 
 	if(DT_PROB(10, delta_time))
-		to_chat(M, span_danger("You can feel your blood going toxic!"))
+		to_chat(M, SPAN_DANGER("You can feel your blood going toxic!"))
 		M.adjustToxLoss(8)
 		M.vomit()
 

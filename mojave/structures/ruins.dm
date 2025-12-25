@@ -51,7 +51,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/vehicle_ruin/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>welding tool</b> to painstakingly take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>welding tool</b> to painstakingly take apart [src] for parts.")
 
 /obj/structure/ms13/vehicle_ruin/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()

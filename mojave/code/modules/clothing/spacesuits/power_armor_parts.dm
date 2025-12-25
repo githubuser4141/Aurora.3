@@ -6,7 +6,7 @@
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	drop_sound = 'mojave/sound/ms13effects/impact/metal/metal_hollow_2.wav'
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 100, ACID = 0, WOUND = 15)
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = 0, \
 					CRUSHING = 0, \
 					CUTTING = 0, \
@@ -52,7 +52,7 @@
 			modules[radial_result] = null
 			if(PA.actions_modules)
 				actions_modules.Remove(PA.actions_modules)
-			to_chat(user, span_notice("You successfully uninstall \the [I] into [src]."))
+			to_chat(user, SPAN_NOTICE("You successfully uninstall \the [I] into [src]."))
 		return
 
 	else if(istype(I, /obj/item/ms13/pa_module))
@@ -68,25 +68,28 @@
 			if(module.actions_modules)
 				LAZYINITLIST(actions_modules)
 				actions_modules |= module.actions_modules
-			to_chat(user, span_notice("You successfully install \the [module] into [src]."))
+			to_chat(user, SPAN_NOTICE("You successfully install \the [module] into [src]."))
 		return
 
-	else if(I.tool_behaviour == TOOL_WELDER)
+	else if(I.iswelder())
+		var/obj/item/weldingtool/WT = I
 		if(!(atom_integrity <= max_integrity - 10))
 			to_chat(user, span_warning("The [src] doesn't need repairs."))
 			return
 
-		if(!I.tool_start_check(user, amount=1))
-			return
+
+		if(WT.use(0,user))
+//		if(!I.tool_start_check(user, amount=1))
+//			return
 		user.visible_message(
-			span_notice("[user] begins patching up the [src] with [I]."),
-			span_notice("You begin restoring the [src]..."))
+			SPAN_NOTICE("[user] begins patching up the [src] with [I]."),
+			SPAN_NOTICE("You begin restoring the [src]..."))
 		playsound(src, 'mojave/sound/ms13effects/crafting/welding-2.ogg', 45, TRUE)
 		if(!I.use_tool(src, user, 1.5 SECONDS, volume=0, amount=1))
 			return
 		user.visible_message(
-			span_notice("[user] fixes up [src]!"),
-			span_notice("You mend the damage of [src]."))
+			SPAN_NOTICE("[user] fixes up [src]!"),
+			SPAN_NOTICE("You mend the damage of [src]."))
 		atom_integrity += 15
 		playsound(src, 'mojave/sound/ms13effects/crafting/welding-3.ogg', 45, TRUE)
 		update_appearance()
@@ -190,7 +193,7 @@
 	icon_state = "t51_leftleg"
 	icon_state_pa = "t51_leftleg"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS4_EDGE, \
 					CRUSHING = CLASS5_CRUSH, \
 					CUTTING = CLASS5_CUT, \
@@ -206,7 +209,7 @@
 	icon_state = "t51_rightleg"
 	icon_state_pa = "t51_rightleg"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS4_EDGE, \
 					CRUSHING = CLASS5_CRUSH, \
 					CUTTING = CLASS5_CUT, \
@@ -222,7 +225,7 @@
 	icon_state = "t51_chest"
 	icon_state_pa = "t51_chest"
 	max_integrity = 480
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS4_EDGE, \
 					CRUSHING = CLASS5_CRUSH, \
 					CUTTING = CLASS5_CUT, \
@@ -238,7 +241,7 @@
 	icon_state = "t51_lefthand"
 	icon_state_pa = "t51_lefthand"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS4_EDGE, \
 					CRUSHING = CLASS5_CRUSH, \
 					CUTTING = CLASS5_CUT, \
@@ -254,7 +257,7 @@
 	icon_state = "t51_righthand"
 	icon_state_pa = "t51_righthand"
 	max_integrity = 250
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS4_EDGE, \
 					CRUSHING = CLASS5_CRUSH, \
 					CUTTING = CLASS5_CUT, \
@@ -277,7 +280,7 @@
 	icon_state = "t45_leftleg"
 	icon_state_pa = "t45_leftleg"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -293,7 +296,7 @@
 	icon_state = "t45_rightleg"
 	icon_state_pa = "t45_rightleg"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -309,7 +312,7 @@
 	icon_state = "t45_chest"
 	icon_state_pa = "t45_chest"
 	max_integrity = 360
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -325,7 +328,7 @@
 	icon_state = "t45_lefthand"
 	icon_state_pa = "t45_lefthand"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -341,7 +344,7 @@
 	icon_state = "t45_righthand"
 	icon_state_pa = "t45_righthand"
 	max_integrity = 175
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -369,7 +372,7 @@
 	icon_state = "apa_chest"
 	icon_state_pa = "apa_chest"
 	max_integrity = 1000
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -385,7 +388,7 @@
 	icon_state = "apa_lefthand"
 	icon_state_pa = "apa_lefthand"
 	max_integrity = 500
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -401,7 +404,7 @@
 	icon_state = "apa_righthand"
 	icon_state_pa = "apa_righthand"
 	max_integrity = 500
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -417,7 +420,7 @@
 	icon_state = "apa_leftleg"
 	icon_state_pa = "apa_leftleg"
 	max_integrity = 400
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -433,7 +436,7 @@
 	icon_state = "apa_rightleg"
 	icon_state_pa = "apa_rightleg"
 	max_integrity = 400
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \

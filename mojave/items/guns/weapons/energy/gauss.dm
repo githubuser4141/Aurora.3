@@ -11,7 +11,7 @@
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	force = 15
-	cell_type = /obj/item/stock_parts/cell/ms13/gauss
+	cell_type = /obj/item/cell/ms13/gauss
 	wield_info = /datum/wield_info/default/inhands
 
 /obj/item/gun/energy/ms13/gauss/rifle

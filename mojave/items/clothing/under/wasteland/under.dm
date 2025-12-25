@@ -24,9 +24,9 @@
 /obj/item/clothing/under/ms13/attackby(obj/item/W, mob/user, params)
 	if(!istype(W, repairable_by))
 		if(W.tool_behaviour == TOOL_KNIFE)
-			user.show_message(span_notice("You begin shredding [src]."), MSG_VISUAL)
+			user.show_message(SPAN_NOTICE("You begin shredding [src]."), MSG_VISUAL)
 			if(do_after(user, 4.5 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_CLOTHSHRED))
-				user.show_message(span_notice("You get cloth and thread from [src]!"), MSG_VISUAL)
+				user.show_message(SPAN_NOTICE("You get cloth and thread from [src]!"), MSG_VISUAL)
 				new /obj/item/stack/sheet/ms13/thread(user.loc)
 				new /obj/item/stack/sheet/ms13/cloth(user.loc, 2)
 				qdel(src)
@@ -46,7 +46,7 @@
 			if(cloth_repair.amount < 3)
 				to_chat(user, span_warning("You require 3 [cloth_repair.name] to repair [src]."))
 				return TRUE
-			to_chat(user, span_notice("You begin fixing the damage to [src] with [cloth_repair]..."))
+			to_chat(user, SPAN_NOTICE("You begin fixing the damage to [src] with [cloth_repair]..."))
 			if(!do_after(user, 3.5 SECONDS, src) || !cloth_repair.use(3))
 				return TRUE
 			repair(user, params)
@@ -453,10 +453,10 @@
 	. = ..()
 	if(!snatched)
 		. += span_yellowteamradio("Has some gold chains attached. Quite the status symbol.")
-		. += span_notice("You could snatch them off with <b>Right Mouse Click</b>")
+		. += SPAN_NOTICE("You could snatch them off with <b>Right Mouse Click</b>")
 
 	if(snatched && has_gold_states)
-		. += span_notice("It has potential... <b> Left Click </b> with <b> Scrap Gold </b> to attach chains to it..")
+		. += SPAN_NOTICE("It has potential... <b> Left Click </b> with <b> Scrap Gold </b> to attach chains to it..")
 
 /obj/item/clothing/under/ms13/slickback/attack_hand_secondary(mob/user, params)
 	. = ..()
@@ -465,12 +465,12 @@
 	playsound(src, 'mojave/sound/ms13effects/jewelry_chain1.ogg', 15, TRUE)
 	user.visible_message( \
 		"[user] begins to tear the chains off of \the [src].", \
-		span_notice("You begin tearing the chains off \the [src]"),
+		SPAN_NOTICE("You begin tearing the chains off \the [src]"),
 		span_hear("You hear cloth moving around with chains rattling."))
 	if(do_after(user, 2.5 SECONDS))
 		user.visible_message( \
 			"[user] finishes tearing the chains off of \the [src].", \
-			span_notice("You finish tearing the chains off \the [src]"),
+			SPAN_NOTICE("You finish tearing the chains off \the [src]"),
 			span_hear("You hear chains rattling with an abrupt stop."))
 		playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 		icon_state = initial(icon_state)+"_snatched"
@@ -487,7 +487,7 @@
 
 	if(istype(W, /obj/item/stack/sheet/ms13/scrap_gold))
 		if(!has_gold_states)
-			to_chat(user, span_notice("Looks dope enough. Not needed."))
+			to_chat(user, SPAN_NOTICE("Looks dope enough. Not needed."))
 			return
 		if(!snatched)
 			to_chat(user, span_yellowteamradio("This thing is already blinged out!"))
@@ -495,7 +495,7 @@
 		if(snatched && has_gold_states)
 			user.visible_message( \
 				"[user] hangs some chains from \the [src].", \
-				span_notice("You hang some gains on \the [src]"),
+				SPAN_NOTICE("You hang some gains on \the [src]"),
 				span_hear("You hear cloth moving around with chains rattling."))
 			icon_state = initial(icon_state)
 			worn_icon_state = initial(icon_state)

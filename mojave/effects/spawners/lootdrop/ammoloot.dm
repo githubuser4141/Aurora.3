@@ -19,8 +19,8 @@
 			/obj/item/ammo_box/magazine/ms13/m9mm = 2,
 			/obj/item/ammo_box/ms13/c10mm = 1,
 			/obj/item/ammo_box/ms13/stripper/r762 = 2,
-			/obj/item/stock_parts/cell/ms13/ec = 1,
-			/obj/item/stock_parts/cell/ms13/mfc = 1,
+			/obj/item/cell/ms13/ec = 1,
+			/obj/item/cell/ms13/mfc = 1,
 			/obj/item/ammo_box/ms13/shotgun/junkshot = 2,
 			/obj/item/ammo_box/ms13/c9mm = 1,
 			)
@@ -35,8 +35,8 @@
 			/obj/item/ammo_box/magazine/ms13/m45 = 2,
 			/obj/item/ammo_box/magazine/ms13/r20 = 2,
 			/obj/item/ammo_box/ms13/stripper/r762 = 2,
-			/obj/item/stock_parts/cell/ms13/ec = 1,
-			/obj/item/stock_parts/cell/ms13/mfc = 1,
+			/obj/item/cell/ms13/ec = 1,
+			/obj/item/cell/ms13/mfc = 1,
 			/obj/item/ammo_box/ms13/shotgun/buckshot = 2,
 			/obj/item/ammo_box/magazine/ms13/smgm9mm = 2,
 			/obj/item/ammo_box/ms13/a556/small = 1,
@@ -58,8 +58,8 @@
 			/obj/item/ammo_box/magazine/ms13/smgm22 = 2,
 			/obj/item/ammo_box/magazine/ms13/smgm45 = 2,
 			/obj/item/ammo_box/magazine/ms13/ar762 = 2,
-			/obj/item/stock_parts/cell/ms13/pc = 1,
-			/obj/item/stock_parts/cell/ms13/mfc = 1,
+			/obj/item/cell/ms13/pc = 1,
+			/obj/item/cell/ms13/mfc = 1,
 			/obj/item/ammo_box/ms13/shotgun/buckshot = 2,
 			)
 
@@ -77,10 +77,10 @@
 			/obj/item/ammo_box/magazine/ms13/deagle = 2,
 			/obj/item/ammo_box/magazine/ms13/m12mm = 2,
 			/obj/item/ammo_box/magazine/ms13/ar762 = 2,
-			/obj/item/stock_parts/cell/ms13/pc = 1,
-			/obj/item/stock_parts/cell/ms13/mfc = 1,
-			/obj/item/stock_parts/cell/ms13/ecp = 1,
-			/obj/item/stock_parts/cell/ms13/gauss = 1
+			/obj/item/cell/ms13/pc = 1,
+			/obj/item/cell/ms13/mfc = 1,
+			/obj/item/cell/ms13/ecp = 1,
+			/obj/item/cell/ms13/gauss = 1
 			)
 
 /obj/effect/spawner/random/ms13/ammo/lowrandom
@@ -109,8 +109,8 @@
 	spawn_loot_chance = 65
 
 	loot = list(
-			/obj/item/stock_parts/cell/ms13/mfc = 35,
-			/obj/item/stock_parts/cell/ms13/pc = 20,
-			/obj/item/stock_parts/cell/ms13/ecp = 10,
-			/obj/item/stock_parts/cell/ms13/ec = 35
+			/obj/item/cell/ms13/mfc = 35,
+			/obj/item/cell/ms13/pc = 20,
+			/obj/item/cell/ms13/ecp = 10,
+			/obj/item/cell/ms13/ec = 35
 	)

@@ -69,7 +69,7 @@
 /datum/element/craftable/proc/examine(atom/source, mob/user, list/examine_list)
 	SIGNAL_HANDLER
 
-	examine_list += span_notice("You think it can be crafted into \a [initial(result_atom_type.name)] with [initial(crafting_object.name)].")
+	examine_list += SPAN_NOTICE("You think it can be crafted into \a [initial(result_atom_type.name)] with [initial(crafting_object.name)].")
 
 /atom/proc/craft(mob/living/user, obj/item/I)
 	var/list/crafting_recipes = list() //List of recipes that can be mutated by sending the signal

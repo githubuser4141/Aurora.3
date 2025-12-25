@@ -207,7 +207,7 @@
 	. += deconstruction_hints(user)
 
 /obj/machinery/ms13/coffee/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/machinery/ms13/coffee/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -232,7 +232,7 @@
 			return
 		replace_mug(user, B)
 		has_mug = TRUE
-		to_chat(user, span_notice("You add [B] to [src]."))
+		to_chat(user, SPAN_NOTICE("You add [B] to [src]."))
 		update_appearance()
 		return TRUE //no afterattack
 

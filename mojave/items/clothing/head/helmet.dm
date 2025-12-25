@@ -5,7 +5,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR, BOMB = ARMOR_BOMB_MINOR, BIO = ARMOR_BIO_MINOR)
 	dynamic_hair_suffix = "+generic"
 	dynamic_fhair_suffix = "+generic"
 	flags_inv = HIDEHAIR
@@ -34,7 +34,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
@@ -64,7 +64,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
@@ -77,7 +77,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0)
 	grid_width = 32
 	grid_height = 64
 
@@ -97,17 +97,8 @@
 	desc = "A hollowed out and re-fitted head of an assaultron robot, being made of metal won't help it at all in protecting from lasers."
 	icon_state = "assaultron"
 	inhand_icon_state = "metalhelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = ARMOR_BALLISTIC_MINOR, LASER = ARMOR_LASER_SMALL, ENERGY = ARMOR_ENERGY_MINOR)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 120
@@ -119,17 +110,8 @@
 	desc = "A good looking brown pre-war flight helmet in decent condition."
 	icon_state = "flightbrown"
 	inhand_icon_state = "combathelmet_mk2"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
@@ -154,17 +136,8 @@
 	desc = "A menancing metal helmet, adorned with two huge blades on the side."
 	icon_state = "bladed"
 	inhand_icon_state = "metalhelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
@@ -175,17 +148,8 @@
 	desc = "An intimidating helmet crudely made from metal scrap."
 	icon_state = "junk"
 	inhand_icon_state = "combathelmet_mk2"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 120
@@ -197,17 +161,8 @@
 	desc = "The skull of a radstag with some padding to be used as a makeshift helmet."
 	icon_state = "radstag"
 	inhand_icon_state = "w_shoes"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 	flags_inv = HIDEEARS|HIDEFACE
@@ -224,17 +179,8 @@
 	desc = "A hollowed out eyebot drone converted into a metal helmet."
 	icon_state = "eyebot"
 	inhand_icon_state = "weldingoff"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
@@ -249,17 +195,8 @@
 	desc = "A protective helmet likely used by pre-war doctors in the event of emergency or in dangerous areas."
 	icon_state = "medical"
 	inhand_icon_state = "combathelmet_mk2"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEHAIR
@@ -273,17 +210,8 @@
 	desc = "A dark pre-war baseball batters helmet, helps protect your noggin a little."
 	icon_state = "batter"
 	inhand_icon_state = "combathelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -304,17 +232,8 @@
 	desc = "A blue pre-war construction hat."
 	icon_state = "hardhat"
 	inhand_icon_state = "vaultvanarmor"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -330,17 +249,8 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	inhand_icon_state = "hazmat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -354,20 +264,11 @@
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	inhand_icon_state = "welding"
 	resistance_flags = FIRE_PROOF
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = CLASS4_FIRE)
 	max_integrity = 325
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_width = 64
 	grid_height = 64
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 75, acid = 0, wound = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -376,17 +277,8 @@
 	desc = "An old pre-war helmet. Seems someone added quite a bit of ballistic padding on the inside, likely to try and modernize it."
 	icon_state = "armyhelmet"
 	inhand_icon_state = "combathelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS3_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -396,18 +288,8 @@
 	name = "civil defense helmet"
 	desc = "A pre-war helmet intended for 'civil defense'. Whatever that is supposed to mean."
 	icon_state = "civildefence"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
-
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 // Hoods //
 
 /obj/item/clothing/head/hooded/ms13/hubologist
@@ -415,24 +297,15 @@
 	desc = "A mysterious hood worn by Hubologists."
 	icon_state = "hubologist"
 	inhand_icon_state = "hubologist"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 10,  "fire" = 10, "acid" = 10, "wound" = 0)
+	armor = list(MELEE = 25, BULLET = 20, LASER = 10, ENERGY = 5, BOMB = 15, BIO = 10)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 /obj/item/clothing/head/ms13/hood/banded
 	name = "banded helmet"
 	desc = "A crude helmet made by placing various banded metal sheets over a hood. Not very comfortable, but offers decent protection from conventional threats."
 	icon_state = "banded"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	inhand_icon_state = "harmorkit"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -445,17 +318,8 @@
 	name = "plated cowl"
 	desc = "A cloth cowl with plated metal reinforcements."
 	icon_state = "plated"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	inhand_icon_state = "armorkit"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
@@ -468,33 +332,15 @@
 	desc = "A plain cloth cowl."
 	icon_state = "cowl"
 	inhand_icon_state = "winterglovesbrown"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/ms13/hood/inquisitor
 	name = "inquisitors helm"
 	desc = "A strange looking piece of armored metal religious headgear. The brass, gold, and iron have a strange shine to them despite the apocalyptic conditions."
 	icon_state = "inquisitor"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	inhand_icon_state = "headdress_l"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -508,33 +354,15 @@
 	desc = "A simple sack with some holes poked in it, for concealing your identity as you pillage the wasteland."
 	icon_state = "sack"
 	inhand_icon_state = "tribalrag"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 /obj/item/clothing/head/ms13/hood/sack/padded
 	name = "padded sack hood"
 	desc = "A sack hood with the addition of some padding and leather strips for extra protection."
 	icon_state = "sackstrap"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -544,17 +372,8 @@
 	name = "reinforced sack hood"
 	desc = "A sack hood reinforced with metal and crude spikes. Looks quite intimidating... for a sack."
 	icon_state = "sackmetal"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -565,33 +384,15 @@
 	desc = "A simple green leather hood."
 	icon_state = "hood"
 	inhand_icon_state = "winterglovesblack"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/ms13/hood/hunter
 	name = "hunter hood"
 	desc = "A tactical hunting hood with some additional padding and a leather face guard. Commonly used by radstag hunters."
 	icon_state = "hunter"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	inhand_icon_state = "winterglovesbrown"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
@@ -606,31 +407,13 @@
 	desc = "A dark, wide brimmed, padded hat normally used by sheriffs of the wastes."
 	icon_state = "sheriffhat"
 	inhand_icon_state = "sheriffhat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/fedora
 	name = "gray fedora"
 	desc = "An old gray fedora."
 	icon_state = "fedold"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/fedora/blue
 	name = "blue fedora"
@@ -658,32 +441,14 @@
 	desc = "A classy gentleman's bowler hat."
 	icon_state = "bowler"
 	inhand_icon_state = "sheriffhat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/cowboy
 	name = "cowboy hat"
 	desc = "A classic cowboy hat. Perhaps worn by lawmen of old."
 	icon_state = "cowboy"
 	inhand_icon_state = "sheriffhat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/cowboy/black
 	name = "black cowboy hat"
@@ -695,16 +460,7 @@
 	desc = "A hat worn commonly by post-war prospectors. Has some added padding for braving the dangers of the wastes."
 	icon_state = "prospector"
 	inhand_icon_state = "sheriffhat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/prospector/brown
 	icon_state = "prospectorbrown"
@@ -715,32 +471,14 @@
 	desc = "A sturdy leather wide-brimmed militia hat, the common garb of free men."
 	icon_state = "militia"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/tricorn
 	name = "tricorn"
 	desc = "A fanciful leather tricorn, how traditional."
 	icon_state = "tricorn"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/tricorn/pirate
 	name = "pirate hat"
@@ -754,16 +492,7 @@
 	desc = "This fanciful hat belongs to a leader or in a museum. The gold and navy silk embroidery is classy and regal, conferring to those who wear it a bearing far beyond what is usually seen in the post-war wastelands."
 	icon_state = "regal"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/tall/manny
 	name = "\improper Manny Mammoth head"
@@ -776,30 +505,12 @@
 	desc = "The truest statement of class one can get in this hell."
 	icon_state = "tophat"
 	inhand_icon_state = "that"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/tall/tophat/slick
 	name = "\improper Slickback top hat"
 	desc = "A stylish, lightly padded top hat almost exclusively seen on the heads of respected members of the Slickback gang."
 	icon_state = "slickback_tophat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 
 /obj/item/clothing/head/helmet/ms13/tall/cone
 	desc = "A once bright warning device, now a staple of wasteland fashion."
@@ -814,7 +525,7 @@
 	attack_verb_simple = list("warn", "caution", "smash")
 	resistance_flags = NONE
 	flags_inv = HIDEHAIR
-	armor = list(melee = 10, bullet = 10, laser = 5, energy = 5, bomb = 5, bio = 5,  fire = 5, acid = 5, wound = 0)
+	armor = list(MELEE = 10, BULLET = 10, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 5)
 	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/helmet/ms13/tall/cone/attack_self(mob/user)
@@ -827,48 +538,21 @@
 	desc = "A classic baseball cap. A relic from pre-nuclear America."
 	icon_state = "baseball"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/deputy
 	name = "deputy's cap"
 	desc = "A refurbished, good looking pre-war police cap normally in use by the new law enforcers of the cold wastes."
 	icon_state = "deputycap"
 	inhand_icon_state = "deputycap"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/military
 	name = "military hat"
 	desc = "A military hat for off-duty soldiers."
 	icon_state = "military"
 	inhand_icon_state = "general"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/military/officer
 	name = "officer's hat"
@@ -890,64 +574,28 @@
 	desc = "A light cap used by pre-war sailors."
 	icon_state = "sailor"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/postman
 	name = "postman hat"
 	desc = "A soft cap for old-school couriers of pre-war America."
 	icon_state = "postman"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/police
 	name = "police hat"
 	desc = "A lightly padded hat used by pre-war police officers."
 	icon_state = "policeman"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/fisher
 	name = "angler hat"
 	desc = "A waterproof angler's hat. About a quarter of what you need to get fishing!"
 	icon_state = "fisher"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/fisher/technobug
 	desc = "A waterproof angler's hat. About a quarter of what you need to get fishing! The name 'T. bugg' is crudely written on the inside."
@@ -957,16 +605,7 @@
 	desc = "A piece of cloth tied around a cap. A sense of gang activity radiates from this hat."
 	icon_state = "bandanacap"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/bandanacap/ms13
 	desc = "A piece of cloth tied around a cap. A sense of gang activity radiates from this hat. The letters and numbers 'MS13' are inscribed on the inside."
@@ -976,64 +615,28 @@
 	desc = "A plain gray beret."
 	icon_state = "beret"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/newsboy
 	name = "newsboy cap"
 	desc = "A cap made famous by newsboys, come read all about it!"
 	icon_state = "newsboy"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/trilby
 	name = "trilby hat"
 	desc = "A yellow trilby hat."
 	icon_state = "trilby"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/beanie
 	name = "beanie"
 	desc = "A typical, dark beanie."
 	icon_state = "beanie"
 	inhand_icon_state = "fedora"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/beret/slick
 	name = "light beret"
@@ -1057,31 +660,13 @@
 	desc = "A professional chef hat, hopefully there is no rat inside."
 	icon_state = "chef"
 	inhand_icon_state = "chefhat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/ushanka
 	name = "ushanka hat"
 	desc = "Thick, warm ushanka hat. The makings of a true slav."
 	icon_state = "ushankared"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/ms13/ushanka/blue
 	name = "blue ushanka hat"
@@ -1100,17 +685,8 @@
 	desc = "A sturdy and robust metal helmet offering excellent conventional protection."
 	icon_state = "metalhelmet"
 	inhand_icon_state = "metalhelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS4_FIRE)
 	max_integrity = 375
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 75, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1125,17 +701,8 @@
 	desc = "A standard pre-war combat helmet. Good overall protection."
 	icon_state = "combathelm"
 	inhand_icon_state = "combathelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -1148,35 +715,17 @@
 	desc = "An advanced combat helmet offering even better protection."
 	icon_state = "adv_combathelm"
 	inhand_icon_state = "combathelmet_mk2"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 375
 
 // Special Helmets //
 
 /obj/item/clothing/head/helmet/ms13/tesla
 	name = "tesla helmet"
-	desc = "An experimental helmet specialized to protect from laser weaponry."
+	desc = "An experimental helmet specialized to protect from LASER weaponry."
 	icon_state = "tesla_helmet"
 	inhand_icon_state = "tesla_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS4_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 375
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -1189,17 +738,8 @@
 	desc = "An advanced helmet originally used by elite pre-war riot control units."
 	icon_state = "riotgearhelmet"
 	inhand_icon_state = "riotgearhelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 375
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	dynamic_hair_suffix = ""
@@ -1214,17 +754,8 @@
 	desc = "A rather pristine vault-tec security helmet with the addition of some ballistic fiber padding for the changing, post apocalypse world."
 	icon_state = "vaulthelmet"
 	inhand_icon_state = "helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -1237,7 +768,7 @@
 	desc = "A highly customized advanced Riot helmet. Featuring a thick furred hat slipped over the helmet to keep insulation at an all-time high."
 	icon_state = "bountyhunter"
 	inhand_icon_state = "riotgearhelmet"
-	armor = list(melee = 50, bullet = 40, laser = 35, energy = 25, bomb = 50, bio = 25,  fire = 50, acid = 25)
+	armor = list(MELEE = 50, BULLET = 40, LASER = 35, ENERGY = 25, BOMB = 50, BIO = 25)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -1246,34 +777,16 @@
 	name = "padded black hat and mask"
 	desc = "A black hat and mask with quite a bit of extra padding for protection. Something about this is quite intimidating."
 	icon_state = "enforcer"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 /obj/item/clothing/head/helmet/ms13/metal/baron
 	name = "\improper Baron's Visage"
 	desc = "A cold, insidious metal mask belonging to a very particular and very feared man."
 	icon_state = "baron"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = 0, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 90
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
@@ -1286,17 +799,8 @@
 	desc = "A hardy, visored helmet. Quite protective, even if a bit bulky."
 	icon_state = "snow_guard"
 	inhand_icon_state = "combathelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS3_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -1311,17 +815,8 @@
 	desc = "The hood to a near completely fire resistent suit. Pretty heavy, but not so bad once it's on."
 	icon_state = "firehood"
 	inhand_icon_state = "firehood"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS5_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 100, acid = 0, wound = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -1349,16 +844,7 @@
 	desc = "A hood to go along with your radiation suit. It's got a broken geiger counter mounted near the filter."
 	icon_state = "radsuithood"
 	inhand_icon_state = "radsuithood"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = 0, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0) //No wound armor
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -1379,16 +865,7 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	resistance_flags = ACID_PROOF
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 /obj/item/clothing/head/helmet/space/ms13
 	name = "space helmet"
@@ -1397,7 +874,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	icon_state = "spacehelmet"
 	inhand_icon_state = "spacehelmet"
-	armor = list(melee = 15, bullet = 5, laser = 5, energy = 5, bomb = 5, bio = 75,  fire = 5, acid = 75)
+	armor = list(MELEE = 15, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 75)
 	flags_inv = HIDEHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -1409,17 +886,8 @@
 	desc = "A standard issue NCR infantry helmet adapted for arctic environments."
 	icon_state = "ncr_infantry_helmet"
 	inhand_icon_state = "ncr_infantry_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_cover = NONE
 	has_fov = TRUE
 	fov_angle = 60
@@ -1430,15 +898,6 @@
 	name = "\improper NCR military police helmet"
 	desc = "An NCR helmet issued to military police stationed at NCR military installations or frontier towns."
 	icon_state = "ncr_mp_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/ncr/medic
 	name = "\improper NCR medic helmet"
@@ -1474,31 +933,13 @@
 	toggle_message = "You pull the goggles down on"
 	alt_toggle_message = "You push the goggles up on"
 	actions_types = list(/datum/action/item_action/toggle)
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 
 /obj/item/clothing/head/helmet/ms13/ncr/beret
 	name = "\improper NCR beret"
 	desc = "A standard padded NCR beret. Normally reserved for NCOs."
 	icon_state = "ncr_officer_beret"
 	inhand_icon_state = "ncr_officer_beret"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	has_fov = FALSE
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
@@ -1520,17 +961,8 @@
 	desc = "A padded headdress used by only the loudest message relayers and heartiest morale boosters of the Legion"
 	icon_state = "leg_vex"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -1539,17 +971,8 @@
 	desc = "A dark leather helmet fashioned from old sports gear, worn by Legion recruits."
 	icon_state = "leg_rec"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 60
@@ -1561,17 +984,8 @@
 	desc = "A red helmet used by Prime Legionaries. Has additional padding for added protection."
 	icon_state = "leg_prime"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 60
@@ -1583,17 +997,8 @@
 	desc = "A red helmet used by Veteran Legionaries with an added face guard. Only the best protection for the Legion's finest."
 	icon_state = "leg_vet"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 90
@@ -1605,17 +1010,8 @@
 	desc = "A feathery, quite protective helmet used by recruit decanii of the Legion. It's got brown feathers to signify lesser leadership."
 	icon_state = "leg_decr"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 300
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 50, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -1638,17 +1034,8 @@
 	desc = "A strong helmet donned by Centurions in the Legion. Some reinforcements on the helmet no doubt came from fallen enemies."
 	icon_state = "leg_cent"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS4_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 375
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
 	fov_angle = 120
@@ -1661,7 +1048,7 @@
 	desc = "A skillfuly forged helmet for a skill endowed man. Only the highest of guards may wear this."
 	icon_state = "leg_prae"
 	inhand_icon_state = "owl_mask"
-	armor = list("melee" = 65, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 65, "bio" = 20,  "fire" = 25, "acid" = 20)
+	armor = list(MELEE = 65, BULLET = 50, LASER = 45, ENERGY = 20, BOMB = 65, BIO = 20)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/ms13/legion/scout
@@ -1669,7 +1056,7 @@
 	desc = "A red bandana, often seen tied aroudn the heads of Legion scouts."
 	icon_state = "leg_scout"
 	inhand_icon_state = "owl_mask"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 20,  "fire" = 25, "acid" = 20)
+	armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 20, BOMB = 35, BIO = 20)
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/helmet/ms13/legion/explorer
@@ -1677,17 +1064,8 @@
 	desc = "A lightly padded hood worn by Legion Explorers."
 	icon_state = "leg_exp"
 	inhand_icon_state = "owl_mask"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 
@@ -1698,17 +1076,8 @@
 	desc = "A light kevlar helmet in use by the Brotherhood of Steel, usually seen accompanying the kevlar vests of the Initiates."
 	icon_state = "bos_kevlar_helmet"
 	inhand_icon_state = "bos_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -1719,17 +1088,8 @@
 	desc = "A hard, custom built helmet issued to Brotherhood troops."
 	icon_state = "bos_helmet"
 	inhand_icon_state = "bos_helmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	max_integrity = 325
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 60, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1742,15 +1102,6 @@
 	desc = "An advanced and intimidating helmet used by equally intimidating and skilled Elite Desert Rangers."
 	icon_state = "elite_ranger"
 	inhand_icon_state = "riotgearhelmet"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS2_EDGE, \
-                CRUSHING = CLASS3_CRUSH, \
-                CUTTING = CLASS4_CUT, \
-                PIERCING = CLASS3_PIERCE, \
-                IMPALING = CLASS3_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS2_PLASMA, \
-                FIRE = CLASS3_FIRE)
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -1759,17 +1110,8 @@
 	desc = "A sylish hat, often worn by Desert Rangers. Made with some thick leather and small internal layer of kevlar."
 	icon_state = "ranger_hat"
 	worn_icon_state = "ranger_hat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0) //No wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
 // Drylander Hoods //
 
@@ -1780,33 +1122,15 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 
 /obj/item/clothing/head/helmet/ms13/drylander/hunter
 	name = "\improper Drylander hunter hood"
 	desc = "A lightly padded hood worn by Drylander hunters."
 	icon_state = "hunter_dry"
 	worn_icon_state = "hunter_dry"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 
@@ -1815,17 +1139,8 @@
 	desc = "A protective hood worn by Headtakers of the Drylander tribe. The sight alone strikes fear into the locals."
 	icon_state = "headtaker"
 	worn_icon_state = "headtaker"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS2_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 25, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 
@@ -1834,17 +1149,8 @@
 	desc = "A lightly padded hood worn by the shaman of the Drylander tribe."
 	icon_state = "shaman"
 	worn_icon_state = "shaman"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
 	max_integrity = 200
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 
@@ -1853,17 +1159,8 @@
 	desc = "A hollowed out Deathclaw skull with padding to be fashioned into a sturdy helmet. It has a sizeable crack over the left eye. Perhaps one day it can be returned to it's former glory."
 	icon_state = "chieftain"
 	worn_icon_state = "chieftain"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS1_EDGE, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS3_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS2_STAB, \
-                LASER = CLASS2_LASER, \
-                ENERGY = CLASS1_PLASMA, \
-                FIRE = CLASS2_FIRE)
 	max_integrity = 260
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 35, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 
@@ -1893,17 +1190,8 @@
 	name = "padded ushanka hat"
 	desc = "Thick, padded, and warm ushanka hat. Almost as good at keeping you alive as it is at keeping you warm."
 	icon_state = "mon_ushanka"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS2_CRUSH, \
-                CUTTING = CLASS2_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = CLASS1_FIRE)
 	max_integrity = 250
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 5)
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 60
 
@@ -1911,16 +1199,7 @@
 	name = "lightly padded ushanka hat"
 	desc = "A warm ushanka hat with some light padding for protection."
 	icon_state = "mon_basicushanka"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 10, acid = 0, wound = 0) //no wound armor
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //no wound armor
 	has_fov = FALSE
 	fov_angle = null
 
@@ -1928,15 +1207,6 @@
 	name = "padded wide brim winter hat"
 	desc = "A wide brim winter hat with the addition of some light protective padding."
 	icon_state = "mon_widehat"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 
 /obj/item/clothing/head/helmet/ms13/combat/mon_city
 	name = "assault gas mask"
@@ -1954,15 +1224,6 @@
 	inhand_icon_state = "fedora"
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 
 // goldman Hats //
 
@@ -1970,15 +1231,6 @@
 	name = "padded wide brim brown hat"
 	desc = "A wide brim dark brown hat with the addition of some light protective padding."
 	icon_state = "goldman_basic"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = CLASS1_PIERCE, \
-                IMPALING = CLASS1_STAB, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/veteran
 	name = "padded wide brim fedora"

@@ -31,11 +31,11 @@
 /obj/machinery/vending/ms13/attack_hand(mob/user, list/modifiers)
 	. = ..()
 	if(loot_inside <= 0)
-		to_chat(user, span_notice("[src] appears empty...</span>"))
+		to_chat(user, SPAN_NOTICE("[src] appears empty...</span>"))
 		return
 	var/tell_em = FALSE
 	if(!tell_em)
-		to_chat(user, span_notice("You start rumamging your hand around in [src] flap, trying to get something out!</span>"))
+		to_chat(user, SPAN_NOTICE("You start rumamging your hand around in [src] flap, trying to get something out!</span>"))
 		tell_em = TRUE
 		playsound(src, 'mojave/sound/ms13effects/vending_rattle.ogg', 100, TRUE)
 	if(do_after(user, 16 SECONDS, src))
@@ -45,7 +45,7 @@
 		var/whathappens = (rand(1,100))
 		switch(whathappens)
 			if(1 to 24) //nothing
-				to_chat(user, span_danger("You feel a slight discomfort and feel nothing in reach.</span>"))
+				to_chat(user, SPAN_DANGER("You feel a slight discomfort and feel nothing in reach.</span>"))
 				return
 			if(25 to 79) //winner winner
 				var/chance = pick_weight(list("medium" = medium_chance, "high" = high_chance, "rare" = rare_chance))
@@ -57,14 +57,14 @@
 					if("rare")
 						vend_loot = pick_weight(loot_rare)
 				var/obj/item/vend_loot_name = new vend_loot(loc)
-				to_chat(user, span_green("You rummage around and feel something inside, you carefully pull out \a [vend_loot_name.name]!"))
+				to_chat(user, SPAN_GREEN("You rummage around and feel something inside, you carefully pull out \a [vend_loot_name.name]!"))
 				user.put_in_active_hand(vend_loot)
 				loot_inside -= 1
 				return
 			if(80 to 100) //arm break
 				var/mob/living/carbon/vender_victim = user
 				var/obj/item/bodypart/affecting = vender_victim.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
-				to_chat(user, span_danger("You feel a horrible pain as your arm gets stuck in the [src]s [pick("mechanisms", "parts", "gears")]!"))
+				to_chat(user, SPAN_DANGER("You feel a horrible pain as your arm gets stuck in the [src]s [pick("mechanisms", "parts", "gears")]!"))
 				if(affecting?.receive_damage(30))
 					var/type_wound = pick(list(/datum/wound/blunt/critical, /datum/wound/blunt/severe, /datum/wound/blunt/moderate))
 					affecting.force_wound_upwards(type_wound)

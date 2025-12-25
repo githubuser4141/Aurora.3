@@ -41,7 +41,7 @@
 	var/canned_open = FALSE
 
 /obj/item/food/ms13/prewar/canned/proc/open_can(mob/user)
-	to_chat(user, span_notice("You pull back the tab of \the [src]."))
+	to_chat(user, SPAN_NOTICE("You pull back the tab of \the [src]."))
 	playsound(user.loc, 'sound/items/foodcanopen.ogg', 50)
 	canned_open = TRUE
 
@@ -68,7 +68,7 @@
 	grid_width = 64
 
 /obj/item/food/ms13/prewar/boxed/proc/open_box(mob/user)
-	to_chat(user, span_notice("You open the cardboard box of [src]."))
+	to_chat(user, SPAN_NOTICE("You open the cardboard box of [src]."))
 	boxed_open = TRUE
 
 /obj/item/food/ms13/prewar/boxed/attack_self(mob/user)

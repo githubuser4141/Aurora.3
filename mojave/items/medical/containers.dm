@@ -41,7 +41,7 @@
 		for(var/datum/reagent/reagent as anything in reagents.reagent_list)
 		if(reagents)
 			reagents.clear_reagents()
-			visible_message(span_notice("[src] spills its contents."))
+			visible_message(SPAN_NOTICE("[src] spills its contents."))
 		else
 			return
 
@@ -58,17 +58,17 @@
 
 	if(istype(M))
 		if(M != user)
-			M.visible_message(span_danger("[user] attempts to feed [M] something from [src]."), \
+			M.visible_message(SPAN_DANGER("[user] attempts to feed [M] something from [src]."), \
 						span_userdanger("[user] attempts to feed you something from [src]."))
 			if(!do_mob(user, M))
 				return
 			if(!reagents || !reagents.total_volume)
 				return // The drink might be empty after the delay, such as by spam-feeding
-			M.visible_message(span_danger("[user] feeds [M] something from [src]."), \
+			M.visible_message(SPAN_DANGER("[user] feeds [M] something from [src]."), \
 						span_userdanger("[user] feeds you something from [src]."))
 			log_combat(user, M, "fed", reagents.log_list())
 		else
-			to_chat(user, span_notice("You swallow a gulp of [src]."))
+			to_chat(user, SPAN_NOTICE("You swallow a gulp of [src]."))
 		SEND_SIGNAL(src, COMSIG_GLASS_DRANK, M, user)
 		addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, 5, TRUE, TRUE, FALSE, user, FALSE, INGEST), 5)
 		playsound(src, "mojave/sound/ms13effects/drinking_redux.ogg", 45, TRUE, 2)

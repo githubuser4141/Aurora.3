@@ -45,7 +45,7 @@
 		if(!user.transferItemToLoc(L, src))
 			return
 		lock = I
-		to_chat(user, span_notice("You attach the [lock.name] to the [name]."))
+		to_chat(user, SPAN_NOTICE("You attach the [lock.name] to the [name]."))
 		update_appearance()
 		return
 	. = ..()
@@ -61,17 +61,17 @@
 			switch(choice)
 				if("Close Lock")
 					lock.lock_open = FALSE
-					to_chat(user, span_notice("You close the [lock.name] not yet locked."))
+					to_chat(user, SPAN_NOTICE("You close the [lock.name] not yet locked."))
 					return
 				if("Remove Lock")
 					user.put_in_hands(lock)
 					lock = null
-					to_chat(user, span_notice("You take the [lock.name] off the [name]."))
+					to_chat(user, SPAN_NOTICE("You take the [lock.name] off the [name]."))
 					update_appearance()
 					return
 		if(!(lock.lock_open))
 			if(lock.item_lock_locked)
-				to_chat(user, span_notice("The [lock.name] is locked."))
+				to_chat(user, SPAN_NOTICE("The [lock.name] is locked."))
 				playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 20, TRUE)
 				return
 			if(!(lock.item_lock_locked))
@@ -80,14 +80,14 @@
 				switch(choice)
 					if("Lock It")
 						if(do_after(user, 0.5 SECONDS))
-							to_chat(user, span_notice("You shut and clasp the [lock.name]."))
+							to_chat(user, SPAN_NOTICE("You shut and clasp the [lock.name]."))
 							lock.item_lock_locked = TRUE
 							AddElement(/datum/element/lockpickable, lock.lock_difficulty)
 							playsound(src, 'mojave/sound/ms13effects/lock_close.ogg', 50, TRUE)
 							return
 					if("Open Lock")
 						lock.lock_open = TRUE
-						to_chat(user, span_notice("You swing open the [lock.name], still attached to the door."))
+						to_chat(user, SPAN_NOTICE("You swing open the [lock.name], still attached to the door."))
 						return
 	. = ..()
 

@@ -88,7 +88,7 @@
 	if(reagents.total_volume)
 		update_icon_state()
 		to_chat(affected_mob, span_warning("You feel the vapor hit your lungs!"))
-		to_chat(user, span_notice("You make [affected_mob] inhale off the [src]."))
+		to_chat(user, SPAN_NOTICE("You make [affected_mob] inhale off the [src]."))
 		playsound(src, use_sound, 40, TRUE)
 		var/fraction = min(amount_per_transfer_from_this/reagents.total_volume, 1)
 
@@ -100,7 +100,7 @@
 			else
 				reagents.expose(affected_mob, INJECT, fraction)
 				trans = reagents.copy_to(affected_mob, amount_per_transfer_from_this)
-			to_chat(user, span_notice("[trans] unit\s inhaled. [reagents.total_volume] unit\s remaining in [src]."))
+			to_chat(user, SPAN_NOTICE("[trans] unit\s inhaled. [reagents.total_volume] unit\s remaining in [src]."))
 			log_combat(user, affected_mob, "inhaled", src, "([contained])")
 		return TRUE
 	return FALSE

@@ -95,7 +95,7 @@
 			up.desc = "An open manhole, it still stinks even after all these years. You could use a crowbar or your hands to slide the cover back on."
 			up.obstructed = FALSE
 			obstructed = FALSE
-			to_chat(user, span_notice("You push up on the cover from below, and slide it off."))
+			to_chat(user, SPAN_NOTICE("You push up on the cover from below, and slide it off."))
 			return
 
 	if(!down && !up.obstructed)
@@ -104,7 +104,7 @@
 			up.desc = "A heavy stamped manhole. You could probably pry it up with a crowbar to access the lower town systems. Or, try using your hands..."
 			up.obstructed = TRUE
 			obstructed = TRUE
-			to_chat(user, span_notice("You carefully drag and slide the cover back on from below."))
+			to_chat(user, SPAN_NOTICE("You carefully drag and slide the cover back on from below."))
 			return
 
 	else
@@ -115,7 +115,7 @@
 				down.obstructed = FALSE
 				icon_state = "manhole_open"
 				desc = "An open manhole, it still stinks even after all these years. You could use a crowbar or your hands to slide the cover back on."
-				to_chat(user, span_notice("With a lot of effort, you manage to finally get the cover off."))
+				to_chat(user, SPAN_NOTICE("With a lot of effort, you manage to finally get the cover off."))
 				if(prob(10))
 					to_chat(user, span_userdanger("MY ARM! THE PAIN!"))
 					arm.force_wound_upwards(/datum/wound/blunt/moderate)
@@ -126,7 +126,7 @@
 				down.obstructed = TRUE
 				icon_state = "manhole_closed"
 				desc = "A heavy stamped manhole. You could probably pry it up with a crowbar to access the lower town systems. Or, try using your hands..."
-				to_chat(user, span_notice("You carefully slide the cover back on the manhole."))
+				to_chat(user, SPAN_NOTICE("You carefully slide the cover back on the manhole."))
 
 
 /obj/structure/ladder/ms13/manhole/crowbar_act_secondary(mob/living/user, obj/item/tool)
@@ -136,7 +136,7 @@
 			down.obstructed = FALSE
 			icon_state = "manhole_open"
 			desc = "An open manhole, it still stinks even after all these years. You could use a crowbar or your hands to slide the cover back on."
-			to_chat(user, span_notice("You wedge the crowbar in and pull the cover off the manhole."))
+			to_chat(user, SPAN_NOTICE("You wedge the crowbar in and pull the cover off the manhole."))
 			return
 
 	if(down && !obstructed)
@@ -145,7 +145,7 @@
 			down.obstructed = TRUE
 			icon_state = "manhole_closed"
 			desc = "A heavy stamped manhole. You could probably pry it up with a crowbar to access the lower town systems. Or, try using your hands..."
-			to_chat(user, span_notice("You hook the edge of the manhole cover with your crowbar and slide it back on."))
+			to_chat(user, SPAN_NOTICE("You hook the edge of the manhole cover with your crowbar and slide it back on."))
 			return
 
 /obj/structure/ladder/ms13/manhole/update_icon_state()
@@ -178,7 +178,7 @@
 			down.obstructed = FALSE
 			icon_state = "bunker_open"
 			desc = "Looks like the entrance to some bunker. The bars on the grate have been cut off, allowing entry."
-			to_chat(user, span_notice("You cut-weld the bars off the grate, letting you slip past."))
+			to_chat(user, SPAN_NOTICE("You cut-weld the bars off the grate, letting you slip past."))
 
 
 /obj/structure/ladder/ms13/bunker/update_icon_state()
@@ -246,24 +246,24 @@
 
 	if(!down)
 		if(up.locked)
-			to_chat(user, span_notice("The bunker hatch is locked from above!"))
+			to_chat(user, SPAN_NOTICE("The bunker hatch is locked from above!"))
 		else
 			to_chat(user, span_warning("You start to slowly [up.obstructed ? "open" : "close"] the bunker hatch from below."))
 			if(do_after(user, 12 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				obstructed = !obstructed
 				up.obstructed = obstructed
 				up.icon_state = up.obstructed ? "hatch_closed" : "hatch_open"
-				to_chat(user, span_notice("You [up.obstructed ? "closed" : "opened"] the bunker hatch from below."))
+				to_chat(user, SPAN_NOTICE("You [up.obstructed ? "closed" : "opened"] the bunker hatch from below."))
 	else
 		if(locked)
-			to_chat(user, span_notice("[src] must be unlocked first."))
+			to_chat(user, SPAN_NOTICE("[src] must be unlocked first."))
 		else
 			to_chat(user, span_warning("You start to slowly [obstructed ? "open" : "close"] [src]."))
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				obstructed = !obstructed
 				down.obstructed = obstructed
 				icon_state = obstructed ? "hatch_closed" : "hatch_open"
-				to_chat(user, span_notice("You [obstructed ? "closed" : "opened"] [src]."))
+				to_chat(user, SPAN_NOTICE("You [obstructed ? "closed" : "opened"] [src]."))
 
 /// Lock or unlock the hatch.
 /// Hatch can only be locked/unlocked from above.
@@ -271,7 +271,7 @@
 /obj/structure/ladder/ms13/hatch/CtrlClick(mob/user)
 	. = ..()
 	if(!down)
-		to_chat(user, span_notice("You cannot [locked ? "unlock" : "lock"] the bunker hatch from this side!"))
+		to_chat(user, SPAN_NOTICE("You cannot [locked ? "unlock" : "lock"] the bunker hatch from this side!"))
 		return
 	else
 		if(obstructed)
@@ -279,10 +279,10 @@
 			if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 				locked = !locked
 				down.locked = locked
-				to_chat(user, span_notice("You [locked ? "locked" : "unlocked"] [src]."))
+				to_chat(user, SPAN_NOTICE("You [locked ? "locked" : "unlocked"] [src]."))
 			return
 		else
-			to_chat(user, span_notice("[src] must be brought down before you can lock it."))
+			to_chat(user, SPAN_NOTICE("[src] must be brought down before you can lock it."))
 
 
 /obj/structure/ladder/ms13/hatch/update_icon_state()
@@ -342,14 +342,14 @@
 			obstructed = !obstructed
 			up.obstructed = obstructed
 			up.icon_state = up.obstructed ? "enclave_closed" : "enclave_open"
-			to_chat(user, span_notice("You [up.obstructed ? "closed" : "opened"] the Enclave bunker hatch from below."))
+			to_chat(user, SPAN_NOTICE("You [up.obstructed ? "closed" : "opened"] the Enclave bunker hatch from below."))
 	else
 		to_chat(user, span_warning("You start to slowly [obstructed ? "open" : "close"] [src]."))
 		if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_LADDERBLOCKERS))
 			obstructed = !obstructed
 			down.obstructed = obstructed
 			icon_state = obstructed ? "enclave_closed" : "enclave_open"
-			to_chat(user, span_notice("You [up.obstructed ? "closed" : "opened"] [src]."))
+			to_chat(user, SPAN_NOTICE("You [up.obstructed ? "closed" : "opened"] [src]."))
 
 /obj/structure/ladder/ms13/enclave/update_icon_state()
 	. = ..()

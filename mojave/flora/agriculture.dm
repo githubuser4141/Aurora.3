@@ -500,7 +500,7 @@
 			p_fertilizer = clamp(p_fertilizer + fertilizer.phos, 0.00, fertilizer_cap)
 		if(fertilizer.pot > 0)
 			k_fertilizer = clamp(k_fertilizer + fertilizer.pot, 0.00, fertilizer_cap)
-		visible_message(span_notice("[user] spreads [O] through the soil."))
+		visible_message(SPAN_NOTICE("[user] spreads [O] through the soil."))
 		return
 
 	if(IS_EDIBLE(O) || istype(O, /obj/item/reagent_containers))  // Syringe stuff (and other reagent containers now too)
@@ -511,7 +511,7 @@
 			return 1
 
 		if(reagents.total_volume >= reagents.maximum_volume && (!reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/unfiltered) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/dirty)))
-			to_chat(user, span_notice("[src] is full."))
+			to_chat(user, SPAN_NOTICE("[src] is full."))
 			return
 
 		var/list/trays = list(src)//makes the list just this in cases of syringes and compost etc
@@ -524,7 +524,7 @@
 			transfer_amount = reagent_source.amount_per_transfer_from_this
 			if(istype(reagent_source, /obj/item/reagent_containers/syringe/))
 				var/obj/item/reagent_containers/syringe/syr = reagent_source
-				visible_message(span_notice("[user] injects [target] with [syr]."))
+				visible_message(SPAN_NOTICE("[user] injects [target] with [syr]."))
 			// Beakers, bottles, buckets, etc.
 			if(reagent_source.is_drainable())
 				playsound(loc, 'sound/effects/slosh.ogg', 25, TRUE)
@@ -561,7 +561,7 @@
 			if(!user.transferItemToLoc(O, src))
 				return
 			SEND_SIGNAL(O, COMSIG_SEED_ON_PLANTED, src)
-			to_chat(user, span_notice("You plant [O]."))
+			to_chat(user, SPAN_NOTICE("You plant [O]."))
 			set_seed(O)
 			TRAY_NAME_UPDATE
 			age = 1
@@ -585,10 +585,10 @@
 		if(!myseed)
 			to_chat(user, span_warning("[src] doesn't have any plants!"))
 			return
-		user.visible_message(span_notice("[user] starts digging out [src]'s plants..."),
-			span_notice("You start digging out [src]'s plants..."))
+		user.visible_message(SPAN_NOTICE("[user] starts digging out [src]'s plants..."),
+			SPAN_NOTICE("You start digging out [src]'s plants..."))
 		if(O.use_tool(src, user, 50, volume=50) || (!myseed))
-			user.visible_message(span_notice("[user] digs out the plants in [src]!"), span_notice("You dig out all of [src]'s plants!"))
+			user.visible_message(SPAN_NOTICE("[user] digs out the plants in [src]!"), SPAN_NOTICE("You dig out all of [src]'s plants!"))
 			if(myseed)
 				age = 0
 				set_plant_health(0, update_icon = TRUE, forced = TRUE)
@@ -622,7 +622,7 @@
 		return myseed.harvest(user)
 
 	else if(plant_status == HYDROTRAY_PLANT_DEAD)
-		to_chat(user, span_notice("You remove the dead plant from [src]."))
+		to_chat(user, SPAN_NOTICE("You remove the dead plant from [src]."))
 		set_seed(null)
 		update_appearance()
 		TRAY_NAME_UPDATE
@@ -641,7 +641,7 @@
 	if(!anchored)
 		return
 	set_self_sustaining(!self_sustaining)
-	to_chat(user, span_notice("You [self_sustaining ? "activate" : "deactivated"] [src]'s autogrow function[self_sustaining ? ", maintaining the tray's health while using high amounts of power" : ""]."))
+	to_chat(user, SPAN_NOTICE("You [self_sustaining ? "activate" : "deactivated"] [src]'s autogrow function[self_sustaining ? ", maintaining the tray's health while using high amounts of power" : ""]."))
 
 /obj/machinery/ms13/agriculture/AltClick(mob/user)
 	return ..() // This hotkey is BLACKLISTED since it's used by /datum/component/simple_rotation
@@ -656,11 +656,11 @@
 /obj/machinery/ms13/agriculture/proc/update_tray(mob/user, product_count)
 	lastproduce = age
 	if(istype(myseed, /obj/item/seeds/replicapod))
-		to_chat(user, span_notice("You harvest from the [myseed.plantname]."))
+		to_chat(user, SPAN_NOTICE("You harvest from the [myseed.plantname]."))
 	else if(product_count <= 0)
 		to_chat(user, span_warning("You fail to harvest anything useful!"))
 	else
-		to_chat(user, span_notice("You harvest [product_count] items from the [myseed.plantname]."))
+		to_chat(user, SPAN_NOTICE("You harvest [product_count] items from the [myseed.plantname]."))
 	if(!myseed.get_gene(/datum/plant_gene/trait/repeated_harvest))
 		set_seed(null)
 		name = initial(name)

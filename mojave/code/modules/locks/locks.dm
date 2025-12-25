@@ -43,7 +43,7 @@
 			return
 		obj_to_lock.lock = src
 		obj_to_lock.lock_locked = TRUE
-		to_chat(user, span_notice("You attach the [name] to the [obj_to_lock.name]."))
+		to_chat(user, SPAN_NOTICE("You attach the [name] to the [obj_to_lock.name]."))
 		if(istype(obj_to_lock, /obj/machinery/door/unpowered/ms13))
 			var/obj/machinery/door/door = obj_to_lock
 			door.locked = TRUE

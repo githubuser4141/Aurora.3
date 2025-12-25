@@ -253,7 +253,7 @@ GLOBAL_LIST_INIT(sentrybot_dying_sound, list(
 
 /mob/living/simple_animal/hostile/ms13/robot/sentrybot/bullet_act(obj/projectile/Proj)
 	if(istype(Proj, /obj/projectile/bullet/shrapnel))
-		visible_message(span_danger("[Proj] bounces off of the [src]!"))
+		visible_message(SPAN_DANGER("[Proj] bounces off of the [src]!"))
 		return BULLET_ACT_BLOCK
 	return ..()
 

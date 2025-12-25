@@ -22,7 +22,7 @@
 	gloves = /obj/item/clothing/gloves/ms13/bos
 	shoes = /obj/item/clothing/shoes/ms13/military/bos
 	suit_store = /obj/item/gun/energy/ms13/laser/rifle
-	r_pocket = 	/obj/item/stock_parts/cell/ms13/mfc
+	r_pocket = 	/obj/item/cell/ms13/mfc
 	l_pocket =  /obj/item/knife/ms13/combat
 	backpack_contents = list(
 		/obj/item/stack/medical/gauze/ms13/three=1, \

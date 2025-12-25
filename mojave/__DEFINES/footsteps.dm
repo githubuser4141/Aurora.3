@@ -64,23 +64,23 @@ GLOBAL_LIST_INIT(footstep, list(
 //bare footsteps lists
 GLOBAL_LIST_INIT(barefootstep, list(
 	FOOTSTEP_WOOD_BAREFOOT = list(list(
-		'sound/effects/footstep/woodbarefoot1.ogg',
-		'sound/effects/footstep/woodbarefoot2.ogg',
-		'sound/effects/footstep/woodbarefoot3.ogg',
-		'sound/effects/footstep/woodbarefoot4.ogg',
-		'sound/effects/footstep/woodbarefoot5.ogg'), 80, -1),
+		'mojave/sound/effects/footstep/woodbarefoot1.ogg',
+		'mojave/sound/effects/footstep/woodbarefoot2.ogg',
+		'mojave/sound/effects/footstep/woodbarefoot3.ogg',
+		'mojave/sound/effects/footstep/woodbarefoot4.ogg',
+		'mojave/sound/effects/footstep/woodbarefoot5.ogg'), 80, -1),
 	FOOTSTEP_HARD_BAREFOOT = list(list(
-		'sound/effects/footstep/hardbarefoot1.ogg',
-		'sound/effects/footstep/hardbarefoot2.ogg',
-		'sound/effects/footstep/hardbarefoot3.ogg',
-		'sound/effects/footstep/hardbarefoot4.ogg',
-		'sound/effects/footstep/hardbarefoot5.ogg'), 80, -1),
+		'mojave/sound/effects/footstep/hardbarefoot1.ogg',
+		'mojave/sound/effects/footstep/hardbarefoot2.ogg',
+		'mojave/sound/effects/footstep/hardbarefoot3.ogg',
+		'mojave/sound/effects/footstep/hardbarefoot4.ogg',
+		'mojave/sound/effects/footstep/hardbarefoot5.ogg'), 80, -1),
 	FOOTSTEP_CARPET_BAREFOOT = list(list(
-		'sound/effects/footstep/carpetbarefoot1.ogg',
-		'sound/effects/footstep/carpetbarefoot2.ogg',
-		'sound/effects/footstep/carpetbarefoot3.ogg',
-		'sound/effects/footstep/carpetbarefoot4.ogg',
-		'sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
+		'mojave/sound/effects/footstep/carpetbarefoot1.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot2.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot3.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot4.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
 	FOOTSTEP_SAND = list(list(
 		'sound/effects/footstep/asteroid1.ogg',
 		'sound/effects/footstep/asteroid2.ogg',
@@ -108,23 +108,23 @@ GLOBAL_LIST_INIT(barefootstep, list(
 //claw footsteps lists
 GLOBAL_LIST_INIT(clawfootstep, list(
 	FOOTSTEP_WOOD_CLAW = list(list(
-		'sound/effects/footstep/woodclaw1.ogg',
-		'sound/effects/footstep/woodclaw2.ogg',
-		'sound/effects/footstep/woodclaw3.ogg',
-		'sound/effects/footstep/woodclaw2.ogg',
-		'sound/effects/footstep/woodclaw1.ogg'), 90, 1),
+		'mojave/sound/effects/footstep/woodclaw1.ogg',
+		'mojave/sound/effects/footstep/woodclaw2.ogg',
+		'mojave/sound/effects/footstep/woodclaw3.ogg',
+		'mojave/sound/effects/footstep/woodclaw2.ogg',
+		'mojave/sound/effects/footstep/woodclaw1.ogg'), 90, 1),
 	FOOTSTEP_HARD_CLAW = list(list(
-		'sound/effects/footstep/hardclaw1.ogg',
-		'sound/effects/footstep/hardclaw2.ogg',
-		'sound/effects/footstep/hardclaw3.ogg',
-		'sound/effects/footstep/hardclaw4.ogg',
-		'sound/effects/footstep/hardclaw1.ogg'), 90, 1),
+		'mojave/sound/effects/footstep/hardclaw1.ogg',
+		'mojave/sound/effects/footstep/hardclaw2.ogg',
+		'mojave/sound/effects/footstep/hardclaw3.ogg',
+		'mojave/sound/effects/footstep/hardclaw4.ogg',
+		'mojave/sound/effects/footstep/hardclaw1.ogg'), 90, 1),
 	FOOTSTEP_CARPET_BAREFOOT = list(list(
-		'sound/effects/footstep/carpetbarefoot1.ogg',
-		'sound/effects/footstep/carpetbarefoot2.ogg',
-		'sound/effects/footstep/carpetbarefoot3.ogg',
-		'sound/effects/footstep/carpetbarefoot4.ogg',
-		'sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
+		'mojave/sound/effects/footstep/carpetbarefoot1.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot2.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot3.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot4.ogg',
+		'mojave/sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
 	FOOTSTEP_SAND = list(list(
 		'sound/effects/footstep/asteroid1.ogg',
 		'sound/effects/footstep/asteroid2.ogg',
@@ -152,8 +152,8 @@ GLOBAL_LIST_INIT(clawfootstep, list(
 //heavy footsteps list
 GLOBAL_LIST_INIT(heavyfootstep, list(
 	FOOTSTEP_GENERIC_HEAVY = list(list(
-		'sound/effects/footstep/heavy1.ogg',
-		'sound/effects/footstep/heavy2.ogg'), 100, 2),
+		'mojave/sound/effects/footstep/heavy1.ogg',
+		'mojave/sound/effects/footstep/heavy2.ogg'), 100, 2),
 	FOOTSTEP_WATER = list(list(
 		'sound/effects/footstep/water1.ogg',
 		'sound/effects/footstep/water2.ogg',

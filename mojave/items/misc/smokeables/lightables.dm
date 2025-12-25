@@ -399,7 +399,7 @@
 			to_chat(user, span_warning("Your [name] is already full!"))
 			return
 		I.reagents.trans_to(src, max_fuel, transfered_by = user)
-		user.visible_message(span_notice("[user] refills [user.p_their()] [name]."), span_notice("You refill [name]."))
+		user.visible_message(SPAN_NOTICE("[user] refills [user.p_their()] [name]."), SPAN_NOTICE("You refill [name]."))
 		playsound(src, 'sound/effects/refill.ogg', 50, TRUE)
 		update_appearance()
 	if(istype(I, /obj/item/reagent_containers/ms13/lighterfluid) && !is_open)

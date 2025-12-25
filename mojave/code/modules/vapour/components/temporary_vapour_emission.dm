@@ -33,5 +33,5 @@
 
 /datum/component/temporary_vapour_emission/proc/wash_off()
 	if(ismob(parent))
-		to_chat(parent, span_notice("The smell that lingered on your body fades."))
+		to_chat(parent, SPAN_NOTICE("The smell that lingered on your body fades."))
 	qdel(src)

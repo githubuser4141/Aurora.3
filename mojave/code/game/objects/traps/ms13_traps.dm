@@ -44,7 +44,7 @@
 	armed = TRUE
 	icon_state = initial(icon_state)
 	playsound(src, 'mojave/sound/ms13machines/frag_mine_arm.ogg', 40, FALSE, -2)
-	visible_message(span_danger("\The [src] beeps softly, indicating it is now active."), vision_distance = COMBAT_MESSAGE_RANGE)
+	visible_message(SPAN_DANGER("\The [src] beeps softly, indicating it is now active."), vision_distance = COMBAT_MESSAGE_RANGE)
 
 /obj/effect/mine/ms13/explosive/on_entered(datum/source, atom/movable/AM)
 	. = ..()
@@ -60,9 +60,9 @@
 	if(triggered) //too busy detonating to detonate again
 		return
 	if(triggerer)
-		visible_message(span_danger("[triggerer] sets off [icon2html(src, viewers(src))] [src]!"))
+		visible_message(SPAN_DANGER("[triggerer] sets off [icon2html(src, viewers(src))] [src]!"))
 	else
-		visible_message(span_danger("[icon2html(src, viewers(src))] [src] detonates!"))
+		visible_message(SPAN_DANGER("[icon2html(src, viewers(src))] [src] detonates!"))
 
 	var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 	s.set_up(3, 1, src)

@@ -15,7 +15,7 @@
 		if((user.is_holding(src) || user.Adjacent(src)) && !user.put_in_hands(casing)) //incase they're using TK
 			casing.bounce_away(FALSE, NONE)
 		playsound(src, 'sound/weapons/gun/general/mag_bullet_insert.ogg', 60, TRUE)
-		to_chat(user, span_notice("You remove a round from [src]!"))
+		to_chat(user, SPAN_NOTICE("You remove a round from [src]!"))
 		update_ammo_count()
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 

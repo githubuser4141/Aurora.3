@@ -28,9 +28,9 @@
 
 /obj/structure/ms13/bars/attackby(obj/item/W, mob/user, params)
 	if(W.tool_behaviour == TOOL_SAW)
-		user.show_message(span_notice("You begin sawing through the bars."), MSG_VISUAL)
+		user.show_message(SPAN_NOTICE("You begin sawing through the bars."), MSG_VISUAL)
 		if(do_after(user, 45 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
-			user.show_message(span_notice("You saw through the bars!"), MSG_VISUAL)
+			user.show_message(SPAN_NOTICE("You saw through the bars!"), MSG_VISUAL)
 			deconstruct()
 			return TRUE
 
@@ -46,7 +46,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/bars/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>saw</b> or <b>welding tool</b> to cut through [src].")
+	return SPAN_NOTICE("You could use a <b>saw</b> or <b>welding tool</b> to cut through [src].")
 
 /obj/structure/ms13/bars/corner
 	icon_state = "barscorner"
@@ -870,7 +870,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/railing/ms13/wood/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>crowbar</b> or similar prying tool to dismantle [src] for planks and parts.")
+	return SPAN_NOTICE("You could use a <b>crowbar</b> or similar prying tool to dismantle [src] for planks and parts.")
 
 /obj/structure/railing/ms13/wood/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -941,7 +941,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/barricade/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>crowbar</b> or similar prying tool to dismantle [src] for planks and parts.")
+	return SPAN_NOTICE("You could use a <b>crowbar</b> or similar prying tool to dismantle [src] for planks and parts.")
 
 /obj/structure/ms13/barricade/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()

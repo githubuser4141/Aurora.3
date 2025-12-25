@@ -745,7 +745,7 @@
 	offsety = 8
 
 //hellpig - pig from hell, very good mount if you have 100 human flesh - prolly gonna be ooooh wee mojave sun sekrit mount wowza
-
+/*
 /mob/living/simple_animal/hostile/ms13/hellpig
 	name = "hellpig"
 	desc = "A massive mutated pig. Wild and deadly."
@@ -891,3 +891,4 @@
 
 	playsound(get_turf(owner), pick('mojave/sound/ms13npc/hellpig_attack1.ogg', 'mojave/sound/ms13npc/hellpig_attack2.ogg', 'mojave/sound/ms13npc/hellpig_attack3.ogg'), 100, TRUE, 2, TRUE)
 	..()
+*/

@@ -58,7 +58,7 @@
 	. += deconstruction_hints(user)
 
 /obj/item/radio/ms13/ham/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to carefully take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to carefully take apart [src] for parts.")
 
 /obj/item/radio/ms13/ham/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
 	if(flags_1&NODECONSTRUCT_1)

@@ -126,7 +126,7 @@
 	. += deconstruction_hints(user)
 
 /obj/machinery/ms13/terminal/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to carefully take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to carefully take apart [src] for parts.")
 
 /obj/machinery/ms13/terminal/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -188,7 +188,7 @@
 		if(!guess)
 			return
 		unlocked = TRUE
-		to_chat(user, span_notice("You unlock the computer."))
+		to_chat(user, SPAN_NOTICE("You unlock the computer."))
 
 	var/clicksound = pick('mojave/sound/ms13machines/terminals/ui_hacking_charenter_01.ogg','mojave/sound/ms13machines/terminals/ui_hacking_charenter_02.ogg', 'mojave/sound/ms13machines/terminals/ui_hacking_charenter_03.ogg',)
 	playsound(src, clicksound, 50, FALSE)
@@ -527,7 +527,7 @@
 /obj/machinery/ms13/terminal/wall/examine(mob/user)
 	. = ..()
 	if(flippable)
-		. += span_notice("You can flip [src] up and down using <b>ALT+CLICK.</b>")
+		. += SPAN_NOTICE("You can flip [src] up and down using <b>ALT+CLICK.</b>")
 
 /obj/machinery/ms13/terminal/wall/pristine
 	icon_state = "wallterminal_new"

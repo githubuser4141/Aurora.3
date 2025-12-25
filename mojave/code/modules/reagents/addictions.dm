@@ -138,7 +138,7 @@
 
 /datum/addiction/mentats/withdrawal_enters_stage_1(mob/living/carbon/M)
 	. = ..()
-	to_chat(M, span_notice("[pick("Your head strains slightly", "You begin to feel unwell.")]"))
+	to_chat(M, SPAN_NOTICE("[pick("Your head strains slightly", "You begin to feel unwell.")]"))
 
 /datum/addiction/ms13/mentats/withdrawal_stage_1_process(mob/living/carbon/M, delta_time)
 	. = ..()
@@ -149,7 +149,7 @@
 
 /datum/addiction/mentats/withdrawal_enters_stage_2(mob/living/carbon/M)
 	. = ..()
-	to_chat(M, span_notice("[pick("Your head strains heavily", "You begin to feel very headsick.")]"))
+	to_chat(M, SPAN_NOTICE("[pick("Your head strains heavily", "You begin to feel very headsick.")]"))
 
 /datum/addiction/ms13/mentats/withdrawal_stage_2_process(mob/living/carbon/M, delta_time)
 	. = ..()
@@ -161,7 +161,7 @@
 
 /datum/addiction/mentats/withdrawal_enters_stage_3(mob/living/carbon/M)
 	. = ..()
-	to_chat(M, span_notice("[pick("Your head pounds in anguish", "You sulk in pain as your head constricts and expands.")]"))
+	to_chat(M, SPAN_NOTICE("[pick("Your head pounds in anguish", "You sulk in pain as your head constricts and expands.")]"))
 
 /datum/addiction/ms13/mentats/withdrawal_stage_3_process(mob/living/carbon/M, delta_time)
 	. = ..()

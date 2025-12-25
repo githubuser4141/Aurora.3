@@ -138,7 +138,7 @@
 	max_integrity = 450
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
 					EDGE_PROTECTION = CLASS2_EDGE, \
 					CRUSHING = CLASS2_CRUSH, \
 					CUTTING = CLASS2_CUT, \
@@ -305,19 +305,19 @@
 		if(!user.transferItemToLoc(L, src))
 			return
 		lock = I
-		to_chat(user, span_notice("You attach the [lock.name] to the [name]."))
+		to_chat(user, SPAN_NOTICE("You attach the [lock.name] to the [name]."))
 		update_appearance()
 		return
 	else if(I.tool_behaviour == TOOL_CROWBAR)
 		toggle_spacesuit_cell(user)
 		return
-	else if(cell_cover_open && istype(I, /obj/item/stock_parts/cell))
+	else if(cell_cover_open && istype(I, /obj/item/cell))
 		if(cell)
 			to_chat(user, span_warning("[src] already has a cell installed."))
 			return
 		if(user.transferItemToLoc(I, src))
 			cell = I
-			to_chat(user, span_notice("You successfully install \the [cell] into [src]."))
+			to_chat(user, SPAN_NOTICE("You successfully install \the [cell] into [src]."))
 			return
 	else if(istype(I, /obj/item/light) && helmettype)
 		if(src == user.get_item_by_slot(ITEM_SLOT_OCLOTHING))
@@ -333,7 +333,7 @@
 		if(do_after(user, 5 SECONDS, src))
 			qdel(I)
 			helmet = new helmettype(src)
-			to_chat(user, span_notice("You have successfully repaired [src]'s helmet."))
+			to_chat(user, SPAN_NOTICE("You have successfully repaired [src]'s helmet."))
 			new /obj/item/light/bulb/broken(drop_location())
 			return
 	else if(istype(I, /obj/item/ms13/power_armor))
@@ -359,7 +359,7 @@
 				var/obj/item/ms13/pa_module/PA_m = PA.modules[k]
 				PA_m.added_to_pa()
 			playsound(src, 'mojave/sound/ms13effects/crafting/wrenchthreeturn.ogg', 25, TRUE)
-			to_chat(user, span_notice("You successfully install \the [PA] onto the [src]."))
+			to_chat(user, SPAN_NOTICE("You successfully install \the [PA] onto the [src]."))
 		return
 	else if(I.tool_behaviour == TOOL_WRENCH)
 		if(!link_to)
@@ -398,11 +398,11 @@
 					continue
 				var/obj/item/ms13/pa_module/PA_m = PA.modules[k]
 				PA_m.removed_from_pa()
-			to_chat(user, span_notice("You successfully uninstall [PA] from the [src]."))
+			to_chat(user, SPAN_NOTICE("You successfully uninstall [PA] from the [src]."))
 	else if(I.tool_behaviour == TOOL_WELDER)
 		for(var/i in module_armor)
 			if(!isnull(module_armor[i]))
-				to_chat(user, span_notice("You need to remove all armour from the [src]."))
+				to_chat(user, SPAN_NOTICE("You need to remove all armour from the [src]."))
 				return
 		if(!(atom_integrity <= max_integrity - 10))
 			to_chat(user, span_warning("The [src] doesn't need repairs."))
@@ -410,14 +410,14 @@
 		if(!I.tool_start_check(user, amount=1))
 			return
 		user.visible_message(
-			span_notice("[user] begins patching up the [src] with [I]."),
-			span_notice("You begin restoring the [src]..."))
+			SPAN_NOTICE("[user] begins patching up the [src] with [I]."),
+			SPAN_NOTICE("You begin restoring the [src]..."))
 		playsound(src, 'mojave/sound/ms13effects/crafting/welding-2.ogg', 45, TRUE)
 		if(!I.use_tool(src, user, 1.5 SECONDS, volume=0, amount=1))
 			return
 		user.visible_message(
-			span_notice("[user] fixes up the [src]!"),
-			span_notice("You mend the damage of the [src]."))
+			SPAN_NOTICE("[user] fixes up the [src]!"),
+			SPAN_NOTICE("You mend the damage of the [src]."))
 		atom_integrity += 25
 		playsound(src, 'mojave/sound/ms13effects/crafting/welding-3.ogg', 45, TRUE)
 		update_appearance()
@@ -479,7 +479,7 @@
 		do_sparks(2, FALSE, src)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/atom_destruction(damage_flag)
-	subarmor = subarmor.setRating(NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+	//subarmor = //subarmor.setRating(NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 	listeningTo?.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/equipped(mob/living/carbon/human/user, slot)
@@ -635,7 +635,7 @@
 	light_color = "#d1c58d"
 	max_integrity = 340
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t51
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -670,7 +670,7 @@
 	light_color = "#dabc7c"
 	max_integrity = 240
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t45
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS4_CRUSH, \
                 CUTTING = CLASS5_CUT, \
@@ -702,7 +702,7 @@
 	hardsuit_type = "advanced" //Determines used sprites: hardsuit[on]-[type]
 	actions_types = null // No light for this one. When we get our NV working, we can make it a module and make them usually come with it, though.
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/advanced
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS4_EDGE, \
                 CRUSHING = CLASS5_CRUSH, \
                 CUTTING = CLASS5_CUT, \

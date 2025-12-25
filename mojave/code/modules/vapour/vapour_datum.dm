@@ -80,7 +80,7 @@
 	if(dominant_vapours.descriptor == SCENT_DESC_ODOR)
 		to_chat(sniffer, span_warning(smell_string))
 	else
-		to_chat(sniffer, span_notice(smell_string))
+		to_chat(sniffer, SPAN_NOTICE(smell_string))
 
 /datum/vapour/proc/ScrubAmount(amount_to_scrub, update_active = TRUE, planetary_multiplier = FALSE)
 	var/turf/above_turf = get_step_multiz(my_turf, UP) // z level above, if there is none this is the highest level

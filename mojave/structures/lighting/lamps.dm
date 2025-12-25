@@ -22,7 +22,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/lamp/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>screwdriver</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>screwdriver</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/lamp/screwdriver_act_secondary(mob/living/user, obj/item/weapon)
 	if(flags_1&NODECONSTRUCT_1)
@@ -35,14 +35,14 @@
 
 /obj/structure/ms13/lamp/attack_hand(mob/living/user, list/modifiers)
     if(!on)
-        to_chat(user, span_notice("You switch the lamp on."))
+        to_chat(user, SPAN_NOTICE("You switch the lamp on."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 20)
         set_light(4.5, 1)
         on = TRUE
         icon_state = "tablelamp_on"
         return
     else
-        to_chat(user, span_notice("You switch the lamp off."))
+        to_chat(user, SPAN_NOTICE("You switch the lamp off."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 20)
         set_light(4.5, 0)
         on = FALSE
@@ -100,14 +100,14 @@
 
 /obj/structure/ms13/lamp/makeshift/attack_hand(mob/living/user, list/modifiers)
     if(!on)
-        to_chat(user, span_notice("You hook the battery to the light, turning it on."))
+        to_chat(user, SPAN_NOTICE("You hook the battery to the light, turning it on."))
         playsound(user, 'mojave/sound/ms13effects/lightson.ogg', 30)
         set_light(3.5, 0.8)
         on = TRUE
         icon_state = "handmadelamp_on"
         return
     else
-        to_chat(user, span_notice("You disconnect the light from the battery, turning it off."))
+        to_chat(user, SPAN_NOTICE("You disconnect the light from the battery, turning it off."))
         set_light(3.5, 0)
         on = FALSE
         icon_state = "handmadelamp"
@@ -153,14 +153,14 @@
 
 /obj/structure/ms13/lamp/mining_lamp/attack_hand(mob/living/user, list/modifiers)
     if(!on)
-        to_chat(user, span_notice("You switch it on, and it flicks to life."))
+        to_chat(user, SPAN_NOTICE("You switch it on, and it flicks to life."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 30)
         set_light(4.5, 0.8)
         on = TRUE
         icon_state = "lamp_on"
         return
     else
-        to_chat(user, span_notice("You switch the lamp off."))
+        to_chat(user, SPAN_NOTICE("You switch the lamp off."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 30)
         set_light(4.5, 0)
         on = FALSE
@@ -202,14 +202,14 @@
 
 /obj/structure/ms13/lamp/medical_lamp/attack_hand(mob/living/user, list/modifiers)
     if(!on)
-        to_chat(user, span_notice("You switch the lamp on."))
+        to_chat(user, SPAN_NOTICE("You switch the lamp on."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 20)
         set_light(4, 2, COLOR_WHITE)
         on = TRUE
         icon_state = "medlamp_on"
         return
     else
-        to_chat(user, span_notice("You switch the lamp off."))
+        to_chat(user, SPAN_NOTICE("You switch the lamp off."))
         playsound(user, 'mojave/sound/ms13effects/buttonpush.ogg', 20)
         set_light(4, 0, COLOR_WHITE)
         on = FALSE

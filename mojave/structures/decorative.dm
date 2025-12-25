@@ -614,16 +614,16 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	to_chat(user, span_notice("You begin salvaging through the pile for a paper."))
+	to_chat(user, SPAN_NOTICE("You begin salvaging through the pile for a paper."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(15))
-			user.visible_message(span_notice("[user] successfully recovers paper from the [src]."), \
-				span_notice("You recover some paper from the [src]"))
+			user.visible_message(SPAN_NOTICE("[user] successfully recovers paper from the [src]."), \
+				SPAN_NOTICE("You recover some paper from the [src]"))
 			new /obj/item/paper/ms13(loc)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to find any usable paper"), \
-				span_notice("You fail to find any usable paper within the [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to find any usable paper"), \
+				SPAN_NOTICE("You fail to find any usable paper within the [src]."))
 			if(prob(70)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -655,16 +655,16 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	to_chat(user, span_notice("You begin salvaging through the books for some paper."))
+	to_chat(user, SPAN_NOTICE("You begin salvaging through the books for some paper."))
 	if(do_after(user, 8 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] successfully recovers paper from [src]."), \
-				span_notice("You recover some paper from [src]"))
+			user.visible_message(SPAN_NOTICE("[user] successfully recovers paper from [src]."), \
+				SPAN_NOTICE("You recover some paper from [src]"))
 			new /obj/item/paper/ms13(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to find any usable paper"), \
-				span_notice("You fail to find any usable paper within [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to find any usable paper"), \
+				SPAN_NOTICE("You fail to find any usable paper within [src]."))
 			if(prob(50)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -695,16 +695,16 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	to_chat(user, span_notice("You begin salvaging through the [src]."))
+	to_chat(user, SPAN_NOTICE("You begin salvaging through the [src]."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(20))
-			user.visible_message(span_notice("[user] successfully recovers paper from the [src]."), \
-				span_notice("You recover some paper from the [src]"))
+			user.visible_message(SPAN_NOTICE("[user] successfully recovers paper from the [src]."), \
+				SPAN_NOTICE("You recover some paper from the [src]"))
 			new /obj/item/paper/ms13(loc, rand(1,2))
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to find any usable paper"), \
-				span_notice("You fail to find any usable paper within the [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to find any usable paper"), \
+				SPAN_NOTICE("You fail to find any usable paper within the [src]."))
 			qdel(src)
 
 /obj/structure/ms13/trash/bricks
@@ -716,16 +716,16 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	to_chat(user, span_notice("You begin salvaging through the rubble for some bricks."))
+	to_chat(user, SPAN_NOTICE("You begin salvaging through the rubble for some bricks."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(20))
-			user.visible_message(span_notice("[user] begins to sift through the [src] for usable bricks."), \
-				span_notice("You begin to dig through the [src] for usable bricks."))
+			user.visible_message(SPAN_NOTICE("[user] begins to sift through the [src] for usable bricks."), \
+				SPAN_NOTICE("You begin to dig through the [src] for usable bricks."))
 			new /obj/item/ms13/brick(loc, rand(1,2))
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to find a usable brick."), \
-				span_notice("You fail to find a usable brick from the [src]"))
+			user.visible_message(SPAN_NOTICE("[user] fails to find a usable brick."), \
+				SPAN_NOTICE("You fail to find a usable brick from the [src]"))
 			if(prob(50)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -738,17 +738,17 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to sift through the [src] for usable pieces."), \
-		span_notice("You begin to dig through the [src] for some wood."))
+	user.visible_message(SPAN_NOTICE("[user] begins to sift through the [src] for usable pieces."), \
+		SPAN_NOTICE("You begin to dig through the [src] for some wood."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(90)) // It's... scrap wood already.
-			user.visible_message(span_notice("[user] gathers up the [src]."), \
-				span_notice("You gather up all the [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up the [src]."), \
+				SPAN_NOTICE("You gather up all the [src]."))
 			new /obj/item/stack/sheet/ms13/wood/scrap_wood(loc, rand(1,2))
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] somehow messes up gathering the [src]. It melts before their very eyes into nothingness."), \
-				span_notice("You somehow manage to mess up gathering the perfectly fine scrap wood. It melts away before your very eyes..."))
+			user.visible_message(SPAN_NOTICE("[user] somehow messes up gathering the [src]. It melts before their very eyes into nothingness."), \
+				SPAN_NOTICE("You somehow manage to mess up gathering the perfectly fine scrap wood. It melts away before your very eyes..."))
 			qdel(src)
 
 /obj/structure/ms13/trash/food
@@ -769,18 +769,18 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through the [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through the [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] gathers up materials from the [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from the [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/ceramic(loc, 1)
 			new /obj/item/stack/sheet/ms13/scrap(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from the [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from the [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(65)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -793,18 +793,18 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(40))
-			user.visible_message(span_notice("[user] gathers up materials from the [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from the [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/glass(loc, 1)
 			new /obj/item/stack/sheet/ms13/scrap_alu(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from the [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from the [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(75)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -821,18 +821,18 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] gathers up materials from [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/scrap(loc, 1)
 			new /obj/item/stack/sheet/ms13/scrap_steel(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from the [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from the [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(65)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -854,18 +854,18 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through the [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through the [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] gathers up materials from the [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from the [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/glass(loc, 1)
 			new /obj/item/stack/sheet/ms13/scrap_alu(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(75)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -878,18 +878,18 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] gathers up materials from [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/glass(loc, 1)
 			new /obj/item/stack/sheet/ms13/ceramic(loc, 1)
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(75)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 
@@ -906,17 +906,17 @@
 	. = ..()
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
-	user.visible_message(span_notice("[user] begins to search through [src] for usable materials."), \
-		span_notice("You begin to search through [src] for some materials."))
+	user.visible_message(SPAN_NOTICE("[user] begins to search through [src] for usable materials."), \
+		SPAN_NOTICE("You begin to search through [src] for some materials."))
 	if(do_after(user, 5 SECONDS, src))
 		if(prob(35))
-			user.visible_message(span_notice("[user] gathers up materials from [src]."), \
-				span_notice("You gather up some materials from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] gathers up materials from [src]."), \
+				SPAN_NOTICE("You gather up some materials from [src]."))
 			new /obj/item/stack/sheet/ms13/glass(loc, rand(1,4))
 			qdel(src)
 		else
-			user.visible_message(span_notice("[user] fails to gather anything useful from [src]."), \
-				span_notice("You don't manage to find anything useful from [src]."))
+			user.visible_message(SPAN_NOTICE("[user] fails to gather anything useful from [src]."), \
+				SPAN_NOTICE("You don't manage to find anything useful from [src]."))
 			if(prob(80)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
 

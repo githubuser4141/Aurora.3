@@ -309,7 +309,7 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 		if(bolt_locked)
 			if(istype(item, /obj/item/gun_maintenance_supplies))
 				if(do_after(user, 10 SECONDS, target = src))
-					user.visible_message(span_notice("[user] finishes maintenance of [src]."))
+					user.visible_message(SPAN_NOTICE("[user] finishes maintenance of [src]."))
 					jamming_chance = 10
 					qdel(item) */
 

@@ -123,13 +123,13 @@
 		return
 	if(closed)
 		if(do_after(user, 0.5 SECONDS, interaction_key = DOAFTER_SOURCE_DOORS))
-			to_chat(user, span_notice("You open [src]."))
+			to_chat(user, SPAN_NOTICE("You open [src]."))
 			playsound(src, 'mojave/sound/ms13effects/furniture/washer_open.ogg', 50)
 			icon_state = "[initial(icon_state)]_open"
 			closed = FALSE
 	else
 		if(do_after(user, 0.5 SECONDS, interaction_key = DOAFTER_SOURCE_DOORS))
-			to_chat(user, span_notice("You close [src]."))
+			to_chat(user, SPAN_NOTICE("You close [src]."))
 			playsound(src, 'mojave/sound/ms13effects/furniture/washer_close.ogg', 50)
 			icon_state = "[initial(icon_state)]"
 			closed = TRUE
@@ -147,7 +147,7 @@
 		to_chat(user, span_warning("Close the door first!"))
 		return SECONDARY_ATTACK_CONTINUE_CHAIN
 	busy = TRUE
-	to_chat(user, span_notice("You press the on button and [src] kicks to life."))
+	to_chat(user, SPAN_NOTICE("You press the on button and [src] kicks to life."))
 	update_overlays()
 	addtimer(CALLBACK(src, PROC_REF(washed)), 20 SECONDS, TIMER_UNIQUE)
 	soundloop.start()
@@ -158,7 +158,7 @@
 	busy = FALSE
 	soundloop.stop()
 	update_overlays()
-	src.visible_message(span_notice("The [src] finishes its washing cycle."))
+	src.visible_message(SPAN_NOTICE("The [src] finishes its washing cycle."))
 	for(var/X in contents)
 		var/atom/movable/AM = X
 		if(AM.GetComponent(/datum/component/machine_washable))
@@ -198,7 +198,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/storage/washingmachine/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>welding tool</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>welding tool</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/storage/washingmachine/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -259,7 +259,7 @@
 				var/icon/chains = new(icon, "chains")
 				add_overlay(chains)
 				obj_connected.link_to = src
-				to_chat(user, span_notice("You connect the power armor to the [src]!"))
+				to_chat(user, SPAN_NOTICE("You connect the power armor to the [src]!"))
 				return TRUE
 			obj_connected = null
 	else
@@ -268,6 +268,6 @@
 			cut_overlays()
 			obj_connected.link_to = null
 			obj_connected = null
-			to_chat(user, span_notice("You disconnect the power armor to the [src]!"))
+			to_chat(user, SPAN_NOTICE("You disconnect the power armor to the [src]!"))
 			return TRUE
 	return FALSE

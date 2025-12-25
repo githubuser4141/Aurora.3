@@ -113,7 +113,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/street_sign/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>welding tool</b> to take apart [src] for parts.")
+	return SPAN_NOTICE("You could use a <b>welding tool</b> to take apart [src] for parts.")
 
 /obj/structure/ms13/street_sign/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()

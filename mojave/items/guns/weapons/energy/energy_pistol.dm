@@ -12,7 +12,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/stan_pistol)
-	cell_type = /obj/item/stock_parts/cell/ms13/ec
+	cell_type = /obj/item/cell/ms13/ec
 	force = 10
 	fire_delay = 0.55 SECONDS
 	slowdown = 0.5
@@ -27,7 +27,7 @@
 	inhand_icon_state = "advlas_pistol"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_2.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/adv_pistol)
-	cell_type = /obj/item/stock_parts/cell/ms13/mfc
+	cell_type = /obj/item/cell/ms13/mfc
 
 /obj/item/gun/energy/ms13/laser/pistol/advanced/brotherhood
 	name = "\improper Codex Enforcer"
@@ -73,7 +73,7 @@
 	inhand_icon_state = "wattz2000car"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_2.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/wattz_heavypistol)
-	cell_type = /obj/item/stock_parts/cell/ms13/mfc
+	cell_type = /obj/item/cell/ms13/mfc
 	fire_delay = 0.65 SECONDS
 
 // Plasma Pistols //

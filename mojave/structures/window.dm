@@ -141,7 +141,7 @@
 
 /obj/structure/window/ms13/examine(mob/user)
 	. = ..()
-	. += span_notice("You can <b>right click</b> the window <b>in combat mode</b> to try smashing it bare handed.")
+	. += SPAN_NOTICE("You can <b>right click</b> the window <b>in combat mode</b> to try smashing it bare handed.")
 
 /obj/structure/window/ms13/attack_hand_secondary(mob/user, params)
 	. = ..()
@@ -154,7 +154,7 @@
 		return
 	if(!breaking)
 		visible_message(span_warning("[C] is attempting to bash down the [src]!"))
-		to_chat(C, span_notice("You attempt to bash the [src] with your elbow!"))
+		to_chat(C, SPAN_NOTICE("You attempt to bash the [src] with your elbow!"))
 		breaking = TRUE
 		if(do_after(C, 5 SECONDS))
 			if(C.gloves && armor.melee < 50)

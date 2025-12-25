@@ -37,7 +37,7 @@
 					boolets++
 			if(boolets > 0)
 				ammo_stack.update_ammo_count()
-				to_chat(user, span_notice("You collect [boolets] shell\s. [ammo_stack] now contains [length(ammo_stack.stored_ammo)] shell\s."))
+				to_chat(user, SPAN_NOTICE("You collect [boolets] shell\s. [ammo_stack] now contains [length(ammo_stack.stored_ammo)] shell\s."))
 			else
 				to_chat(user, span_warning("You fail to collect anything!"))
 		return
@@ -84,7 +84,7 @@
 	var/obj/item/ammo_box/magazine/ammo_stack/ammo_stack = other_casing.stack_with(src)
 	if(user)
 		user.put_in_hands(ammo_stack)
-		to_chat(user, span_notice("[src] has been stacked with [other_casing]."))
+		to_chat(user, SPAN_NOTICE("[src] has been stacked with [other_casing]."))
 	return ammo_stack
 
 /obj/item/ammo_casing/proc/stack_with(obj/item/ammo_casing/other_casing)

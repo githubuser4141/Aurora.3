@@ -28,4 +28,4 @@
 			                  fire = text2num(result["values"][FIRE]),\
 			                  acid = text2num(result["values"][ACID]))
 				log_admin("[key_name(usr)] modified the subarmor on [src] ([type]) to subarmor_flags: [subarmor.subarmor_flags], crushing: [subarmor.crushing], cutting: [subarmor.cutting], piercing: [subarmor.piercing], impaling: [subarmor.impaling], laser: [subarmor.laser], energy: [subarmor.energy], acid: [subarmor.acid]")
-				message_admins(span_notice("[key_name_admin(usr)] modified the subarmor on [src] ([type]) to subarmor_flags: [subarmor.subarmor_flags], crushing: [subarmor.crushing], cutting: [subarmor.cutting], piercing: [subarmor.piercing], impaling: [subarmor.impaling], laser: [subarmor.laser], energy: [subarmor.energy], acid: [subarmor.acid]"))
+				message_admins(SPAN_NOTICE("[key_name_admin(usr)] modified the subarmor on [src] ([type]) to subarmor_flags: [subarmor.subarmor_flags], crushing: [subarmor.crushing], cutting: [subarmor.cutting], piercing: [subarmor.piercing], impaling: [subarmor.impaling], laser: [subarmor.laser], energy: [subarmor.energy], acid: [subarmor.acid]"))

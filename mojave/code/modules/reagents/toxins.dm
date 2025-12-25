@@ -48,7 +48,7 @@
 		M.emote("cough")
 		M.Stun(15)
 	if(DT_PROB(6, delta_time))
-		to_chat(M, span_danger("You feel horrendously weak and ill!"))
+		to_chat(M, SPAN_DANGER("You feel horrendously weak and ill!"))
 		M.emote("scream")
 		M.Knockdown(rand(60,80))
 		M.Stun(40)

@@ -126,10 +126,10 @@
 	. = ..()
 	if(!.)
 		if(W.tool_behaviour == TOOL_SHOVEL)
-			to_chat(user, span_notice("You start digging the outlines of a grave."))
+			to_chat(user, SPAN_NOTICE("You start digging the outlines of a grave."))
 			if(do_after(user, 4 SECONDS * W.toolspeed, target = src))
-				user.visible_message(span_notice("[user] dug out the outlines of a grave."),
-										span_notice("You dug out the outlines of a grave."))
+				user.visible_message(SPAN_NOTICE("[user] dug out the outlines of a grave."),
+										SPAN_NOTICE("You dug out the outlines of a grave."))
 				new /obj/structure/closet/ms13/grave(src)
 
 /*
@@ -219,10 +219,10 @@
 	. = ..()
 	if(!.)
 		if(W.tool_behaviour == TOOL_SHOVEL)
-			to_chat(user, span_notice("You start digging the outlines of a grave."))
+			to_chat(user, SPAN_NOTICE("You start digging the outlines of a grave."))
 			if(do_after(user, 4 SECONDS * W.toolspeed, target = src))
-				user.visible_message(span_notice("[user] dug out the outlines of a grave."),
-										span_notice("You dug out the outlines of a grave."))
+				user.visible_message(SPAN_NOTICE("[user] dug out the outlines of a grave."),
+										SPAN_NOTICE("You dug out the outlines of a grave."))
 				new /obj/structure/closet/ms13/grave(src)
 
 /turf/open/floor/plating/ms13/ground/snow
@@ -275,16 +275,16 @@
 			return
 		if(W.tool_behaviour == TOOL_SHOVEL)
 			if(dug)
-				to_chat(user, span_notice("The snow is already dug and packed."))
+				to_chat(user, SPAN_NOTICE("The snow is already dug and packed."))
 				return TRUE
 
 			if(!isturf(user.loc))
 				return
 
-			to_chat(user, span_notice("You start digging."))
+			to_chat(user, SPAN_NOTICE("You start digging."))
 
 			if(W.use_tool(src, user, 40, volume=50))
-				to_chat(user, span_notice("You dig out a path."))
+				to_chat(user, SPAN_NOTICE("You dig out a path."))
 				getDug()
 				return TRUE
 
@@ -540,7 +540,7 @@
 /turf/open/floor/plating/ms13/ground/ice/attackby(obj/item/W, mob/user, params)
 	. = ..()
 	if(W.force < 15)
-		to_chat(user, span_notice("The [W.name] cannot break away the ice!"))
+		to_chat(user, SPAN_NOTICE("The [W.name] cannot break away the ice!"))
 		return
 
 	if(!breaking)
@@ -548,7 +548,7 @@
 		playsound(get_turf(src), 'mojave/sound/ms13effects/icebreakshort.ogg', 100, FALSE, FALSE)
 		breaking = TRUE
 		if(do_after(user, 5 SECONDS, interaction_key = DOAFTER_SOURCE_BREAKICE))
-			to_chat(user, span_notice("You break away the ice."))
+			to_chat(user, SPAN_NOTICE("You break away the ice."))
 			switch(crack_state)
 				if(1)
 					crack_state = 2
@@ -687,9 +687,9 @@ GLOBAL_VAR(FishPopNextCalc)
 		if(container.is_refillable())
 			if(!container.reagents.holder_full())
 				container.reagents.add_reagent(dispensedreagent, min(container.volume - container.reagents.total_volume, container.amount_per_transfer_from_this))
-				to_chat(user, span_notice("You fill [container] from [src]."))
+				to_chat(user, SPAN_NOTICE("You fill [container] from [src]."))
 				return TRUE
-			to_chat(user, span_notice("\The [container] is full."))
+			to_chat(user, SPAN_NOTICE("\The [container] is full."))
 			return FALSE
 
 /turf/open/ms13/water/proc/getFished(mob/user)

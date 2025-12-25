@@ -43,7 +43,7 @@
 		icon_state = "[base_icon_state]"
 	return ..()
 
-/obj/item/gun/energy/ms13/proc/insert_magazine(mob/user, var/obj/item/stock_parts/cell/ms13/AM, display_message = TRUE)
+/obj/item/gun/energy/ms13/proc/insert_magazine(mob/user, var/obj/item/cell/ms13/AM, display_message = TRUE)
 	if(!istype(AM, cell_type))
 		to_chat(user, "<span class='warning'>\The [AM] doesn't seem to fit into \the [src]...</span>")
 		return FALSE
@@ -59,10 +59,10 @@
 		return FALSE
 
 ///Handles all the logic of magazine ejection, if tac_load is set that magazine will be tacloaded in the place of the old eject
-/obj/item/gun/energy/ms13/proc/eject_magazine(mob/user, display_message = TRUE, var/obj/item/stock_parts/cell/ms13/tac_load = null)
+/obj/item/gun/energy/ms13/proc/eject_magazine(mob/user, display_message = TRUE, var/obj/item/cell/ms13/tac_load = null)
 	if(cell)
 		cell.forceMove(drop_location())
-		var/obj/item/stock_parts/cell/ms13/old_mag = cell
+		var/obj/item/cell/ms13/old_mag = cell
 		playsound(src, unload_sound, load_sound_volume, load_sound_vary)
 		if (tac_load)
 			if (insert_magazine(user, tac_load, FALSE))
@@ -82,8 +82,8 @@
 	. = ..()
 	if (.)
 		return
-	if (istype(A, /obj/item/stock_parts/cell/ms13))
-		var/obj/item/stock_parts/cell/ms13/AM = A
+	if (istype(A, /obj/item/cell/ms13))
+		var/obj/item/cell/ms13/AM = A
 		if (!cell)
 			insert_magazine(user, AM)
 		else
@@ -107,7 +107,7 @@
 	name = "Base class laser gub"
 	desc = "Life is heck. Report a bug today"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser)
-	cell_type = /obj/item/stock_parts/cell/ms13/mfc
+	cell_type = /obj/item/cell/ms13/mfc
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
@@ -121,7 +121,7 @@
 	name = "Base class plasma gun"
 	desc = "Life is heck. Report a bug today"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma)
-	cell_type = /obj/item/stock_parts/cell/ms13/pc
+	cell_type = /obj/item/cell/ms13/pc
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
@@ -133,7 +133,7 @@
 
 //energy weapon ammotypes: I don't think there's a better place to put these, they're all really generic.
 
-/obj/item/stock_parts/cell/ms13
+/obj/item/cell/ms13
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'
 	name = "ammo cell"
 	desc = "You shouldn't be holding this."
@@ -145,15 +145,15 @@
 	var/base_icon = ""
 	var/multiple_states = FALSE
 
-/obj/item/stock_parts/cell/ms13/Initialize()
+/obj/item/cell/ms13/Initialize()
 	. = ..()
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/ammo/ammo_inventory.dmi')
 
-/obj/item/stock_parts/cell/ms13/New()
+/obj/item/cell/ms13/New()
 	..()
 	return
 
-/obj/item/stock_parts/cell/ms13/mfc
+/obj/item/cell/ms13/mfc
 	name = "microfusion cell"
 	desc = "A microfusion cell, typically used as ammunition for large energy weapons."
 	icon_state = "mfc"
@@ -161,7 +161,7 @@
 	chargerate = 100
 	base_icon = "mfc"
 
-/obj/item/stock_parts/cell/ms13/ecp
+/obj/item/cell/ms13/ecp
 	name = "electron charge pack"
 	desc = "An electron charge pack, typically used as ammunition for rapidly-firing energy weapons."
 	icon_state = "mfc"
@@ -169,7 +169,7 @@
 	chargerate = 100
 	base_icon = "mfc"
 
-/obj/item/stock_parts/cell/ms13/ec
+/obj/item/cell/ms13/ec
 	name = "energy cell"
 	desc = "An energy cell, typically used as ammunition for small-arms energy weapons."
 	icon_state = "sec"
@@ -177,7 +177,7 @@
 	chargerate = 100
 	base_icon = "sec"
 
-/obj/item/stock_parts/cell/ms13/pc
+/obj/item/cell/ms13/pc
 	name = "plasma cell"
 	desc = "A plasma cell, typically used as ammunition for plasma based energy weapons."
 	icon_state = "plasma"
@@ -186,14 +186,14 @@
 	base_icon = "plasma"
 	multiple_states = TRUE
 
-/obj/item/stock_parts/cell/ms13/pc/update_icon()
+/obj/item/cell/ms13/pc/update_icon()
 	if (src.charge == 0)
 		icon_state = "[base_icon]_empty"
 	else
 		icon_state = "[base_icon]"
 	return ..()
 
-/obj/item/stock_parts/cell/ms13/gauss
+/obj/item/cell/ms13/gauss
 	name = "2mm electromagnetic cartridge"
 	desc = "A combination battery pack and magazine used as ammunition for gauss weaponry."
 	icon = 'mojave/icons/objects/ammo/ammo_world.dmi'

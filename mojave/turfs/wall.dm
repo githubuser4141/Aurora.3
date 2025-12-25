@@ -344,7 +344,7 @@
 	weldable = TRUE
 
 /turf/closed/wall/ms13/craftable/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>welder</b> to cut through this wall.")
+	return SPAN_NOTICE("You could use a <b>welder</b> to cut through this wall.")
 
 /turf/closed/wall/ms13/craftable/scrap
 	name = "crude scrap wall"

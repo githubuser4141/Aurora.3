@@ -20,9 +20,9 @@
 	. = ..()
 	W.force -= mining_bonus_damage
 	if(W.mining_mult <= 0)
-		to_chat(user, span_notice("You could probably use something better than a [W.name] for this."))
+		to_chat(user, SPAN_NOTICE("You could probably use something better than a [W.name] for this."))
 	if(W.mining_mult > 0)
-		to_chat(user, span_notice("The [src.name] crumbles under your [W.name]!"))
+		to_chat(user, SPAN_NOTICE("The [src.name] crumbles under your [W.name]!"))
 
 /obj/structure/ms13/ore_deposit/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
@@ -118,9 +118,9 @@
 		if(5)
 			. += span_nicegreen("She's flowin' great! Won't take long to build up at all.")
 		if(4)
-			. += span_green("Flow's pretty alright...")
+			. += SPAN_GREEN("Flow's pretty alright...")
 		if(3)
-			. += span_notice("This vent is completely average.")
+			. += SPAN_NOTICE("This vent is completely average.")
 		if(2)
 			. += span_alert("Sputtering and inconsistent.")
 		if(1)

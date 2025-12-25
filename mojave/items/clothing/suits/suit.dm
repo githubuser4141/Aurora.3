@@ -51,15 +51,6 @@
 	icon_state = "leather_vest"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = CLASS1_STAB, \
-                LASER = 0, \
-                ENERGY = 0, \
-                FIRE = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 
 /obj/item/clothing/suit/ms13/vest/brown
@@ -67,22 +58,12 @@
 	desc = "A brown vest, commonly worn by wannabe cowboys and prospectors."
 	icon_state = "brown_vest"
 	inhand_icon_state = "bos_jumpsuit"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = 0, \
-                CRUSHING = CLASS1_CRUSH, \
-                CUTTING = CLASS1_CUT, \
-                PIERCING = 0, \
-                IMPALING = 0, \
-                LASER = CLASS1_LASER, \
-                ENERGY = 0, \
-                FIRE = 0)
-
 /obj/item/clothing/suit/ms13/vest/black
 	name = "black vest"
 	desc = "A black, fancy looking vest."
 	icon_state = "black_vest"
 	inhand_icon_state = "bos_jumpsuit_o"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -98,7 +79,7 @@
 	icon_state = "leatherjacket"
 	inhand_icon_state = "leatherjacket"
 	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -115,7 +96,7 @@
 	icon_state = "veteran_coat"
 	inhand_icon_state = "leatherjacket"
 	body_parts_covered = CHEST|GROIN
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
                 CUTTING = CLASS1_CUT, \
@@ -137,7 +118,7 @@
 	icon_state = "reinf_veteran_coat"
 	body_parts_covered = CHEST|GROIN|ARMS
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -159,7 +140,7 @@
 	inhand_icon_state = "reinforcedjacket"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -181,7 +162,7 @@
 	desc = "If you are seeing this, someone fucked up."
 	inhand_icon_state = "winter"
 	body_parts_covered = CHEST|GROIN|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -202,7 +183,7 @@
 	desc = "A reinforced and padded orange winter jacket."
 	icon_state = "reinforcedwinterorange"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -222,7 +203,7 @@
 	desc = "An heavily reinforced orange winter jacket with the addition of bulky metal plates."
 	icon_state = "armoredwinterorange"
 	slowdown = 0.3
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -247,7 +228,7 @@
 	desc = "A reinforced and padded brown winter jacket."
 	icon_state = "reinforcedwinterbrown"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -267,7 +248,7 @@
 	desc = "An armored and sturdily reinforced brown winter jacket."
 	icon_state = "armoredwinterbrown"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS3_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -292,7 +273,7 @@
 	desc = "A reinforced and padded blue winter jacket."
 	icon_state = "reinforcedwinterblue"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -312,7 +293,7 @@
 	desc = "An armored and sturdily reinforced blue winter jacket."
 	icon_state = "armoredwinterblue"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS3_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -337,7 +318,7 @@
 	desc = "A reinforced and padded black winter jacket."
 	icon_state = "reinforcedwinterblack"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -357,7 +338,7 @@
 	desc = "An armored and sturdily reinforced black winter jacket."
 	icon_state = "armoredwinterblack"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS1_EDGE, \
                 CRUSHING = CLASS3_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -380,7 +361,7 @@
 	icon_state = "moleskinjacket"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -396,7 +377,7 @@
 	icon_state = "wanderer"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -412,7 +393,7 @@
 	icon_state = "militaryjacket"
 	inhand_icon_state = "greenjump"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
                 CUTTING = CLASS1_CUT, \
@@ -428,7 +409,7 @@
 	icon_state = "mustyjacket"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -445,7 +426,7 @@
 	icon_state = "bikerjacket"
 	inhand_icon_state = "leatherjacket"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -461,7 +442,7 @@
 	icon_state = "letterman"
 	inhand_icon_state = "shirt"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -476,7 +457,7 @@
 	desc = "A fur-lined bomber jacket. Warm and stylish."
 	icon_state = "bomberjacket"
 	body_parts_covered = CHEST|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -494,7 +475,7 @@
 	icon_state = "tantrench"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -510,7 +491,7 @@
 	desc = "A trenchcoat normally worn by pre-war detectives."
 	icon_state = "detective"
 	body_parts_covered = CHEST|ARMS|GROIN
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
                 CUTTING = CLASS1_CUT, \
@@ -525,7 +506,7 @@
 	desc = "A slightly dirty brown overcoat."
 	icon_state = "brownover"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -540,7 +521,7 @@
 	desc = "A leather overcoat. Almost a duster"
 	icon_state = "bum"
 	body_parts_covered = CHEST|ARMS|GROIN
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -556,7 +537,7 @@
 	icon_state = "blacktrench"
 	inhand_icon_state = "leatherjacket"
 	body_parts_covered = CHEST|ARMS|GROIN
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -570,7 +551,7 @@
 	name = "bruiser trenchcoat"
 	desc = "A beefy black trenchcoat."
 	icon_state = "bruiser"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -586,7 +567,7 @@
 	icon_state = "reinfblacktrench"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -607,7 +588,7 @@
 	icon_state = "armorblacktrench"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -630,7 +611,7 @@
 	icon_state = "duster"
 	inhand_icon_state = "duster"
 	body_parts_covered = CHEST|GROIN|ARMS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -646,7 +627,7 @@
 	desc = "A duster with added leather and padding for some more protection."
 	icon_state = "reinfduster"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -666,7 +647,7 @@
 	desc = "A closed, padded duster used by the Desert Rangers. Commonly worn by Rangers preferring maximum mobility and discretion."
 	icon_state = "closed_duster"
 	body_parts_covered = CHEST|GROIN
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -693,7 +674,7 @@
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "followers"
 	inhand_icon_state = "shirt"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -713,7 +694,7 @@
 	desc = "A lab coat often worn by Vault doctors. Good for protecting your precious undersuit from rapid blood ejection from your patients."
 	icon_state = "vaultlabcoat"
 	inhand_icon_state = "shirt"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -759,7 +740,7 @@
 	desc = "You shouldn't be seeing this."
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	icon_state = "dry_simple"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -775,7 +756,7 @@
 	desc = "Lightly padded robes worn by hunters of the Drylander tribe. Light, breathable, and still somewhat protective."
 	icon_state = "hunter"
 	body_parts_covered = CHEST|GROIN|LEGS
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -794,7 +775,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARM_RIGHT
 	slowdown = 0.15
 	icon_state = "headtaker"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -833,7 +814,7 @@
 	desc = "An impressive set of robes worn by the chieftain of the Drylander tribe. This commands respect."
 	body_parts_covered = CHEST|GROIN|ARMS
 	icon_state = "chief"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -858,7 +839,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	slowdown = 0.15
 	icon_state = "slick_1"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -876,10 +857,10 @@
 
 	if(!snatched && has_gold_states)
 		. += span_yellowteamradio("Has some gold chains attached. Quite the status symbol.")
-		. += span_notice("You could snatch them off with <b>Right Mouse Click</b>")
+		. += SPAN_NOTICE("You could snatch them off with <b>Right Mouse Click</b>")
 
 	if(snatched && has_gold_states)
-		. += span_danger("An obvious empty spot where chains should be. It's <b>RUINED!</b>. Time to order a new one to be custom tailored...")
+		. += SPAN_DANGER("An obvious empty spot where chains should be. It's <b>RUINED!</b>. Time to order a new one to be custom tailored...")
 
 
 /obj/item/clothing/suit/ms13/slickback/attack_hand_secondary(mob/user, params)
@@ -889,12 +870,12 @@
 	playsound(src, 'mojave/sound/ms13effects/jewelry_chain1.ogg', 15, TRUE)
 	user.visible_message( \
 		"[user] begins to irreversibly ruin \the [src].", \
-		span_danger("You begin pillaging the chains off \the [src], forever stealing a part of it."),
+		SPAN_DANGER("You begin pillaging the chains off \the [src], forever stealing a part of it."),
 		span_hear("You hear cloth moving around with chains rattling."))
 	if(do_after(user, 5 SECONDS))
 		user.visible_message( \
 			"[user] finishes tearing the chains off of \the [src].", \
-			span_notice("You finish tearing the chains off \the [src]. Destroying the style."),
+			SPAN_NOTICE("You finish tearing the chains off \the [src]. Destroying the style."),
 			span_hear("You hear chains rattling with an abrupt stop."))
 		playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 		icon_state = initial(icon_state)+"_snatched"
@@ -917,7 +898,7 @@
 		else if(snatched && has_gold_states)
 			user.visible_message( \
 				"[user] hangs some chains from \the [src].", \
-				span_notice("You hang some gains on \the [src]"),
+				SPAN_NOTICE("You hang some gains on \the [src]"),
 				span_hear("You hear cloth moving around with chains rattling."))
 			icon_state = initial(icon_state)
 			worn_icon_state = initial(icon_state)
@@ -954,7 +935,7 @@
 	desc = "A well made, very fancy looking fur coat tailor made for individuals with some real clout within the Slickback gang. Even has some extra protective padding that adds some bulk."
 	icon_state = "slick_underboss"
 	slowdown = 0.3
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -973,7 +954,7 @@
 	desc = "You shouldn't be seeing this."
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	icon_state = "goldman_duster"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -991,7 +972,7 @@
 	desc = "A thick and carefully padded trenchcoat with a gold star embroidered on the back. A status symbol among the Goldman Posse and usually a sign of leadership."
 	icon_state = "goldman_leader"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -1005,7 +986,7 @@
 	name = "\improper goldman padded suit"
 	desc = "A fancy suit with the addition of a small poncho draped over the shoulders and some light protective padding. Commonly seen adorning respected individuals within the Goldman Posse."
 	icon_state = "goldman_keeper"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -1020,7 +1001,7 @@
 	desc = "A dark brown poncho with gold embroidery on the back, perfect for braving the desert in comfort and style."
 	body_parts_covered = CHEST|ARM_LEFT
 	icon_state = "goldman_poncho"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
                 CUTTING = CLASS1_CUT, \
@@ -1040,7 +1021,7 @@
 	desc = "A duster that has seen the addition of armoring and protective padding. This likely belongs to a member of the Goldman Posse."
 	icon_state = "goldman_reinfduster"
 	slowdown = 0.3
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS3_CUT, \
@@ -1056,7 +1037,7 @@
 	desc = "A thick, padded duster with an adorned poncho added for extra flair. Commonly associated with members of the Goldman Posse."
 	icon_state = "goldman_coveredduster"
 	slowdown = 0.15
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \
@@ -1072,7 +1053,7 @@
 	desc = "A poncho that has seen many modifications. From the addition of protective padding to embroidered gold symbols and stars. This is no doubt property of the Goldman Posse."
 	body_parts_covered = CHEST|ARMS
 	icon_state = "goldman_thickponcho"
-	subarmor = list(SUBARMOR_FLAGS = NONE, \
+	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS2_CRUSH, \
                 CUTTING = CLASS2_CUT, \

@@ -99,8 +99,8 @@
 	if(I.tool_behaviour == TOOL_KNIFE)
 		if(do_after(user, 10 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_DECON))
 			new /obj/item/stack/sheet/ms13/cloth(I.drop_location(), 5)
-			user.visible_message(span_notice("[user] cuts [src] into pieces of cloth with [I]."), \
-				span_notice("You cut [src] into pieces of cloth with [I]."), \
+			user.visible_message(SPAN_NOTICE("[user] cuts [src] into pieces of cloth with [I]."), \
+				SPAN_NOTICE("You cut [src] into pieces of cloth with [I]."), \
 				span_hear("You hear cutting."))
 			qdel(src)
 	else
@@ -111,7 +111,7 @@
 	. += deconstruction_hints(user)
 
 /obj/structure/ms13/wall_decor/flag/proc/deconstruction_hints(mob/user)
-	return span_notice("You could use a <b>knife</b> to cut up [src] for cloth.")
+	return SPAN_NOTICE("You could use a <b>knife</b> to cut up [src] for cloth.")
 
 /obj/structure/ms13/wall_decor/flag/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
@@ -224,12 +224,12 @@
 
 /obj/structure/ms13/wall_decor/poster/attack_hand_secondary(mob/user, list/modifiers)
 	. = ..()
-	user.visible_message(span_notice("[user] begins tearing apart [src]"), \
-		span_notice("You tear begin to tear [src] into shreds."), \
+	user.visible_message(SPAN_NOTICE("[user] begins tearing apart [src]"), \
+		SPAN_NOTICE("You tear begin to tear [src] into shreds."), \
 		span_hear("You hear paper crinkling."))
 	if(do_after(user, 1 SECONDS))
-		user.visible_message(span_notice("[user] shreds [src] into pieces."), \
-			span_notice("You tear [src] into shreds."), \
+		user.visible_message(SPAN_NOTICE("[user] shreds [src] into pieces."), \
+			SPAN_NOTICE("You tear [src] into shreds."), \
 			span_hear("You hear paper tearing."))
 		playsound(src.loc, 'sound/items/poster_ripped.ogg', 100, TRUE)
 		qdel(src)

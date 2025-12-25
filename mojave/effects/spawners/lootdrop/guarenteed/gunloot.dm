@@ -20,7 +20,7 @@
 				)
 	var/loot3 = list(
 				/obj/item/gun/energy/ms13/laser/rifle/wattz,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot4 = list(
@@ -45,7 +45,7 @@
 				)
 	var/loot8 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/wattz,
-				/obj/item/stock_parts/cell/ms13/ec,
+				/obj/item/cell/ms13/ec,
 				""
 				)
 	var/loot9 = list(
@@ -108,12 +108,12 @@
 				)
 	var/loot8 = list(
 				/obj/item/gun/energy/ms13/laser/pistol,
-				/obj/item/stock_parts/cell/ms13/ec,
+				/obj/item/cell/ms13/ec,
 				""
 				)
 	var/loot9 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/wattz_heavy,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot10 = list(
@@ -211,22 +211,22 @@
 				)
 	var/loot13 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/advanced,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot14 = list(
 				/obj/item/gun/energy/ms13/laser/rifle,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot15 = list(
 				/obj/item/gun/energy/ms13/plasma/pistol,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot16 = list(
 				/obj/item/gun/energy/ms13/plasma/rifle/carbine,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot17 = list(
@@ -294,7 +294,7 @@
 				)
 	var/loot10 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/advanced/defender,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot11 = list(
@@ -304,37 +304,37 @@
 				)
 	var/loot12 = list(
 				/obj/item/gun/energy/ms13/laser/rifle/wattz/sniper,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot13 = list(
 				/obj/item/gun/energy/ms13/laser/rifle/advanced,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot14 = list(
 				/obj/item/gun/energy/ms13/laser/scatter,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot15 = list(
 				/obj/item/gun/energy/ms13/plasma/pistol/defender,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot16 = list(
 				/obj/item/gun/energy/ms13/plasma/rifle,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot17 = list(
 				/obj/item/gun/energy/ms13/plasma/pistol/advanced,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot18 = list(
 				/obj/item/gun/energy/ms13/plasma/multi,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 
@@ -372,7 +372,7 @@
 				)
 	var/loot6 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/wattz/magneto,
-				/obj/item/stock_parts/cell/ms13/ec
+				/obj/item/cell/ms13/ec
 				)
 
 /obj/effect/spawner/random/ms13/guaranteed/gun/lowunique/Initialize(mapload)
@@ -475,53 +475,53 @@
 				)
 	var/loot7 = list(
 				/obj/item/gun/energy/ms13/laser/pistol/advanced/defender,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot8 = list(
 				/obj/item/gun/energy/ms13/laser/rifle/advanced,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot9 = list(
 				/obj/item/gun/energy/ms13/laser/scatter,
-				/obj/item/stock_parts/cell/ms13/mfc,
+				/obj/item/cell/ms13/mfc,
 				""
 				)
 	var/loot10 = list(
 				/obj/item/gun/energy/ms13/plasma/pistol/defender,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot11 = list(
 				/obj/item/gun/energy/ms13/plasma/rifle,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot12 = list(
 				/obj/item/gun/energy/ms13/plasma/pistol/advanced,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot13 = list(
 				/obj/item/gun/energy/ms13/plasma/multi,
-				/obj/item/stock_parts/cell/ms13/pc,
+				/obj/item/cell/ms13/pc,
 				""
 				)
 	var/loot14 = list(
 				/obj/item/gun/energy/ms13/gauss/pistol,
-				/obj/item/stock_parts/cell/ms13/gauss,
-				/obj/item/stock_parts/cell/ms13/gauss
+				/obj/item/cell/ms13/gauss,
+				/obj/item/cell/ms13/gauss
 				)
 	var/loot15 = list(
 				/obj/item/gun/energy/ms13/gauss/rifle,
-				/obj/item/stock_parts/cell/ms13/gauss,
-				/obj/item/stock_parts/cell/ms13/gauss
+				/obj/item/cell/ms13/gauss,
+				/obj/item/cell/ms13/gauss
 				)
 	var/loot16 = list(
 				/obj/item/gun/energy/ms13/gauss/sniper,
-				/obj/item/stock_parts/cell/ms13/gauss,
-				/obj/item/stock_parts/cell/ms13/gauss
+				/obj/item/cell/ms13/gauss,
+				/obj/item/cell/ms13/gauss
 				)
 
 /obj/effect/spawner/random/ms13/guaranteed/gun/military/Initialize(mapload)

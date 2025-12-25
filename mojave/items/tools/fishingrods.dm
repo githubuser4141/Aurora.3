@@ -38,7 +38,7 @@
 /obj/item/ms13/tools/fishing_rod/telescopic/attack_self(mob/user, modifiers)
 	. = ..()
 	if(!toggled)
-		to_chat(user, span_notice("You begin to extend the rod fully."))
+		to_chat(user, SPAN_NOTICE("You begin to extend the rod fully."))
 		if(do_after(user, 2.5 SECONDS, interaction_key = DOAFTER_SOURCE_TELESCOPICROD))
 			icon_state = extended_icon
 			inhand_icon_state = icon_state
@@ -50,7 +50,7 @@
 			grid_width = 192
 			grid_height = 32
 	else
-		to_chat(user, span_notice("You begin to collapse the rod."))
+		to_chat(user, SPAN_NOTICE("You begin to collapse the rod."))
 		if(do_after(user, 2.5 SECONDS, interaction_key = DOAFTER_SOURCE_TELESCOPICROD))
 			icon_state = (initial(icon_state))
 			inhand_icon_state = icon_state

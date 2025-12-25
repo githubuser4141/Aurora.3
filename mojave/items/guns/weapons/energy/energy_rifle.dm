@@ -9,7 +9,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/lasrifle/las_rifle_1.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/laser_rifle.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/stan_rifle)
-	cell_type = /obj/item/stock_parts/cell/ms13/mfc
+	cell_type = /obj/item/cell/ms13/mfc
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
@@ -63,7 +63,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/lasrcw/rcw_5.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/rcw.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/las_rcw)
-	cell_type = /obj/item/stock_parts/cell/ms13/ecp
+	cell_type = /obj/item/cell/ms13/ecp
 	fire_delay = 0.25 SECONDS
 	spread = 4
 	slowdown = 0.75
@@ -87,7 +87,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/scatter)
-	cell_type = /obj/item/stock_parts/cell/ms13/mfc
+	cell_type = /obj/item/cell/ms13/mfc
 	fire_delay = 0.7 SECONDS
 	slowdown = 0.75
 	grid_width = 192

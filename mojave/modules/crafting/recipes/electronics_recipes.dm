@@ -98,7 +98,7 @@
 
 /datum/crafting_recipe/energy_cell
 	name = "energy cell"
-	result = /obj/item/stock_parts/cell/ms13/ec
+	result = /obj/item/cell/ms13/ec
 	time = 10 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
@@ -111,7 +111,7 @@
 
 /datum/crafting_recipe/mfc
 	name = "microfusion cell"
-	result = /obj/item/stock_parts/cell/ms13/mfc
+	result = /obj/item/cell/ms13/mfc
 	time = 12 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
@@ -126,7 +126,7 @@
 
 /datum/crafting_recipe/ecp
 	name = "electron charge pack"
-	result = /obj/item/stock_parts/cell/ms13/ecp
+	result = /obj/item/cell/ms13/ecp
 	time = 15 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)
@@ -141,7 +141,7 @@
 
 /datum/crafting_recipe/pc
 	name = "plasma cell"
-	result = /obj/item/stock_parts/cell/ms13/pc
+	result = /obj/item/cell/ms13/pc
 	time = 15 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	tool_paths = list(/obj/item/wirecutters/ms13)

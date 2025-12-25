@@ -94,7 +94,7 @@
 			update_appearance()
 			if(!user.transferItemToLoc(I, src))
 				return
-			to_chat(user, span_notice("You string up [I] on [src]."))
+			to_chat(user, SPAN_NOTICE("You string up [I] on [src]."))
 			return
 	if(!has_rope)
 		to_chat(user, "<span class='warning'>You need to attach some rope to hang things here!</span>")

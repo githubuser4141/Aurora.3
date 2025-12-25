@@ -422,7 +422,7 @@
 	var/obj/item/ammo_casing/shotgun/ms13/buckshot/triple/boomtype = new /obj/item/ammo_casing/shotgun/ms13/buckshot/triple
 	user.visible_message( \
 		"[user] breaks the string off \the [src]", \
-		span_notice("You break \the [src], producing a singular usable [boomtype]"),
+		SPAN_NOTICE("You break \the [src], producing a singular usable [boomtype]"),
 		span_hear("You hear a string snap."))
 	boomtype.desc += " It has the name [registered_name] written on it."
 	user.put_in_hands(boomtype)

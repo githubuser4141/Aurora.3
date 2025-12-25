@@ -58,7 +58,7 @@
 /datum/element/lockpickable/proc/examine(atom/source, mob/user, list/examine_list)
 	SIGNAL_HANDLER
 
-	examine_list += span_notice("[source] is fitted with a [shown_difficulty] difficulty lock.")
+	examine_list += SPAN_NOTICE("[source] is fitted with a [shown_difficulty] difficulty lock.")
 
 /datum/element/lockpickable/proc/pick_info(datum/source, list/mutable_lockpicks, list/mutable_wedges, mutable_difficulty)
 	SIGNAL_HANDLER
@@ -295,7 +295,7 @@
 /atom/movable/screen/movable/snap/ms13/lockpicking/proc/mob_detection(atom/source, mob/user, list/examine_list)
 	SIGNAL_HANDLER
 
-	examine_list += span_notice("They are picking the [picking_object]'s lock!")
+	examine_list += SPAN_NOTICE("They are picking the [picking_object]'s lock!")
 
 /atom/movable/screen/movable/snap/ms13/lockpicking/proc/close_lockpick(client/source, atom/_target, turf/location, control, params)
 	SIGNAL_HANDLER

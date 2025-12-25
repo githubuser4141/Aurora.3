@@ -13,6 +13,8 @@
 #define GRID_TO_PIXEL(x, y) list((x * world.icon_size) + (y * world.icon_size))
 #define PIXEL_TO_GRID(x, y) list((x / world.icon_size), (y / world.icon_size))
 
+#define GRID_SIZE_32X32 list(world.icon_size * 32, world.icon_size * 32)
+
 //this is stupid shitcode but grid inventory sadly requires it
 /atom/proc/reset_grid_inventory()
 	var/drop_location = drop_location()
@@ -39,7 +41,7 @@
 	grid_height = old_width
 	grid_width = old_height
 	if(user)
-		to_chat(user, span_notice("You flip the [src] for storage."))
+		to_chat(user, SPAN_NOTICE("You flip the [src] for storage."))
 
 /obj/item/storage
 	var/grid = TRUE
@@ -955,10 +957,10 @@
 		storage_master.orient2hud()
 		storage_master.show_to(usr)
 		testing("storage screen variables reset.")
-		to_chat(usr, span_notice("Storage window position has been reset."))
+		to_chat(usr, SPAN_NOTICE("Storage window position has been reset."))
 	else if(LAZYACCESS(modifiers, CTRL_CLICK))
 		locked = !locked
-		to_chat(usr, span_notice("Storage window [locked ? "" : "un"]locked."))
+		to_chat(usr, SPAN_NOTICE("Storage window [locked ? "" : "un"]locked."))
 	else
 		if(!istype(storage_master))
 			return
