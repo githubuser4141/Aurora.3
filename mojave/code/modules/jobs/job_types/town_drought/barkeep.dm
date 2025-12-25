@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/barkeep
+	outfit = /obj/outfit/job/ms13/town_drought/barkeep
 
 	display_order = JOB_DISPLAY_ORDER_MS13_BARKEEP
 
-/datum/outfit/job/ms13/town_drought/barkeep
+/obj/outfit/job/ms13/town_drought/barkeep
 	name = "_Barony Barkeep"
 	jobtype = /datum/job/ms13/town_drought/barkeep
 
@@ -24,5 +24,5 @@
 	l_pocket =   /obj/item/stack/ms13/currency/cap/hunnedtwentyfive
 	back =       null
 
-/datum/outfit/job/ms13/town_drought/barkeep/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/barkeep/pre_equip(mob/living/carbon/human/H)
 	..()

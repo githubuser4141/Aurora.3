@@ -5,11 +5,11 @@
 	supervisors = "A Deputy-Chief, if present."
 	description = "Scout the region and provide aid to the downtrodden and needy when possible. Establish friendly relations with the locals."
 
-	outfit = /datum/outfit/job/ms13/ranger/sharpshooter
+	outfit = /obj/outfit/job/ms13/ranger/sharpshooter
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RANGERSHARP
 
-/datum/outfit/job/ms13/ranger/sharpshooter
+/obj/outfit/job/ms13/ranger/sharpshooter
 	name = "_Desert Ranger Sharpshooter"
 	jobtype = 	 /datum/job/ms13/ranger/sharpshooter
 	id = 		 /obj/item/card/id/ms13/ranger
@@ -29,5 +29,5 @@
 		/obj/item/stack/ms13/currency/prewar/sixty=1,\
 		/obj/item/radio/ms13/broadcast=1)
 
-/datum/outfit/job/ms13/ranger/sharpshooter/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ranger/sharpshooter/pre_equip(mob/living/carbon/human/H)
 	..()

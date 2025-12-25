@@ -5,11 +5,11 @@
 	supervisors = "Knights, Scribes, and above"
 	description = "You are an inexperienced Brotherhood recruit. Learn what it means to be a member of the Brotherhood and execute orders given to you by anyone that is not a fellow Initiate. You're currently at edge with the NCR, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/bos/initiate
+	outfit = /obj/outfit/job/ms13/bos/initiate
 
 	display_order = JOB_DISPLAY_ORDER_MS13_INITIATE
 
-/datum/outfit/job/ms13/bos/initiate
+/obj/outfit/job/ms13/bos/initiate
 	name = "_BoS Initiate"
 	jobtype = /datum/job/ms13/bos/initiate
 
@@ -26,5 +26,5 @@
 	backpack_contents = list(
 		/obj/item/stack/medical/gauze/ms13/three=1)
 
-/datum/outfit/job/ms13/bos/initiate/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/bos/initiate/pre_equip(mob/living/carbon/human/H)
 	..()

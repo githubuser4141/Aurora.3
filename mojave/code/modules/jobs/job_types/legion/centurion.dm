@@ -6,11 +6,11 @@
 	description = "Command your Centuria, leading them to glorious victory at all costs."
 	enforce = "The Legion expects you to lead them effectively. Do not be a coward."
 
-	outfit = /datum/outfit/job/ms13/legion/centurion
+	outfit = /obj/outfit/job/ms13/legion/centurion
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CENTURION
 
-/datum/outfit/job/ms13/legion/centurion
+/obj/outfit/job/ms13/legion/centurion
 	name = "_Legion Centurion"
 	jobtype = /datum/job/ms13/legion/centurion
 
@@ -31,5 +31,5 @@
 		/obj/item/stack/ms13/currency/aurelius/five=1,\
 		/obj/item/stack/ms13/currency/denarius/fifteen=1)
 
-/datum/outfit/job/ms13/legion/centurion/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/centurion/pre_equip(mob/living/carbon/human/H)
 	..()

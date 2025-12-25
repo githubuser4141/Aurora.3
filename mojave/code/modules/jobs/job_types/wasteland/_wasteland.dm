@@ -5,7 +5,7 @@
 	)
 	guestbook_flags = NONE //by default, wasteland jobs should not know each other
 
-/datum/outfit/job/ms13/wasteland
+/obj/outfit/job/ms13/wasteland
 	name = "Default"
 	jobtype = /datum/job/ms13/wasteland
 

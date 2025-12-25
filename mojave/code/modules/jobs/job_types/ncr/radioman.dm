@@ -5,11 +5,11 @@
 	supervisors = "Sergeants and above"
 	description = "Act as a relay between your squad and command. Assist your assigned Sergeant in organizing your squad as the second in command. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/radioman
+	outfit = /obj/outfit/job/ms13/ncr/radioman
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RADIOMAN
 
-/datum/outfit/job/ms13/ncr/radioman
+/obj/outfit/job/ms13/ncr/radioman
 	name = "_NCR Radioman"
 	jobtype = 	 /datum/job/ms13/ncr/radioman
 	id = 		 /obj/item/card/id/ms13/ncr/radioman
@@ -28,5 +28,5 @@
 		/obj/item/clothing/mask/ms13/ncr=1, \
 		/obj/item/stack/ms13/currency/ncr_dollar/twenty=1)
 
-/datum/outfit/job/ms13/ncr/radioman/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/radioman/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/nurse
+	outfit = /obj/outfit/job/ms13/town/nurse
 
 	display_order = JOB_DISPLAY_ORDER_MS13_NURSE
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING)
 
-/datum/outfit/job/ms13/town/nurse
+/obj/outfit/job/ms13/town/nurse
 	name = "_Snowcrest Nurse"
 	jobtype = /datum/job/ms13/town/nurse
 
@@ -24,5 +24,5 @@
 	shoes = 	 /obj/item/clothing/shoes/ms13/winter
 	back =       /obj/item/storage/ms13/satchel
 
-/datum/outfit/job/ms13/town/nurse/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/nurse/pre_equip(mob/living/carbon/human/H)
 	..()

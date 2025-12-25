@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/bodyguard
+	outfit = /obj/outfit/job/ms13/town/bodyguard
 
 	display_order = JOB_DISPLAY_ORDER_MS13_TOWNBODYGUARD
 
-/datum/outfit/job/ms13/town/bodyguard
+/obj/outfit/job/ms13/town/bodyguard
 	name = "_Snowcrest Bodyguard"
 	jobtype = /datum/job/ms13/town/bodyguard
 
@@ -31,7 +31,7 @@
 		/obj/item/radio/ms13=1, \
 		/obj/item/restraints/handcuffs/ms13=1)
 
-/datum/outfit/job/ms13/town/bodyguard/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/bodyguard/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	suit_store = pick(
@@ -40,7 +40,7 @@
 			/obj/item/gun/energy/ms13/laser/pistol)
 
 
-/datum/outfit/job/ms13/town/bodyguard/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/town/bodyguard/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

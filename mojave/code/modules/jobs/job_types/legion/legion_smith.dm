@@ -5,13 +5,13 @@
 	supervisors = "The Veteran Decanus"
 	description = "Ensure your fellow Legionaries are properly supplied and armed for the fights to come. Listen to orders from the Decanus."
 
-	outfit = /datum/outfit/job/ms13/legion/legion_smith
+	outfit = /obj/outfit/job/ms13/legion/legion_smith
 
 	display_order = JOB_DISPLAY_ORDER_MS13_LEGIONSMITH
 
 	mind_traits = list(TRAIT_LEGION_SMITHING)
 
-/datum/outfit/job/ms13/legion/legion_smith
+/obj/outfit/job/ms13/legion/legion_smith
 	name = "_Legion Blacksmith"
 	jobtype = /datum/job/ms13/legion/legion_smith
 
@@ -32,5 +32,5 @@
 		/obj/item/weldingtool/ms13=1,\
 		/obj/item/clothing/glasses/ms13/welding=1)
 
-/datum/outfit/job/ms13/legion/legion_smith/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/legion_smith/pre_equip(mob/living/carbon/human/H)
 	..()

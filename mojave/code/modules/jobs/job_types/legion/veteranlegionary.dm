@@ -5,11 +5,11 @@
 	supervisors = "The Veteran Decanus."
 	description = "Fight in the name of Caesar, and claim the lands for the Bull! Listen to your superiors, they will guide you to victory."
 
-	outfit = /datum/outfit/job/ms13/legion/veteranlegionary
+	outfit = /obj/outfit/job/ms13/legion/veteranlegionary
 
 	display_order = JOB_DISPLAY_ORDER_MS13_VETERANLEGIONARY
 
-/datum/outfit/job/ms13/legion/veteranlegionary
+/obj/outfit/job/ms13/legion/veteranlegionary
 	name = "_Legion Veteran Legionary"
 	jobtype = /datum/job/ms13/legion/veteranlegionary
 
@@ -27,7 +27,7 @@
 	backpack_contents = list(
 		/obj/item/ammo_box/ms13/shotgun/buckshot=1)
 
-/datum/outfit/job/ms13/legion/veteranlegionary/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/veteranlegionary/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	r_hand = pick(

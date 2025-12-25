@@ -5,13 +5,13 @@
 	supervisors = "The Chieftain"
 	description = "You are the Shaman of the Drylander tribe. Coordinate the common folk of the tribe, listen to and advise the Chieftain, and ensure the Hunters and Headtakers of the tribe are well equipped and cared for."
 
-	outfit = /datum/outfit/job/ms13/drylander/shaman
+	outfit = /obj/outfit/job/ms13/drylander/shaman
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SHAMAN
 
 	mind_traits = list(TRAIT_DRY_SHAMAN)
 
-/datum/outfit/job/ms13/drylander/shaman
+/obj/outfit/job/ms13/drylander/shaman
 	name = "_Drylander Shaman"
 	jobtype = /datum/job/ms13/drylander/shaman
 
@@ -32,5 +32,5 @@
 					/obj/item/screwdriver/ms13=1
 	)
 
-/datum/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
 	..()

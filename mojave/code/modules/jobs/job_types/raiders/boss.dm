@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/raiders/boss
+	outfit = /obj/outfit/job/ms13/raiders/boss
 
 	display_order = JOB_DISPLAY_ORDER_MS13_BOSS
 
-/datum/outfit/job/ms13/raiders/boss
+/obj/outfit/job/ms13/raiders/boss
 	name = "_Raider Boss"
 	jobtype = /datum/job/ms13/raiders/boss
 
@@ -31,5 +31,5 @@
 		/obj/item/radio/ms13/broadcast=1, \
 		/obj/item/stack/ms13/currency/prewar/hunnedtwenty=1)
 
-/datum/outfit/job/ms13/raiders/boss/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/boss/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -7,18 +7,18 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/raiders/raider
+	outfit = /obj/outfit/job/ms13/raiders/raider
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RAIDER
 
-/datum/outfit/job/ms13/raiders/raider
+/obj/outfit/job/ms13/raiders/raider
 	name = "_Raider"
 	jobtype = /datum/job/ms13/raiders/raider
 
 	id = 		/obj/item/card/id/ms13/raider
 	shoes = 	/obj/item/clothing/shoes/ms13/military/diesel
 
-/datum/outfit/job/ms13/raiders/raider/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/raider/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	head = pick(
@@ -77,7 +77,7 @@
 	else
 		l_pocket = null
 
-/datum/outfit/job/ms13/raiders/raider/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/raiders/raider/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

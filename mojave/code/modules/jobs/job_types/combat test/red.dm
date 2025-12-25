@@ -5,11 +5,11 @@
 	supervisors = "Chief Blud"
 	description = "Blast those blue bastards away! This is YOUR turf!"
 
-	outfit = /datum/outfit/job/ms13/combattest/red
+	outfit = /obj/outfit/job/ms13/combattest/red
 	departments_list = list(/datum/job_department/security)
 	display_order = JOB_DISPLAY_ORDER_MS13_RED
 
-/datum/outfit/job/ms13/combattest/red
+/obj/outfit/job/ms13/combattest/red
 	name = "_Red ganger"
 	jobtype = /datum/job/ms13/combattest/red
 
@@ -22,5 +22,5 @@
 	shoes = /obj/item/clothing/shoes/ms13/winter
 	back = /obj/item/storage/backpack/satchel/leather
 
-/datum/outfit/job/ms13/combattest/red/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/combattest/red/pre_equip(mob/living/carbon/human/H)
 	..()

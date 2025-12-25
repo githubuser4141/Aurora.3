@@ -5,13 +5,13 @@
 	supervisors = "The Rangers"
 	description = "A doctor working alongside the Rangers in order to aid the public when needed. Maintain health of the Rangers and any bystanders."
 
-	outfit = /datum/outfit/job/ms13/ranger/doctor
+	outfit = /obj/outfit/job/ms13/ranger/doctor
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RANGERDOCTOR
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING, TRAIT_DRUGGIE)
 
-/datum/outfit/job/ms13/ranger/doctor
+/obj/outfit/job/ms13/ranger/doctor
 	name = "_Desert Ranger Doctor"
 	jobtype = 	 /datum/job/ms13/ranger/rdoctor
 	id = 		 /obj/item/card/id/ms13/ranger_doctor
@@ -29,10 +29,10 @@
 		/obj/item/stack/medical/gauze/ms13/half=1,\
 		/obj/item/radio/ms13=1)
 
-/datum/outfit/job/ms13/ranger/doctor/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ranger/doctor/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/ranger/doctor/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/ranger/doctor/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

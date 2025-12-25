@@ -5,11 +5,11 @@
 	supervisors = "The Lieutenant, Staff Sergeants, and Sergeants. In that order."
 	description = "You are in charge of fortifying and building for NCR strategic locations throughout the region. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/engineer
+	outfit = /obj/outfit/job/ms13/ncr/engineer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_ENGINEER
 
-/datum/outfit/job/ms13/ncr/engineer
+/obj/outfit/job/ms13/ncr/engineer
 	name = "_NCR Engineer"
 	jobtype = /datum/job/ms13/ncr/engineer
 	id = 		 /obj/item/card/id/ms13/ncr/engineer
@@ -29,5 +29,5 @@
 		/obj/item/ms13/hammer=1, \
 		/obj/item/stack/medical/gauze/ms13/three=1)
 
-/datum/outfit/job/ms13/ncr/engineer/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/engineer/pre_equip(mob/living/carbon/human/H)
 	..()

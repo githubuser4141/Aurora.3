@@ -5,11 +5,11 @@
 	supervisors = "The Will of Caesar."
 	description = "Further the Legion's goals in the region and keep the Drylander tribe in check and on the path to assimilation."
 
-	outfit = /datum/outfit/job/ms13/legion/veterandecanus
+	outfit = /obj/outfit/job/ms13/legion/veterandecanus
 
 	display_order = JOB_DISPLAY_ORDER_MS13_VETERANDECANUS
 
-/datum/outfit/job/ms13/legion/veterandecanus
+/obj/outfit/job/ms13/legion/veterandecanus
 	name = "_Legion Veteran Decanus"
 	jobtype = /datum/job/ms13/legion/veterandecanus
 
@@ -27,5 +27,5 @@
 		/obj/item/ammo_box/magazine/ms13/ar762=1,\
 		/obj/item/stack/ms13/currency/aurelius/five=1)
 
-/datum/outfit/job/ms13/legion/veterandecanus/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/veterandecanus/pre_equip(mob/living/carbon/human/H)
 	..()

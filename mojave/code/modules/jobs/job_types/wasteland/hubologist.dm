@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/wasteland/hubologist
+	outfit = /obj/outfit/job/ms13/wasteland/hubologist
 
 	display_order = JOB_DISPLAY_ORDER_MS13_HUBOLOGIST
 
-/datum/outfit/job/ms13/wasteland/hubologist
+/obj/outfit/job/ms13/wasteland/hubologist
 	name = "_Hubologist"
 	jobtype = /datum/job/ms13/wasteland/hubologist
 
@@ -19,5 +19,5 @@
 	uniform = /obj/item/clothing/under/ms13/wasteland/hubologist
 	shoes = /obj/item/clothing/shoes/ms13/fancy
 
-/datum/outfit/job/ms13/wasteland/hubologist/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/hubologist/pre_equip(mob/living/carbon/human/H)
 	..()

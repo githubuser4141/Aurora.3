@@ -8,11 +8,11 @@
 	forbid = "The Goldman Posse forbids betrayal of one's own, a close ally, or of a previous agreement. Hostility towards protected individiuals, as determined by Goldman leadership."
 	enforce = "The Goldman Posse expects obeying your superiors, keeping a cool head, and adhering to agreements and obligations expected of the group. Money and power is important, but so is the word of the Goldman Posse and not backing down from it."
 
-/datum/outfit/job/ms13/goldman
+/obj/outfit/job/ms13/goldman
 	name = "GoldmanDatums"
 	jobtype = /datum/job/ms13/goldman
 
-/datum/outfit/job/ms13/goldman/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/pre_equip(mob/living/carbon/human/H)
 	..()
 
 //These are base jobs, we don't want them appearing at all

@@ -7,15 +7,15 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/wasteland/wastelander
+	outfit = /obj/outfit/job/ms13/wasteland/wastelander
 
 	display_order = JOB_DISPLAY_ORDER_MS13_WASTELANDER
 
-/datum/outfit/job/ms13/wasteland/wastelander
+/obj/outfit/job/ms13/wasteland/wastelander
 	name = "_Wastelander"
 	jobtype = /datum/job/ms13/wasteland/wastelander
 
-/datum/outfit/job/ms13/wasteland/wastelander/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/wastelander/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	if(prob(75))
 		head = pick(
@@ -144,7 +144,7 @@
 	else
 		l_pocket = null
 
-/datum/outfit/job/ms13/wasteland/wastelander/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/wasteland/wastelander/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

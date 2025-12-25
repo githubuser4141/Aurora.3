@@ -5,11 +5,11 @@
 	supervisors = "The Chieftain and the Headtakers"
 	description = "You are a trained warrior and hunter of the Drylander tribe. Listen to the Chieftain and the Headtakers of the tribe and do what you must to protect your tribe and ensure they prosper."
 
-	outfit = /datum/outfit/job/ms13/drylander/hunter
+	outfit = /obj/outfit/job/ms13/drylander/hunter
 
 	display_order = JOB_DISPLAY_ORDER_MS13_HUNTER
 
-/datum/outfit/job/ms13/drylander/hunter
+/obj/outfit/job/ms13/drylander/hunter
 	name = "_Drylander Hunter"
 	jobtype = /datum/job/ms13/drylander/hunter
 
@@ -22,10 +22,10 @@
 	r_hand =	 /obj/item/ms13/twohanded/fireaxe/drylander
 	back =       /obj/item/storage/ms13/leather_backpack
 
-/datum/outfit/job/ms13/drylander/hunter/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/hunter/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/drylander/hunter/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/hunter/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.gender != MALE)
 		H.gender = MALE
@@ -36,7 +36,7 @@
 	else
 		r_pocket = null
 
-/datum/outfit/job/ms13/drylander/hunter/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/drylander/hunter/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

@@ -4,11 +4,11 @@
 		/datum/job_department/raiders,
 	)
 
-/datum/outfit/job/ms13/raiders
+/obj/outfit/job/ms13/raiders
 	name = "Default"
 	jobtype = /datum/job/ms13/raiders
 
-/datum/outfit/job/ms13/raiders/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/pre_equip(mob/living/carbon/human/H)
 	..()
 
 //These are base jobs, we don't want them appearing at all

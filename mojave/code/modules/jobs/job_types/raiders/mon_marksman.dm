@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = "The Mon City Mercs expect: No disobedience, following the orders of superiors to the letter, getting the job done no matter what. Failure is not an option."
 
-	outfit = /datum/outfit/job/ms13/raiders/mon_marksman
+	outfit = /obj/outfit/job/ms13/raiders/mon_marksman
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MONMARKSMAN
 
-/datum/outfit/job/ms13/raiders/mon_marksman
+/obj/outfit/job/ms13/raiders/mon_marksman
 	name = "_Mon City Marksman"
 	jobtype = /datum/job/ms13/raiders/mon_marksman
 
@@ -32,8 +32,8 @@
 			/obj/item/reagent_containers/pill/ms13/cateye=1,\
 			/obj/item/radio/ms13=1)
 
-/datum/outfit/job/ms13/raiders/mon_marksman/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/mon_marksman/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/raiders/mon_marksman/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/raiders/mon_marksman/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()

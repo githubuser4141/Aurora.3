@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/bartender
+	outfit = /obj/outfit/job/ms13/town/bartender
 
 	display_order = JOB_DISPLAY_ORDER_MS13_BARTENDER
 
-/datum/outfit/job/ms13/town/bartender
+/obj/outfit/job/ms13/town/bartender
 	name = "_Snowcrest Bartender"
 	jobtype = /datum/job/ms13/town/bartender
 
@@ -24,5 +24,5 @@
 	l_pocket =   /obj/item/stack/ms13/currency/prewar/hunnedfourty
 	back =       null
 
-/datum/outfit/job/ms13/town/bartender/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/bartender/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -5,13 +5,13 @@
 	supervisors = "Sergeants and above"
 	description = "You are one of the few NCR medics in the region in charge of providing medical support to your platoon and their operations. You are primarily a non-combat role and as such, should focus on self preservation to ensure you can continue to save the lives of your comrades. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/medic
+	outfit = /obj/outfit/job/ms13/ncr/medic
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MEDIC
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING)
 
-/datum/outfit/job/ms13/ncr/medic
+/obj/outfit/job/ms13/ncr/medic
 	name = "_NCR Medic"
 	jobtype = /datum/job/ms13/ncr/medic
 	id = 		 /obj/item/card/id/ms13/ncr/medic
@@ -26,5 +26,5 @@
 		/obj/item/ammo_box/magazine/ms13/m9mm=1, \
 		/obj/item/stack/medical/gauze/ms13/half=1)
 
-/datum/outfit/job/ms13/ncr/medic/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/medic/pre_equip(mob/living/carbon/human/H)
 	..()

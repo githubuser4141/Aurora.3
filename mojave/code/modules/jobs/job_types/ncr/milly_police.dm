@@ -5,11 +5,11 @@
 	supervisors = "The Sergeant"
 	description = "Follow and execute orders given to you by the Sergeant. Ensure the safety and law and order of the town of Snowcrest."
 
-	outfit = /datum/outfit/job/ms13/ncr/mp
+	outfit = /obj/outfit/job/ms13/ncr/mp
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MILPOLICE
 
-/datum/outfit/job/ms13/ncr/mp
+/obj/outfit/job/ms13/ncr/mp
 	name = "_NCR Military Police"
 	jobtype = 	 /datum/job/ms13/ncr/mp
 	id = 		 /obj/item/card/id/ms13/ncr/mp
@@ -24,7 +24,7 @@
 		/obj/item/stack/ms13/currency/ncr_dollar/twelve=1, \
 		/obj/item/restraints/handcuffs/ms13=1)
 
-/datum/outfit/job/ms13/ncr/mp/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/mp/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	if(prob(40))
@@ -50,7 +50,7 @@
 			/obj/item/gun/ballistic/rifle/ms13/hunting/surplus)
 
 
-/datum/outfit/job/ms13/ncr/mp/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/ncr/mp/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

@@ -6,7 +6,7 @@
 	forbid = "The tribe forbids: Betrayal of the tribe."
 	enforce = "The tribe expects: Adhering to traditional Drylander attire. Only using traditional Drylander weaponry unless the very existence of the tribe or yourself is under grave threat."
 
-/datum/outfit/job/ms13/drylander
+/obj/outfit/job/ms13/drylander
 	name = "Default"
 	jobtype = /datum/job/ms13/drylander
 
@@ -14,7 +14,7 @@
 	shoes =      /obj/item/clothing/shoes/ms13/drylander
 	gloves =     /obj/item/clothing/gloves/ms13/drylander
 
-/datum/outfit/job/ms13/drylander/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/pre_equip(mob/living/carbon/human/H)
 	..()
 
 //These are base jobs, we don't want them appearing at all

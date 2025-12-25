@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = "The Mon City Mercs expect: No disobedience, following the orders of superiors to the letter, getting the job done no matter what. Failure is not an option."
 
-	outfit = /datum/outfit/job/ms13/raiders/mon_grunt
+	outfit = /obj/outfit/job/ms13/raiders/mon_grunt
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MONGRUNT
 
-/datum/outfit/job/ms13/raiders/mon_grunt
+/obj/outfit/job/ms13/raiders/mon_grunt
 	name = "_Mon City Grunt"
 	jobtype = /datum/job/ms13/raiders/mon_grunt
 
@@ -29,7 +29,7 @@
 			/obj/item/stack/medical/gauze/ms13/three=1,\
 			/obj/item/ammo_box/ms13/c10mm/junk=1)
 
-/datum/outfit/job/ms13/raiders/mon_grunt/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/mon_grunt/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	head = pick(
@@ -45,7 +45,7 @@
 			/obj/item/gun/ballistic/shotgun/ms13/lever,\
 			/obj/item/gun/ballistic/shotgun/ms13/lever/cowboy)
 
-/datum/outfit/job/ms13/raiders/mon_grunt/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/raiders/mon_grunt/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

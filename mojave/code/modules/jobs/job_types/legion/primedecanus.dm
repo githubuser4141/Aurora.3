@@ -5,11 +5,11 @@
 	supervisors = "The Centurion."
 	description = "Assist the Centurion in handling your soldiers, keep them in line and focused on the goals at hand."
 
-	outfit = /datum/outfit/job/ms13/legion/primedecanus
+	outfit = /obj/outfit/job/ms13/legion/primedecanus
 
 	display_order = JOB_DISPLAY_ORDER_MS13_PRIMEDECANUS
 
-/datum/outfit/job/ms13/legion/primedecanus
+/obj/outfit/job/ms13/legion/primedecanus
 	name = "_Legion Prime Decanus"
 	jobtype = /datum/job/ms13/legion/primedecanus
 
@@ -27,5 +27,5 @@
 		/obj/item/ammo_box/magazine/ms13/smgm9mm=1,\
 		/obj/item/stack/ms13/currency/denarius/fifteen=1)
 
-/datum/outfit/job/ms13/legion/primedecanus/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/primedecanus/pre_equip(mob/living/carbon/human/H)
 	..()

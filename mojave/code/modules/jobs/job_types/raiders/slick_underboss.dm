@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = "The Slickbacks expect: Profitable operations, professional conduct and behavior, doing what is needed and best for the gang, but still within reason."
 
-	outfit = /datum/outfit/job/ms13/raiders/slick_underboss
+	outfit = /obj/outfit/job/ms13/raiders/slick_underboss
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SLICKUNDERBOSS
 
-/datum/outfit/job/ms13/raiders/slick_underboss
+/obj/outfit/job/ms13/raiders/slick_underboss
 	name = "_Slickback Underboss"
 	jobtype = /datum/job/ms13/raiders/slick_underboss
 
@@ -35,5 +35,5 @@
 		/obj/item/storage/pill_bottle/ms13/daytripper=1,\
 		/obj/item/ms13/knuckles=1)
 
-/datum/outfit/job/ms13/raiders/slick_underboss/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/slick_underboss/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -5,11 +5,11 @@
 	supervisors = "The Ranger Chief, if present."
 	description = "Ensure peace in the region. Lead your outpost fairly and protect the wasteland. Aid those in need."
 
-	outfit = /datum/outfit/job/ms13/ranger/deputychief
+	outfit = /obj/outfit/job/ms13/ranger/deputychief
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RANGERDEPUTYCHIEF
 
-/datum/outfit/job/ms13/ranger/deputychief
+/obj/outfit/job/ms13/ranger/deputychief
 	name = "_Desert Ranger Deputy-Chief"
 	jobtype = 	 /datum/job/ms13/ranger/deputychief
 	suit = 	  	 /obj/item/clothing/suit/ms13/duster/ranger/chief
@@ -31,5 +31,5 @@
 		/obj/item/radio/ms13=1,\
 		/obj/item/stack/ms13/currency/prewar/hunnedtwenty=1)
 
-/datum/outfit/job/ms13/ranger/deputychief/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ranger/deputychief/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -7,16 +7,16 @@
 	exp_required_type = EXP_TYPE_LEGION
 	forbid = "Caesar's Legion forbids: chem usage, over-reliance on technology of all forms."
 
-/datum/outfit/job/ms13/legion
+/obj/outfit/job/ms13/legion
 	name = "Default"
 	jobtype = /datum/job/ms13/legion
 
 	back = /obj/item/storage/ms13/leather_backpack
 
-/datum/outfit/job/ms13/legion/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/legion/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/legion/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	if(H.gender != MALE)
 		H.gender = MALE

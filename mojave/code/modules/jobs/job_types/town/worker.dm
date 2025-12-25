@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/worker
+	outfit = /obj/outfit/job/ms13/town/worker
 
 	display_order = JOB_DISPLAY_ORDER_MS13_WORKER
 
 	mind_traits = list(TRAIT_SNOWCREST_TAILOR)
 
-/datum/outfit/job/ms13/town/worker
+/obj/outfit/job/ms13/town/worker
 	name = "_Snowcrest Worker"
 	jobtype = /datum/job/ms13/town/worker
 
@@ -25,7 +25,7 @@
 	r_hand =	 /obj/item/storage/ms13/toolbox/filled
 
 
-/datum/outfit/job/ms13/town/worker/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/worker/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

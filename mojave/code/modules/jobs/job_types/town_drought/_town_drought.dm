@@ -4,11 +4,11 @@
 		/datum/job_department/town_drought,
 	)
 
-/datum/outfit/job/ms13/town_drought
+/obj/outfit/job/ms13/town_drought
 	name = "Default"
 	jobtype = /datum/job/ms13/town_drought
 
-/datum/outfit/job/ms13/town_drought/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/pre_equip(mob/living/carbon/human/H)
 	..()
 
 //These are base jobs, we don't want them appearing at all

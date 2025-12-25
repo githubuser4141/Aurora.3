@@ -5,11 +5,11 @@
 	supervisors = "The Principles of the Goldman Posse."
 	description = "Assist and advise the Ringleader in matters. Organize and keep stock of the group's supplies. "
 
-	outfit = /datum/outfit/job/ms13/goldman/ringleader
+	outfit = /obj/outfit/job/ms13/goldman/ringleader
 
 	display_order = JOB_DISPLAY_ORDER_MS13_GLDMNOVER
 
-/datum/outfit/job/ms13/goldman/ringleader
+/obj/outfit/job/ms13/goldman/ringleader
 	name = "_Goldman Ringleader"
 	jobtype = 	 /datum/job/ms13/goldman/ringleader
 	id =		 /obj/item/card/id/ms13/goldman/ringleader
@@ -31,5 +31,5 @@
 		/obj/item/stack/ms13/currency/cap/hunned=1,\
 		/obj/item/ammo_box/ms13/c4570box=1)
 
-/datum/outfit/job/ms13/goldman/ringleader/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/ringleader/pre_equip(mob/living/carbon/human/H)
 	..()

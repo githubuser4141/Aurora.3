@@ -4,14 +4,14 @@
 
 /obj/effect/mob_spawn/corpse/human/ms13/wastelander
 	name = "Wastelander"
-	outfit = /datum/outfit/job/ms13/wasteland/corpse
+	outfit = /obj/outfit/job/ms13/wasteland/corpse
 	icon_state = "corpsegreytider"
 
-/datum/outfit/job/ms13/wasteland/corpse
+/obj/outfit/job/ms13/wasteland/corpse
 	name = "_Wastelander Corpse"
 	jobtype = null
 
-/datum/outfit/job/ms13/wasteland/corpse/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/corpse/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.pre_spawn = TRUE
 	if(prob(65))
@@ -184,14 +184,14 @@
 
 /obj/effect/mob_spawn/corpse/human/ms13/nomad
 	name = "Nomad"
-	outfit = /datum/outfit/job/ms13/wasteland/corpse/drought
+	outfit = /obj/outfit/job/ms13/wasteland/corpse/drought
 	icon_state = "corpsegreytider"
 
-/datum/outfit/job/ms13/wasteland/corpse/drought
+/obj/outfit/job/ms13/wasteland/corpse/drought
 	name = "Nomad Corpse"
 	jobtype = null
 
-/datum/outfit/job/ms13/wasteland/corpse/drought/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/corpse/drought/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(prob(65))
 		head = pick(

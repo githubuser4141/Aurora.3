@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/sheriff
+	outfit = /obj/outfit/job/ms13/town/sheriff
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SHERIFF
 
-/datum/outfit/job/ms13/town/sheriff
+/obj/outfit/job/ms13/town/sheriff
 	name = "_Town Sheriff"
 	jobtype = /datum/job/ms13/town/sheriff
 
@@ -36,5 +36,5 @@
 		/obj/item/radio/ms13/broadcast/advanced=1, \
 		/obj/item/ammo_box/magazine/ms13/m10mm=1)
 
-/datum/outfit/job/ms13/town/sheriff/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/sheriff/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/enforcer
+	outfit = /obj/outfit/job/ms13/town_drought/enforcer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_TOWNENFORCER
 
-/datum/outfit/job/ms13/town_drought/enforcer
+/obj/outfit/job/ms13/town_drought/enforcer
 	name = "_Barony Enforcer"
 	jobtype = /datum/job/ms13/town_drought/enforcer
 
@@ -30,7 +30,7 @@
 		/obj/item/stack/ms13/currency/cap/ninety=1, \
 		/obj/item/restraints/handcuffs/ms13=1)
 
-/datum/outfit/job/ms13/town_drought/enforcer/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/enforcer/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(
@@ -50,7 +50,7 @@
 			/obj/item/ms13/twohanded/spear)
 
 
-/datum/outfit/job/ms13/town_drought/enforcer/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/town_drought/enforcer/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

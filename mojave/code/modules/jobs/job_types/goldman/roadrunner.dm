@@ -5,11 +5,11 @@
 	supervisors = "The Ringleader and the Keeper."
 	description = "Stay in line and listen to your superiors. Ensure messages are delivered as needed and the nearby region is well travelled and scouted. Abide by established agreements and patrol the highways."
 
-	outfit = /datum/outfit/job/ms13/goldman/roadrunner
+	outfit = /obj/outfit/job/ms13/goldman/roadrunner
 
 	display_order = JOB_DISPLAY_ORDER_MS13_GLDMNROADRUN
 
-/datum/outfit/job/ms13/goldman/roadrunner
+/obj/outfit/job/ms13/goldman/roadrunner
 	name = "_Goldman Road Runner"
 	jobtype = 	 /datum/job/ms13/goldman/roadrunner
 	id =		 /obj/item/card/id/ms13/goldman/road
@@ -33,10 +33,10 @@
 		/obj/item/ammo_box/magazine/ms13/smgm9mm=1, \
 		/obj/item/stack/ms13/currency/cap/sixty=1)
 
-/datum/outfit/job/ms13/goldman/roadrunner/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/roadrunner/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/goldman/roadrunner/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/goldman/roadrunner/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

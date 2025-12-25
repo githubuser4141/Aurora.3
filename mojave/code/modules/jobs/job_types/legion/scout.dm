@@ -5,11 +5,11 @@
 	supervisors = "The Centurion, Speculatores, Explorers."
 	description = "Assist the Legion by scouting out the land, taking out targets strategically."
 
-	outfit = /datum/outfit/job/ms13/legion/scout
+	outfit = /obj/outfit/job/ms13/legion/scout
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SCOUT
 
-/datum/outfit/job/ms13/legion/scout
+/obj/outfit/job/ms13/legion/scout
 	name = "_Legion Scout"
 	jobtype = /datum/job/ms13/legion/scout
 
@@ -21,5 +21,5 @@
 	suit_store = /obj/item/gun/ballistic/rifle/ms13/hunting
 	l_pocket = /obj/item/ammo_box/magazine/ms13/r308
 
-/datum/outfit/job/ms13/legion/scout/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/scout/pre_equip(mob/living/carbon/human/H)
 	..()

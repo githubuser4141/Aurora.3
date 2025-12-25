@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = "The Slickbacks expect: Profitable operations, professional conduct and behavior, doing what is needed and best for the gang, but still within reason."
 
-	outfit = /datum/outfit/job/ms13/raiders/slick_cook
+	outfit = /obj/outfit/job/ms13/raiders/slick_cook
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SLICKBACKCOOK
 
 	mind_traits = list(TRAIT_DRUGGIE)
 
-/datum/outfit/job/ms13/raiders/slick_cook
+/obj/outfit/job/ms13/raiders/slick_cook
 	name = "_Slickback Cook"
 	jobtype = /datum/job/ms13/raiders/slick_cook
 
@@ -36,5 +36,5 @@
 		/obj/item/stack/medical/splint/ms13/wooden=1)
 
 
-/datum/outfit/job/ms13/raiders/slick_cook/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/slick_cook/pre_equip(mob/living/carbon/human/H)
 	..()

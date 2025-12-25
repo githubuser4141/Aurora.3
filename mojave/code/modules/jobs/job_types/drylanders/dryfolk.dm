@@ -5,11 +5,11 @@
 	supervisors = "The Chieftain and the Shaman"
 	description = "You are a proud member of the Drylander tribe. You have no particular role or specialization, but should do what you can to help the tribe prosper. Listen to the Chieftain and Shaman's orders."
 
-	outfit = /datum/outfit/job/ms13/drylander/dryfolk
+	outfit = /obj/outfit/job/ms13/drylander/dryfolk
 
 	display_order = JOB_DISPLAY_ORDER_MS13_DRYFOLK
 
-/datum/outfit/job/ms13/drylander/dryfolk
+/obj/outfit/job/ms13/drylander/dryfolk
 	name = "_Drylander Folk"
 	jobtype = /datum/job/ms13/drylander/dryfolk
 
@@ -17,7 +17,7 @@
 	belt =		 /obj/item/knife/ms13/tribal
 	back =       null
 
-/datum/outfit/job/ms13/drylander/dryfolk/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/dryfolk/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	head = pick(/obj/item/clothing/head/helmet/ms13/drylander/hood,\

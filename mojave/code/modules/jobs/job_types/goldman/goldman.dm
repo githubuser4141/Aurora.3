@@ -5,11 +5,11 @@
 	supervisors = "The Ringleader and the Keeper."
 	description = "Stay in line and listen to your superiors. Expand the influence and profits of the Goldman posse. Abide by established agreements and patrol the highways."
 
-	outfit = /datum/outfit/job/ms13/goldman/standardgold
+	outfit = /obj/outfit/job/ms13/goldman/standardgold
 
 	display_order = JOB_DISPLAY_ORDER_MS13_GOLDMAN
 
-/datum/outfit/job/ms13/goldman/standardgold
+/obj/outfit/job/ms13/goldman/standardgold
 	name = "_Goldman"
 	jobtype = 	 /datum/job/ms13/goldman/standardgold
 	id =		 /obj/item/card/id/ms13/goldman
@@ -26,7 +26,7 @@
 		/obj/item/knife/ms13/hunting=1,\
 		/obj/item/ammo_box/ms13/c10mm=1)
 
-/datum/outfit/job/ms13/goldman/standardgold/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/standardgold/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	suit = pick(/obj/item/clothing/suit/ms13/goldman/duster_covered,\
@@ -41,7 +41,7 @@
 	else
 		glasses = null
 
-/datum/outfit/job/ms13/goldman/standardgold/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/goldman/standardgold/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

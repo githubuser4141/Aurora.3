@@ -5,11 +5,11 @@
 	supervisors = "Caesar, Praetorians, Legates."
 	description = "Take out high value targets and gather information from the dark. You are the all-seeing eye and the all-reaping blade."
 
-	outfit = /datum/outfit/job/ms13/legion/speculatore
+	outfit = /obj/outfit/job/ms13/legion/speculatore
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SPECULATORE
 
-/datum/outfit/job/ms13/legion/speculatore
+/obj/outfit/job/ms13/legion/speculatore
 	name = "_Legion Speculatore"
 	jobtype = /datum/job/ms13/legion/speculatore
 
@@ -22,5 +22,5 @@
 	l_pocket = /obj/item/ammo_box/magazine/ms13/amr
 	neck = /obj/item/clothing/neck/cloak/ms13/legion/speculatore
 
-/datum/outfit/job/ms13/legion/speculatore/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/speculatore/pre_equip(mob/living/carbon/human/H)
 	..()

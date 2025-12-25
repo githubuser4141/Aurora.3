@@ -5,11 +5,11 @@
 	supervisors = "The Chieftain"
 	description = "You are an elite and hardened veteran of the Drylander tribe. Skilled in sniping, scouting, and covert operations. Carry out the will of the chieftain using your expertise."
 
-	outfit = /datum/outfit/job/ms13/drylander/headtaker
+	outfit = /obj/outfit/job/ms13/drylander/headtaker
 
 	display_order = JOB_DISPLAY_ORDER_MS13_HEADTAKER
 
-/datum/outfit/job/ms13/drylander/headtaker
+/obj/outfit/job/ms13/drylander/headtaker
 	name = "_Drylander Headtaker"
 	jobtype = /datum/job/ms13/drylander/headtaker
 
@@ -28,10 +28,10 @@
 					/obj/item/flashlight/flare/ms13=1
 	)
 
-/datum/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/headtaker/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.gender != MALE)
 		H.gender = MALE

@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/mayor
+	outfit = /obj/outfit/job/ms13/town/mayor
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MAYOR
 
-/datum/outfit/job/ms13/town/mayor
+/obj/outfit/job/ms13/town/mayor
 	name = "_Snowcrest Mayor"
 	jobtype = /datum/job/ms13/town/mayor
 
@@ -25,5 +25,5 @@
 	l_pocket =   /obj/item/stack/ms13/currency/prewar/mayor
 	back =       null
 
-/datum/outfit/job/ms13/town/mayor/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/mayor/pre_equip(mob/living/carbon/human/H)
 	..()

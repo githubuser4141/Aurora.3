@@ -6,11 +6,11 @@
 	supervisors = "The Paladin and Head Paladin"
 	description = "Follow the orders of your superiors and ensure weaponized technology in the wastes is kept contained and in check. You're currently at edge with the NCR, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/bos/knight
+	outfit = /obj/outfit/job/ms13/bos/knight
 
 	display_order = JOB_DISPLAY_ORDER_MS13_KNIGHT
 
-/datum/outfit/job/ms13/bos/knight
+/obj/outfit/job/ms13/bos/knight
 	name = "_BoS Knight"
 
 	id = /obj/item/card/id/ms13/bos/knight
@@ -30,5 +30,5 @@
 		/obj/item/ammo_box/magazine/ms13/m10mm=1, \
 		/obj/item/radio/ms13/broadcast/advanced=1)
 
-/datum/outfit/job/ms13/bos/knight/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/bos/knight/pre_equip(mob/living/carbon/human/H)
 	..()

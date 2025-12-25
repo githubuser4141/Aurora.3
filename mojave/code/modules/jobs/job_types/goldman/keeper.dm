@@ -5,13 +5,13 @@
 	supervisors = "The Ringleader."
 	description = "Assist and advise the Ringleader in matters. Organize and keep stock of the group's supplies. Engage in matters on the Ringleader's behalf as needed."
 
-	outfit = /datum/outfit/job/ms13/goldman/keeper
+	outfit = /obj/outfit/job/ms13/goldman/keeper
 
 	display_order = JOB_DISPLAY_ORDER_MS13_GLDMNKEEPER
 
 	mind_traits = list(TRAIT_GOLDQM)
 
-/datum/outfit/job/ms13/goldman/keeper
+/obj/outfit/job/ms13/goldman/keeper
 	name = "_Goldman Keeper"
 	jobtype = 	 /datum/job/ms13/goldman/keeper
 	id =		 /obj/item/card/id/ms13/goldman/keeper
@@ -32,5 +32,5 @@
 		/obj/item/ammo_box/ms13/shotgun/buckshot=1,\
 		/obj/item/knife/ms13/hunting=1)
 
-/datum/outfit/job/ms13/goldman/keeper/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/keeper/pre_equip(mob/living/carbon/human/H)
 	..()

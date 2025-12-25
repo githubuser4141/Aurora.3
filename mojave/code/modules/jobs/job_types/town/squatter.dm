@@ -7,19 +7,19 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/squatter
+	outfit = /obj/outfit/job/ms13/town/squatter
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SQUATTER
 
 	guestbook_flags = GUESTBOOK_FORGETMENOT //anonymity from the rest of town
 
-/datum/outfit/job/ms13/town/squatter
+/obj/outfit/job/ms13/town/squatter
 	name = "_Snowcrest Squatter"
 	jobtype = /datum/job/ms13/town/squatter
 
 	back =       null
 
-/datum/outfit/job/ms13/town/squatter/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/squatter/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	if(prob(10))

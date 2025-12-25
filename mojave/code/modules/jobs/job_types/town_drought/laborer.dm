@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/laborer
+	outfit = /obj/outfit/job/ms13/town_drought/laborer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_LABORER
 
-/datum/outfit/job/ms13/town_drought/laborer
+/obj/outfit/job/ms13/town_drought/laborer
 	name = "_Barony Laborer"
 	jobtype = /datum/job/ms13/town_drought/laborer
 
@@ -22,7 +22,7 @@
 	r_hand =	 /obj/item/storage/ms13/toolbox/filled
 
 
-/datum/outfit/job/ms13/town_drought/laborer/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/laborer/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

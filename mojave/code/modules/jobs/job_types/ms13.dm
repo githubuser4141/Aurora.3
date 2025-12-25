@@ -12,11 +12,11 @@ Mojave Sun Job Base Class
 	paycheck_department = null
 	job_flags = JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS
 
-/datum/outfit/job/ms13
+/obj/outfit/job/ms13
 	name = "Default"
 	jobtype = /datum/job/ms13
 
-	//This is all nulled to override /datum/outfit/job giving everyone assistant gear.
+	//This is all nulled to override /obj/outfit/job giving everyone assistant gear.
 
 	uniform = null
 	id = null

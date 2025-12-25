@@ -7,13 +7,13 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/raiders/sawbone
+	outfit = /obj/outfit/job/ms13/raiders/sawbone
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SAWBONE
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING)
 
-/datum/outfit/job/ms13/raiders/sawbone
+/obj/outfit/job/ms13/raiders/sawbone
 	name = "_Raider Sawbone"
 	jobtype = /datum/job/ms13/raiders/sawbone
 
@@ -30,5 +30,5 @@
 		/obj/item/stack/medical/gauze/ms13/half=1, \
 		/obj/item/ms13/handdrill=1)
 
-/datum/outfit/job/ms13/raiders/sawbone/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/sawbone/pre_equip(mob/living/carbon/human/H)
 	..()

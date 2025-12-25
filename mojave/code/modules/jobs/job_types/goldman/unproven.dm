@@ -5,11 +5,11 @@
 	supervisors = "Proper Goldman, the Ringleader and the Kepper."
 	description = "Stay in line and listen to your superiors. Prove yourself to the goldman. Make yourself useful to the group. Make a name for yourself, somewhat literally."
 
-	outfit = /datum/outfit/job/ms13/goldman/unproven
+	outfit = /obj/outfit/job/ms13/goldman/unproven
 
 	display_order = JOB_DISPLAY_ORDER_MS13_GLDMNUNPROVEN
 
-/datum/outfit/job/ms13/goldman/unproven
+/obj/outfit/job/ms13/goldman/unproven
 	name = "_Goldman Unproven"
 	jobtype = 	 /datum/job/ms13/goldman/unproven
 	head = 		 /obj/item/clothing/head/helmet/ms13/cowboy/goldman
@@ -20,7 +20,7 @@
 	backpack_contents = list(
 		/obj/item/stack/medical/gauze/ms13/three=1)
 
-/datum/outfit/job/ms13/goldman/unproven/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/goldman/unproven/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	suit = pick(/obj/item/clothing/suit/ms13/goldman/poncho,\
@@ -30,7 +30,7 @@
 		/obj/item/gun/ballistic/revolver/ms13/single,\
 		/obj/item/gun/ballistic/rifle/ms13/varmint)
 
-/datum/outfit/job/ms13/goldman/unproven/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/goldman/unproven/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

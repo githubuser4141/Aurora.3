@@ -5,11 +5,11 @@
 	supervisors = "The Veteran Decanus."
 	description = "Assist the Legion by scouting out the land, taking out targets strategically."
 
-	outfit = /datum/outfit/job/ms13/legion/explorer
+	outfit = /obj/outfit/job/ms13/legion/explorer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_EXPLORER
 
-/datum/outfit/job/ms13/legion/explorer
+/obj/outfit/job/ms13/legion/explorer
 	name = "_Legion Explorer"
 	jobtype = /datum/job/ms13/legion/explorer
 
@@ -28,5 +28,5 @@
 		/obj/item/ammo_box/ms13/stripper/r762=2,\
 		/obj/item/stack/ms13/currency/denarius/ten=1)
 
-/datum/outfit/job/ms13/legion/explorer/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/explorer/pre_equip(mob/living/carbon/human/H)
 	..()

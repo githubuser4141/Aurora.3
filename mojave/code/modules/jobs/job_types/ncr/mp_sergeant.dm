@@ -5,11 +5,11 @@
 	supervisors = "Any officer, if present. NCR law."
 	description = "Keep your MPs in line and organize them to enforce law and order within Snowcrest and protect it from any threats. Work with the Mayor of Snowcrest to work towards the prosperity of the town and further integration with the NCR."
 
-	outfit = /datum/outfit/job/ms13/ncr/mp_sergeant
+	outfit = /obj/outfit/job/ms13/ncr/mp_sergeant
 
 	display_order = JOB_DISPLAY_ORDER_MS13_MPSERGEANT
 
-/datum/outfit/job/ms13/ncr/mp_sergeant
+/obj/outfit/job/ms13/ncr/mp_sergeant
 	name = "_NCR MP Sergeant"
 	jobtype = 	 /datum/job/ms13/ncr/mp_sergeant
 	id = 		 /obj/item/card/id/ms13/ncr/sergeant/mp
@@ -31,5 +31,5 @@
 		/obj/item/stack/medical/ointment/ms13/half=1, \
 		/obj/item/restraints/handcuffs/ms13=1)
 
-/datum/outfit/job/ms13/ncr/mp_sergeant/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/mp_sergeant/pre_equip(mob/living/carbon/human/H)
 	..()

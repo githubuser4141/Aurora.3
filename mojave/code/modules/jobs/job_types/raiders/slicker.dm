@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = "The Slickbacks expect: Profitable operations, professional conduct and behavior, doing what is needed and best for the gang, but still within reason."
 
-	outfit = /datum/outfit/job/ms13/raiders/slicker
+	outfit = /obj/outfit/job/ms13/raiders/slicker
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SLICKBACK
 
-/datum/outfit/job/ms13/raiders/slicker
+/obj/outfit/job/ms13/raiders/slicker
 	name = "_Slickback"
 	jobtype = /datum/job/ms13/raiders/slicker
 
@@ -21,7 +21,7 @@
 		/obj/item/stack/medical/gauze/ms13/three=1)
 
 
-/datum/outfit/job/ms13/raiders/slicker/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/slicker/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	back = pick(
@@ -60,7 +60,7 @@
 	else
 		r_pocket = null
 
-/datum/outfit/job/ms13/raiders/slicker/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/raiders/slicker/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

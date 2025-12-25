@@ -7,13 +7,13 @@
 	req_admin_notify = 1
 	description = "Lead and organize your team of scribes. Ensure that the technology and overall workings of the bunker are in order. Provide medical assistance to Brotherhood operations as needed. You're currently at edge with the NCR, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/bos/head_scribe
+	outfit = /obj/outfit/job/ms13/bos/head_scribe
 
 	display_order = JOB_DISPLAY_ORDER_MS13_HEAD_SCRIBE
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING, TRAIT_SCRIBE_TRAINING, TRAIT_DRUGGIE)
 
-/datum/outfit/job/ms13/bos/head_scribe
+/obj/outfit/job/ms13/bos/head_scribe
 	name = "_BoS Head Scribe"
 	jobtype = /datum/job/ms13/bos/head_scribe
 
@@ -31,5 +31,5 @@
 		/obj/item/stack/ms13/currency/prewar/hunned=1, \
 		/obj/item/radio/ms13/broadcast/advanced=1)
 
-/datum/outfit/job/ms13/bos/head_scribe/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/bos/head_scribe/pre_equip(mob/living/carbon/human/H)
 	..()

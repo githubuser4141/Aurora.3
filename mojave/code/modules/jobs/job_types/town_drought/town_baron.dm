@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/baron
+	outfit = /obj/outfit/job/ms13/town_drought/baron
 
 	display_order = JOB_DISPLAY_ORDER_MS13_BARON
 
-/datum/outfit/job/ms13/town_drought/baron
+/obj/outfit/job/ms13/town_drought/baron
 	name = "_The Baron"
 	jobtype = /datum/job/ms13/town_drought/baron
 
@@ -27,10 +27,10 @@
 	l_pocket =   /obj/item/stack/ms13/currency/cap/baron
 	back =       null
 
-/datum/outfit/job/ms13/town_drought/baron/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/baron/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/town_drought/baron/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/baron/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.gender != MALE)
 		H.gender = MALE

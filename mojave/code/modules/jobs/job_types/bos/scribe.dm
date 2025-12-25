@@ -6,13 +6,13 @@
 	supervisors = "The Head Scribe"
 	description = "Ensure the bunker is up to standards, ensure everyone is in good health, and ensure the technology of the Brotherhood is well maintained. Obey orders from the Head Scribe. You're currently at edge with the NCR, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/bos/scribe
+	outfit = /obj/outfit/job/ms13/bos/scribe
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SCRIBE
 
 	mind_traits = list(TRAIT_MEDICAL_TRAINING, TRAIT_SCRIBE_TRAINING)
 
-/datum/outfit/job/ms13/bos/scribe
+/obj/outfit/job/ms13/bos/scribe
 	name = "_BoS Scribe"
 	jobtype = /datum/job/ms13/bos/scribe
 
@@ -27,5 +27,5 @@
 	backpack_contents = list(
 		/obj/item/stack/medical/gauze/ms13/half=1)
 
-/datum/outfit/job/ms13/bos/scribe/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/bos/scribe/pre_equip(mob/living/carbon/human/H)
 	..()

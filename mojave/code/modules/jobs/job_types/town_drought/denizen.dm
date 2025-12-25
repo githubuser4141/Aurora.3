@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town_drought/denizen
+	outfit = /obj/outfit/job/ms13/town_drought/denizen
 
 	display_order = JOB_DISPLAY_ORDER_MS13_DENIZEN
 
-/datum/outfit/job/ms13/town_drought/denizen
+/obj/outfit/job/ms13/town_drought/denizen
 	name = "_Barony Denizen"
 	jobtype = /datum/job/ms13/town_drought/denizen
 
@@ -19,7 +19,7 @@
 	r_pocket =   /obj/item/stack/ms13/currency/cap/thirtyfive
 	back =       null
 
-/datum/outfit/job/ms13/town_drought/denizen/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town_drought/denizen/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	uniform = pick(

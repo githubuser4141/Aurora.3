@@ -5,11 +5,11 @@
 	supervisors = "The Lieutenant"
 	description = "Act as the Second in Command for NCR operations in the region. Direct your Sergeants and advise and assist the Lieutenant as needed. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/staffsergeant
+	outfit = /obj/outfit/job/ms13/ncr/staffsergeant
 
 	display_order = JOB_DISPLAY_ORDER_MS13_STAFFSERGEANT
 
-/datum/outfit/job/ms13/ncr/staffsergeant
+/obj/outfit/job/ms13/ncr/staffsergeant
 	name = "_NCR Staff Sergeant"
 	jobtype = 	 /datum/job/ms13/ncr/staffsergeant
 	id = 		 /obj/item/card/id/ms13/ncr/staff_sergeant
@@ -28,5 +28,5 @@
 		/obj/item/radio/ms13=1, \
 		/obj/item/stack/ms13/currency/ncr_dollar/fifty=1)
 
-/datum/outfit/job/ms13/ncr/staffsergeant/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/staffsergeant/pre_equip(mob/living/carbon/human/H)
 	..()

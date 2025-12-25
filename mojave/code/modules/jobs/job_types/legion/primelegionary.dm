@@ -5,11 +5,11 @@
 	supervisors = "The Centurion and the Prime Decanus."
 	description = "Fight in the name of Caesar, and claim the lands for the Bull! Listen to your superiors, they will guide you to victory."
 
-	outfit = /datum/outfit/job/ms13/legion/primelegionary
+	outfit = /obj/outfit/job/ms13/legion/primelegionary
 
 	display_order = JOB_DISPLAY_ORDER_MS13_PRIMELEGIONARY
 
-/datum/outfit/job/ms13/legion/primelegionary
+/obj/outfit/job/ms13/legion/primelegionary
 	name = "_Legion Prime Legionary"
 	jobtype = /datum/job/ms13/legion/primelegionary
 
@@ -25,7 +25,7 @@
 	belt = /obj/item/claymore/ms13/machete
 	id = /obj/item/card/id/ms13/legprime
 
-/datum/outfit/job/ms13/legion/primelegionary/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/primelegionary/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	suit_store = pick(
@@ -35,7 +35,7 @@
 		/obj/item/gun/ballistic/revolver/ms13/rev357/police,\
 		/obj/item/gun/ballistic/revolver/ms13/caravan/sawed)
 
-/datum/outfit/job/ms13/legion/primelegionary/post_equip(mob/living/carbon/human/H, visualsOnly)
+/obj/outfit/job/ms13/legion/primelegionary/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
 	var/obj/item/gun/ballistic/equipped_gun = H.get_item_by_slot(ITEM_SLOT_SUITSTORE)
 	if(!istype(equipped_gun))

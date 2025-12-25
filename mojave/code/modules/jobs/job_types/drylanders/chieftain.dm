@@ -5,11 +5,11 @@
 	supervisors = "The well being and survival of your tribe."
 	description = "You are the chief and leader of the Drylander tribe. Navigate your tribe through this tumultuous and rapidly changing period, and make the ultimate decisions for the tribe."
 
-	outfit = /datum/outfit/job/ms13/drylander/chieftain
+	outfit = /obj/outfit/job/ms13/drylander/chieftain
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CHIEFTAIN
 
-/datum/outfit/job/ms13/drylander/chieftain
+/obj/outfit/job/ms13/drylander/chieftain
 	name = "_Drylander Chieftain"
 	jobtype = /datum/job/ms13/drylander/chieftain
 
@@ -24,10 +24,10 @@
 	l_hand =     /obj/item/ammo_box/ms13/shotgun/slug
 	back =       null
 
-/datum/outfit/job/ms13/drylander/chieftain/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/chieftain/pre_equip(mob/living/carbon/human/H)
 	..()
 
-/datum/outfit/job/ms13/drylander/chieftain/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/drylander/chieftain/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.gender != MALE)
 		H.gender = MALE

@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/town/settler
+	outfit = /obj/outfit/job/ms13/town/settler
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SETTLER
 
-/datum/outfit/job/ms13/town/settler
+/obj/outfit/job/ms13/town/settler
 	name = "_Snowcrest Citizen"
 	jobtype = /datum/job/ms13/town/settler
 
@@ -19,7 +19,7 @@
 	r_pocket =   /obj/item/stack/ms13/currency/prewar/eighty
 	back =       null
 
-/datum/outfit/job/ms13/town/settler/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/town/settler/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	if(prob(35))

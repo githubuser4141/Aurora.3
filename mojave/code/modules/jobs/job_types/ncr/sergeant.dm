@@ -5,11 +5,11 @@
 	supervisors = "The Staff Sergeant and the Lieutenant"
 	description = "Keep troopers in line, obey orders, and relay changes in situations to keep command up to date. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/sergeant
+	outfit = /obj/outfit/job/ms13/ncr/sergeant
 
 	display_order = JOB_DISPLAY_ORDER_MS13_SERGEANT
 
-/datum/outfit/job/ms13/ncr/sergeant
+/obj/outfit/job/ms13/ncr/sergeant
 	name = "_NCR Sergeant"
 	jobtype = /datum/job/ms13/ncr/sergeant
 	id = 		 /obj/item/card/id/ms13/ncr/sergeant
@@ -28,5 +28,5 @@
 		/obj/item/radio/ms13=1, \
 		/obj/item/stack/ms13/currency/ncr_dollar/fourty=1)
 
-/datum/outfit/job/ms13/ncr/sergeant/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/sergeant/pre_equip(mob/living/carbon/human/H)
 	..()

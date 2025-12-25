@@ -5,11 +5,11 @@
 	supervisors = "The Centurion and the Veteran Decanus"
 	description = "Assist the higher ranks in any way possible, deliver messages on their behalf. Rally the troops in battle."
 
-	outfit = /datum/outfit/job/ms13/legion/vexillarius
+	outfit = /obj/outfit/job/ms13/legion/vexillarius
 
 	display_order = JOB_DISPLAY_ORDER_MS13_VEXILLARIUS
 
-/datum/outfit/job/ms13/legion/vexillarius
+/obj/outfit/job/ms13/legion/vexillarius
 	name = "_Legion Vexillarius"
 	jobtype = /datum/job/ms13/legion/vexillarius
 
@@ -28,5 +28,5 @@
 		/obj/item/ammo_box/ms13/shotgun/buckshot=1,\
 		/obj/item/stack/ms13/currency/aurelius/two=1)
 
-/datum/outfit/job/ms13/legion/vexillarius/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/vexillarius/pre_equip(mob/living/carbon/human/H)
 	..()

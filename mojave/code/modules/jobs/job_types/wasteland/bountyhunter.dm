@@ -7,10 +7,10 @@
 	forbid = "Do not create unnecessary casualties."
 	enforce = "Stick to the list."
 
-	outfit = /datum/outfit/job/ms13/wasteland/bountyhunter
+	outfit = /obj/outfit/job/ms13/wasteland/bountyhunter
 */ //Uncommented until this fella is made a latespawn or something.//
 
-/datum/outfit/job/ms13/wasteland/bountyhunter
+/obj/outfit/job/ms13/wasteland/bountyhunter
 	name = "_Bounty Hunter"
 	//jobtype = /datum/job/ms13/wasteland/bountyhunter
 
@@ -30,5 +30,5 @@
 	/obj/item/kitchen/knife/ms13/hunting/unique=1,\
 	/obj/item/restraints/handcuffs=2)
 
-/datum/outfit/job/ms13/wasteland/bountyhunter/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/bountyhunter/pre_equip(mob/living/carbon/human/H)
 	..()

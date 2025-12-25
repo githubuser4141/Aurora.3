@@ -5,11 +5,11 @@
 	supervisors = "Sergeants and above."
 	description = "Follow and execute orders given to you by your superiors. You're currently at edge with the BoS, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/ncr/trooper
+	outfit = /obj/outfit/job/ms13/ncr/trooper
 
 	display_order = JOB_DISPLAY_ORDER_MS13_TROOPER
 
-/datum/outfit/job/ms13/ncr/trooper
+/obj/outfit/job/ms13/ncr/trooper
 	name = "_NCR Trooper"
 	jobtype = 	 /datum/job/ms13/ncr/trooper
 	id = 		 /obj/item/card/id/ms13/ncr
@@ -22,5 +22,5 @@
 		/obj/item/stack/medical/gauze/ms13/three=1, \
 		/obj/item/clothing/mask/ms13/ncr=1)
 
-/datum/outfit/job/ms13/ncr/trooper/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/ncr/trooper/pre_equip(mob/living/carbon/human/H)
 	..()

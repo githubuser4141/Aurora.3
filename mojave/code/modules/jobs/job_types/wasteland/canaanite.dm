@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/wasteland/canaanite
+	outfit = /obj/outfit/job/ms13/wasteland/canaanite
 
 	display_order = JOB_DISPLAY_ORDER_MS13_CANAANITE
 
-/datum/outfit/job/ms13/wasteland/canaanite
+/obj/outfit/job/ms13/wasteland/canaanite
 	name = "_New Canaanite"
 	jobtype = /datum/job/ms13/wasteland/canaanite
 
@@ -19,5 +19,5 @@
 	uniform = /obj/item/clothing/under/ms13/wasteland/canaan
 	shoes = /obj/item/clothing/shoes/ms13/fancy
 
-/datum/outfit/job/ms13/wasteland/canaanite/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/wasteland/canaanite/pre_equip(mob/living/carbon/human/H)
 	..()

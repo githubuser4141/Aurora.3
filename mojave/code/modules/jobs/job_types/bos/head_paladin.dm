@@ -7,11 +7,11 @@
 	req_admin_notify = 1
 	description = "Give orders to your Paladin and ensure the Knights are working properly in the region. Work with the Head Scribe to coordinate efforts for the Brotherhood's mission in the region. You're currently at edge with the NCR, though not at war, yet."
 
-	outfit = /datum/outfit/job/ms13/bos/head_paladin
+	outfit = /obj/outfit/job/ms13/bos/head_paladin
 
 	display_order = JOB_DISPLAY_ORDER_MS13_HEAD_PALADIN
 
-/datum/outfit/job/ms13/bos/head_paladin
+/obj/outfit/job/ms13/bos/head_paladin
 	name = "_BoS Head Paladin"
 	jobtype = /datum/job/ms13/bos/head_paladin
 
@@ -31,5 +31,5 @@
 		/obj/item/stack/medical/ointment/ms13/half=1, \
 		/obj/item/stack/ms13/currency/prewar/hunned=1)
 
-/datum/outfit/job/ms13/bos/head_paladin/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/bos/head_paladin/pre_equip(mob/living/carbon/human/H)
 	..()

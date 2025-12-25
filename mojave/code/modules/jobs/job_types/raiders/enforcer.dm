@@ -7,11 +7,11 @@
 	forbid = ""
 	enforce = ""
 
-	outfit = /datum/outfit/job/ms13/raiders/enforcer
+	outfit = /obj/outfit/job/ms13/raiders/enforcer
 
 	display_order = JOB_DISPLAY_ORDER_MS13_ENFORCER
 
-/datum/outfit/job/ms13/raiders/enforcer
+/obj/outfit/job/ms13/raiders/enforcer
 	name = "_Raider Enforcer"
 	jobtype = /datum/job/ms13/raiders/enforcer
 
@@ -34,5 +34,5 @@
 		/obj/item/radio/ms13/broadcast=1, \
 		/obj/item/stack/ms13/currency/prewar/sixty=1)
 
-/datum/outfit/job/ms13/raiders/enforcer/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/raiders/enforcer/pre_equip(mob/living/carbon/human/H)
 	..()

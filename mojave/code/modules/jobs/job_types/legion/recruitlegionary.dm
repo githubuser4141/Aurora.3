@@ -5,11 +5,11 @@
 	supervisors = "The Centurion and the Recruit Decanus"
 	description = "Fight in the name of Caesar, and claim the lands for the Bull! Listen to your superiors, they will guide you to victory."
 
-	outfit = /datum/outfit/job/ms13/legion/recruitlegionary
+	outfit = /obj/outfit/job/ms13/legion/recruitlegionary
 
 	display_order = JOB_DISPLAY_ORDER_MS13_RECRUITLEGIONARY
 
-/datum/outfit/job/ms13/legion/recruitlegionary
+/obj/outfit/job/ms13/legion/recruitlegionary
 	name = "_Legion Recruit"
 	jobtype = /datum/job/ms13/legion/recruitlegionary
 
@@ -23,5 +23,5 @@
 	gloves = /obj/item/clothing/gloves/ms13/legion/dark
 	id = /obj/item/card/id/ms13/legrecruit
 
-/datum/outfit/job/ms13/legion/recruitlegionary/pre_equip(mob/living/carbon/human/H)
+/obj/outfit/job/ms13/legion/recruitlegionary/pre_equip(mob/living/carbon/human/H)
 	..()
