@@ -62,14 +62,8 @@
 	inhand_icon_state = "ointment"
 	amount = 12
 	max_amount = 12
-	repeating = FALSE
-	self_delay = 2.5 SECONDS
-	other_delay = 1.5 SECONDS
 	heal_burn = 8
-	flesh_regeneration = 2.25
-	sanitization = 0.5
 	gender = NEUTER //So examine text says "This is a bottle of ointment" instead of "These are some bottle of ointment"
-	merge_type = /obj/item/stack/medical/ointment/ms13
 
 /obj/item/stack/medical/ointment/ms13/half
 	amount = 6
@@ -85,8 +79,6 @@
 	icon_state = "burndress"
 	inhand_icon_state = null
 	heal_burn = 12
-	flesh_regeneration = 3
-	sanitization = 1
 	gender = PLURAL
 	merge_type = /obj/item/stack/medical/ointment/ms13/dressing
 
@@ -102,13 +94,9 @@
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "bandage"
 	inhand_icon_state = "bandage"
-	self_delay = 2 SECONDS
-	other_delay = 1 SECONDS
 	max_amount = 12
 	amount = 12
 	novariants = TRUE
-	burn_cleanliness_bonus = 0.5
-	merge_type = /obj/item/stack/medical/gauze/ms13
 	gauze_type = /datum/bodypart_aid/gauze/ms13
 
 /obj/item/stack/medical/gauze/ms13/attackby(obj/item/I, mob/user, params)

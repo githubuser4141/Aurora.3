@@ -63,7 +63,7 @@
 	name = "dog food"
 	desc = "A portion of century old beef, gravy and barely recognizable vegetables, made for mutts, are you really that desperate?"
 	icon_state = "dog_food"
-	foodtypes = MEAT | VEGETABLES | GROSS | JUNKFOOD
+	//foodtypes = MEAT | VEGETABLES | GROSS | JUNKFOOD
 	tastes = list(MEATY = 3, SOUR = 1, OLD = 1)
 	nutrition = list(MEAT_N = 3, VEG_N = 1, JUNKFOOD_N = 3, BAD_N = 3)
 	max_volume = 20
@@ -80,7 +80,7 @@
 	name = "cram"
 	desc = "A block of processed cram meat, rumored to last forever in its salty, fatty goodness."
 	icon_state = "cram"
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 	tastes = list(MEATY = 3, SLIMEY = 4, SALTY = 1) //ayo this motherfucker forgot to cook the cram!
 	nutrition = list(MEAT_N = 15, BAD_N = 10, JUNKFOOD_N = 5)
 	max_volume = 60
@@ -99,7 +99,7 @@
 	name = "imitation seafood"
 	desc = "A block of fake seafood tasting ... meat? Maybe, who even knows what this durable block of goop contains, who cares, tastes like nothing else!"
 	icon_state = "seafood"
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 	tastes = list(SWEET = 2, MEATY = 3, SLIMEY = 4, PUNGENT = 2, SPICY = 1)
 	nutrition = list(MEAT_N = 10, DAIRY_N = 3, JUNKFOOD_N = 2)
 	max_volume = 40
@@ -118,7 +118,7 @@
 	name = "salisbury steak"
 	desc = "A freeze dried ancient imitation steak of meats and gravy, compressed into patty form for your post-war dining."
 	icon_state = "s_steak"
-	foodtypes = MEAT | JUNKFOOD | GRAIN
+	//foodtypes = MEAT | JUNKFOOD | GRAIN
 	tastes = list(MEATY = 5, SAVOURY = 3, SALTY = 1, OLD = 1)
 	nutrition = list(MEAT_N = 7, GRAIN_N = 3, JUNKFOOD_N = 5)
 	max_volume = 30

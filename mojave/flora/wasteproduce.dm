@@ -74,7 +74,7 @@
 	name = "barrel cactus fruit"
 	desc = "Barrel cactus fruit are found on spherical barrel cacti. Fairly firm to the touch."
 	bite_consumption_mod = 2
-	foodtypes = FRUIT | TOXIC
+	//foodtypes = FRUIT | TOXIC
 	icon_state = "barrelcactus"
 	filling_color = "#a6b115"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/barrel_wine
@@ -106,7 +106,7 @@
 	name = "mutfruit"
 	desc = "A squishy and juicy mutfruit. It warms your hand to the touch."
 	bite_consumption_mod = 2
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	icon_state = "mutfruit"
 	filling_color = "#5f035f"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/mutfruit_wine
@@ -136,7 +136,7 @@
 	seed = /obj/item/seeds/ms13/cmutfruit
 	name = "crunchy mutfruit"
 	desc = "A firm and stiff mutfruit. Producted a sort of hollow sound when tapped."
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	bite_consumption_mod = 2
 	icon_state = "cmutfruit"
 	filling_color = "#7c3e04"
@@ -168,7 +168,7 @@
 	name = "apple"
 	desc = "A common apple. It is firm to the touch and hardy."
 	bite_consumption_mod = 1
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	icon_state = "apple"
 	filling_color = "#9b7470"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/apple_cider
@@ -201,7 +201,7 @@
 	desc = "A menacing fruit filled with spines. The flesh feels thin and easy to peel otherwise."
 	icon_state = "prickly"
 	filling_color = "#8a0483"
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	bite_consumption_mod = 2
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/pricklypear_wine
 	tastes = list("sweetness"= 1)
@@ -249,7 +249,7 @@
 	desc = "A fleshy fruit with a yellowish-brown, thick skin. Puts off a strange smell."
 	icon_state = "punga"
 	bite_consumption_mod = 2
-	foodtypes = FRUIT | TOXIC
+	//foodtypes = FRUIT | TOXIC
 	filling_color = "#695d19"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/punga_wine
 	tastes = list("sourness"= 6, "warmth"= 1)
@@ -280,7 +280,7 @@
 	desc = "A glowing fleshy fruit with a pulsing green skin. Has a harsh acidic smell."
 	icon_state = "geigpunga"
 	bite_consumption_mod = 2
-	foodtypes = FRUIT | TOXIC
+	//foodtypes = FRUIT | TOXIC
 	filling_color = "#55ff06"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/geigpunga_wine
 	tastes = list("acid"= 6, "burning"= 5)
@@ -310,7 +310,7 @@
 	desc = "A lengthy cane. Very stiff and firm."
 	icon_state = "snaptail"
 	bite_consumption_mod = 1
-	foodtypes = SUGAR | GROSS
+	//foodtypes = SUGAR | GROSS
 	filling_color = "#caa3a3"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/snaptail_rum
 	tastes = list("sugar"= 5, "reed"= 5)
@@ -342,7 +342,7 @@
 	name = "tarberry"
 	desc = "A dark and sticky berry. It leaves a sap behind on your hands."
 	bite_consumption_mod = 1
-	foodtypes = FRUIT | GROSS
+	//foodtypes = FRUIT | GROSS
 	icon_state = "tarberry"
 	filling_color = "#2f2525ff"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tarberry_wine
@@ -375,7 +375,7 @@
 	name = "blackberry"
 	desc = "A squishy bundle of blackberries. Bubbly and round. It gives off a faint sweet aroma"
 	bite_consumption_mod = 1
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	icon_state = "blackberry"
 	filling_color = "#15172a"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/blackberry_wine
@@ -408,7 +408,7 @@
 	desc = "A glowing and warm radberry. The skin fringes off and exposes the squishy core."
 	icon_state = "radberry"
 	bite_consumption_mod = 1
-	foodtypes = FRUIT | GROSS
+	//foodtypes = FRUIT | GROSS
 	filling_color = "#00ff2a"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/radberry_wine
 	tastes = list("metal"= 5, "sweetness"= 1)
@@ -437,7 +437,7 @@
 	desc = "The fleshy long fruit. It gives off a faint sweet starch smell."
 	icon_state = "yucca"
 	bite_consumption_mod = 4
-	foodtypes = FRUIT
+	//foodtypes = FRUIT
 	filling_color = "#b4a031ff"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/yucca_wine
 	tastes = list("sweet" = 5, "starch" = 2)
@@ -468,7 +468,7 @@
 	name = "tomato"
 	desc = "A strange red, round fruit with a semi-thick skin. It is squishy."
 	bite_consumption_mod = 2
-	foodtypes = FRUIT | VEGETABLES
+	//foodtypes = FRUIT | VEGETABLES
 	icon_state = "tomato"
 	filling_color = "#8d1d1d"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tomato_wine
@@ -504,7 +504,7 @@
 	name = "tato"
 	desc = "An oblong and hard red plant. It smells disgusting."
 	bite_consumption_mod = 3
-	foodtypes = VEGETABLES | GROSS
+	//foodtypes = VEGETABLES | GROSS
 	icon_state = "tato"
 	filling_color = "#4b2727"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tato_liquor
@@ -533,7 +533,7 @@
 	name = "potato"
 	desc = "A strange and round vegetable. Has a faint starchy hint to it, and is seemingly rock hard."
 	bite_consumption_mod = 2
-	foodtypes = VEGETABLES | GROSS
+	//foodtypes = VEGETABLES | GROSS
 	icon_state = "potato"
 	filling_color = "#ada876"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_vodka
@@ -565,7 +565,7 @@
 	name = "jalapeno"
 	desc = "A moderately sized thin green pepper. Has no smell to it."
 	bite_consumption_mod = 1
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "jalepeno"
 	filling_color = "#233b29"
 	tastes = list("spicy"= 5)
@@ -597,7 +597,7 @@
 	name = "radpepper"
 	desc = "A glowing thin green pepper. Has a palpable heat to its aroma."
 	bite_consumption_mod = 1
-	foodtypes = VEGETABLES | TOXIC
+	//foodtypes = VEGETABLES | TOXIC
 	icon_state = "radpepper"
 	filling_color = "#837e3c"
 	tastes = list("death"= 5, "pain"= 5)
@@ -625,7 +625,7 @@
 	name = "onion"
 	desc = "A hardy and aromatic root vegetable. Seems to have layers."
 	bite_consumption_mod = 4
-	foodtypes = VEGETABLES | GROSS
+	//foodtypes = VEGETABLES | GROSS
 	icon_state = "onion"
 	filling_color = "#5d5151"
 	tastes = list("sour"= 5)
@@ -654,7 +654,7 @@
 	name = "garlic"
 	desc = "A hard and potent smelling vegetable"
 	bite_consumption_mod = 1
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "garlic"
 	filling_color = "#707070"
 	tastes = list("garlic"= 5, "burning" = 5)
@@ -681,7 +681,7 @@
 	name = "xander root"
 	desc = "A dark root, it is rather hard. There is no obvious smell to it."
 	bite_consumption_mod = 4
-	foodtypes = VEGETABLES | GROSS
+	//foodtypes = VEGETABLES | GROSS
 	icon_state = "xander"
 	filling_color = "#2f2424"
 	tastes = list("bitterness"= 5)
@@ -719,7 +719,7 @@
 	name = "carrot"
 	desc = "A root vegetable, long and orange. Smells faintly sweet."
 	bite_consumption_mod = 2
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "carrot"
 	filling_color = "#815c1f"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/carrot_wine
@@ -749,7 +749,7 @@
 	name = "razorgrain"
 	desc = "Some razorgrain. It is very bushy and flakes off dust as you brush it."
 	bite_consumption_mod = 1
-	foodtypes = GRAIN | GROSS
+	//foodtypes = GRAIN | GROSS
 	icon_state = "razorgrain"
 	filling_color = "#8f905b"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_beer
@@ -779,7 +779,7 @@
 	name = "baifan"
 	desc = "A tuft-topped stalk of baifan. Yields a rice-like grain."
 	bite_consumption_mod = 1
-	foodtypes = GRAIN | GROSS
+	//foodtypes = GRAIN | GROSS
 	icon_state = "baifan"
 	filling_color = "#505749"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_sake
@@ -809,7 +809,7 @@
 	name = "cabbage"
 	desc = "A resilient leaf plant, only green thing out here."
 	bite_consumption_mod = 4
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "cabbage"
 	filling_color = "#2d382a"
 	tastes = list("cabbage"= 5)
@@ -839,7 +839,7 @@
 	name = "pinyon nuts"
 	desc = "Small pinyon nuts."
 	bite_consumption_mod = 2
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "pinyon"
 	filling_color = "#7b7c68"
 	tastes = list("nutty"= 4, "sourness"= 1)
@@ -870,7 +870,7 @@
 	name = "mesquite"
 	desc = "Long honey mesquite pods. The pod itself has the texture of old leather."
 	bite_consumption_mod = 2
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "mesquite"
 	filling_color = "#223a24"
 	tastes = list("sour"= 5, "sweet"= 5)
@@ -900,7 +900,7 @@
 	name = "buffalo"
 	desc = "A buffalo gourd, a decent ingredient, but nasty when raw."
 	bite_consumption_mod = 6
-	foodtypes = VEGETABLES | GROSS
+	//foodtypes = VEGETABLES | GROSS
 	icon_state = "buffalo"
 	filling_color = "#2b3325"
 	tastes = list("wood"= 5)
@@ -927,7 +927,7 @@
 	name = "maize"
 	desc = "A hardy maize crop. Has a thick husk around it."
 	bite_consumption_mod = 4
-	foodtypes = VEGETABLES | GRAIN
+	//foodtypes = VEGETABLES | GRAIN
 	icon_state = "maize"
 	filling_color = "#bbb81c"
 	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_whiskey
@@ -963,7 +963,7 @@
 	name = "ash rose"
 	desc = "A pretty red colored flower. Its petals are layered with a dense core."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "ashrose"
 	filling_color = "#411c19"
 	tastes = list("sourness"= 5)
@@ -994,7 +994,7 @@
 	name = "rad rose"
 	desc = "A vibrant cyan colored flower. It seemingly begs for your attention."
 	bite_consumption_mod = 1
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	icon_state = "radrose"
 	filling_color = "#579797"
 	tastes = list("warmth"= 5, "sourness"= 5, "pain"= 5)
@@ -1025,7 +1025,7 @@
 	name = "soot flower"
 	desc = "A vibrant purple flower with a strange shape."
 	bite_consumption_mod = 1
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	icon_state = "soot"
 	filling_color = "#462050"
 	tastes = list("bitterness"= 5)
@@ -1056,7 +1056,7 @@
 	name = "toxic soot flower"
 	desc = "A glowing flower. It has a strange shape, with multiple points sticking forward."
 	bite_consumption_mod = 1
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	icon_state = "toxsoot"
 	filling_color = "#34773f"
 	tastes = list("bitterness"= 10)
@@ -1087,7 +1087,7 @@
 	name = "datura flower"
 	desc = "An unstained white flower. Has a strange smell to it."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "datura"
 	filling_color = "#a7a7a7"
 	tastes = list("bitterness"= 5)
@@ -1118,7 +1118,7 @@
 	name = "radtura flower"
 	desc = "A pulsing yellow cup shaped flower. Has a very strange smell. You can feel a warmth resonating from it."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "radtura"
 	filling_color = "#a2a36c"
 	tastes = list("bitterness"= 5, "warmth"= 5)
@@ -1146,7 +1146,7 @@
 	name = "coyote tobacco"
 	desc = "A coyote tobacco leaf. Smells quite nice."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "tobacco"
 	filling_color = "#1d3821"
 	can_dry = TRUE
@@ -1208,7 +1208,7 @@
 	name = "ash blossom"
 	desc = "A long purple and blue flower. Has a nice aroma to it."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "ashblossom"
 	filling_color = "#213436"
 
@@ -1238,7 +1238,7 @@
 	name = "thistle"
 	desc = "A purple star shaped pickly weed."
 	bite_consumption_mod = 1
-	foodtypes = GROSS
+	//foodtypes = GROSS
 	icon_state = "thistle"
 	filling_color = "#a64e5a"
 	tastes = list("pain"= 5)
@@ -1354,7 +1354,7 @@
 	desc = "A rather plain looking mushroom. Nothing about it stands out in particular."
 	bite_consumption_mod = 1
 	icon_state = "cavefungus"
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	filling_color = "#64553b"
 	tastes = list("mushroom"= 5)
 
@@ -1385,7 +1385,7 @@
 	desc = "A glowing mushroom. Gives off a strange warmth even just looking at it."
 	bite_consumption_mod = 1
 	icon_state = "glowfungus"
-	foodtypes = TOXIC
+	//foodtypes = TOXIC
 	filling_color = "#357944"
 	tastes = list("mushroom"= 5, "warmth"= 5)
 	light_range = 2
@@ -1422,7 +1422,7 @@
 	desc = "A dark, strange spotted mushroom. Has a thick trunk and is firm."
 	bite_consumption_mod = 1
 	icon_state = "blight"
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	filling_color = "#575c2a"
 	tastes = list("spice"= 5, "gunk"= 5)
 
@@ -1450,7 +1450,7 @@
 	name = "brain fungus"
 	desc = "An asymmetrically shaped flesh colored mushroom. Upon close examination, it looks like it has spines."
 	bite_consumption_mod = 1
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	icon_state = "brainfung"
 	filling_color = "#c87070"
 	tastes = list("illness"= 5)
@@ -1495,7 +1495,7 @@
 	name = "firecap"
 	desc = "A red bubbly mushroom cap. You can almost see fluid moving in the boils."
 	bite_consumption_mod = 1
-	foodtypes = TOXIC
+	//foodtypes = TOXIC
 	icon_state = "firecap"
 	filling_color = "#3f2e0f"
 	tastes = list("fire"= 5, "mushroom"= 1)
@@ -1543,7 +1543,7 @@
 	name = "gutshroom"
 	desc = "A red button shaped mushroom. Has visible secretion and appears to be filled with juice."
 	bite_consumption_mod = 1
-	foodtypes = GROSS | TOXIC
+	//foodtypes = GROSS | TOXIC
 	icon_state = "gutshroom"
 	filling_color = "#38372a"
 	tastes = list("pain"= 5)
@@ -1648,7 +1648,7 @@
 	name = "fly amanita"
 	desc = "A dark red mushroom with white spots looking like nib sugar."
 	bite_consumption_mod = 1
-	foodtypes = TOXIC
+	//foodtypes = TOXIC
 	icon_state = "flyamanita"
 	filling_color = "#c87070"
 	tastes = list("illness"= 5, "bitterness"= 5)
@@ -1679,7 +1679,7 @@
 	name = "penny bun"
 	desc = "A fungus with a large brown cap and prized as an ingredient in various culinary dishes."
 	bite_consumption_mod = 1
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "pennybun"
 	filling_color = "#695433"
 	tastes = list("succulent"= 5, "mushroom"= 5)
@@ -1710,7 +1710,7 @@
 	name = "chanterelle"
 	desc = "A funnel-shaped yellowish mushroom which emits a fruity aroma."
 	bite_consumption_mod = 1
-	foodtypes = VEGETABLES
+	//foodtypes = VEGETABLES
 	icon_state = "chanterelle"
 	filling_color = "#875a25"
 	tastes = list("savory"= 5, "fruity"= 5)
@@ -1741,7 +1741,7 @@
 	name = "mindshroom"
 	desc = "A glowing mushroom. You feel something at the back of your mind just looking at it."
 	bite_consumption_mod = 1
-	foodtypes = TOXIC
+	//foodtypes = TOXIC
 	icon_state = "mindshroom"
 	filling_color = "#4468b2"
 	tastes = list("spicy"= 5, "mint"= 5)
@@ -1779,7 +1779,7 @@
 	name = "gremlinstool"
 	desc = "A yellow-doted mushroom that oozes a grey liquid."
 	bite_consumption_mod = 1
-	foodtypes = TOXIC
+	//foodtypes = TOXIC
 	icon_state = "gremlinstool"
 	filling_color = "#7b704c"
 	tastes = list("creamy"= 5, "fire"= 5)

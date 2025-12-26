@@ -6,7 +6,7 @@
 	icon = 'mojave/icons/objects/food/fish/fish_world.dmi'
 	bite_consumption = 4
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6)
-	foodtypes = MEAT | RAW
+	//foodtypes = MEAT | RAW
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_height = 64
 	grid_width = 96
@@ -104,7 +104,7 @@
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
 	tastes = list("fish" = 8)
-	foodtypes = MEAT | RAW
+	//foodtypes = MEAT | RAW
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
 
 /obj/item/food/meat/rawcutlet/ms13/fish/MakeGrillable()
@@ -183,7 +183,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	grid_height = 32
 	grid_width = 64
-	foodtypes = MEAT
+	//foodtypes = MEAT
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
 
 /obj/item/food/meat/cutlet/ms13/fish/Initialize()

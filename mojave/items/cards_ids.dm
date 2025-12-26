@@ -11,6 +11,12 @@
 	icon = 'mojave/icons/objects/identification/dogtags_inventory.dmi'
 	icon_state = "bos_holotag"
 	worn_icon_state = null
+	var/shows_age = TRUE
+
+/obj/item/card/id/examine(mob/user)
+	. = ..()
+	if(registered_age && shows_age)
+		. += "It indicates that the holder is [age] years old."
 
 /obj/item/card/id/ms13/Initialize()
 	. = ..()

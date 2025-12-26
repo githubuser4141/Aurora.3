@@ -35,7 +35,7 @@
 	name = "generic custom smigglerette"
 	desc = "THE COMPONENT FUCKED UP, ABORT ABORT, DO NOT SMOKE."
 	obj_flags = UNIQUE_RENAME | UNIQUE_RENAME_NO_DESCRIPTION
-	list_reagents = null
+	reagents_to_add = null
 	nicotine_potency = 0.10 //less potent
 	smoking_damage = 0.005 //organic
 	//used by component to find filling
@@ -77,32 +77,32 @@
 	switch(filling_identifier)
 		if("xx")
 			//brute heal medium, high smoke damage
-			list_reagents = list(/datum/reagent/ms13/medicine/concentrated_xander = 10)
+			reagents_to_add = list(/datum/reagent/ms13/medicine/concentrated_xander = 10)
 			nicotine_potency = 0
 			smoking_damage = 0.2
 		if("xb", "bx")
 			//weaker bitter drink, medium smoke damage
-			list_reagents = list(/datum/reagent/ms13/medicine/bitter_mix = 18)
+			reagents_to_add = list(/datum/reagent/ms13/medicine/bitter_mix = 18)
 			nicotine_potency = 0
 			smoking_damage = 0.1
 		if("xt", "tx")
 			//half nic, brute heal minor
-			list_reagents = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_xander = 7)
+			reagents_to_add = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_xander = 7)
 			nicotine_potency = 0.05
 			smoking_damage = 0.05
 		if("bb")
 			//burn heal medium, high smoke damage
-			list_reagents = list(/datum/reagent/ms13/medicine/concentrated_broc = 10)
+			reagents_to_add = list(/datum/reagent/ms13/medicine/concentrated_broc = 10)
 			nicotine_potency = 0
 			smoking_damage = 0.2
 		if("bt", "tb")
 			//half nic, burn heal minor
-			list_reagents = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_broc = 7)
+			reagents_to_add = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_broc = 7)
 			nicotine_potency = 0.05
 			smoking_damage = 0.05
 		if("tt")
 			//slightly more potent rollie
-			list_reagents = list(/datum/reagent/ms13/nicotine = 24)
+			reagents_to_add = list(/datum/reagent/ms13/nicotine = 24)
 			nicotine_potency = 0.16
 			smoking_damage = 0.006
-	reagents.add_reagent_list(list_reagents)
+	reagents.add_reagent_list(reagents_to_add)

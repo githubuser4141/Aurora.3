@@ -169,7 +169,7 @@ GLOBAL_LIST_INIT(ceramic_recipes, list ( \
 	)
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_results,\
-				foodtypes = GROSS,\
+				//foodtypes = GROSS,\
 				after_eat = CALLBACK(src, PROC_REF(on_bite)), \
 				volume = INFINITY)
 

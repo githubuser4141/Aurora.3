@@ -34,7 +34,7 @@
 	var/lastHolder = null
 	var/smoketime = 5 SMOKEMINUTE //5 minutes per cig, 300 seconds
 	var/chem_volume = 30
-	var/list_reagents = list(/datum/reagent/ms13/nicotine = 21) //used for tracking effects in body, not directly from reagent, 6 minutes of effect, butt is extra 1 minute
+	var/reagents_to_add = list(/datum/reagent/ms13/nicotine = 21) //used for tracking effects in body, not directly from reagent, 6 minutes of effect, butt is extra 1 minute
 	var/nicotine_potency = 0.15 //used for nicotine effect in body
 	var/smoking_damage = 0.008 //impact on smoking abuse in lungs
 	var/lit_type = "ciglit" //Lit Overlay type
@@ -50,8 +50,8 @@
 	update_overlays()
 	update_icon_state()
 	create_reagents(chem_volume, INJECTABLE | NO_REACT)
-	if(list_reagents)
-		reagents.add_reagent_list(list_reagents)
+	if(reagents_to_add)
+		reagents.add_reagent_list(reagents_to_add)
 	AddComponent(/datum/component/knockoff, 100, null, list(ITEM_SLOT_MASK))
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/smokeables/smokeables_inventory.dmi', world_state, inventory_state)
 
@@ -66,7 +66,7 @@
 	lit_mutable = "butt_lit"
 	extinguished_mutable = "butt_extinguished"
 	smoketime = 1 SMOKEMINUTE
-	list_reagents = list(/datum/reagent/ms13/nicotine = 4.2)
+	reagents_to_add = list(/datum/reagent/ms13/nicotine = 4.2)
 	smoking_damage = 0.05
 	butt_transform = TRUE //infinite butt dupe glitch real any % wr
 
@@ -353,14 +353,14 @@
 /obj/item/ms13/cigarette/salem
 	desc = "A pre-war cigarette, banded with a cyan brand marking. <B><I>Salem</I></B>."
 	inventory_state = "salem"
-	list_reagents = list(/datum/reagent/ms13/nicotine/menthol = 21)
+	reagents_to_add = list(/datum/reagent/ms13/nicotine/menthol = 21)
 	nicotine_potency = 0.17 //that menthol KICK
 	smoking_damage = 0.016 //these things fuck you up
 
 /obj/item/ms13/cigarette/kools
 	desc = "A pre-war cigarette, banded with a green brand marking. <B><I>Kools</I></B>."
 	inventory_state = "kool"
-	list_reagents = list(/datum/reagent/ms13/nicotine/menthol = 21)
+	reagents_to_add = list(/datum/reagent/ms13/nicotine/menthol = 21)
 	nicotine_potency = 0.17 //that menthol KICK
 	smoking_damage = 0.016 //these things fuck you up
 
@@ -378,7 +378,7 @@
 	world_state = "rollie"
 	worn_icon_state = "rollie"
 	inhand_icon_state = "rollie"
-	list_reagents = list(/datum/reagent/ms13/nicotine = 14) //less potent, 4 minutes of effect, roach is extra 1 minute
+	reagents_to_add = list(/datum/reagent/ms13/nicotine = 14) //less potent, 4 minutes of effect, roach is extra 1 minute
 	nicotine_potency = 0.10 //less potent
 	smoking_damage = 0.005 //organic
 	lit_type = "rollit"
@@ -394,7 +394,7 @@
 	world_state = "roach"
 	worn_icon_state = "roach"
 	inhand_icon_state = "roach"
-	list_reagents = list(/datum/reagent/ms13/nicotine = 2.8)
+	reagents_to_add = list(/datum/reagent/ms13/nicotine = 2.8)
 
 /obj/item/ms13/cigarette/rollie/republic
 	desc = "A rolled joint, featuring the iconic red star of the <B>NCR</B>."

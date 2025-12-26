@@ -124,7 +124,7 @@
 	labelled = 1
 	blood_type = null
 	volume = 200
-	list_reagents = list(/datum/reagent/ms13/medicine/radaway = 200)
+	reagents_to_add = list(/datum/reagent/ms13/medicine/radaway = 200)
 
 /datum/reagent/ms13/medicine/radaway
 	name = "Radaway"

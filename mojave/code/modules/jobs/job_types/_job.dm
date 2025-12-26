@@ -2,6 +2,8 @@
 	var/forbid = ""
 	var/enforce = ""
 	var/stats_type = /datum/stats
+	var/display_order = 0
+	var/description = ""
 
 /datum/job/after_spawn(mob/living/spawned, client/player_client)
 	. = ..()
@@ -34,3 +36,11 @@
 	data["enforce"] = enforce
 
 	return data
+
+/proc/cmp_job_display_asc(datum/job/A, datum/job/B)
+	return A.display_order - B.display_order
+
+/proc/cmp_department_display_asc(datum/job_department/A, datum/job_department/B)
+	return A.display_order - B.display_order
+
+#warn description and display_order are not connected to anything

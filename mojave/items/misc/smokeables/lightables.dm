@@ -434,7 +434,7 @@
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	inhand_icon_state = "butane"
 	volume = 100 // 2 and half welder refills
-	list_reagents = list(/datum/reagent/fuel = 100)
+	reagents_to_add = list(/datum/reagent/fuel = 100)
 	grid_width = 32
 	grid_height = 64
 

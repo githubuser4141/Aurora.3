@@ -28,7 +28,7 @@
 	inhand_icon_state = "stim"
 	volume = 10
 	amount_per_transfer_from_this = 10
-	list_reagents = list(/datum/reagent/ms13/medicine/stimpak_fluid = 10)
+	reagents_to_add = list(/datum/reagent/ms13/medicine/stimpak_fluid = 10)
 	ignore_flags = 0
 	grid_height = 64
 	grid_width = 32
@@ -61,4 +61,4 @@
 	desc = "A stimpak augmented with an additional vial of chemicals and a belt to strap it to the point of injection."
 	icon_state = "superstim"
 	inhand_icon_state = "superstim"
-	list_reagents = list(/datum/reagent/ms13/medicine/stimpak_fluid/super = 10)
+	reagents_to_add = list(/datum/reagent/ms13/medicine/stimpak_fluid/super = 10)

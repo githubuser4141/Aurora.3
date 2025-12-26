@@ -539,7 +539,7 @@
 	icon_state = "radroach"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/radroach
 	tastes = list("gross" = 4, "meat" = 1)
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 
 /obj/item/food/meat/steak/ms13/animal/radroach
 	name = "grilled radroach"
@@ -547,7 +547,7 @@
 	icon_state = "radroach_roasted"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6)
 	tastes = list("gross" = 2, "meat" = 1)
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 
 /obj/item/food/meat/slab/ms13/animal/glowroach
 	name = "glowroach meat"
@@ -556,7 +556,7 @@
 	steak_type = /obj/item/food/meat/steak/ms13/animal/glowroach
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/uranium = 3)
 	tastes = list("disgusting" = 4, "radiation" = 4)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/glowroach
 	name = "grilled glowroach"
@@ -564,7 +564,7 @@
 	icon_state = "glowroach_roasted"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/uranium = 2)
 	tastes = list("disgusting" = 3, "radiation" = 3)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/slab/ms13/animal/ant
 	name = "ant meat"
@@ -572,7 +572,7 @@
 	icon_state = "fatty"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/ant
 	tastes = list("gross" = 4, "protein" = 1)
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 
 /obj/item/food/meat/steak/ms13/animal/ant
 	name = "grilled ant meat"
@@ -580,7 +580,7 @@
 	icon_state = "fatty_roasted"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("gross" = 2, "protein" = 1)
-	foodtypes = MEAT | GROSS
+	//foodtypes = MEAT | GROSS
 
 /obj/item/food/meat/slab/ms13/animal/mirelurk
 	name = "mirelurk claw"
@@ -602,7 +602,7 @@
 	steak_type = /obj/item/food/meat/steak/ms13/animal/radlurk
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/uranium = 6)
 	tastes = list("disgusting" = 4, "radiation" = 4)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/radlurk
 	name = "grilled radlurk claw"
@@ -610,7 +610,7 @@
 	icon_state = "radlurk_roasted"
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 12, /datum/reagent/uranium = 4)
 	tastes = list("disgusting" = 3, "radiation" = 3)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/slab/ms13/animal/bark_scorp
 	name = "bark scorpion meat"
@@ -618,7 +618,7 @@
 	icon_state = "barkscorpiontail"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/bark_scorp
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/toxin = 3)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/bark_scorp
 	name = "grilled bark scorpion meat"
@@ -632,7 +632,7 @@
 	icon_state = "scorpiontail"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/rad_scorp
 	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/toxin = 6)
-	foodtypes = MEAT | GROSS | TOXIC
+	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/rad_scorp
 	name = "grilled radscorpion meat"

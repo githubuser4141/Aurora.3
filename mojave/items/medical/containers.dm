@@ -21,12 +21,12 @@
 /obj/item/reagent_containers/ms13/flask/AltClick(mob/user)
 	. = ..()
 	if(do_after(user, 0.75 SECONDS))
-		if(!spillable)
-			spillable = TRUE
+		if(!//spillable)
+			//spillable = TRUE
 			playsound(src, "mojave/sound/ms13effects/bottle_open.ogg", 35, TRUE, 2)
 			icon_state = "[initial(icon_state)]-open"
 		else
-			spillable = FALSE
+			//spillable = FALSE
 			icon_state = initial(icon_state)
 
 /obj/item/reagent_containers/ms13/flask/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
@@ -37,7 +37,7 @@
 
 /obj/item/reagent_containers/ms13/flask/dropped(mob/user, silent)
 	. = ..()
-	if(spillable)
+	if(//spillable)
 		for(var/datum/reagent/reagent as anything in reagents.reagent_list)
 		if(reagents)
 			reagents.clear_reagents()
@@ -49,7 +49,7 @@
 	if(!canconsume(M, user))
 		return
 
-	if(!spillable)
+	if(!//spillable)
 		return
 
 	if(!reagents || !reagents.total_volume)
@@ -75,7 +75,7 @@
 
 /obj/item/reagent_containers/ms13/flask/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
 	. = ..()
-	if (!spillable)
+	if (!//spillable)
 		context[SCREENTIP_CONTEXT_ALT_LMB] = "Open"
 	else
 		context[SCREENTIP_CONTEXT_ALT_LMB] = "Close"
@@ -86,37 +86,37 @@
 	name = "bitter drink flask"
 	desc = "A painted round bottom ceramic flask, the rim smells of bitterness. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
 	icon_state = "bitter_drink"
-	list_reagents = list(/datum/reagent/medicine/bitter_drink = 15)
+	reagents_to_add = list(/datum/reagent/medicine/bitter_drink = 15)
 
 /obj/item/reagent_containers/ms13/flask/herbal_antitox
 	name = "herbal anti-toxin flask"
 	desc = "A painted round bottom ceramic flask, the rim smells of sharp bitterness. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
 	icon_state = "bitter_drink"
-	list_reagents = list(/datum/reagent/medicine/herb_antitox = 15)
+	reagents_to_add = list(/datum/reagent/medicine/herb_antitox = 15)
 
 /obj/item/reagent_containers/ms13/flask/blood_remedy
 	name = "blood remedy flask"
 	desc = "A painted round bottom ceramic flask, the rim smells of sourness. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
 	icon_state = "bitter_drink"
-	list_reagents = list(/datum/reagent/medicine/blood_remedy = 15)
+	reagents_to_add = list(/datum/reagent/medicine/blood_remedy = 15)
 
 /obj/item/reagent_containers/ms13/flask/burn_remedy
 	name = "burn remedy flask"
 	desc = "A painted round bottom ceramic flask, the rim has a strong scent of spice. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
 	icon_state = "bitter_drink"
-	list_reagents = list(/datum/reagent/medicine/burn_remedy = 15)
+	reagents_to_add = list(/datum/reagent/medicine/burn_remedy = 15)
 
 /obj/item/reagent_containers/ms13/flask/trail_brew
 	name = "trail brew flask"
 	desc = "A basic round bottom ceramic flask, the rim smells faintly sweet. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
-	list_reagents = list(/datum/reagent/medicine/trail_brew = 15)
+	reagents_to_add = list(/datum/reagent/medicine/trail_brew = 15)
 
 /obj/item/reagent_containers/ms13/flask/radtura_flask
 	name = "radtura mix flask"
 	desc = "A basic round bottom ceramic flask, the rim smells of warm bitterness. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
-	list_reagents = list(/datum/reagent/medicine/radtura_mix = 15)
+	reagents_to_add = list(/datum/reagent/medicine/radtura_mix = 15)
 
 /obj/item/reagent_containers/ms13/flask/dark_datflask
 	name = "dark datura flask"
 	desc = "A basic round bottom ceramic flask, the rim smells of harsh bitterness. <b>If it is open when dropped or put in a bag, it will roll over and spill! <br> Alt-Click to open or close it.</b>"
-	list_reagents = list(/datum/reagent/toxin/ms13/dark_datura = 15)
+	reagents_to_add = list(/datum/reagent/toxin/ms13/dark_datura = 15)
