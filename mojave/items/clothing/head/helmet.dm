@@ -8,7 +8,7 @@
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR, BOMB = ARMOR_BOMB_MINOR, BIO = ARMOR_BIO_MINOR)
 	dynamic_hair_suffix = "+generic"
 	dynamic_fhair_suffix = "+generic"
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
 	max_integrity = 150
 	grid_width = 64
@@ -35,7 +35,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -65,7 +65,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -99,7 +99,7 @@
 	item_state = "metalhelmet"
 	max_integrity = 325
 	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = ARMOR_BALLISTIC_MINOR, LASER = ARMOR_LASER_SMALL, ENERGY = ARMOR_ENERGY_MINOR)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
@@ -114,7 +114,7 @@
 	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -150,7 +150,7 @@
 	item_state = "combathelmet_mk2"
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
@@ -183,7 +183,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 120
@@ -199,7 +199,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -298,7 +298,7 @@
 	icon_state = "hubologist"
 	item_state = "hubologist"
 	armor = list(MELEE = 25, BULLET = 20, LASER = 10, ENERGY = 5, BOMB = 15, BIO = 10)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 
 /obj/item/clothing/head/ms13/hood/banded
 	name = "banded helmet"
@@ -307,7 +307,7 @@
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	item_state = "harmorkit"
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 120
@@ -321,7 +321,7 @@
 	max_integrity = 300
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	item_state = "armorkit"
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
@@ -333,7 +333,7 @@
 	icon_state = "cowl"
 	item_state = "winterglovesbrown"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 
 /obj/item/clothing/head/ms13/hood/inquisitor
 	name = "inquisitors helm"
@@ -342,7 +342,7 @@
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	item_state = "headdress_l"
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 120
@@ -355,7 +355,7 @@
 	icon_state = "sack"
 	item_state = "tribalrag"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 
 /obj/item/clothing/head/ms13/hood/sack/padded
 	name = "padded sack hood"
@@ -385,7 +385,7 @@
 	icon_state = "hood"
 	item_state = "winterglovesblack"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 
 /obj/item/clothing/head/ms13/hood/hunter
 	name = "hunter hood"
@@ -394,7 +394,7 @@
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	item_state = "winterglovesbrown"
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -524,7 +524,7 @@
 	attack_verb_continuous = list("warns", "cautions", "smashes")
 	attack_verb_simple = list("warn", "caution", "smash")
 	resistance_flags = NONE
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 	armor = list(MELEE = 10, BULLET = 10, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 5)
 	dynamic_hair_suffix = ""
 
@@ -703,7 +703,7 @@
 	item_state = "combathelmet"
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -726,7 +726,7 @@
 	item_state = "tesla_helmet"
 	max_integrity = 375
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -740,7 +740,7 @@
 	item_state = "riotgearhelmet"
 	max_integrity = 375
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -756,7 +756,7 @@
 	item_state = "helmet"
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 60
@@ -769,7 +769,7 @@
 	icon_state = "bountyhunter"
 	item_state = "riotgearhelmet"
 	armor = list(MELEE = 50, BULLET = 40, LASER = 35, ENERGY = 25, BOMB = 50, BIO = 25)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
@@ -779,7 +779,7 @@
 	icon_state = "enforcer"
 	max_integrity = 200
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 
 /obj/item/clothing/head/helmet/ms13/metal/baron
 	name = "\improper Baron's Visage"
@@ -789,7 +789,7 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
 	fov_angle = 90
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
@@ -801,7 +801,7 @@
 	item_state = "combathelmet"
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -875,7 +875,7 @@
 	icon_state = "spacehelmet"
 	item_state = "spacehelmet"
 	armor = list(MELEE = 15, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 75)
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
@@ -973,7 +973,7 @@
 	item_state = "owl_mask"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -986,7 +986,7 @@
 	item_state = "owl_mask"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 60
 	equip_delay_self = 1.5 SECONDS
@@ -999,7 +999,7 @@
 	item_state = "owl_mask"
 	max_integrity = 300
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -1012,7 +1012,7 @@
 	item_state = "owl_mask"
 	max_integrity = 300
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -1036,7 +1036,7 @@
 	item_state = "owl_mask"
 	max_integrity = 375
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 120
 	equip_delay_self = 2 SECONDS
@@ -1049,7 +1049,7 @@
 	icon_state = "leg_prae"
 	item_state = "owl_mask"
 	armor = list(MELEE = 65, BULLET = 50, LASER = 45, ENERGY = 20, BOMB = 65, BIO = 20)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
 
 /obj/item/clothing/head/helmet/ms13/legion/scout
 	name = "\improper Legion scout bandana"
@@ -1118,7 +1118,7 @@
 /obj/item/clothing/head/helmet/ms13/drylander
 	name = "base type drylander hood"
 	desc = "You shouldn't be seeing this."
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.

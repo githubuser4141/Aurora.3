@@ -4,7 +4,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
-	body_parts_covered = CHEST|ARMS|LEGS|GROIN
+	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	max_integrity = 325
 	///Icon file for left inhand overlays
@@ -28,7 +28,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
-	body_parts_covered = CHEST|ARMS|LEGS|GROIN
+	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	///Icon file for left inhand overlays
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
@@ -50,7 +50,7 @@
 	desc = "A vest made of tanned leather."
 	icon_state = "leather_vest"
 	item_state = "duster"
-	body_parts_covered = CHEST
+	body_parts_covered = UPPER_TORSO
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 
 /obj/item/clothing/suit/ms13/vest/brown
@@ -78,7 +78,7 @@
 	desc = "A typical leather jacket. Nothing too special about it."
 	icon_state = "leatherjacket"
 	item_state = "leatherjacket"
-	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
+	body_parts_covered = UPPER_TORSO|LEGS|LOWER_TORSO|ARM_LEFT
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -95,7 +95,7 @@
 	desc = "A blue padded coat adorned with war medals. Common attire for mercenaries."
 	icon_state = "veteran_coat"
 	item_state = "leatherjacket"
-	body_parts_covered = CHEST|GROIN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -116,7 +116,7 @@
 	name = "reinforced veteran coat"
 	desc = "A blue padded coat with additional leather and crude metal reinforcements. Common attire for hardened, dangerous mercenaries."
 	icon_state = "reinf_veteran_coat"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	slowdown = 0.15
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -138,7 +138,7 @@
 	desc = "An atypical leather jacket reinforced with extra leather padding to make it into an actual makeshift suit of armor."
 	icon_state = "reinfljacket"
 	item_state = "reinforcedjacket"
-	body_parts_covered = CHEST|LEGS|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LEGS|LOWER_TORSO|ARMS
 	slowdown = 0.15
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -161,7 +161,7 @@
 	name = "DO NOT USE ME - base type winter jacket"
 	desc = "If you are seeing this, someone fucked up."
 	item_state = "winter"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -360,7 +360,7 @@
 	desc = "A durable jacket made from pigrat hide."
 	icon_state = "moleskinjacket"
 	item_state = "duster"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -376,7 +376,7 @@
 	desc = "An old, worn jacket that has no doubt seen it's fair share of places."
 	icon_state = "wanderer"
 	item_state = "duster"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -392,7 +392,7 @@
 	desc = "An old school military jacket."
 	icon_state = "militaryjacket"
 	item_state = "greenjump"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -408,7 +408,7 @@
 	desc = "A musty, old jacket full of holes. Better than nothing."
 	icon_state = "mustyjacket"
 	item_state = "duster"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -425,7 +425,7 @@
 	desc = "A classic tough and durable leather jacket, for riding the highways in badass style."
 	icon_state = "bikerjacket"
 	item_state = "leatherjacket"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -441,7 +441,7 @@
 	desc = "A high school letterman jacket. For showing off your achievements in the post apocalypse."
 	icon_state = "letterman"
 	item_state = "shirt"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -456,7 +456,7 @@
 	name = "bomber jacket"
 	desc = "A fur-lined bomber jacket. Warm and stylish."
 	icon_state = "bomberjacket"
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -474,7 +474,7 @@
 	desc = "A heavy tan trenchcoat."
 	icon_state = "tantrench"
 	item_state = "duster"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -490,7 +490,7 @@
 	name = "detective's trenchcoat"
 	desc = "A trenchcoat normally worn by pre-war detectives."
 	icon_state = "detective"
-	body_parts_covered = CHEST|ARMS|GROIN
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = 0, \
@@ -505,7 +505,7 @@
 	name = "brown overcoat"
 	desc = "A slightly dirty brown overcoat."
 	icon_state = "brownover"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -520,7 +520,7 @@
 	name = "leather overcoat"
 	desc = "A leather overcoat. Almost a duster"
 	icon_state = "bum"
-	body_parts_covered = CHEST|ARMS|GROIN
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -536,7 +536,7 @@
 	desc = "An imposingblack trenchcoat."
 	icon_state = "blacktrench"
 	item_state = "leatherjacket"
-	body_parts_covered = CHEST|ARMS|GROIN
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -565,7 +565,7 @@
 	name = "reinforced black trenchcoat"
 	desc = "A black trenchcoat with the addition of some heavy metal reinforcements and armor for added protection."
 	icon_state = "reinfblacktrench"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	slowdown = 0.3
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -586,7 +586,7 @@
 	name = "armored black trenchcoat"
 	desc = "A heavily armored black trenchcoat that is a near perfect balance between maximum style and maximum protection."
 	icon_state = "armorblacktrench"
-	body_parts_covered = CHEST|ARMS|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	slowdown = 0.3
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = CLASS2_EDGE, \
@@ -610,7 +610,7 @@
 	desc = "A typical leather duster."
 	icon_state = "duster"
 	item_state = "duster"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -646,7 +646,7 @@
 	name = "\improper Desert Ranger duster"
 	desc = "A closed, padded duster used by the Desert Rangers. Commonly worn by Rangers preferring maximum mobility and discretion."
 	icon_state = "closed_duster"
-	body_parts_covered = CHEST|GROIN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -662,7 +662,7 @@
 	name = "\improper Desert Ranger Deputy-Chief poncho"
 	desc = "A well made, padded poncho known for being specially made for certain high ranking members within the Desert Rangers."
 	icon_state = "deputy_chief"
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 
 // labcoats //
@@ -684,7 +684,7 @@
                 ENERGY = 0, \
                 FIRE = 0)
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -704,7 +704,7 @@
                 ENERGY = 0, \
                 FIRE = 0)
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0,  fire = 0, acid = 0, wound = 0)
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -715,7 +715,7 @@
 	desc = "A pair of heavy duty leather waders, they've seen better days."
 	icon_state = "hort_waders"
 	item_state = "hort_waders"
-	body_parts_covered = CHEST|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	permeability_coefficient = 0.5
 
 /obj/item/clothing/suit/hooded/ms13/hubologist
@@ -738,7 +738,7 @@
 /obj/item/clothing/suit/ms13/drylander
 	name = "base type Drylander suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	icon_state = "dry_simple"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -755,7 +755,7 @@
 	name = "\improper Drylander hunter padded robes"
 	desc = "Lightly padded robes worn by hunters of the Drylander tribe. Light, breathable, and still somewhat protective."
 	icon_state = "hunter"
-	body_parts_covered = CHEST|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -772,7 +772,7 @@
 /obj/item/clothing/suit/ms13/drylander/headtaker
 	name = "\improper Drylander Headtaker padded robes"
 	desc = "Padded robes worn by the notorious Headtakers of the Drylander tribe. A frightening sight."
-	body_parts_covered = CHEST|GROIN|LEGS|ARM_RIGHT
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARM_RIGHT
 	slowdown = 0.15
 	icon_state = "headtaker"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -806,13 +806,13 @@
 /obj/item/clothing/suit/ms13/drylander/bando
 	name = "\improper Drylander bandolier robes"
 	desc = "Light robes with a bandolier strewn across to help with storage. Doesn't seem to be very effective though."
-	body_parts_covered = CHEST|GROIN|LEGS|ARM_RIGHT
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARM_RIGHT
 	icon_state = "dry_bando"
 
 /obj/item/clothing/suit/ms13/drylander/chief
 	name = "\improper Drylander chieftain robes"
 	desc = "An impressive set of robes worn by the chieftain of the Drylander tribe. This commands respect."
-	body_parts_covered = CHEST|GROIN|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	icon_state = "chief"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -836,7 +836,7 @@
 /obj/item/clothing/suit/ms13/slickback
 	name = "base type Slickback suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	slowdown = 0.15
 	icon_state = "slick_1"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -952,7 +952,7 @@
 /obj/item/clothing/suit/ms13/goldman
 	name = "base type goldman suit"
 	desc = "You shouldn't be seeing this."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	icon_state = "goldman_duster"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -999,7 +999,7 @@
 /obj/item/clothing/suit/ms13/goldman/poncho
 	name = "dark brown poncho"
 	desc = "A dark brown poncho with gold embroidery on the back, perfect for braving the desert in comfort and style."
-	body_parts_covered = CHEST|ARM_LEFT
+	body_parts_covered = UPPER_TORSO|ARM_LEFT
 	icon_state = "goldman_poncho"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -1051,7 +1051,7 @@
 /obj/item/clothing/suit/ms13/goldman/poncho_padded
 	name = "\improper goldman embroidered poncho"
 	desc = "A poncho that has seen many modifications. From the addition of protective padding to embroidered gold symbols and stars. This is no doubt property of the Goldman Posse."
-	body_parts_covered = CHEST|ARMS
+	body_parts_covered = UPPER_TORSO|ARMS
 	icon_state = "goldman_thickponcho"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \

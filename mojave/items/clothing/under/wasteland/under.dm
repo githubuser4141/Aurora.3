@@ -68,7 +68,7 @@
 	desc = "A pair of pants worn by caravaneers that can't seem to afford a shirt."
 	icon_state = "caravan"
 	item_state = "tribalrag"
-	body_parts_covered = LEGS|GROIN
+	body_parts_covered = LEGS|LOWER_TORSO
 	max_integrity = 220
 	grid_width = 64
 	grid_height = 64
@@ -78,7 +78,7 @@
 	desc = "A relatively intact pair of cloth pants, grubby and dishevelled."
 	icon_state = "cloth"
 	item_state = "tribalrag"
-	body_parts_covered = LEGS|GROIN
+	body_parts_covered = LEGS|LOWER_TORSO
 	max_integrity = 220
 	grid_width = 64
 	grid_height = 64
@@ -88,7 +88,7 @@
 	desc = "A barely intact pair of ancient cloth pants."
 	icon_state = "ghoul"
 	item_state = "tribalrag"
-	body_parts_covered = LEGS|GROIN
+	body_parts_covered = LEGS|LOWER_TORSO
 	max_integrity = 200
 	limb_integrity = 80
 	grid_width = 64
@@ -99,7 +99,7 @@
 	desc = "A hardy, somewhat intimidating pair of black leather pants. Fastened and tightened with multiple belts."
 	icon_state = "warboy"
 	item_state = "petcollar"
-	body_parts_covered = LEGS|GROIN
+	body_parts_covered = LEGS|LOWER_TORSO
 	max_integrity = 220
 	grid_width = 64
 	grid_height = 64
@@ -111,7 +111,7 @@
 	desc = "A set of rags worn by those who can't seem to find better, or like things loose."
 	icon_state = "rag"
 	item_state = "tribalrag"
-	body_parts_covered = CHEST|GROIN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	max_integrity = 250
 
 /obj/item/clothing/under/ms13/wasteland/worn
@@ -119,14 +119,14 @@
 	desc = "A set of ragged clothes that have seen better days."
 	icon_state = "worn"
 	item_state = "ro_suit"
-	body_parts_covered = CHEST|GROIN|ARMS|LEG_LEFT
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEG_LEFT
 
 /obj/item/clothing/under/ms13/wasteland/doctor
 	name = "wasteland doctor uniform"
 	desc = "A set of identifiably dark green, ragged clothes usually worn by wasteland doctors."
 	icon_state = "doctor"
 	item_state = "ro_suit"
-	body_parts_covered = CHEST|GROIN|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/under/ms13/wasteland/peasant
 	name = "homemade garbs"

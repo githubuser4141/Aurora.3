@@ -125,14 +125,14 @@
 	name = "red facewrap and goggles"
 	desc = "A thick red facewrap with a pair of goggles."
 	icon_state = "mon_marks"
-	flags_inv = HIDEFACE | HIDEHAIR
+	flags_inv = HIDEFACE | BLOCKHEADHAIR
 	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 
 /obj/item/clothing/mask/ms13/facewrap/goldman
 	name = "dark brown facewrap"
 	desc = "A dark brown facewrap and bandana. It oozes mystery."
 	icon_state = "goldman_facewrap"
-	flags_inv = HIDEFACE | HIDEHAIR
+	flags_inv = HIDEFACE | BLOCKHEADHAIR
 	flags_cover = MASKCOVERSMOUTH | MASKCOVERSEYES
 
 /obj/item/clothing/mask/ms13/legion
@@ -161,7 +161,7 @@
 	desc = "A light hood used by the Brotherhood of Steel, originally designed to be worn under power armor."
 	icon_state = "bos_hood"
 	item_state = "bos_hood"
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 
 /obj/item/clothing/mask/gas/ms13
 	name = "gas mask"
@@ -209,7 +209,7 @@
 	icon_state = "mon_gasmask"
 	worn_icon_state = "mon_gasmask"
 	adjustable = FALSE
-	flags_inv = HIDEHAIR
+	flags_inv = BLOCKHEADHAIR
 
 /obj/item/clothing/mask/gas/ms13/mon_city/full
 	desc = "A very old gas mask, seemingly even more uncommon. This one has a long snorkel like tube with a filter on the end."

@@ -3,7 +3,7 @@
 	desc = "A standard uniform worn by members of Caesar's Legion."
 	icon_state = "leg_skirt"
 	item_state = "bl_suit"
-	body_parts_covered = CHEST|GROIN
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/ms13/legion/fatigues/dark
 	name = "scouting Legion fatigues"
