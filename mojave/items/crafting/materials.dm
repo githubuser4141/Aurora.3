@@ -41,7 +41,7 @@
 	desc = "Assorted parts like nuts, bolts, screws, and springs."
 	singular_name = "scrap part"
 	icon_state = "scrap_parts"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_parts
 	amount = 1
 	max_amount = 10
@@ -194,7 +194,7 @@ GLOBAL_LIST_INIT(ceramic_recipes, list ( \
 	desc = "Various pieces of electronic parts. Some still useable, others not. Figure it out."
 	singular_name = "scrap electronic piece"
 	icon_state = "scrap_electronic"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_electronics
 	amount = 1
 	max_amount = 10
@@ -217,7 +217,7 @@ GLOBAL_LIST_INIT(ceramic_recipes, list ( \
 	desc = "Scavenged circuits that can hopefully still be used for something."
 	singular_name = "circuit board"
 	icon_state = "circuits"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/circuits
 	amount = 1
 	max_amount = 10

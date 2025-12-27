@@ -77,7 +77,7 @@
 	desc = "A tube used for lighting."
 	icon_state = "ltube"
 	base_state = "ltube"
-	inhand_icon_state = "c_tube"
+	item_state = "c_tube"
 	brightness = 7
 	grid_width = 64
 	grid_height = 32
@@ -94,7 +94,7 @@
 	desc = "A light bulb that can be screwed into a fixture."
 	icon_state = "lbulb"
 	base_state = "lbulb"
-	inhand_icon_state = "contvapour"
+	item_state = "contvapour"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	brightness = 4.5

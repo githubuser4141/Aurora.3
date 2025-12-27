@@ -9,7 +9,7 @@
 	desc = "Assorted metal junk that has since become an indistinguishable clump of various old and corroded metals."
 	singular_name = "scrap metal piece"
 	icon_state = "scrap"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap
 	amount = 1
 	max_amount = 10
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(scrap_recipes, list ( \
 	desc = "Scrap pieces of steel. Still quite strong and sturdy."
 	singular_name = "scrap steel piece"
 	icon_state = "scrap_steel"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_steel
 	amount = 1
 	max_amount = 10
@@ -127,7 +127,7 @@ GLOBAL_LIST_INIT(refined_steel_recipes, list ( \
 	desc = "Scrap pieces of lead. Dense and dull."
 	singular_name = "scrap lead piece"
 	icon_state = "scrap_lead"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_lead
 	amount = 1
 	max_amount = 10
@@ -217,7 +217,7 @@ GLOBAL_LIST_INIT(refined_steel_recipes, list ( \
 	desc = "Lightweight and somewhat shiny pieces of scrap brass."
 	singular_name = "scrap brass piece"
 	icon_state = "scrap_brass"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_brass
 	amount = 1
 	max_amount = 10
@@ -307,7 +307,7 @@ GLOBAL_LIST_INIT(refined_steel_recipes, list ( \
 	desc = "Scrap pieces of aluminum. Through all the dirt, they don't look too bad."
 	singular_name = "scrap aluminum piece"
 	icon_state = "scrap_aluminum"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_alu
 	amount = 1
 	max_amount = 10
@@ -380,7 +380,7 @@ GLOBAL_LIST_INIT(refined_alu_recipes, list ( \
 	desc = "Scrap pieces of silver that still have quite a bit of shine to them."
 	singular_name = "scrap silver piece"
 	icon_state = "scrap_silver"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_silver
 	amount = 1
 	max_amount = 10
@@ -431,7 +431,7 @@ GLOBAL_LIST_INIT(refined_alu_recipes, list ( \
 	desc = "Assorted pieces of bright and shining gold, waiting to be melted together into something even more beautiful."
 	singular_name = "scrap gold piece"
 	icon_state = "scrap_gold"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_gold
 	amount = 1
 	max_amount = 10
@@ -482,7 +482,7 @@ GLOBAL_LIST_INIT(refined_alu_recipes, list ( \
 	desc = "Strands of scrap copper wire. Still could be used."
 	singular_name = "copper wire piece"
 	icon_state = "scrap_copper"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/scrap_copper
 	amount = 1
 	max_amount = 10
@@ -512,7 +512,7 @@ GLOBAL_LIST_INIT(refined_alu_recipes, list ( \
 	desc = "A refined copper ingot."
 	singular_name = "refined copper ingot"
 	icon_state = "ingot_copper"
-	inhand_icon_state = "scrap"
+	item_state = "scrap"
 	merge_type = /obj/item/stack/sheet/ms13/refined_copper
 	amount = 1
 	max_amount = 6

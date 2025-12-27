@@ -9,7 +9,7 @@
 	icon_state = "rollie_paper"
 	inventory_state = "rollie_paper"
 	world_state = "rollie_paper"
-	inhand_icon_state = "paper"
+	item_state = "paper"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	w_class = WEIGHT_CLASS_TINY
@@ -48,7 +48,7 @@
 	inventory_state = "rollie"
 	world_state = "rollie"
 	worn_icon_state = "rollie"
-	inhand_icon_state = "rollie"
+	item_state = "rollie"
 	lit_type = "rollit"
 	butt_icon = "roach"
 	butt_name = "roach"
@@ -62,7 +62,7 @@
 	inventory_state = "cigarette"
 	world_state = "cigarette"
 	worn_icon_state = "cigarette"
-	inhand_icon_state = "cigarette"
+	item_state = "cigarette"
 	lit_type = "ciglit"
 	butt_icon = "butt"
 	butt_name = "butt"

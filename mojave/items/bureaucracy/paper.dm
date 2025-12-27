@@ -6,7 +6,7 @@
 	icon = 'mojave/icons/objects/clutter/clutter_world.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "paper"
+	item_state = "paper"
 	grind_results = null
 	slot_flags = null
 

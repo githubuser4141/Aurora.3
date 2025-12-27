@@ -3,7 +3,7 @@
 	name = "hunting rifle"
 	desc = "A sturdy bolt action hunting rifle, chambered in .308 and in use before the war."
 	icon_state = "hunting"
-	inhand_icon_state = "hunting"
+	item_state = "hunting"
 	mag_type = /obj/item/ammo_box/magazine/ms13/r308
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/rifle/rifleback2.ogg'
 	lock_back_sound = 'mojave/sound/ms13weapons/gunsounds/rifle/rifleback2.ogg'
@@ -29,7 +29,7 @@
 	name = "scoped hunting rifle"
 	desc = "A bolt action hunting rifle with a scope attached and a slightly improved barrel for reduced recoil, though the added weight of everything will slow the user down."
 	icon_state = "scoped_hunting"
-	inhand_icon_state = "scoped_hunting"
+	item_state = "scoped_hunting"
 	recoil = 1.5
 	slowdown = 1
 	has_scope = TRUE
@@ -39,7 +39,7 @@
 	name = "varmint rifle"
 	desc = "A light hunting rifle chambered for 5.56 rounds."
 	icon_state = "varmint"
-	inhand_icon_state = "varmint"
+	item_state = "varmint"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
@@ -95,7 +95,7 @@
 	name = "\improper Ratslayer"
 	desc = "A uniquely modified varmint rifle with improved rifling, a scope, and supressor attached. The added weight of all the attachments will slow the user down some more."
 	icon_state = "ratslayer"
-	inhand_icon_state = "ratslayer"
+	item_state = "ratslayer"
 	recoil = 0.25
 	slowdown = 1
 	fire_sound = 'sound/weapons/gun/smg/shot_suppressed.ogg'
@@ -110,7 +110,7 @@
 	name = "anti-material rifle"
 	desc = "An extremely heavy duty .50 caliber sniper rifle. Have you seen what this can do to a Deathclaw?"
 	icon_state = "amr"
-	inhand_icon_state = "amr"
+	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/ms13/amr
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/amr/amrback.ogg'
 	lock_back_sound = 'mojave/sound/ms13weapons/gunsounds/amr/amrback.ogg'
@@ -162,7 +162,7 @@
 	name = "surplus hunting rifle"
 	desc = "A cheap bolt action hunting rifle, chambered in 7.62 with an internal magazine."
 	icon_state = "surplushunting"
-	inhand_icon_state = "surplushunting"
+	item_state = "surplushunting"
 	internal_magazine = TRUE
 	mag_type = /obj/item/ammo_box/magazine/internal/ms13/chinese_rifle
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/rifle/rifle_load.ogg'
@@ -176,7 +176,7 @@
 	name = "handmade jezzail"
 	desc = "A crude but effective and accurate handmade single shot rifle. It seems to be chambered in 7.62"
 	icon_state = "jezzail"
-	inhand_icon_state = "jezzail"
+	item_state = "jezzail"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -201,7 +201,7 @@
 	name = "antique sniper"
 	desc = "A very old single shot sniper rifle from long before the war. A prized possession, even now. It is chambered in the ever so hefty 45-70."
 	icon_state = "antique"
-	inhand_icon_state = "antique"
+	item_state = "antique"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -229,7 +229,7 @@
 	name = "\improper Japanese war rifle"
 	desc = "An ancient pre-war rifle, chambered in .308 with an internal 5 round magazine. Hardly functions in days like these, but it works... Sometimes."
 	icon_state = "arisaka"
-	inhand_icon_state = "arisaka"
+	item_state = "arisaka"
 	internal_magazine = TRUE
 	mag_type = /obj/item/ammo_box/magazine/internal/ms13/arisaka
 	fire_sound = 'mojave/sound/ms13weapons/hunting_rifle.ogg'
@@ -245,7 +245,7 @@
 	name = "scoped Japanese war rifle"
 	desc = "A really old pre-war rifle, chambered in .308 with an internal 5 round magazine. This one has a scoped mounted to it. Hardly functions in days like these, but it works... Sometimes."
 	icon_state = "scoped_arisaka"
-	inhand_icon_state = "scoped_arisaka"
+	item_state = "scoped_arisaka"
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 14
@@ -254,7 +254,7 @@
 	name = "This Machine"
 	desc = "An ancient pre-war rifle design thats still reliable, using an 8 round enbloc magazine chambered in .308."
 	icon_state = "battlerifle"
-	inhand_icon_state = "battlerifle"
+	item_state = "battlerifle"
 	bolt_type = BOLT_TYPE_NO_BOLT
 	empty_alarm = TRUE
 	semi_auto = TRUE

@@ -7,7 +7,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "flashlight_old"
-	inhand_icon_state = "flashlight_old"
+	item_state = "flashlight_old"
 	light_range = 3.75
 	light_power = 0.75
 	light_color = "#dbb070"
@@ -22,7 +22,7 @@
 	name = "stick flashlight"
 	desc = "A lengthy dark flashlight. Has a fair light range, and feels relatively high quality."
 	icon_state = "flashlight_mag"
-	inhand_icon_state = "flashlight_mag"
+	item_state = "flashlight_mag"
 	light_range = 4.5
 	light_power = 0.9
 	light_color = "#dac97c"
@@ -31,7 +31,7 @@
 	name = "homemade flashlight"
 	desc = "To call it a flashlight is even a stretch. This device is simply a lightbulb connected to a low output fusion cell."
 	icon_state = "flashlight_crafted"
-	inhand_icon_state = "flashlight_crafted"
+	item_state = "flashlight_crafted"
 	light_range = 3 // doo-doo. But much better than nothing.
 	light_power = 0.6
 	light_color = "#ddd2b9"
@@ -43,7 +43,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "flare"
-	inhand_icon_state = "flare"
+	item_state = "flare"
 	light_range = 3.5
 	light_power = 0.75
 	grid_width = 64

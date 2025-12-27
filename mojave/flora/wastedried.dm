@@ -6,7 +6,7 @@
 	name = "generic dried object"
 	desc = "You dry as hell boy."
 	icon = 'mojave/icons/hydroponics/harvest/harvest_world.dmi'
-	inhand_icon_state = "plant"
+	item_state = "plant"
 	lefthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	w_class = WEIGHT_CLASS_TINY

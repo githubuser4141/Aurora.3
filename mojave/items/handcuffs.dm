@@ -5,7 +5,7 @@
 	icon = 'mojave/icons/objects/crafting/materials_world.dmi'
 	worn_icon_state = "rope"
 	worn_icon = 'mojave/icons/mob/clothing/hands.dmi'
-	inhand_icon_state = "rope"
+	item_state = "rope"
 	handcuffed_icon = 'mojave/icons/mob/clothing/hands.dmi'
 	handcuffed_icon_state = "rope"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
@@ -40,7 +40,7 @@
 	grid_width = 64
 	icon_state = "handcuffs"
 	icon = 'mojave/icons/objects/tools/tools_inventory.dmi'
-	inhand_icon_state = "handcuffs"
+	item_state = "handcuffs"
 	handcuffed_icon = 'mojave/icons/mob/clothing/hands.dmi'
 	handcuffed_icon_state = "handcuffs"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'

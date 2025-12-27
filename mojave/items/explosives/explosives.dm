@@ -1,6 +1,6 @@
 /obj/item/grenade/ms13/Initialize()
 	. = ..()
-	inhand_icon_state = initial(icon_state)
+	item_state = initial(icon_state)
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/throwables/grenades_inventory.dmi')
 
 /obj/item/grenade/ms13/examine(mob/user)
@@ -25,7 +25,7 @@
 /obj/item/grenade/frag/ms13/arm_grenade(mob/user, delayoverride, msg, volume)
 	. = ..()
 	icon_state = initial(icon_state) + "_active"
-	inhand_icon_state = icon_state
+	item_state = icon_state
 	playsound(src, 'mojave/sound/ms13weapons/grenade_pin.wav', 20, TRUE)
 
 /obj/item/grenade/frag/ms13/dropped(mob/user, silent)
@@ -40,7 +40,7 @@
 	name = "scrap grenade"
 	desc = "A homebrew grenade. Quite shifty- You're unsure if you'll work, but pehaps it's worth a shot?"
 	icon_state = "tinbomb"
-	inhand_icon_state = "tinbomb"
+	item_state = "tinbomb"
 	shrapnel_type = /obj/projectile/bullet/ms13/nail
 	shrapnel_radius = 3
 	ex_heavy = 2
@@ -102,7 +102,7 @@
 	playsound(src, arm_sound, volume, TRUE)
 	active = TRUE
 	icon_state = icon_state + "_active"
-	inhand_icon_state = icon_state
+	item_state = icon_state
 	SEND_SIGNAL(src, COMSIG_GRENADE_ARMED, det_time, delayoverride)
 	addtimer(CALLBACK(src, PROC_REF(detonate)), isnull(delayoverride)? det_time : delayoverride)
 	update_icon()

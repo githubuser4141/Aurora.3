@@ -5,7 +5,7 @@
 	desc = "A basic and relatively unremarkable laser pistol, aside from the fact that it fires concentrated beams of energy."
 	icon_state = "stanlas_pistol"
 	base_icon_state = "stanlas_pistol"
-	inhand_icon_state = "stanlas_pistol"
+	item_state = "stanlas_pistol"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_1.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/laser_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -24,7 +24,7 @@
 	desc = "A more advanced model of laser pistol, hits quite a bit harder but fires slightly slower to properly concentrate the beams."
 	icon_state = "advlas_pistol"
 	base_icon_state = "advlas_pistol"
-	inhand_icon_state = "advlas_pistol"
+	item_state = "advlas_pistol"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_2.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/adv_pistol)
 	cell_type = /obj/item/cell/ms13/mfc
@@ -34,7 +34,7 @@
 	desc = "A specially modified and customized advanced laser pistol primarily used by high ranking members of the Brotherhood of Steel. Sometimes used to enforce the Codex if other means fail, as one may expect."
 	icon_state = "boslas_pistol"
 	base_icon_state = "boslas_pistol"
-	inhand_icon_state = "boslas_pistol"
+	item_state = "boslas_pistol"
 	fire_delay = 0.5 SECONDS
 
 /obj/item/gun/energy/ms13/laser/pistol/advanced/defender
@@ -42,7 +42,7 @@
 	desc = "A highly advanced, experimental laser pistol. Sports best in class stopping power and fire rate, truly a menace in the right hands."
 	icon_state = "laserdefender"
 	base_icon_state = "laserdefender"
-	inhand_icon_state = "laserdefender"
+	item_state = "laserdefender"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_3.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/las_defender)
 	fire_delay = 0.5 SECONDS
@@ -52,7 +52,7 @@
 	desc = "A civilian grade laser pistol. It's lasers are not very concentrated as a result."
 	icon_state = "wattzpistol"
 	base_icon_state = "wattzpistol"
-	inhand_icon_state = "wattzpistol"
+	item_state = "wattzpistol"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_4.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/wattz_pistol)
 
@@ -61,7 +61,7 @@
 	desc = "This Wattz 1000 laser pistol has been upgraded with a magnetic field targeting system that tightens the laser emission, giving this pistol extra penetrating power."
 	icon_state = "wattz1000mag"
 	base_icon_state = "wattz1000mag"
-	inhand_icon_state = "wattz1000mag"
+	item_state = "wattz1000mag"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_4.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/wattz_pistol/magneto)
 
@@ -70,7 +70,7 @@
 	desc = "An experimental laser pistol developed by Wattz electronics, intended to try and push into the military laser weapon market. Fires slower than other laser pistols but packs a decent punch."
 	icon_state = "wattz2000car"
 	base_icon_state = "wattz2000car"
-	inhand_icon_state = "wattz2000car"
+	item_state = "wattz2000car"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_2.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/wattz_heavypistol)
 	cell_type = /obj/item/cell/ms13/mfc
@@ -83,7 +83,7 @@
 	desc = "A standard, experimental plasma pistol that fires very hot concentrated bolts of green plasma. They travel slowly, but burn like hell."
 	icon_state = "plasmapistol"
 	base_icon_state = "plasmapistol"
-	inhand_icon_state = "plasmapistol"
+	item_state = "plasmapistol"
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/plaspistol/plasma_3.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/plasma_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -103,7 +103,7 @@
 	desc = "A more advanced and even more experimental version of the plasma pistol. Concentrates it's bolts in an even more deadly manner."
 	icon_state = "enclaveplasmapistol"
 	base_icon_state = "enclaveplasmapistol"
-	inhand_icon_state = "enclaveplasmapistol"
+	item_state = "enclaveplasmapistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/adv_pistol)
 
 /obj/item/gun/energy/ms13/plasma/pistol/defender
@@ -111,7 +111,7 @@
 	desc = "The peak of compact plasma weaponry. Faster firing and more accurate than other plasma pistols. Something you do not want to be on the receiving end of."
 	icon_state = "plasmadefender"
 	base_icon_state = "plasmadefender"
-	inhand_icon_state = "plasmadefender"
+	item_state = "plasmadefender"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/plas_defender)
 	fire_delay = 0.5 SECONDS
 	spread = 4

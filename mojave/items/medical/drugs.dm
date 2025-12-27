@@ -109,10 +109,10 @@
 	. = ..()
 	if(reagents.total_volume > 0)
 		icon_state = initial(icon_state)
-		inhand_icon_state = initial(inhand_icon_state)
+		item_state = initial(item_state)
 	else
 		icon_state = "[initial(icon_state)]0"
-		inhand_icon_state = "[initial(inhand_icon_state)]0"
+		item_state = "[initial(item_state)]0"
 
 /obj/item/reagent_containers/ms13/inhaler/jet
 	name = "jet inhaler"
@@ -203,7 +203,7 @@
 	desc = "A simple bottle with a cork top used to store medicine capsules."
 	icon = 'mojave/icons/objects/drugs.dmi'
 	icon_state = "bottle_closed"
-	inhand_icon_state = "contsolid"
+	item_state = "contsolid"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	w_class = WEIGHT_CLASS_SMALL

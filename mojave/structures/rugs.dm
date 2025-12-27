@@ -165,7 +165,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "rug"
-	inhand_icon_state = "rug"
+	item_state = "rug"
 	throw_range = 2
 	w_class = WEIGHT_CLASS_BULKY
 	var/obj/structure/ms13/rug/origin_type = /obj/structure/ms13/rug
@@ -205,14 +205,14 @@
 	name = "rubber mat"
 	desc = "A large rubber mat, usually used in industrial areas to keep traction in slick conditions. Rolled and ready to transport."
 	icon_state = "rug_rubber"
-	inhand_icon_state = "rug_rubber"
+	item_state = "rug_rubber"
 	origin_type = /obj/structure/ms13/rug/rubber
 
 /obj/item/ms13/rug/mat
 	name = "door mat"
 	desc = "A small door mat, It's rolled and ready for transport."
 	icon_state = "rug"
-	inhand_icon_state = "mat"
+	item_state = "mat"
 	throw_range = 6
 	origin_type = /obj/structure/ms13/rug/mat
 	w_class = WEIGHT_CLASS_NORMAL
@@ -247,7 +247,7 @@
 	name = "rubber mats"
 	desc = "A small assortment of rubber mats. Good for keeping traction in slippery areas. Stacked and ready to pack."
 	icon_state = "rug_rubber"
-	inhand_icon_state = "mat"
+	item_state = "mat"
 	origin_type = /obj/structure/ms13/rug/mat/rubber
 
 /obj/item/ms13/rug/mat/rubber/single

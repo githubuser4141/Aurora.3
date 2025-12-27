@@ -41,7 +41,7 @@
 	name = "armor kit"
 	desc = "A makeshift kit of armor intended to be worn over clothing and made mostly of metal."
 	icon_state = "armorkit"
-	inhand_icon_state = "armorkit"
+	item_state = "armorkit"
 	body_parts_covered = CHEST|LEGS|ARM_LEFT
 	slowdown = 0.15
 	armor = list(MELEE = ARMOR_MELEE_SMALL)
@@ -52,7 +52,7 @@
 	name = "reinforced armor kit"
 	desc = "A reinforced, heavier kit of armor intended to be worn over clothing. Made mostly of durable metal plates."
 	icon_state = "reinf_armorkit"
-	inhand_icon_state = "reinf_armorkit"
+	item_state = "reinf_armorkit"
 	body_parts_covered = CHEST|LEGS|ARM_LEFT|GROIN
 	slowdown = 0.3
 	max_integrity = 400
@@ -65,7 +65,7 @@
 	name = "tire armor"
 	desc = "Sections of tire, roughly cut apart and bound together. Getting into a firefight isn't advised, but you shouldn't feel a punch in this."
 	icon_state = "tirearmor"
-	inhand_icon_state = "tirearmor"
+	item_state = "tirearmor"
 	body_parts_covered = CHEST|GROIN
 	slowdown = 0.15
 	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = ARMOR_BALLISTIC_MINOR)
@@ -76,7 +76,7 @@
 	name = "leather armor"
 	desc = "A suit of armor made of hardened leather, a wasteland staple."
 	icon_state = "leatherarmor"
-	inhand_icon_state = "leatherarmor"
+	item_state = "leatherarmor"
 	body_parts_covered = CHEST|LEGS|GROIN
 	slowdown = 0.15
 	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = ARMOR_BALLISTIC_MINOR, LASER = ARMOR_LASER_SMALL, ENERGY = ARMOR_ENERGY_SMALL, BOMB = ARMOR_BOMB_PADDED)
@@ -87,7 +87,7 @@
 	name = "reinforced leather armor"
 	desc = "A suit of leather armor with light ballistic padding, more leather, and some ceramic reinforcements. A solid defense."
 	icon_state = "reinforcedleather"
-	inhand_icon_state = "reinforcedleather"
+	item_state = "reinforcedleather"
 	slowdown = 0.15
 	max_integrity = 450
 	armor = list(MELEE = ARMOR_MELEE_RESISTANT, BULLET = ARMOR_BALLISTIC_SMALL, LASER = ARMOR_LASER_PISTOL, ENERGY = ARMOR_ENERGY_RESISTANT, BOMB = ARMOR_BOMB_PADDED)
@@ -98,7 +98,7 @@
 	name = "metal armor"
 	desc = "Standard metal armor, great protection from blades but quite bulky and susceptible to lasers and blunt weapons."
 	icon_state = "metalarmor"
-	inhand_icon_state = "metalarmor"
+	item_state = "metalarmor"
 	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
 	slowdown = 0.5
 	max_integrity = 500
@@ -110,7 +110,7 @@
 	name = "reinforced metal armor"
 	desc = "Sturdy metal armor with additional reinforcements, excellent protection from blades and bullets at the cost of mobility and vulnerability to lasers and blunt weapons."
 	icon_state = "reinforcedmetal"
-	inhand_icon_state = "reinforcedmetal"
+	item_state = "reinforcedmetal"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	max_integrity = 575
 	armor = list(MELEE = ARMOR_MELEE_VERY_HIGH, BULLET = ARMOR_BALLISTIC_PISTOL, LASER = ARMOR_LASER_PISTOL)
@@ -119,7 +119,7 @@
 	name = "heavy metal armor"
 	desc = "A full suit of heavy duty plated metal armor. Looks quite intimidating and offers the protection to match."
 	icon_state = "heavymetal"
-	inhand_icon_state = "heavymetal"
+	item_state = "heavymetal"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	max_integrity = 575
 	armor = list(MELEE = ARMOR_MELEE_VERY_HIGH, BULLET = ARMOR_BALLISTIC_CARBINE)
@@ -128,7 +128,7 @@
 	name = "\improper Vault-tec van armor"
 	desc = "Makeshift armor scrounged together from, as one may expect, the old remains of a Vault-tec van."
 	icon_state = "vaultvanarmor"
-	inhand_icon_state = "vaultvanarmor"
+	item_state = "vaultvanarmor"
 	body_parts_covered = CHEST|LEGS
 	slowdown = 0.3
 	armor = list(MELEE = ARMOR_MELEE_MAJOR, BULLET = ARMOR_BALLISTIC_MINOR)
@@ -141,7 +141,7 @@
 	name = "police kevlar vest"
 	desc = "A bulletproof kevlar vest used primarily by pre-war police forces during emergencies."
 	icon_state = "police_kevlar"
-	inhand_icon_state = "policekevlar"
+	item_state = "policekevlar"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST
 	slowdown = 0.15
@@ -160,7 +160,7 @@
 	name = "military kevlar vest"
 	desc = "A military grade bulletproof kevlar vest, unmatched protection against almost any caliber of bullet."
 	icon_state = "military_kevlar"
-	inhand_icon_state = "militarykevlar"
+	item_state = "militarykevlar"
 	body_parts_covered = CHEST|GROIN
 	armor = list(MELEE = ARMOR_MELEE_KEVLAR, BULLET = ARMOR_BALLISTIC_MEDIUM, LASER = ARMOR_LASER_PISTOL)
 
@@ -184,7 +184,7 @@
 	name = "enforcers overcoat"
 	desc = "A duster with a rather thick vest under it and the addition of some metal spikes and reinforcements. This practically screams intimidating authority."
 	icon_state = "enforcercoat"
-	inhand_icon_state = "det_suit"
+	item_state = "det_suit"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN
 	armor = list(MELEE = ARMOR_MELEE_MEDIUM, BULLET = ARMOR_BALLISTIC_PISTOL, LASER = ARMOR_LASER_KEVLAR, ENERGY = ARMOR_ENERGY_SMALL)
@@ -193,7 +193,7 @@
 	name = "boss' coat"
 	desc = "A padded trenchcoat, with the arms left exposed. Worn by the biggest and baddest."
 	icon_state = "courier"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|GROIN
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -203,7 +203,7 @@
 	name = "raider reinforced jacket"
 	desc = "A winter jacket with some basic armoring and reinforcements. In recent times, it has become a staple for raiders in Mammoth."
 	icon_state = "winterjacketraider"
-	inhand_icon_state = "det_suit"
+	item_state = "det_suit"
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST|ARMS|GROIN|LEG_RIGHT
 	slowdown = 0.15
@@ -234,7 +234,7 @@
 	name = "combat armor"
 	desc = "Pre-war military grade combat armor. Offers great all around protection."
 	icon_state = "combatarmor"
-	inhand_icon_state = "combatarmor"
+	item_state = "combatarmor"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	slowdown = 0.3
 	max_integrity = 500
@@ -246,7 +246,7 @@
 	name = "advanced combat armor"
 	desc = "An advanced and more protective model of combat armor. Excellent overall protection."
 	icon_state = "adv_combatarmor"
-	inhand_icon_state = "combat_armor_mk2"
+	item_state = "combat_armor_mk2"
 	max_integrity = 575
 
 // Special Armor //
@@ -255,7 +255,7 @@
 	name = "assassin armor"
 	desc = "A prototype pre-war lightweight suit of armor that is so light and optimized that it can serve to speed the wearer up and mask the sound of footsteps."
 	icon_state = "assassin"
-	inhand_icon_state = "assassin"
+	item_state = "assassin"
 	slowdown = -0.3
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	max_integrity = 400
@@ -268,7 +268,7 @@
 	name = "tesla armor"
 	desc = "Pre-war experimental armor designed to expressly limit damage from LASER and ENERGY weapons."
 	icon_state = "tesla_armor"
-	inhand_icon_state = "tesla_armor"
+	item_state = "tesla_armor"
 	blood_overlay_type = "armor"
 	slowdown = 0.3
 	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
@@ -281,7 +281,7 @@
 	name = "elite riot gear"
 	desc = "A highly advanced suit of armor originally in use by elite riot control units before the war."
 	icon_state = "riotgear"
-	inhand_icon_state = "riotgear"
+	item_state = "riotgear"
 	slowdown = 0.5
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	max_integrity = 575
@@ -293,7 +293,7 @@
 	name = "bounty hunter's jacket"
 	desc = "A unique fur lined leather coat featuring thick ballistic weave fibers through it. Built to hold up to the worse while retaining protection against the elements."
 	icon_state = "bountyhunter"
-	inhand_icon_state = "armoredwinterblack"
+	item_state = "armoredwinterblack"
 
 /obj/item/clothing/suit/armor/ms13/combat/enforcer
 	name = "surplus combat armor"
@@ -309,7 +309,7 @@
 	name = "fire suit"
 	desc = "Thick fibers woven together, into the ultimate fire-proof suit. While it has some other applications, you're generally looking to ignore fire using this."
 	icon_state = "firesuit"
-	inhand_icon_state = "firesuit"
+	item_state = "firesuit"
 	slowdown = 0.3
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	max_integrity = 450
@@ -335,7 +335,7 @@
 	name = "radiation suit"
 	desc = "A lead lined suit, designed with the sole purpose of blocking radiation from the human body. It's pretty thick, and while it could protect you from more than rads, why would you waste such a thing like this in combat?"
 	icon_state = "radsuit"
-	inhand_icon_state = "radsuit"
+	item_state = "radsuit"
 	slowdown = 0.3
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	max_integrity = 450
@@ -351,7 +351,7 @@
 	name = "hazmat suit"
 	desc = "A relatively thin hazmat suit. You're not quite sure what it's made from, only that this should be able to keep any dangerous liquids off of you."
 	icon_state = "hazmat"
-	inhand_icon_state = "hazmat"
+	item_state = "hazmat"
 	slowdown = 0.15
 	hoodtype = /obj/item/clothing/head/hooded/ms13/hazmat
 	resistance_flags = ACID_PROOF
@@ -364,7 +364,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "spacesuit"
-	inhand_icon_state = "spacesuit"
+	item_state = "spacesuit"
 	armor = list(MELEE = 25, BULLET = 15, LASER = 25, ENERGY = 25, BOMB = 5)
 
 // NCR Armor //
@@ -373,7 +373,7 @@
 	name = "\improper NCR infantry vest"
 	desc = "A standard issue NCR infantry vest specialized for arctic environments."
 	icon_state = "ncr_vest"
-	inhand_icon_state = "ncr_infantry_vest"
+	item_state = "ncr_infantry_vest"
 	slowdown = 0.15
 	body_parts_covered = CHEST
 	max_integrity = 400
@@ -386,20 +386,20 @@
 	name = "\improper NCR reinforced infantry vest"
 	desc = "An NCR infantry vest with extra protective reinforcements."
 	icon_state = "ncr_reinforced_vest"
-	inhand_icon_state = "ncr_reinforced_vest"
+	item_state = "ncr_reinforced_vest"
 	body_parts_covered = CHEST|GROIN
 
 /obj/item/clothing/suit/armor/ms13/ncr/mantle
 	name = "\improper NCR mantle vest"
 	desc = "An NCR vest with a mantle on the shoulder, normally indicating some form of authority or command position."
 	icon_state = "ncr_standard_mantle"
-	inhand_icon_state = "ncr_standard_mantle"
+	item_state = "ncr_standard_mantle"
 
 /obj/item/clothing/suit/armor/ms13/ncr/mantle/reinforced
 	name = "\improper NCR reinforced mantle vest"
 	desc = "An NCR mantle vest with additional protective reinforcements."
 	icon_state = "ncr_reinforced_mantle"
-	inhand_icon_state = "ncr_reinforced_mantle"
+	item_state = "ncr_reinforced_mantle"
 	slowdown = 0.3
 	body_parts_covered = CHEST|GROIN
 	max_integrity = 500
@@ -413,7 +413,7 @@
 	name = "standard Legion armor"
 	desc = "Standard non-existant armor for Legion recruits, cobbled together with various sports equipment and additional reinforcements as needed."
 	icon_state = "leg_rec"
-	inhand_icon_state = "legarmor"
+	item_state = "legarmor"
 	slowdown = 0.15
 	body_parts_covered = CHEST|GROIN|LEGS
 	max_integrity = 400
@@ -423,7 +423,7 @@
 	name = "\improper Legion recruit armor"
 	desc = "Standard leather armor for Legion recruits. Crudely made but offering decent protection."
 	icon_state = "leg_rec"
-	inhand_icon_state = "legarmor"
+	item_state = "legarmor"
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -498,7 +498,7 @@
 	name = "\improper Brotherhood scribe's robe"
 	desc = "A finely made, comfortable cloth robe worn by Brotherhood scribes."
 	icon_state = "scribe"
-	inhand_icon_state = "scribe"
+	item_state = "scribe"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -508,13 +508,13 @@
 	name = "\improper Brotherhood head scribe's robe"
 	desc = "A finely made, comfortable cloth robe worn by Brotherhood scribes. This one is navy blue, denoting that it's for a head scribe."
 	icon_state = "head_scribe"
-	inhand_icon_state = "head_scribe"
+	item_state = "head_scribe"
 
 /obj/item/clothing/suit/armor/ms13/head_paladin
 	name = "\improper Brotherhood head paladin's battlecoat"
 	desc = "A masterwork of Brotherhood tailoring, featuring good reinforcements and armoring while not compromising on style or weight."
 	icon_state = "battlecoat"
-	inhand_icon_state = "battlecoat"
+	item_state = "battlecoat"
 	body_parts_covered = CHEST|ARMS|GROIN
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -563,7 +563,7 @@
 	desc = "A set of Elite Desert Ranger armor. Heavy kevlar padding in a duster, with a metal breastplate in the front. Built to last through the worst."
 	icon_state = "elite_ranger"
 	worn_icon_state = "elite_ranger"
-	inhand_icon_state = "riotgear"
+	item_state = "riotgear"
 	slowdown = 0.5
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
@@ -574,7 +574,7 @@
 	name = "padded green winter hoodie"
 	desc = "A thick, lightly padded green winter hoodie. Warm and might just save your life!"
 	icon_state = "mon_marksman"
-	inhand_icon_state = "winter"
+	item_state = "winter"
 	alternative_mode = TRUE
 	slowdown = 0
 	hoodtype = /obj/item/clothing/head/hooded/ms13/mon_city

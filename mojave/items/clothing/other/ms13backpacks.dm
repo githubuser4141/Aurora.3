@@ -8,7 +8,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_inventory/backpack_inventory.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/back.dmi'
 	icon_state = ""
-	inhand_icon_state = ""
+	item_state = ""
 	worn_icon_state = ""
 	lefthand_file = 'mojave/icons/mob/inhands/equipment/backpack_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/equipment/backpack_righthand.dmi'
@@ -29,7 +29,7 @@
 	. = ..()
 	//This ones flipped for the pref menu icons
 	AddElement(/datum/element/world_icon, null, 'mojave/icons/objects/clothing/clothing_world/backpack_world.dmi', icon)
-	inhand_icon_state = icon_state
+	item_state = icon_state
 	worn_icon_state = icon_state
 
 /obj/item/storage/ms13/ComponentInitialize()

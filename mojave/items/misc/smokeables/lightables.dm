@@ -12,7 +12,7 @@
 	component_type = /datum/component/storage/concrete/ms13/matchbox
 	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
-	inhand_icon_state = "matchbox"
+	item_state = "matchbox"
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = null
 	foldable = null
@@ -169,7 +169,7 @@
 	world_state = "match"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
-	inhand_icon_state = "match"
+	item_state = "match"
 	smoketime = 45 SECONDS
 	grind_results = null
 	grid_width = 32
@@ -192,13 +192,13 @@
 	smoketime -= 1 SECONDS
 	if(lit)
 		world_state = "match_lit"
-		inhand_icon_state = "match_lit"
+		item_state = "match_lit"
 		update_appearance()
 		update_overlays()
 		update_icon()
 	if(smoketime <= 0)
 		world_state = "match_burnt"
-		inhand_icon_state = "match_burnt"
+		item_state = "match_burnt"
 		update_appearance()
 		update_overlays()
 		update_icon()
@@ -210,7 +210,7 @@
 	. = ..()
 	if(lit)
 		world_state = "match_lit"
-		inhand_icon_state = "match_lit"
+		item_state = "match_lit"
 		switch(smoketime)
 			if(0 to 60)
 				inventory_state = "[initial(inventory_state)]_lit_5"
@@ -225,7 +225,7 @@
 	if(burnt || smoketime <= 0)
 		inventory_state = "match_burnt"
 		world_state = "match_burnt"
-		inhand_icon_state = "match_burnt"
+		item_state = "match_burnt"
 		return
 
 /obj/item/match/ms13/matchignite(mob/user)
@@ -239,7 +239,7 @@
 	force = 3
 	inventory_state = "[initial(inventory_state)]_lit_5"
 	world_state = "match_lit"
-	inhand_icon_state = "match_lit"
+	item_state = "match_lit"
 	name = "lit [initial(name)]"
 	desc = "A [initial(name)]. This one is lit."
 	attack_verb_continuous = string_list(list("burns", "singes"))
@@ -264,7 +264,7 @@
 	update_icon()
 	inventory_state = "match_burnt"
 	world_state = "match_burnt"
-	inhand_icon_state = "match_burnt"
+	item_state = "match_burnt"
 	name = "burnt [initial(name)]"
 	desc = "A [initial(name)]. This one has seen better days."
 	attack_verb_continuous = string_list(list("flicks"))
@@ -293,7 +293,7 @@
 	world_state = "zippo"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
-	inhand_icon_state = "zippo"
+	item_state = "zippo"
 	slot_flags = null
 	var/max_fuel = 50
 	overlay_list = null
@@ -326,7 +326,7 @@
 /obj/item/lighter/ms13/zippo/process()
 	if(!is_open)
 		set_lit(FALSE)
-		inhand_icon_state = "zippo"
+		item_state = "zippo"
 		world_state = "zippo"
 		return
 	if(lit)
@@ -334,11 +334,11 @@
 		update_appearance()
 		update_overlays()
 		update_icon()
-		inhand_icon_state = "zippo_on"
+		item_state = "zippo_on"
 		world_state = "zippo_on"
 		if(get_fuel() <= 0)
 			set_lit(FALSE)
-			inhand_icon_state = "zippo_open"
+			item_state = "zippo_open"
 			world_state = "zippo_open"
 
 /obj/item/lighter/ms13/zippo/attack_self()
@@ -346,7 +346,7 @@
 		playsound(src, 'mojave/sound/ms13effects/zippoopen.ogg', 100)
 		is_open = TRUE
 		inventory_state = "[initial(inventory_state)]_open"
-		inhand_icon_state = "zippo_open"
+		item_state = "zippo_open"
 		world_state = "zippo_open"
 		update_appearance()
 		update_overlays()
@@ -355,7 +355,7 @@
 	if(is_open && get_fuel() > 0 && !lit)
 		playsound(src, 'mojave/sound/ms13effects/zippolight.ogg', 100)
 		set_lit(TRUE)
-		inhand_icon_state = "zippo_on"
+		item_state = "zippo_on"
 		world_state = "zippo_on"
 		update_appearance()
 		update_overlays()
@@ -366,7 +366,7 @@
 		set_lit(FALSE)
 		is_open = FALSE
 		inventory_state = initial(inventory_state)
-		inhand_icon_state = "zippo"
+		item_state = "zippo"
 		world_state = "zippo"
 		update_appearance()
 		update_overlays()
@@ -377,7 +377,7 @@
 		set_lit(FALSE)
 		is_open = FALSE
 		inventory_state = initial(inventory_state)
-		inhand_icon_state = "zippo"
+		item_state = "zippo"
 		world_state = "zippo"
 		update_appearance()
 		update_overlays()
@@ -412,7 +412,7 @@
 		playsound(src, 'mojave/sound/ms13effects/zippoclose.ogg', 100)
 		set_lit(FALSE)
 		is_open = FALSE
-		inhand_icon_state = "zippo"
+		item_state = "zippo"
 		world_state = "zippo"
 		inventory_state = initial(inventory_state)
 		update_appearance()
@@ -432,7 +432,7 @@
 	world_state = "butane"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
-	inhand_icon_state = "butane"
+	item_state = "butane"
 	volume = 100 // 2 and half welder refills
 	reagents_to_add = list(/singleton/reagent/fuel = 100)
 	grid_width = 32

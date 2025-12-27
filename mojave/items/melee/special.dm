@@ -11,7 +11,7 @@
 	attack_verb_continuous = list("punches", "jabs", "clocks", "nails", "bludgeons", "whacks", "bonks")
 	attack_verb_simple = list("punch", "jab", "clock", "nail", "bludgeon", "whack", "bonk")
 	icon_state = "knuckles"
-	inhand_icon_state = "knuckles"
+	item_state = "knuckles"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/genericblunt_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_grip.ogg'
 	w_class = WEIGHT_CLASS_TINY
@@ -36,7 +36,7 @@
 	name = "steel knuckle"
 	desc = "A heavy knuckle made of steel, quite a bit stronger and more dangerous than a plain brass knuckle."
 	icon_state = "knuckles_weighted"
-	inhand_icon_state = "knuckles_weighted"
+	item_state = "knuckles_weighted"
 	force = 20
 	subtractible_armour_penetration = 20
 
@@ -44,7 +44,7 @@
 	name = "spiked knuckles"
 	desc = "A steel knuckle with the addition of some pointed spikes. With this, you aren't looking to knock someone out anymore."
 	icon_state = "knuckles_spike"
-	inhand_icon_state = "knuckles_spike"
+	item_state = "knuckles_spike"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/stab_hit.ogg'
 	force = 25
 	throwforce = 10 //Imagine finshing off someone running away by throwing your spiked knuckle at them
@@ -61,7 +61,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
 	icon_state = "powerfist"
-	inhand_icon_state = "powerfist"
+	item_state = "powerfist"
 	hitsound = list('mojave/sound/ms13weapons/meleesounds/powerfist_hit1.ogg', 'mojave/sound/ms13weapons/meleesounds/powerfist_hit2.ogg', 'mojave/sound/ms13weapons/meleesounds/powerfist_hit3.ogg')
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/powerfist_pickup.ogg'
 	force = 40

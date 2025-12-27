@@ -24,7 +24,7 @@
 	desc = "A metal bucket, great for transporting liquids such as water."
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
 	icon_state = "bucket"
-	inhand_icon_state = "bucket"
+	item_state = "bucket"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	custom_materials = list(/datum/material/iron=200)

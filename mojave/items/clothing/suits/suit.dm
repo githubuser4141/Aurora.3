@@ -24,7 +24,7 @@
 	name = "generic ms13 toggleable"
 	desc = "Don't look. Don't look. NIGHTMARE NIGHTMARE NIGHTMARE."
 	icon_state = "winterjacketorange"
-	inhand_icon_state = "winter"
+	item_state = "winter"
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
@@ -49,7 +49,7 @@
 	name = "leather vest"
 	desc = "A vest made of tanned leather."
 	icon_state = "leather_vest"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST
 	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/large
 
@@ -57,12 +57,12 @@
 	name = "brown vest"
 	desc = "A brown vest, commonly worn by wannabe cowboys and prospectors."
 	icon_state = "brown_vest"
-	inhand_icon_state = "bos_jumpsuit"
+	item_state = "bos_jumpsuit"
 /obj/item/clothing/suit/ms13/vest/black
 	name = "black vest"
 	desc = "A black, fancy looking vest."
 	icon_state = "black_vest"
-	inhand_icon_state = "bos_jumpsuit_o"
+	item_state = "bos_jumpsuit_o"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -77,7 +77,7 @@
 	name = "leather jacket"
 	desc = "A typical leather jacket. Nothing too special about it."
 	icon_state = "leatherjacket"
-	inhand_icon_state = "leatherjacket"
+	item_state = "leatherjacket"
 	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -94,7 +94,7 @@
 	name = "merc veteran coat"
 	desc = "A blue padded coat adorned with war medals. Common attire for mercenaries."
 	icon_state = "veteran_coat"
-	inhand_icon_state = "leatherjacket"
+	item_state = "leatherjacket"
 	body_parts_covered = CHEST|GROIN
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -137,7 +137,7 @@
 	name = "reinforced leather jacket"
 	desc = "An atypical leather jacket reinforced with extra leather padding to make it into an actual makeshift suit of armor."
 	icon_state = "reinfljacket"
-	inhand_icon_state = "reinforcedjacket"
+	item_state = "reinforcedjacket"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
 	slowdown = 0.15
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -160,7 +160,7 @@
 /obj/item/clothing/suit/toggle/ms13/wjacket
 	name = "DO NOT USE ME - base type winter jacket"
 	desc = "If you are seeing this, someone fucked up."
-	inhand_icon_state = "winter"
+	item_state = "winter"
 	body_parts_covered = CHEST|GROIN|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -359,7 +359,7 @@
 	name = "ratskin jacket"
 	desc = "A durable jacket made from pigrat hide."
 	icon_state = "moleskinjacket"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -375,7 +375,7 @@
 	name = "wanderer jacket"
 	desc = "An old, worn jacket that has no doubt seen it's fair share of places."
 	icon_state = "wanderer"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -391,7 +391,7 @@
 	name = "military jacket"
 	desc = "An old school military jacket."
 	icon_state = "militaryjacket"
-	inhand_icon_state = "greenjump"
+	item_state = "greenjump"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -407,7 +407,7 @@
 	name = "musty jacket"
 	desc = "A musty, old jacket full of holes. Better than nothing."
 	icon_state = "mustyjacket"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -424,7 +424,7 @@
 	name = "biker jacket"
 	desc = "A classic tough and durable leather jacket, for riding the highways in badass style."
 	icon_state = "bikerjacket"
-	inhand_icon_state = "leatherjacket"
+	item_state = "leatherjacket"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -440,7 +440,7 @@
 	name = "letterman jacket"
 	desc = "A high school letterman jacket. For showing off your achievements in the post apocalypse."
 	icon_state = "letterman"
-	inhand_icon_state = "shirt"
+	item_state = "shirt"
 	body_parts_covered = CHEST|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -473,7 +473,7 @@
 	name = "tan trenchcoat"
 	desc = "A heavy tan trenchcoat."
 	icon_state = "tantrench"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|ARMS|GROIN|LEGS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -535,7 +535,7 @@
 	name = "black trenchcoat"
 	desc = "An imposingblack trenchcoat."
 	icon_state = "blacktrench"
-	inhand_icon_state = "leatherjacket"
+	item_state = "leatherjacket"
 	body_parts_covered = CHEST|ARMS|GROIN
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -609,7 +609,7 @@
 	name = "duster"
 	desc = "A typical leather duster."
 	icon_state = "duster"
-	inhand_icon_state = "duster"
+	item_state = "duster"
 	body_parts_covered = CHEST|GROIN|ARMS
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
@@ -673,7 +673,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "followers"
-	inhand_icon_state = "shirt"
+	item_state = "shirt"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -693,7 +693,7 @@
 	name = "vault lab coat"
 	desc = "A lab coat often worn by Vault doctors. Good for protecting your precious undersuit from rapid blood ejection from your patients."
 	icon_state = "vaultlabcoat"
-	inhand_icon_state = "shirt"
+	item_state = "shirt"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
                 EDGE_PROTECTION = 0, \
                 CRUSHING = CLASS1_CRUSH, \
@@ -714,7 +714,7 @@
 	name = "leather waders"
 	desc = "A pair of heavy duty leather waders, they've seen better days."
 	icon_state = "hort_waders"
-	inhand_icon_state = "hort_waders"
+	item_state = "hort_waders"
 	body_parts_covered = CHEST|GROIN|LEGS
 	permeability_coefficient = 0.5
 
@@ -722,7 +722,7 @@
 	name = "hubologist robes"
 	desc = "Long, dark, and imposing padded robes worn by Hubologists."
 	icon_state = "hubologist"
-	inhand_icon_state = "hostrench"
+	item_state = "hostrench"
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 15, "bio" = 10,  "fire" = 10, "acid" = 10, "wound" = 0)
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	hoodtype = /obj/item/clothing/head/hooded/ms13/hubologist
@@ -731,7 +731,7 @@
 	name = "\improper Manny Mammoth suit"
 	desc = "A perfectly preserved pre-war VINTAGE Manny Mammoth suit! It smells of crusty pizza."
 	icon_state = "mannybody"
-	inhand_icon_state = "mannyhead"
+	item_state = "mannyhead"
 
 // Drylanders //
 

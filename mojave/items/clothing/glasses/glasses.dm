@@ -4,7 +4,7 @@
 /obj/item/clothing/glasses/ms13
 	name = "generic ms13 glasses"
 	desc = "this doesn't even exist"
-	inhand_icon_state = "sunglasses"
+	item_state = "sunglasses"
 	icon = 'mojave/icons/objects/clothing/clothing_world/glasses_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/eyes.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
@@ -64,7 +64,7 @@
 	name = "metal goggles"
 	desc = "Tinted metal goggles for weathering the wastes, cold to the touch."
 	icon_state = "gogglemetal"
-	inhand_icon_state = "sunglasses"
+	item_state = "sunglasses"
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/gray
 	flags_cover = GLASSESCOVERSEYES

@@ -3,7 +3,7 @@
 	desc = "A radio backpack primarily in use by the NCR. The peak of NCR communication, when they feel like using it."
 	icon = 'mojave/icons/objects/clothing/clothing_inventory/backpack_inventory.dmi'
 	icon_state = "radiopack"
-	inhand_icon_state = "radiopack"
+	item_state = "radiopack"
 	worn_icon = 'mojave/icons/mob/clothing/back.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/equipment/backpack_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/equipment/backpack_righthand.dmi'
@@ -90,7 +90,7 @@
 	name = "walkie-talkie"
 	icon = 'mojave/icons/objects/tools/tools_inventory.dmi'
 	icon_state = "handradio"
-	inhand_icon_state = "handradio"
+	item_state = "handradio"
 	desc = "The important bit of the radiopack, this broadcasts and recieves radio messages in high quality with an amplified volume."
 	canhear_range = 3
 	radio_broadcast = RADIOSTATIC_LIGHT

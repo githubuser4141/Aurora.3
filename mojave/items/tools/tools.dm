@@ -7,7 +7,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "hammer"
-	inhand_icon_state = "hammer"
+	item_state = "hammer"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/genericblunt_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	force = 20
@@ -43,7 +43,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "handsaw"
-	inhand_icon_state = "handsaw"
+	item_state = "handsaw"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/hatchet_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	force = 25
@@ -76,7 +76,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "handdrill"
-	inhand_icon_state = "handdrill"
+	item_state = "handdrill"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/stab_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	force = 25
@@ -108,7 +108,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "crowbar"
-	inhand_icon_state = "crowbar"
+	item_state = "crowbar"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/pipe_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	force = 25
@@ -137,7 +137,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "torch"
-	inhand_icon_state = "torch"
+	item_state = "torch"
 	force = 10
 	throwforce = 10
 	subtractible_armour_penetration = 10
@@ -162,12 +162,12 @@
 /obj/item/weldingtool/ms13/update_icon_state()
 	. = ..()
 	if(welding)
-		inhand_icon_state = "[initial(inhand_icon_state)]-lit"
+		item_state = "[initial(item_state)]-lit"
 		icon_state = "[initial(icon_state)]-lit"
 		force = 25
 		damtype = BURN
 	else
-		inhand_icon_state = "[initial(inhand_icon_state)]"
+		item_state = "[initial(item_state)]"
 		icon_state = "[initial(icon_state)]"
 		force = 10
 		damtype = BRUTE
@@ -201,7 +201,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "wrench"
-	inhand_icon_state = "wrench"
+	item_state = "wrench"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/genericblunt_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	force = 15
@@ -227,7 +227,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "wirecutter"
-	inhand_icon_state = "wirecutter"
+	item_state = "wirecutter"
 	force = 5
 	sharpness = SHARP_POINTY
 	wound_bonus = CANT_WOUND
@@ -250,7 +250,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "screwdriver"
-	inhand_icon_state = "screwdriver"
+	item_state = "screwdriver"
 	flags_1 = CONDUCT_1
 	force = 15
 	sharpness = SHARP_IMPALING
@@ -276,7 +276,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "screwdriver"
-	inhand_icon_state = "screwdriver"
+	item_state = "screwdriver"
 	flags_1 = CONDUCT_1
 	force = 15
 	sharpness = SHARP_IMPALING
@@ -301,7 +301,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "shovel"
-	inhand_icon_state = "shovel"
+	item_state = "shovel"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/genericblunt_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/wooden_pickup.ogg'
 	force = 25
@@ -326,7 +326,7 @@
 	name = "spade"
 	desc = "A small, compact spade for digging up the ground. It's smaller size makes it not as efficent as using a full sized shovel."
 	icon_state = "spade"
-	inhand_icon_state = "spade"
+	item_state = "spade"
 	force = 20
 	throwforce = 10
 	subtractible_armour_penetration = 15
@@ -344,7 +344,7 @@
 	name = "snow shovel"
 	desc = "A shovel primarily meant for clearing snow, but could be used to dig somewhat inefficiently."
 	icon_state = "shovel_snow"
-	inhand_icon_state = "shovel_snow"
+	item_state = "shovel_snow"
 	force = 25
 	throwforce = 10
 	subtractible_armour_penetration = 0
@@ -357,7 +357,7 @@
 	name = "rake"
 	desc = "A rake used for raking. You could try to dig with it, but it won't do you much good."
 	icon_state = "rake"
-	inhand_icon_state = "rake"
+	item_state = "rake"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/stab_hit.ogg'
 	force = 25
 	throwforce = 10
@@ -399,7 +399,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "scissors"
-	inhand_icon_state = "scissors"
+	item_state = "scissors"
 	force = 15
 	throwforce = 5
 	toolspeed = 2
@@ -417,7 +417,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "brick"
-	inhand_icon_state = "brick"
+	item_state = "brick"
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/genericblunt_hit.ogg'
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_grip.ogg'
 	attack_verb_continuous = list("clonks", "smacks", "clocks", "nails", "bludgeons", "whacks", "bonks", "bricks")

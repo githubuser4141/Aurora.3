@@ -3,7 +3,7 @@
 	name = "lever action shotgun"
 	desc = "A trusty lever action shotgun with a tube supporting a maximum of five shells and a reinforced grip for bashing in heads."
 	icon_state = "levershot"
-	inhand_icon_state = "levershot"
+	item_state = "levershot"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/lever
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/levershot/leverrack.ogg'
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/levershot/levershotload.ogg'
@@ -38,7 +38,7 @@
 	name = "hunting shotgun"
 	desc = "A pre-war pump action shotgun with an extended tube capable of holding eight shells and a bulky stock that excels in melee combat."
 	icon_state = "huntingshot"
-	inhand_icon_state = "huntingshot"
+	item_state = "huntingshot"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/huntingshot
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/huntingshot/huntingshotpump.ogg'
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/huntingshot/huntingshotload2.ogg'
@@ -72,7 +72,7 @@
 	name = "trail carbine"
 	desc = "A lever action repeater chambered for .44 Magnum with a solid capacity."
 	icon_state = "trail"
-	inhand_icon_state = "trail"
+	item_state = "trail"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube44
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -96,7 +96,7 @@
 	name = "cowboy repeater"
 	desc = "A classic lever action repeater chambered for .357."
 	icon_state = "cowboy"
-	inhand_icon_state = "cowboy"
+	item_state = "cowboy"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube357
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -120,7 +120,7 @@
 	name = "brush gun"
 	desc = "A lever action repeater chambered for the deadly .45-70 cartridge. Can't carry a lot of rounds, but with so much damage does that really matter?"
 	icon_state = "brush"
-	inhand_icon_state = "brush"
+	item_state = "brush"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube4570
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -144,7 +144,7 @@
 	name = "\improper Soviet battle rifle"
 	desc = "An old Soviet semi-automatic rifle chambered for 7.62 rounds and normally fed from 10 round stripper clips."
 	icon_state = "sks"
-	inhand_icon_state = "sks"
+	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/sks
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
@@ -180,7 +180,7 @@
 	name = "scoped Soviet battle rifle"
 	desc = "A Soviet battle rifle with a scope attached and some improved rifling for better accuracy. The added weight of the scope will slow the user down."
 	icon_state = "scoped_sks"
-	inhand_icon_state = "scoped_sks"
+	item_state = "scoped_sks"
 	spread = 2
 	slowdown = 1
 	has_scope = TRUE

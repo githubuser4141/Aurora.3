@@ -59,7 +59,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "ointment"
-	inhand_icon_state = "ointment"
+	item_state = "ointment"
 	amount = 12
 	max_amount = 12
 	heal_burn = 8
@@ -77,7 +77,7 @@
 	desc = "Some high quality burn dressings meant to be applied to burns to aid in the healing process."
 	singular_name = "dressing"
 	icon_state = "burndress"
-	inhand_icon_state = null
+	item_state = null
 	heal_burn = 12
 	gender = PLURAL
 	merge_type = /obj/item/stack/medical/ointment/ms13/dressing
@@ -93,7 +93,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "bandage"
-	inhand_icon_state = "bandage"
+	item_state = "bandage"
 	max_amount = 12
 	amount = 12
 	novariants = TRUE
@@ -119,7 +119,7 @@
 	name = "military gauze"
 	desc = "A sterile and elastic roll of gauze with a handle used to help pin the dressing down. Very good at soaking up blood from wounds."
 	icon_state = "bandage_m"
-	inhand_icon_state = "bandage_m"
+	item_state = "bandage_m"
 	burn_cleanliness_bonus = 0.3 //Lower = better
 	merge_type = /obj/item/stack/medical/gauze/ms13/military
 	gauze_type = /datum/bodypart_aid/gauze/ms13/military

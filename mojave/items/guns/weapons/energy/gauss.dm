@@ -19,7 +19,7 @@
 	desc = "A bulky, slow firing, but devastating gauss rifle."
 	base_icon_state = "usgauss"
 	icon_state = "usgauss"
-	inhand_icon_state = "usgauss"
+	item_state = "usgauss"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/gauss/rifle)
 	fire_delay = 0.9 SECONDS
 	recoil = 1.5
@@ -33,7 +33,7 @@
 	desc = "A gauss rifle with a scope attached, intended for the best of the best marksmen."
 	base_icon_state = "m72"
 	icon_state = "m72"
-	inhand_icon_state = "m72"
+	item_state = "m72"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/gauss/sniper)
 	fire_delay = 0.8 SECONDS
 	recoil = 1
@@ -51,7 +51,7 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/gauss_light.ogg'
 	base_icon_state = "ppk12"
 	icon_state = "ppk12"
-	inhand_icon_state = "ppk12"
+	item_state = "ppk12"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/gauss/pistol)
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
@@ -70,7 +70,7 @@
 	name = "\improper Chinese gauss rifle"
 	desc = "A Chinese gauss rifle. Unknown how it got here, the only thing that's relevant is that it's here now. Used microfusion cells to propel its limited internal magazine."
 	icon_state = "chinagauss"
-	inhand_icon_state = "chinagauss"
+	item_state = "chinagauss"
 	internal_magazine = TRUE
 	mag_type = /obj/item/ammo_box/magazine/ms13/gauss/internal
 	extra_damage = 30

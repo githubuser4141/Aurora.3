@@ -25,7 +25,7 @@
 	name = "stimpak"
 	desc = "A basic stimpak. It's a quick and easy way to ensure you continue to live as long as you avoid battle while your wounds mend."
 	icon_state = "stim"
-	inhand_icon_state = "stim"
+	item_state = "stim"
 	volume = 10
 	amount_per_transfer_from_this = 10
 	reagents_to_add = list(/singleton/reagent/ms13/medicine/stimpak_fluid = 10)
@@ -51,14 +51,14 @@
 	. = ..()
 	if(reagents.total_volume > 0)
 		icon_state = initial(icon_state)
-		inhand_icon_state = initial(inhand_icon_state)
+		item_state = initial(item_state)
 	else
 		icon_state = "[initial(icon_state)]0"
-		inhand_icon_state = "[initial(inhand_icon_state)]0"
+		item_state = "[initial(item_state)]0"
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/stimpak/super
 	name = "super stimpak"
 	desc = "A stimpak augmented with an additional vial of chemicals and a belt to strap it to the point of injection."
 	icon_state = "superstim"
-	inhand_icon_state = "superstim"
+	item_state = "superstim"
 	reagents_to_add = list(/singleton/reagent/ms13/medicine/stimpak_fluid/super = 10)

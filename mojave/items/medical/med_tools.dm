@@ -7,7 +7,7 @@
 	icon_state = "hemostat"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "hemostat"
+	item_state = "hemostat"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
@@ -23,7 +23,7 @@
 	icon_state = "retractor"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "retractor"
+	item_state = "retractor"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
@@ -39,7 +39,7 @@
 	icon_state = "bonesaw"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "bonesaw"
+	item_state = "bonesaw"
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_width = 96
 	grid_height = 32
@@ -60,7 +60,7 @@
 	icon_state = "cautery"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "cautery"
+	item_state = "cautery"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
@@ -76,7 +76,7 @@
 	icon_state = "scalpel"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "scalpel"
+	item_state = "scalpel"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
@@ -94,7 +94,7 @@
 	icon_state = "bonesetter"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "bonesetter"
+	item_state = "bonesetter"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
@@ -109,7 +109,7 @@
 	icon_state = "surgical_drapes"
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	inhand_icon_state = "surgical_drapes"
+	item_state = "surgical_drapes"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32

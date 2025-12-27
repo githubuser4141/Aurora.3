@@ -9,7 +9,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "knife_kitchen"
-	inhand_icon_state = "knife_kitchen"
+	item_state = "knife_kitchen"
 	hitsound = list('mojave/sound/ms13weapons/meleesounds/knife_hit1.ogg', 'mojave/sound/ms13weapons/meleesounds/knife_hit2.ogg')
 	pickup_sound = list('mojave/sound/ms13weapons/meleesounds/knife_pickup1.ogg', 'mojave/sound/ms13weapons/meleesounds/knife_pickup2.ogg')
 	force = 20
@@ -36,7 +36,7 @@
 	name = "combat knife"
 	desc = "A well made, serrated combat knife. Not to be underestimated."
 	icon_state = "knife_bayonet"
-	inhand_icon_state = "knife_bayonet"
+	item_state = "knife_bayonet"
 	force = 30
 	throwforce = 25
 	subtractible_armour_penetration = 20
@@ -49,13 +49,13 @@
 	name = "\improper Soviet combat knife"
 	desc = "A slick, straight back combat knife of Soviet make. Seems quite old, and has a faint engraving reading NKVD."
 	icon_state = "knife_soviet"
-	inhand_icon_state = "knife_soviet"
+	item_state = "knife_soviet"
 
 /obj/item/knife/ms13/combat/bowie
 	name = "bowie knife"
 	desc = "A heavy duty bowie knife. Incredibly dangerous in skilled hands."
 	icon_state = "knife_bowie"
-	inhand_icon_state = "knife_bowie"
+	item_state = "knife_bowie"
 	force = 35
 	throwforce = 30
 	subtractible_armour_penetration = 25
@@ -68,7 +68,7 @@
 	name = "hunting knife"
 	desc = "A standard hunting knife, a useful tool for anyone in the post apocalypse."
 	icon_state = "knife_hunting"
-	inhand_icon_state = "knife_hunting"
+	item_state = "knife_hunting"
 	force = 25
 	throwforce = 20
 	subtractible_armour_penetration = 15
@@ -81,7 +81,7 @@
 	name = "\improper Hunter's Pride"
 	desc = "A gold rimmed hunting knife with an added finger loop to assist in grip. It is in a pristine overall condition, someone took great care of this."
 	icon_state = "knife_hunting_u"
-	inhand_icon_state = "knife_hunting_u"
+	item_state = "knife_hunting_u"
 	force = 25
 	throwforce = 25
 	subtractible_armour_penetration = 25
@@ -91,7 +91,7 @@
 	name = "throwing knife"
 	desc = "A sharp, pointed knife designed to be thrown."
 	icon_state = "knife_throwing"
-	inhand_icon_state = "knife_throwing"
+	item_state = "knife_throwing"
 	force = 15
 	throwforce = 20
 	subtractible_armour_penetration = 5
@@ -108,7 +108,7 @@
 	name = "switchblade"
 	desc = "A slick and concealable switchblade."
 	icon_state = "knife_switch_closed"
-	inhand_icon_state = "knife_switch_closed"
+	item_state = "knife_switch_closed"
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	wound_bonus = 10
 	bare_wound_bonus = 5
@@ -120,7 +120,7 @@
 	open = !open
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)
 	icon_state = "knife_switch_[open ? "open" : "closed"]"
-	inhand_icon_state = "knife_switch_[open ? "open" : "closed"]"
+	item_state = "knife_switch_[open ? "open" : "closed"]"
 
 	if(open)
 		attack_verb_continuous = list("slashes", "slices", "tears", "lacerates", "rips", "dices", "cuts")
@@ -152,7 +152,7 @@
 	name = "straight razor"
 	desc = "A men's shaving tool, now more commonly used to cut throats instead of beards."
 	icon_state = "knife_razor_closed"
-	inhand_icon_state = "knife_razor_closed"
+	item_state = "knife_razor_closed"
 	wound_bonus = 5
 	bare_wound_bonus = 5
 	edge_protection_penetration = 0
@@ -162,7 +162,7 @@
 	open = !open
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 50, TRUE)
 	icon_state = "knife_razor_[open ? "open" : "closed"]"
-	inhand_icon_state = "knife_razor_[open ? "open" : "closed"]"
+	item_state = "knife_razor_[open ? "open" : "closed"]"
 
 	if(open)
 		attack_verb_continuous = list("slashes", "slices", "tears", "lacerates", "rips", "dices", "cuts")
@@ -199,7 +199,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "knife_cleaver"
-	inhand_icon_state = "knife_cleaver"
+	item_state = "knife_cleaver"
 	hitsound = list('mojave/sound/ms13weapons/meleesounds/blade_hit1.ogg', 'mojave/sound/ms13weapons/meleesounds/blade_hit2.ogg')
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/blade_pickup2.ogg'
 	force = 25
@@ -224,7 +224,7 @@
 	name = "\improper Chopper"
 	desc = "A cleaver that has definitely seen a lot of use and is heavily rusted. Though it still looks like it could chop off a limb, or give a case of tetanus while trying."
 	icon_state = "knife_cleaver_rust"
-	inhand_icon_state = "knife_cleaver_rust"
+	item_state = "knife_cleaver_rust"
 	force = 30
 	wound_bonus = 15
 	bare_wound_bonus = 15
@@ -234,7 +234,7 @@
 	name = "improvised shiv"
 	desc = "A makeshift, dangerous looking shiv. No good for cutting someone, but excellent at getting a few stabs in in a pinch."
 	icon_state = "tribal_knife"
-	inhand_icon_state = "tribal_knife"
+	item_state = "tribal_knife"
 	force = 25
 	throwforce = 15
 	subtractible_armour_penetration = 10

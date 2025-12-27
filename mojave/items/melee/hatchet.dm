@@ -9,7 +9,7 @@
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	icon_state = "hatchet"
-	inhand_icon_state = "hatchet"
+	item_state = "hatchet"
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/wooden_pickup.ogg'
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/hatchet_hit.ogg'
 	force = 30
@@ -36,7 +36,7 @@
 	name = "broad hatchet"
 	desc = "A broad headed hatchet that is heftier and more dangerous than it's simpler cousin."
 	icon_state = "hatchet_broad"
-	inhand_icon_state = "hatchet_broad"
+	item_state = "hatchet_broad"
 	force = 35
 	throwforce = 30
 	subtractible_armour_penetration = 25
@@ -47,7 +47,7 @@
 	name = "ice pick"
 	desc = "A standard ice pick that is as good at breaking up ice as it is at breaking skulls."
 	icon_state = "ice_pick"
-	inhand_icon_state = "ice_pick"
+	item_state = "ice_pick"
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/stab_hit.ogg'
 	force = 25
@@ -64,7 +64,7 @@
 	name = "tomahawk"
 	desc = "A makeshift tomahawk, primarily intended for throwing. Two long spikes protrude, used for digging into the target."
 	icon_state = "tomahawk"
-	inhand_icon_state = "tomahawk"
+	item_state = "tomahawk"
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/general_pickup.ogg'
 	hitsound = 'mojave/sound/ms13weapons/meleesounds/stab_hit.ogg'
 	force = 20

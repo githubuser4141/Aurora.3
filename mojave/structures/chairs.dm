@@ -230,7 +230,7 @@
 	desc = "Scream at the coders if you see this."
 	icon = 'mojave/icons/structure/chairs.dmi'
 	icon_state = "metal_chair_toppled"
-	inhand_icon_state = "metal_chair"
+	item_state = "metal_chair"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/chairs_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/chairs_righthand.dmi'
 	custom_materials = null
@@ -243,71 +243,71 @@
 	name = "metal chair"
 	desc = "An uncomfortable chair."
 	icon_state = "metal_chair_toppled"
-	inhand_icon_state = "metal_chair"
+	item_state = "metal_chair"
 	origin_type = /obj/structure/chair/ms13/metal
 
 /obj/item/chair/ms13/metal/broken
 	desc = "A broken chair that is somehow more comfortable than a regular one."
 	icon_state = "metal_chair_broken_toppled"
-	inhand_icon_state = "metal_chair_broken"
+	item_state = "metal_chair_broken"
 	origin_type = /obj/structure/chair/ms13/metal/broken
 
 /obj/item/chair/ms13/metal/unfinished
 	desc = "Without a backrest, this chair is essentially a stool with rods."
 	icon_state = "metal_chair_unfinished_toppled"
-	inhand_icon_state = "metal_chair_unfinished"
+	item_state = "metal_chair_unfinished"
 	origin_type = /obj/structure/chair/ms13/metal/unfinished
 
 /obj/item/chair/ms13/metal/blue
 	name = "metal chair"
 	desc = "An uncomfortable chair."
 	icon_state = "metal_chair_blue_toppled"
-	inhand_icon_state = "metal_chair"
+	item_state = "metal_chair"
 	origin_type = /obj/structure/chair/ms13/metal/blue
 
 /obj/item/chair/ms13/metal/blue/broken
 	desc = "A broken chair that is somehow more comfortable than a regular one."
 	icon_state = "metal_chair_blue_broken_toppled"
-	inhand_icon_state = "metal_chair_broken"
+	item_state = "metal_chair_broken"
 	origin_type = /obj/structure/chair/ms13/metal/blue/broken
 
 /obj/item/chair/ms13/metal/blue/unfinished
 	desc = "Without a backrest, this chair is essentially a stool with rods."
 	icon_state = "metal_chair_blue_unfinished_toppled"
-	inhand_icon_state = "metal_chair_unfinished"
+	item_state = "metal_chair_unfinished"
 	origin_type = /obj/structure/chair/ms13/metal/blue/unfinished
 
 /obj/item/chair/ms13/metal/red
 	name = "metal chair"
 	desc = "An uncomfortable chair."
 	icon_state = "metal_chair_red_toppled"
-	inhand_icon_state = "metal_chair"
+	item_state = "metal_chair"
 	origin_type = /obj/structure/chair/ms13/metal/red
 
 /obj/item/chair/ms13/metal/red/broken
 	desc = "A broken chair that is somehow more comfortable than a regular one."
 	icon_state = "metal_chair_red_broken_toppled"
-	inhand_icon_state = "metal_chair_broken"
+	item_state = "metal_chair_broken"
 	origin_type = /obj/structure/chair/ms13/metal/red/broken
 
 /obj/item/chair/ms13/metal/red/unfinished
 	desc = "Without a backrest, this chair is essentially a stool with rods."
 	icon_state = "metal_chair_red_unfinished_toppled"
-	inhand_icon_state = "metal_chair_unfinished"
+	item_state = "metal_chair_unfinished"
 	origin_type = /obj/structure/chair/ms13/metal/red/unfinished
 
 /obj/item/chair/ms13/metal/folding
 	name = "metal folding chair"
 	desc = "Before the war, These were viewed as the lowest form of seat. Now? What's not to love. It's a chair that's easily moveable. Genius!"
 	icon_state = "metal_chair_folding_toppled"
-	inhand_icon_state = "metal_chair_folding"
+	item_state = "metal_chair_folding"
 	origin_type = /obj/structure/chair/ms13/metal/folding
 
 /obj/item/chair/ms13/metal/stool
 	name = "bar stool"
 	desc = "A bar stool. It's help up against time rather well. Perfect to prop yourself up on after a long day."
 	icon_state = "barstool_toppled"
-	inhand_icon_state = "stool"
+	item_state = "stool"
 	origin_type = /obj/structure/chair/ms13/metal/stool
 
 // Office Chair Items //
@@ -321,39 +321,39 @@
 	name = "office chair"
 	desc = "Still spins, but not like this."
 	icon_state = "office_chair_toppled"
-	inhand_icon_state = "office_chair"
+	item_state = "office_chair"
 	origin_type = /obj/structure/chair/office/ms13/red
 
 /obj/item/chair/ms13/metal/office/red/broken
 	desc = "Hardly spins. Especially not like this."
 	icon_state = "office_chair_broken_toppled"
-	inhand_icon_state = "office_chair_broken"
+	item_state = "office_chair_broken"
 	origin_type = /obj/structure/chair/office/ms13/red/broken
 
 /obj/item/chair/ms13/metal/office/blue
 	name = "office chair"
 	desc = "Still spins, but not like this."
 	icon_state = "office_chair_blue_toppled"
-	inhand_icon_state = "office_chair_blue"
+	item_state = "office_chair_blue"
 	origin_type = /obj/structure/chair/office/ms13/blue
 
 /obj/item/chair/ms13/metal/office/blue/broken
 	desc = "Hardly spins. Especially not like this."
 	icon_state = "office_chair_blue_broken_toppled"
-	inhand_icon_state = "office_chair_blue"
+	item_state = "office_chair_blue"
 	origin_type = /obj/structure/chair/office/ms13/blue/broken
 
 /obj/item/chair/ms13/metal/office/green
 	name = "office chair"
 	desc = "Still spins, but not like this."
 	icon_state = "office_chair_green_toppled"
-	inhand_icon_state = "office_chair_green"
+	item_state = "office_chair_green"
 	origin_type = /obj/structure/chair/office/ms13/green
 
 /obj/item/chair/ms13/metal/office/green/broken
 	desc = "Hardly spins. Especially not like this."
 	icon_state = "office_chair_green_broken_toppled"
-	inhand_icon_state = "office_chair_green"
+	item_state = "office_chair_green"
 	origin_type = /obj/structure/chair/office/ms13/green/broken
 
 // Wood Chair Items //
@@ -362,7 +362,7 @@
 	name = "wooden chair"
 	desc = "An antique wooden chair with a small green cushion."
 	icon_state = "wood_chair_toppled"
-	inhand_icon_state = "wood_chair"
+	item_state = "wood_chair"
 	custom_materials = list(/datum/material/wood = 2000)
 	origin_type = /obj/structure/chair/ms13/wood
 
@@ -370,7 +370,7 @@
 	name = "padded wooden chair"
 	desc = "An antique wooden chair with a large, plush red cushion"
 	icon_state = "wood_chair_padded_toppled"
-	inhand_icon_state = "wood_chair_padded"
+	item_state = "wood_chair_padded"
 	origin_type = /obj/structure/chair/ms13/wood/padded
 
 // Misc Chair Items //
@@ -384,7 +384,7 @@
 	throw_range = 5
 	break_chance = 5
 	icon_state = "plastic_chair_toppled"
-	inhand_icon_state = "plastic_chair"
+	item_state = "plastic_chair"
 	origin_type = /obj/structure/chair/ms13/overlaypickup/plastic
 
 /obj/structure/chair/comfy/ms13/diner

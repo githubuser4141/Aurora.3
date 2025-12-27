@@ -2,7 +2,7 @@
 	name = "\improper Legion fatigues"
 	desc = "A standard uniform worn by members of Caesar's Legion."
 	icon_state = "leg_skirt"
-	inhand_icon_state = "bl_suit"
+	item_state = "bl_suit"
 	body_parts_covered = CHEST|GROIN
 
 /obj/item/clothing/under/ms13/legion/fatigues/dark

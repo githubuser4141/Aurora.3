@@ -5,7 +5,7 @@
 	desc = "An old wax candle, ready to be lit and provide a false sense of comfort."
 	icon = 'mojave/icons/objects/tools/lightables_world.dmi'
 	icon_state = "candle1"
-	inhand_icon_state = "candle1"
+	item_state = "candle1"
 	w_class = WEIGHT_CLASS_TINY
 	light_color = LIGHT_COLOR_FIRE
 	heat = 1000

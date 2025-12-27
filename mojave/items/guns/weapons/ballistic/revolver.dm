@@ -3,7 +3,7 @@
 	name = "caravan shotgun"
 	desc = "A well worn but reliable double barrel shotgun with a tighter spread than other shotguns."
 	icon_state = "caravan"
-	inhand_icon_state = "caravan"
+	item_state = "caravan"
 	force = 20
 	subtractible_armour_penetration = 5
 	fire_delay = 0.45 SECONDS
@@ -28,7 +28,7 @@
 	name = "sawed-off shotgun"
 	desc = "A double barrel sawed-off shotgun. Can be used and fired with only one hand, making it a deadly weapon in a pinch."
 	icon_state = "sawedoff"
-	inhand_icon_state = "sawedoff"
+	item_state = "sawedoff"
 	force = 15
 	subtractible_armour_penetration = 0
 	spread_reduction = CHOKE_LOOSE
@@ -44,7 +44,7 @@
 	name = "single shotgun"
 	desc = "A very cheap and very common lightweight shotgun with only a single round, better make it count. It has a very tight choke that enhances its effective range."
 	icon_state = "singleshot"
-	inhand_icon_state = "singleshot"
+	item_state = "singleshot"
 	force = 20
 	subtractible_armour_penetration = 5
 	fire_delay = 0.45 SECONDS
@@ -69,7 +69,7 @@
 	name = "revolver shotgun"
 	desc = "A strange shotgun resembling a revolver. Fires semi-automatic and faster than most shotguns."
 	icon_state = "revrifle"
-	inhand_icon_state = "revrifle"
+	item_state = "revrifle"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
@@ -93,7 +93,7 @@
 	name = "short revolver shotgun"
 	desc = "A cut down revolving shotgun. The stock is still intact, keep it that way. Half the barrel, half the accuracy- yet twice the fun."
 	icon_state = "revrifle_shorty"
-	inhand_icon_state = "revrifle_shorty"
+	item_state = "revrifle_shorty"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
@@ -112,7 +112,7 @@
 	name = "derringer"
 	desc = "A small and sneaky 2 shot pistol that is often concealed. Chambered for .357."
 	icon_state = "derringer"
-	inhand_icon_state = "derringer"
+	item_state = "derringer"
 	force = 5
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/ms13/derringer
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/55.6/556revload2.ogg' //placeholder
@@ -133,13 +133,13 @@
 	name = "gold trimmed derringer"
 	desc = "A small and sneaky 2 shot pistol that is often concealed. This one has some gold trim."
 	icon_state = "derringer_t"
-	inhand_icon_state = "derringer_t"
+	item_state = "derringer_t"
 
 /obj/item/gun/ballistic/revolver/ms13/rev44
 	name = ".44 magnum revolver"
 	desc = "A double action revolver chambered for .44 Magnum rounds. Decently fast and damaging at the same time."
 	icon_state = "44magnum"
-	inhand_icon_state = "44magnum"
+	item_state = "44magnum"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/rev44
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumload.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumload.ogg'
@@ -159,14 +159,14 @@
 	name = "\improper Mysterious Magnum"
 	desc = "A unique .44 Magnum with a silver finish for style and an improved hammer for faster firing. Something sure is mysterious about this gun though."
 	icon_state = "mysterious"
-	inhand_icon_state = "mysterious"
+	item_state = "mysterious"
 	fire_delay = 0.5 SECONDS
 
 /obj/item/gun/ballistic/revolver/ms13/rev357
 	name = ".357 magnum revolver"
 	desc = "A classic .357 Magnum revolver, packs a decent punch but fires a bit slower due to it's old mechanisms."
 	icon_state = "rev357"
-	inhand_icon_state = "rev357"
+	item_state = "rev357"
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/357/357load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/357/357load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnum_eject2.ogg'
@@ -186,14 +186,14 @@
 	name = "\improper Lucky"
 	desc = "A unique .357 Magnum with fancy engravings and a nice finish. The lucky nature of the gun seems to make it almost dead accurate."
 	icon_state = "lucky"
-	inhand_icon_state = "lucky"
+	item_state = "lucky"
 	spread = 2
 
 /obj/item/gun/ballistic/revolver/ms13/rev357/police
 	name = "police revolver"
 	desc = "A lightweight, short .357 revolver that can be easily stored and hidden, commonly used by pre-war police forces. The shorter barrel of the gun reduces accuracy and increases recoil."
 	icon_state = "policerev"
-	inhand_icon_state = "policerev"
+	item_state = "policerev"
 	fire_sound = 'mojave/sound/ms13weapons/policepistol.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/policepistol.ogg'
 	w_class = WEIGHT_CLASS_SMALL
@@ -208,7 +208,7 @@
 	name = "10mm revolver"
 	desc = "A bulky revolver chambered for 10mm rounds with a five round capacity."
 	icon_state = "rev10mm"
-	inhand_icon_state = "rev10mm"
+	item_state = "rev10mm"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/rev10mm
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/55.6/556revload2.ogg' //placeholder
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/55.6/556revload2.ogg' //placeholder
@@ -228,7 +228,7 @@
 	name = "hunting revolver"
 	desc = "A slow firing revolver chambered for heavy .45-70 rounds and only carrying five at a time. Make every shot count."
 	icon_state = "huntingrev"
-	inhand_icon_state = "huntingrev"
+	item_state = "huntingrev"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/rev4570
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumload.ogg' //placeholder
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumload.ogg' //placeholder
@@ -248,7 +248,7 @@
 	name = "\improper Sequoia"
 	desc = "A unique and modified .45-70 revolver that is more controllable with a better rate of fire."
 	icon_state = "sequoia"
-	inhand_icon_state = "sequoia"
+	item_state = "sequoia"
 	recoil = 1.5
 	fire_delay = 0.6 SECONDS
 
@@ -256,7 +256,7 @@
 	name = "5.56 revolver"
 	desc = "A modern and fast firing revolver firing 5.56 rifle rounds."
 	icon_state = "556rev"
-	inhand_icon_state = "556rev"
+	item_state = "556rev"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/rev556
 	load_sound = 'mojave/sound/ms13weapons/gunsounds/55.6/556revload2.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/55.6/556revload2.ogg'

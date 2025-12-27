@@ -9,7 +9,7 @@
 	world_state = "generic"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/smokeables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/smokeables_righthand.dmi'
-	inhand_icon_state = "lucky"
+	item_state = "lucky"
 	w_class = WEIGHT_CLASS_SMALL
 	gender = PLURAL
 	spawn_type = /obj/item/ms13/cigarette
@@ -151,7 +151,7 @@
 	icon_state = "marl"
 	inventory_state = "marl_pack"
 	world_state = "marl"
-	inhand_icon_state = "red"
+	item_state = "red"
 	spawn_type = /obj/item/ms13/cigarette/marlboro
 
 /obj/item/storage/fancy/ms13/cigarettes/marlboro/random
@@ -163,7 +163,7 @@
 	icon_state = "wins"
 	inventory_state = "wins_pack"
 	world_state = "wins"
-	inhand_icon_state = "red"
+	item_state = "red"
 	spawn_type = /obj/item/ms13/cigarette/winston
 
 /obj/item/storage/fancy/ms13/cigarettes/winston/random
@@ -175,7 +175,7 @@
 	icon_state = "lucky"
 	inventory_state = "lucky_pack"
 	world_state = "lucky"
-	inhand_icon_state = "lucky"
+	item_state = "lucky"
 	spawn_type = /obj/item/ms13/cigarette/lucky
 	amount = 7
 	max_amount = 7
@@ -191,7 +191,7 @@
 	icon_state = "salem"
 	inventory_state = "salem_pack"
 	world_state = "salem"
-	inhand_icon_state = "green"
+	item_state = "green"
 	spawn_type = /obj/item/ms13/cigarette/salem
 
 /obj/item/storage/fancy/ms13/cigarettes/salem/random
@@ -203,7 +203,7 @@
 	icon_state = "kool"
 	inventory_state = "kool_pack"
 	world_state = "kool"
-	inhand_icon_state = "green"
+	item_state = "green"
 	spawn_type = /obj/item/ms13/cigarette/kools
 	othertype = FALSE
 
@@ -218,7 +218,7 @@
 	icon_state = "custom"
 	inventory_state = "custom_pack"
 	world_state = "custom"
-	inhand_icon_state = "brown"
+	item_state = "brown"
 	spawn_type = /obj/item/ms13/cigarette/rollie
 	othertype = FALSE
 	pack_overlay = "rolled"
@@ -235,7 +235,7 @@
 	icon_state = "repub"
 	inventory_state = "repub_pack"
 	world_state = "repub"
-	inhand_icon_state = "brown"
+	item_state = "brown"
 	spawn_type = /obj/item/ms13/cigarette/rollie/republic
 
 /obj/item/storage/fancy/ms13/cigarettes/rollies/republics/random

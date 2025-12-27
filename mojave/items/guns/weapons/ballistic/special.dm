@@ -2,7 +2,7 @@
 	name = "m79 grenade launcher"
 	desc = "An m79 grenade launcher, capable of lobbing ordinance or otherwise a considerable distance."
 	icon_state = "m79"
-	inhand_icon_state = "m79"
+	item_state = "m79"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY

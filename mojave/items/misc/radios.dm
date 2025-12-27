@@ -4,7 +4,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "handradio"
-	inhand_icon_state = "handradio"
+	item_state = "handradio"
 	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
 	worn_icon_state = "empty_placeholder"
 	desc = "A basic handheld radio that recieves over a relatively long range, unfortunately this one can't broadcast."

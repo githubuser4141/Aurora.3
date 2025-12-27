@@ -26,7 +26,7 @@
 
 /obj/item/food/grown/ms13
 	icon = 'mojave/icons/hydroponics/harvest/harvest_world.dmi'
-	inhand_icon_state = "plant"
+	item_state = "plant"
 	lefthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	can_distill = TRUE

@@ -3,7 +3,7 @@
 	name = "police 10mm pistol"
 	desc = "A pre-war 10mm pistol normally seen in the hands of law enforcement."
 	icon_state = "police10mm"
-	inhand_icon_state = "police10mm"
+	item_state = "police10mm"
 	mag_type = /obj/item/ammo_box/magazine/ms13/m10mm
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/45/45rack.ogg' //placeholder
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/45/45rack.ogg' //placeholder
@@ -25,13 +25,13 @@
 	name = "military 10mm pistol"
 	desc = "A 10mm pistol typically used as a side arm by the pre-war US military."
 	icon_state = "mil10mm"
-	inhand_icon_state = "mil10mm"
+	item_state = "mil10mm"
 
 /obj/item/gun/ballistic/automatic/pistol/ms13/m10mm/chinese
 	name = "\improper Chinese pistol"
 	desc = "A mass produced pre-war Chinese pistol chambered for 10mm rounds."
 	icon_state = "cpistol"
-	inhand_icon_state = "cpistol"
+	item_state = "cpistol"
 	mag_type = /obj/item/ammo_box/magazine/internal/ms13/cpistol
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumeject.ogg' //placeholder
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/44/magnumeject.ogg' //placeholder
@@ -57,14 +57,14 @@
 	name = "v420 Chinese pistol"
 	desc = "A prototype Chinese pistol with a faster fire rate and much better looks."
 	icon_state = "420pistol"
-	inhand_icon_state = "420pistol"
+	item_state = "420pistol"
 	fire_delay = 0.4 SECONDS
 
 /obj/item/gun/ballistic/automatic/pistol/ms13/m9mm
 	name = "9mm pistol"
 	desc = "A very common and easy to handle 9mm pistol."
 	icon_state = "9mm"
-	inhand_icon_state = "9mm"
+	item_state = "9mm"
 	mag_type = /obj/item/ammo_box/magazine/ms13/m9mm
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/9mm/9mm_rack2.ogg'
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/9mm/9mmrack.ogg'
@@ -87,7 +87,7 @@
 	name = "Nambu type 14"
 	desc = "An unreliable ancient pre-war pistol chambered in 9mm nambu."
 	icon_state = "nambu"
-	inhand_icon_state = "nambu"
+	item_state = "nambu"
 	mag_type = /obj/item/ammo_box/magazine/ms13/m9mm
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/9mm/9mm1.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
@@ -100,7 +100,7 @@
 	name = "12.7mm pistol"
 	desc = "A pre-war, heavy duty European pistol chambered in 12.7mm. Might not look like it, but it can do some real damage."
 	icon_state = "m12mm"
-	inhand_icon_state = "m12mm"
+	item_state = "m12mm"
 	mag_type = /obj/item/ammo_box/magazine/ms13/m12mm
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/12mm/12mmrack3.ogg'
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/12mm/12mmrack.ogg'
@@ -122,7 +122,7 @@
 	name = ".45 pistol"
 	desc = "A classic handgun chambered in .45 caliber. What's not to love?"
 	icon_state = "45pistol"
-	inhand_icon_state = "45pistol"
+	item_state = "45pistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/ms13/m45
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/45/45rack.ogg'
@@ -145,7 +145,7 @@
 	name = "\improper Stallion"
 	desc = "A fancy, well kept, and improved .45 pistol. An even better version of the classic. Sports improved rate of fire and accuracy."
 	icon_state = "stallion"
-	inhand_icon_state = "stallion"
+	item_state = "stallion"
 	fire_delay = 0.4 SECONDS
 	spread = 5
 
@@ -153,7 +153,7 @@
 	name = "desert eagle"
 	desc = "A hard hitting, heavy handgun uniquely chambered for .44 magnum rounds."
 	icon_state = "deagle"
-	inhand_icon_state = "deagle"
+	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/ms13/deagle
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/45/45rack.ogg' //placeholder
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/45/45rack.ogg' //placeholder
@@ -175,7 +175,7 @@
 	name = ".22 pistol"
 	desc = "An extremely weak but also extremely easy to conceal .22 pistol. This one has an integrated suppressor."
 	icon_state = "22pistol"
-	inhand_icon_state = "22pistol"
+	item_state = "22pistol"
 	mag_type = /obj/item/ammo_box/magazine/ms13/m22
 	rack_sound = 'mojave/sound/ms13weapons/gunsounds/9mm/9mm_rack2.ogg'
 	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/9mm/9mmrack.ogg'

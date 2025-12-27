@@ -21,7 +21,7 @@
 	name = "black bandana"
 	desc = "A black bandana useful for keeping dust, snow, and prying eyes away from your face."
 	icon_state = "bandana"
-	inhand_icon_state = "winterglovesbrown"
+	item_state = "winterglovesbrown"
 	flags_inv = HIDEFACE
 	flags_cover = MASKCOVERSMOUTH
 
@@ -146,13 +146,13 @@
 	name = "\improper Legion speculatore mask"
 	desc = "A mask only worn by the near unheard of Speculatores of the Legion."
 	icon_state = "leg_spec"
-	inhand_icon_state = "owl_mask"
+	item_state = "owl_mask"
 
 /obj/item/clothing/mask/ms13/ncr
 	name = "\improper NCR cowl"
 	desc = "A universal NCR cowl. Suitable for any region for an assortment of purposes."
 	icon_state = "ncr_cowl"
-	inhand_icon_state = "ncr_standard_gloves"
+	item_state = "ncr_standard_gloves"
 	flags_inv = HIDEFACE
 	flags_cover = MASKCOVERSMOUTH
 
@@ -160,7 +160,7 @@
 	name = "\improper BoS hood"
 	desc = "A light hood used by the Brotherhood of Steel, originally designed to be worn under power armor."
 	icon_state = "bos_hood"
-	inhand_icon_state = "bos_hood"
+	item_state = "bos_hood"
 	flags_inv = HIDEHAIR
 
 /obj/item/clothing/mask/gas/ms13
@@ -169,7 +169,7 @@
 	icon = 'mojave/icons/objects/clothing/clothing_world/masks_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/mask.dmi'
 	icon_state = "gasmaskmodern"
-	inhand_icon_state = "gasmask"
+	item_state = "gasmask"
 	var/adjusted = FALSE
 	var/adjustable = TRUE
 	has_fov = FALSE //placeholder for now until we make this more useful to justify a FOV

@@ -17,7 +17,7 @@
 	worn_icon_state = "cigarette"
 	lefthand_file = 'mojave/icons/mob/inhands/misc/smokeables_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/misc/smokeables_righthand.dmi'
-	inhand_icon_state = "cigarette"
+	item_state = "cigarette"
 	throw_speed = 0.5
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_MASK
@@ -62,7 +62,7 @@
 	inventory_state = "butt"
 	world_state = "butt"
 	worn_icon_state = "butt"
-	inhand_icon_state = "butt"
+	item_state = "butt"
 	lit_mutable = "butt_lit"
 	extinguished_mutable = "butt_extinguished"
 	smoketime = 1 SMOKEMINUTE
@@ -178,7 +178,7 @@
 			inventory_state = "[butt_icon]"
 			world_state = "[butt_icon]"
 			worn_icon_state = "[butt_icon]"
-			inhand_icon_state = "[butt_icon]"
+			item_state = "[butt_icon]"
 			lit_mutable = "butt_lit"
 			extinguished_mutable = "butt_extinguished"
 			smoking_damage = (initial(smoking_damage) * 6.25)
@@ -239,7 +239,7 @@
 				inventory_state = "[butt_icon]"
 				world_state = "[butt_icon]"
 				worn_icon_state = "[butt_icon]"
-				inhand_icon_state = "[butt_icon]"
+				item_state = "[butt_icon]"
 				lit_mutable = "butt_lit"
 				extinguished_mutable = "butt_extinguished"
 				smoking_damage = (initial(smoking_damage) * 6.25) //not good
@@ -377,7 +377,7 @@
 	inventory_state = "rollie"
 	world_state = "rollie"
 	worn_icon_state = "rollie"
-	inhand_icon_state = "rollie"
+	item_state = "rollie"
 	reagents_to_add = list(/singleton/reagent/ms13/nicotine = 14) //less potent, 4 minutes of effect, roach is extra 1 minute
 	nicotine_potency = 0.10 //less potent
 	smoking_damage = 0.005 //organic
@@ -393,7 +393,7 @@
 	inventory_state = "roach"
 	world_state = "roach"
 	worn_icon_state = "roach"
-	inhand_icon_state = "roach"
+	item_state = "roach"
 	reagents_to_add = list(/singleton/reagent/ms13/nicotine = 2.8)
 
 /obj/item/ms13/cigarette/rollie/republic

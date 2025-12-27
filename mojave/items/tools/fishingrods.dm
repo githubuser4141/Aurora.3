@@ -41,7 +41,7 @@
 		to_chat(user, SPAN_NOTICE("You begin to extend the rod fully."))
 		if(do_after(user, 2.5 SECONDS, interaction_key = DOAFTER_SOURCE_TELESCOPICROD))
 			icon_state = extended_icon
-			inhand_icon_state = icon_state
+			item_state = icon_state
 			desc = "[initial(desc)] It is currently extended."
 			tool_behaviour = TOOL_FISHINGROD
 			w_class = WEIGHT_CLASS_BULKY
@@ -53,7 +53,7 @@
 		to_chat(user, SPAN_NOTICE("You begin to collapse the rod."))
 		if(do_after(user, 2.5 SECONDS, interaction_key = DOAFTER_SOURCE_TELESCOPICROD))
 			icon_state = (initial(icon_state))
-			inhand_icon_state = icon_state
+			item_state = icon_state
 			desc = "[initial(desc)] It is currently collapsed."
 			tool_behaviour = null
 			w_class = WEIGHT_CLASS_NORMAL

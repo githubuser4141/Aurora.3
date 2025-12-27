@@ -2,7 +2,7 @@
 	name = "\improper Ranger fatigues"
 	desc = "A set of fatigues often worn by Desert Rangers."
 	icon_state = "ranger_fatigues"
-	inhand_icon_state = "shirt"
+	item_state = "shirt"
 
 /obj/item/clothing/under/ms13/ranger/casual
 	name = "casual Ranger clothes"
@@ -18,4 +18,4 @@
 	name = "\improper Ranger Deputy-Chief clothes"
 	desc = "A carefully tailored set of clothes worn by high ranking members within the Desert Rangers."
 	icon_state = "deputy_chief"
-	inhand_icon_state = "shirt"
+	item_state = "shirt"
