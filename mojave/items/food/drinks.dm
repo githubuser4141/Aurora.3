@@ -160,10 +160,10 @@
 		for(var/singleton/reagent/R in reagents.reagent_list)
 			if(istype(R, /singleton/reagent/consumable/ethanol/ms13))
 				var/singleton/reagent/consumable/ethanol/henny = R
-				if(henny.volume >= 50 && henny.boozepwr >= 40 && do_after(user, 1 SECONDS, user, interaction_key = DOAFTER_SOURCE_CRAFTING))
+				if(henny.volume >= 50 && henny.strength >= 40 && do_after(user, 1 SECONDS, user, interaction_key = DOAFTER_SOURCE_CRAFTING))
 					user.visible_message(SPAN_NOTICE("[user] inserts a piece of cloth into [src], creating a molotov cocktail."), SPAN_NOTICE("You insert a piece of cloth into [src], creating a molotov cocktail."))
 					var/obj/item/grenade/ms13/molotov/M = new /obj/item/grenade/ms13/molotov(loc)
-					M.extra_POWER = round(henny.boozepwr / 35)
+					M.extra_POWER = round(henny.strength / 35)
 					if(istype(src, /obj/item/reagent_containers/food/drinks/bottle/ms13/nukashine))
 						M.name = "nukatov"
 						M.desc = "A molotov made out of nukashine, allegedly. If this is true, we're in for a hell of a party."
