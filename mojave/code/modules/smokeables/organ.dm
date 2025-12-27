@@ -22,9 +22,9 @@
 		nicotine -= 0.15 //dissipates at the same rate as nic intake, equal debuff time
 	if(!smoking && (chain_smokah) >= (3)) //no cigarette in mouth, has smoked at least 1 cigarette, first smigglerette always the best
 		chain_smokah -= 0.05 //dissipates 1 cigarette smoked a minute
-	if((owner.reagents.get_reagent_amount(/datum/reagent/ms13/nicotine) > 0)) //COOLING
+	if((owner.reagents.get_reagent_amount(/singleton/reagent/ms13/nicotine) > 0)) //COOLING
 		has_nic = TRUE
-	if((owner.reagents.get_reagent_amount(/datum/reagent/ms13/nicotine) == 0)) //JONESING
+	if((owner.reagents.get_reagent_amount(/singleton/reagent/ms13/nicotine) == 0)) //JONESING
 		has_nic = FALSE
 	if(has_nic) //NIC!!!
 		switch(nicotine)

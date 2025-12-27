@@ -155,7 +155,7 @@
 	. = ..()
 	var/fuel_start = rand(25, max_fuel)
 	create_reagents(fuel_start)
-	reagents.add_reagent(/datum/reagent/fuel, fuel_start)
+	reagents.add_reagent(/singleton/reagent/fuel, fuel_start)
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/tools/tools_inventory.dmi')
 	update_appearance()
 
@@ -175,10 +175,10 @@
 /obj/item/weldingtool/ms13/attackby(obj/item/I, mob/user, params)
 	. = ..()
 	if(istype(I, /obj/item/reagent_containers/ms13/lighterfluid))
-		if(!I.reagents.has_reagent(/datum/reagent/fuel))
+		if(!I.reagents.has_reagent(/singleton/reagent/fuel))
 			to_chat(user, SPAN_WARNING("[src] is out of fluid!"))
 			return
-		if(reagents.has_reagent(/datum/reagent/fuel, max_fuel))
+		if(reagents.has_reagent(/singleton/reagent/fuel, max_fuel))
 			to_chat(user, SPAN_WARNING("Your [name] is already full!"))
 			return
 		I.reagents.trans_to(src, max_fuel, transfered_by = user)

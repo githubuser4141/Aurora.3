@@ -5,7 +5,7 @@
 	desc = "You shouldn't be seeing this."
 	icon = 'mojave/icons/objects/food/fish/fish_world.dmi'
 	bite_consumption = 4
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 6)
 	//foodtypes = MEAT | RAW
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_height = 64
@@ -102,7 +102,7 @@
 	grid_width = 64
 	var/fish_cooked_type = /obj/item/food/meat/cutlet/ms13/fish
 	bite_consumption = 3
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 3)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 3)
 	tastes = list("fish" = 8)
 	//foodtypes = MEAT | RAW
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
@@ -178,7 +178,7 @@
 	icon = 'mojave/icons/objects/food/fish/fish_world.dmi'
 	icon_state = "sockeye_cutlet"
 	bite_consumption = 5
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 4, /singleton/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("fish" = 5)
 	w_class = WEIGHT_CLASS_SMALL
 	grid_height = 32

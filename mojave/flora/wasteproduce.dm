@@ -33,7 +33,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/brew_sludge
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/brew_sludge
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
 	var/can_dry = FALSE //used for drying racks
 	var/dry_time = 600 // 10 Minutes
@@ -66,7 +66,7 @@
 	growthstages = 4
 	production = 30 //produces every 10 minutes
 	maturation = 60 //20 minutes to mature
-	reagents_add = list(/datum/reagent/toxin = 0.04, /datum/reagent/consumable/nutriment = 0.2)
+	reagents_add = list(/singleton/reagent/toxin = 0.04, /singleton/reagent/consumable/nutriment = 0.2)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/barrelcactus
@@ -77,7 +77,7 @@
 	//foodtypes = FRUIT | TOXIC
 	icon_state = "barrelcactus"
 	filling_color = "#a6b115"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/barrel_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/barrel_wine
 	tastes = list("sourness"= 10, "burning"= 1)
 
 ///////////////////// MUTFRUIT /////////////////////////
@@ -98,7 +98,7 @@
 	growthstages = 4
 	production = 24 //produces every 8 minutes
 	maturation = 55 //18m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/mutfruit
@@ -109,7 +109,7 @@
 	//foodtypes = FRUIT
 	icon_state = "mutfruit"
 	filling_color = "#5f035f"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/mutfruit_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/mutfruit_wine
 	tastes = list("warmth"= 5, "sweetness"= 2)
 
 //CRUNCHY MUTFRUITx
@@ -129,7 +129,7 @@
 	growthstages = 3
 	production = 14 //4m 40s to produce
 	maturation = 32 //10m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/cmutfruit
@@ -140,7 +140,7 @@
 	bite_consumption_mod = 2
 	icon_state = "cmutfruit"
 	filling_color = "#7c3e04"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/mutfruit_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/mutfruit_wine
 	tastes = list("sourness"= 5, "sweetness"= 1)
 
 //APPLEx
@@ -160,7 +160,7 @@
 	growthstages = 5
 	production = 20 //6m 40s to produce
 	maturation = 48 //16m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/apple
@@ -171,7 +171,7 @@
 	//foodtypes = FRUIT
 	icon_state = "apple"
 	filling_color = "#9b7470"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/apple_cider
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/apple_cider
 	tastes = list("apple"= 1)
 
 ///////////////////// PRICKLY PEAR /////////////////////////
@@ -192,7 +192,7 @@
 	growthstages = 4
 	production = 16 //5m 20s to produce
 	maturation = 64 //21m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/pricklypear
@@ -203,7 +203,7 @@
 	filling_color = "#8a0483"
 	//foodtypes = FRUIT
 	bite_consumption_mod = 2
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/pricklypear_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/pricklypear_wine
 	tastes = list("sweetness"= 1)
 
 /obj/item/food/grown/ms13/pricklypear/pickup(mob/living/user)
@@ -240,7 +240,7 @@
 	growthstages = 4
 	production = 21 //7m to produce
 	maturation = 90 //30m to mature
-	reagents_add = list(/datum/reagent/toxin = 0.04, /datum/reagent/consumable/nutriment = 0.2)
+	reagents_add = list(/singleton/reagent/toxin = 0.04, /singleton/reagent/consumable/nutriment = 0.2)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/pungafruit
@@ -251,7 +251,7 @@
 	bite_consumption_mod = 2
 	//foodtypes = FRUIT | TOXIC
 	filling_color = "#695d19"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/punga_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/punga_wine
 	tastes = list("sourness"= 6, "warmth"= 1)
 
 //refined punga
@@ -271,7 +271,7 @@
 	growthstages = 4
 	production = 20 //6m 40s to produce
 	maturation = 78 //26m to mature
-	reagents_add = list(/datum/reagent/toxin = 0.08, /datum/reagent/consumable/nutriment = 0.2)
+	reagents_add = list(/singleton/reagent/toxin = 0.08, /singleton/reagent/consumable/nutriment = 0.2)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/geigpungafruit
@@ -282,7 +282,7 @@
 	bite_consumption_mod = 2
 	//foodtypes = FRUIT | TOXIC
 	filling_color = "#55ff06"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/geigpunga_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/geigpunga_wine
 	tastes = list("acid"= 6, "burning"= 5)
 
 ///////////////////// SNAPTAIL /////////////////////////x
@@ -301,7 +301,7 @@
 	growthstages = 5
 	production = 18 //6m to produce
 	maturation = 42 //14m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/consumable/sugar = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1, /singleton/reagent/consumable/sugar = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/snaptail
@@ -312,7 +312,7 @@
 	bite_consumption_mod = 1
 	//foodtypes = SUGAR | GROSS
 	filling_color = "#caa3a3"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/snaptail_rum
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/snaptail_rum
 	tastes = list("sugar"= 5, "reed"= 5)
 
 ///////////////////// TARBERRY /////////////////////////x
@@ -334,7 +334,7 @@
 	growthstages = 3
 	production = 16 //5m 20s to produce
 	maturation = 50 //16m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/tarberry
@@ -345,7 +345,7 @@
 	//foodtypes = FRUIT | GROSS
 	icon_state = "tarberry"
 	filling_color = "#2f2525ff"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tarberry_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tarberry_wine
 	tastes = list("oil"= 5, "stale berries"= 1)
 
 //BLACKBERRYx
@@ -367,7 +367,7 @@
 	growthstages = 4
 	production = 12 //4m to produce
 	maturation = 45 //15m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.02, /datum/reagent/consumable/nutriment = 0.08)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.02, /singleton/reagent/consumable/nutriment = 0.08)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/blackberry
@@ -378,7 +378,7 @@
 	//foodtypes = FRUIT
 	icon_state = "blackberry"
 	filling_color = "#15172a"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/blackberry_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/blackberry_wine
 	tastes = list("berries"= 5, "juice"= 1)
 
 //RADBERRYx
@@ -399,7 +399,7 @@
 	growthstages = 3
 	production = 12 //4m to produce
 	maturation = 24 //8m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.02, /datum/reagent/consumable/nutriment = 0.08)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.02, /singleton/reagent/consumable/nutriment = 0.08)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/radberry
@@ -410,7 +410,7 @@
 	bite_consumption_mod = 1
 	//foodtypes = FRUIT | GROSS
 	filling_color = "#00ff2a"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/radberry_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/radberry_wine
 	tastes = list("metal"= 5, "sweetness"= 1)
 
 ///////////////////// YUCCA /////////////////////////
@@ -428,7 +428,7 @@
 	production = 13 //4m 20s to produce
 	maturation = 64 //21m 20s to mature
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.08, /datum/reagent/consumable/nutriment = 0.15)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.08, /singleton/reagent/consumable/nutriment = 0.15)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/yucca
@@ -439,7 +439,7 @@
 	bite_consumption_mod = 4
 	//foodtypes = FRUIT
 	filling_color = "#b4a031ff"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/yucca_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/yucca_wine
 	tastes = list("sweet" = 5, "starch" = 2)
 
 //TOMATO
@@ -460,7 +460,7 @@
 	growthstages = 4
 	production = 10 //3m 20s to produce
 	maturation = 40 //13m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/tomato
@@ -471,7 +471,7 @@
 	//foodtypes = FRUIT | VEGETABLES
 	icon_state = "tomato"
 	filling_color = "#8d1d1d"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tomato_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tomato_wine
 	tastes = list("sweetness" = 3, "tangy acid" = 2)
 
 /////////////////////////////////////////////////////////////
@@ -496,7 +496,7 @@
 	growthstages = 3
 	production = 12 //4m to produce
 	maturation = 50 //16m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/tato
@@ -507,7 +507,7 @@
 	//foodtypes = VEGETABLES | GROSS
 	icon_state = "tato"
 	filling_color = "#4b2727"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/tato_liquor
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tato_liquor
 	tastes = list("raw eggs"= 5)
 
 //POTATO
@@ -525,7 +525,7 @@
 	growthstages = 3
 	production = 9 //3m to produce
 	maturation = 28 //9m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.25)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.25)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/potato
@@ -536,7 +536,7 @@
 	//foodtypes = VEGETABLES | GROSS
 	icon_state = "potato"
 	filling_color = "#ada876"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_vodka
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_vodka
 	tastes = list("starch"= 5)
 
 ////////////////////// JALEPENO /////////////////////////////
@@ -557,7 +557,7 @@
 	growthstages = 4
 	production = 13 //4m 20s to produce
 	maturation = 35 //11m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.01, /datum/reagent/consumable/nutriment = 0.05, /datum/reagent/consumable/capsaicin = 0.025)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.01, /singleton/reagent/consumable/nutriment = 0.05, /singleton/reagent/consumable/capsaicin = 0.025)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/jalepeno
@@ -589,7 +589,7 @@
 	growthstages = 4
 	production = 11 //3m 40s to produce
 	maturation = 42 //14m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.01, /datum/reagent/consumable/nutriment = 0.05, /datum/reagent/consumable/capsaicin = 0.25)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.01, /singleton/reagent/consumable/nutriment = 0.05, /singleton/reagent/consumable/capsaicin = 0.25)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/radpepper
@@ -617,7 +617,7 @@
 	growthstages = 3
 	production = 10 //3m 20s to produce
 	maturation = 24 //8m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/onion
@@ -646,7 +646,7 @@
 	yield = 4
 	instability = 15
 	growthstages = 3
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/garlic
@@ -673,7 +673,7 @@
 	production = 12 //4m to produce
 	yield = 4
 	growthstages = 3
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/xander
@@ -711,7 +711,7 @@
 	growthstages = 3
 	production = 9 //3m to produce
 	maturation = 35 //11m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/carrot
@@ -722,7 +722,7 @@
 	//foodtypes = VEGETABLES
 	icon_state = "carrot"
 	filling_color = "#815c1f"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/carrot_wine
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/carrot_wine
 	tastes = list("sweetness"= 1)
 
 //////////////////////// RAZORGRAIN /////////////////////////
@@ -741,7 +741,7 @@
 	growthstages = 5
 	production = 13 //4m 20s to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/razorgrain
@@ -752,7 +752,7 @@
 	//foodtypes = GRAIN | GROSS
 	icon_state = "razorgrain"
 	filling_color = "#8f905b"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_beer
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_beer
 	tastes = list("chalky grain"= 5)
 
 //////////////////////// BAIFAN /////////////////////////////
@@ -771,7 +771,7 @@
 	growthstages = 5
 	production = 14 //4m 40s to produce
 	maturation = 44 //14m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/baifan
@@ -782,7 +782,7 @@
 	//foodtypes = GRAIN | GROSS
 	icon_state = "baifan"
 	filling_color = "#505749"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_sake
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_sake
 	tastes = list("chalky grain"= 2, "raw rice"= 5)
 
 /////////////////////// CABBAGE /////////////////////////////
@@ -801,7 +801,7 @@
 	growthstages = 3
 	production = 15 //5m to produce
 	maturation = 33 //11m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/cabbage
@@ -831,7 +831,7 @@
 	growthstages = 5
 	production = 18 //6m to produce
 	maturation = 90 //30m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/pinyon
@@ -843,7 +843,7 @@
 	icon_state = "pinyon"
 	filling_color = "#7b7c68"
 	tastes = list("nutty"= 4, "sourness"= 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 2, /singleton/reagent/consumable/nutriment/vitamin = 1)
 
 ///////////////////////// MESQUITE //////////////////////////
 
@@ -862,7 +862,7 @@
 	growthstages = 4
 	production = 16 //5m 20s to produce
 	maturation = 50 //16m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/mesquite
@@ -892,7 +892,7 @@
 	growthstages = 3
 	production = 13 //4m 20s to produce
 	maturation = 54 //18m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/buffalo
@@ -919,7 +919,7 @@
 	growthstages = 3
 	production = 12 //4m to produce
 	maturation = 44 //14m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/maize
@@ -930,7 +930,7 @@
 	//foodtypes = VEGETABLES | GRAIN
 	icon_state = "maize"
 	filling_color = "#bbb81c"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_whiskey
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_whiskey
 	tastes = list("corn"= 5)
 
 /////////////////////////////////////////////////////////////
@@ -955,7 +955,7 @@
 	production = 18 //6m to produce
 	maturation = 84 //28m to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/ashrose
@@ -986,7 +986,7 @@
 	production = 12 //4m to produce
 	maturation = 78 //26m to mature
 	instability = 90
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/radrose
@@ -1017,7 +1017,7 @@
 	production = 11 //3m 40s to produce
 	maturation = 90 //30m to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/soot
@@ -1048,7 +1048,7 @@
 	production = 18 //6m to produce
 	maturation = 66 //22m to mature
 	instability = 50
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/toxicsoot
@@ -1079,7 +1079,7 @@
 	production = 14 //4m 40s to produce
 	maturation = 70 //23m 20s to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/datura
@@ -1110,7 +1110,7 @@
 	production = 17 //5m 40s to produce
 	maturation = 58 //19m 20m to mature
 	instability = 50
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/radtura
@@ -1138,7 +1138,7 @@
 	growthstages = 3
 	production = 12 //4m to produce
 	maturation = 85 //28m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/coyote
@@ -1170,7 +1170,7 @@
 	production = 18 //6m to produce
 	maturation = 96 //32m to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/aster
@@ -1200,7 +1200,7 @@
 	production = 15 //5m to produce
 	maturation = 90 //30m to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/ashblossom
@@ -1230,7 +1230,7 @@
 	yield = 5
 	instability = 25
 	growthstages = 3
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/thistle
@@ -1278,7 +1278,7 @@
 	production = 16 //5m 20s to produce
 	maturation = 99 //33m to mature
 	instability = 25
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/agave
@@ -1288,7 +1288,7 @@
 	bite_consumption_mod = 1
 	icon_state = "agave"
 	filling_color = "#37524e"
-	distill_reagent = /datum/reagent/consumable/ethanol/ms13/waster_tequila
+	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_tequila
 	tastes = list("bitterness"= 5)
 
 /////////////////////// BROC FLOWER /////////////////////////
@@ -1308,7 +1308,7 @@
 	production = 14 //4m 40s to produce
 	yield = 2 //8 flowers/seed
 	growthstages = 3
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/brocflower
@@ -1345,7 +1345,7 @@
 	growthstages = 4
 	production = 9 //3m to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/cavefungus
@@ -1376,7 +1376,7 @@
 	growthstages = 4
 	production = 12 //4m to produce
 	maturation = 30 //10m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/glowfungus
@@ -1413,7 +1413,7 @@
 	growthstages = 4
 	production = 11 //3m 40s to produce
 	maturation = 46 //15m 20s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/blight
@@ -1442,7 +1442,7 @@
 	growthstages = 4
 	production = 12 //4m to produce
 	maturation = 30 //10m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/brainfung
@@ -1487,7 +1487,7 @@
 	growthstages = 4
 	production = 9 //3m to produce
 	maturation = 36 //12m to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/firecap
@@ -1535,7 +1535,7 @@
 	growthstages = 4
 	production = 10 //3m 20s to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/gutshroom
@@ -1580,7 +1580,7 @@
 	growthstages = 4
 	production = 10 //3m 20s to produce
 	maturation = 50 //16m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/lureweed
@@ -1610,7 +1610,7 @@
 	growthstages = 4
 	production = 7 //2m 20s to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/nara
@@ -1640,7 +1640,7 @@
 	growthstages = 1
 	production = 12 //4m to produce
 	maturation = 30 //10m to mature
-	reagents_add = list(/datum/reagent/toxin/ms13/flyamanita = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/toxin/ms13/flyamanita = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/flyamanita
@@ -1671,7 +1671,7 @@
 	growthstages = 1
 	production = 14 //4m 40s to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/pennybun
@@ -1702,7 +1702,7 @@
 	growthstages = 1
 	production = 12 //4m to produce
 	maturation = 38 //12m 40s to mature
-	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/consumable/nutriment/vitamin = 0.04, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "K"
 
 /obj/item/food/grown/ms13/chanterelle
@@ -1733,7 +1733,7 @@
 	growthstages = 1
 	production = 18 //6m to produce
 	maturation = 45 //15m to mature
-	reagents_add = list(/datum/reagent/ms13/day_tripper = 0.03, /datum/reagent/ms13/mentats = 0.03, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/ms13/day_tripper = 0.03, /singleton/reagent/ms13/mentats = 0.03, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "N"
 
 /obj/item/food/grown/ms13/mindshroom
@@ -1771,7 +1771,7 @@
 	growthstages = 1
 	production = 15 //5m to produce
 	maturation = 30 //10m to mature
-	reagents_add = list(/datum/reagent/toxin/ms13/gunpowder = 0.05, /datum/reagent/consumable/nutriment = 0.1)
+	reagents_add = list(/singleton/reagent/toxin/ms13/gunpowder = 0.05, /singleton/reagent/consumable/nutriment = 0.1)
 	nutrient_type = "P"
 
 /obj/item/food/grown/ms13/gremlinstool

@@ -418,7 +418,7 @@
 	base_pixel_x = -48
 	offsety = 6
 	var/poison_per_bite = 10
-	var/poison_type = /datum/reagent/toxin
+	var/poison_type = /singleton/reagent/toxin
 
 /mob/living/simple_animal/hostile/ms13/nightstalker/AttackingTarget()
 	. = ..()
@@ -506,7 +506,7 @@
 	tame_chance = 5
 	bonus_tame_chance = 5
 	var/poison_per_bite = 5
-	var/poison_type = /datum/reagent/toxin
+	var/poison_type = /singleton/reagent/toxin
 
 /mob/living/simple_animal/hostile/ms13/radscorpion/death()
 	. = ..()

@@ -639,7 +639,7 @@
 	layer = TURF_LAYER_WATER_BASE
 	slowdown = 0.5
 	// What type of water it'll give you when you fill a container from it.
-	var/dispensedreagent = /datum/reagent/consumable/ms13/water/unfiltered
+	var/dispensedreagent = /singleton/reagent/consumable/ms13/water/unfiltered
 	var/next_splash = 1
 	var/atom/watereffect = /obj/effect/overlay/ms13/water/medium
 	var/atom/watertop = /obj/effect/overlay/ms13/water/top/medium
@@ -914,7 +914,7 @@ GLOBAL_VAR(FishPopNextCalc)
 	name = "sewer water"
 	desc = "Murky and foul smelling water, if you could call it that."
 	baseturfs = /turf/open/ms13/water/sewer
-	dispensedreagent = /datum/reagent/consumable/ms13/water/dirty
+	dispensedreagent = /singleton/reagent/consumable/ms13/water/dirty
 	fish = list(/obj/item/food/meat/slab/ms13/fish/lamprey = 2,
 		/obj/item/food/meat/slab/ms13/fish/largemouth = 1,
 		/obj/item/food/meat/slab/ms13/fish/chum = 3,

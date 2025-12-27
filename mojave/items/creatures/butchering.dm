@@ -531,7 +531,7 @@
 	name = "grilled golden gecko"
 	desc = "A piece of grilled golden gecko meat. Something of a desert delicacy."
 	icon_state = "goldengecko_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 10, /singleton/reagent/consumable/nutriment/vitamin = 1)
 
 /obj/item/food/meat/slab/ms13/animal/radroach
 	name = "radroach meat"
@@ -545,7 +545,7 @@
 	name = "grilled radroach"
 	desc = "Well cooked, seared radroach. Will only help it taste just a bit better."
 	icon_state = "radroach_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 6)
 	tastes = list("gross" = 2, "meat" = 1)
 	//foodtypes = MEAT | GROSS
 
@@ -554,7 +554,7 @@
 	desc = "Irradiated radroach meat. You shouldn't even touch this, let alone eat it."
 	icon_state = "glowroach"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/glowroach
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 4, /datum/reagent/uranium = 3)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 4, /singleton/reagent/uranium = 3)
 	tastes = list("disgusting" = 4, "radiation" = 4)
 	//foodtypes = MEAT | GROSS | TOXIC
 
@@ -562,7 +562,7 @@
 	name = "grilled glowroach"
 	desc = "Grilled glowroach meat. You really still should not eat this."
 	icon_state = "glowroach_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/uranium = 2)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 6, /singleton/reagent/uranium = 2)
 	tastes = list("disgusting" = 3, "radiation" = 3)
 	//foodtypes = MEAT | GROSS | TOXIC
 
@@ -578,7 +578,7 @@
 	name = "grilled ant meat"
 	desc = "A grilled piece of ant meat. Quite nutritious, even if not very tasty."
 	icon_state = "fatty_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 10, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 10, /singleton/reagent/consumable/nutriment/vitamin = 1)
 	tastes = list("gross" = 2, "protein" = 1)
 	//foodtypes = MEAT | GROSS
 
@@ -592,7 +592,7 @@
 	name = "grilled mirelurk claw"
 	desc = "A mirelurk claw that has been grilled. Your delicious reward awaits!"
 	icon_state = "mirelurk_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 12, /datum/reagent/consumable/nutriment/vitamin = 3)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 12, /singleton/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("succulent" = 3, "meat" = 2)
 
 /obj/item/food/meat/slab/ms13/animal/radlurk
@@ -600,7 +600,7 @@
 	desc = "A radlurk claw. Quite the triumph to be able to claim this, makes for a nice trophy."
 	icon_state = "radlurk"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/radlurk
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/uranium = 6)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 8, /singleton/reagent/uranium = 6)
 	tastes = list("disgusting" = 4, "radiation" = 4)
 	//foodtypes = MEAT | GROSS | TOXIC
 
@@ -608,7 +608,7 @@
 	name = "grilled radlurk claw"
 	desc = "A cooked radlurk claw. You aren't considering eating this, are you?"
 	icon_state = "radlurk_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 12, /datum/reagent/uranium = 4)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 12, /singleton/reagent/uranium = 4)
 	tastes = list("disgusting" = 3, "radiation" = 3)
 	//foodtypes = MEAT | GROSS | TOXIC
 
@@ -617,28 +617,28 @@
 	desc = "An raw chunk of meat from a bark scorpion's tail. Probably not safe to eat it like this."
 	icon_state = "barkscorpiontail"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/bark_scorp
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 6, /datum/reagent/toxin = 3)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 6, /singleton/reagent/toxin = 3)
 	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/bark_scorp
 	name = "grilled bark scorpion meat"
 	desc = "A grilled piece of a bark scorpion tail. Tastier than it looks."
 	icon_state = "barkscorpiontail_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 9, /datum/reagent/consumable/nutriment/vitamin = 1)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 9, /singleton/reagent/consumable/nutriment/vitamin = 1)
 
 /obj/item/food/meat/slab/ms13/animal/rad_scorp
 	name = "radscorpion meat"
 	desc = "Raw radscorpion meat. Properly cooked and prepared, this can make a fine meal."
 	icon_state = "scorpiontail"
 	steak_type = /obj/item/food/meat/steak/ms13/animal/rad_scorp
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 8, /datum/reagent/toxin = 6)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 8, /singleton/reagent/toxin = 6)
 	//foodtypes = MEAT | GROSS | TOXIC
 
 /obj/item/food/meat/steak/ms13/animal/rad_scorp
 	name = "grilled radscorpion meat"
 	desc = "A finely cooked piece of radscorpion tail. A delicious wasteland treat."
 	icon_state = "scorpiontail_roasted"
-	food_reagents = list(/datum/reagent/consumable/nutriment/protein = 12, /datum/reagent/consumable/nutriment/vitamin = 3)
+	food_reagents = list(/singleton/reagent/consumable/nutriment/protein = 12, /singleton/reagent/consumable/nutriment/vitamin = 3)
 	tastes = list("succulent" = 3, "meat" = 2)
 
 /obj/item/food/meat/slab/ms13/animal/pork

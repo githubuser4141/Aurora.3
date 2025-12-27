@@ -146,7 +146,7 @@
 	if(amount < HOTBOX_MINIMUM)
 		return
 	//HOTBOX_MINIMUM vapour = 1u
-	victim.reagents.add_reagent(/datum/reagent/drug/cannabis, amount / HOTBOX_MINIMUM)
+	victim.reagents.add_reagent(/singleton/reagent/drug/cannabis, amount / HOTBOX_MINIMUM)
 
 #undef HOTBOX_MINIMUM
 

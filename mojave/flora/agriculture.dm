@@ -137,8 +137,8 @@
 
 	// Aand if a reagent container has water or plant fertilizer in it, we can use it on the plant.
 	if(is_reagent_container(held_item) && length(held_item.reagents.reagent_list))
-		var/datum/reagent/most_common_reagent = held_item.reagents.get_master_reagent()
-		context[SCREENTIP_CONTEXT_LMB] = "[istype(most_common_reagent, /datum/reagent/water) ? "Water" : "Feed"] plant"
+		var/singleton/reagent/most_common_reagent = held_item.reagents.get_master_reagent()
+		context[SCREENTIP_CONTEXT_LMB] = "[istype(most_common_reagent, /singleton/reagent/water) ? "Water" : "Feed"] plant"
 		return CONTEXTUAL_SCREENTIP_SET
 
 	return NONE
@@ -510,7 +510,7 @@
 			to_chat(user, SPAN_WARNING("[reagent_source] is empty!"))
 			return 1
 
-		if(reagents.total_volume >= reagents.maximum_volume && (!reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/unfiltered) || !reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/dirty)))
+		if(reagents.total_volume >= reagents.maximum_volume && (!reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water) || !reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water/unfiltered) || !reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water/dirty)))
 			to_chat(user, SPAN_NOTICE("[src] is full."))
 			return
 
@@ -531,18 +531,18 @@
 
 		for(var/obj/machinery/ms13/agriculture/H in trays)
 			//This looks awful, a result of having 3 water types, all are applicable for watering crops
-			if(reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water, 1))
-				var/water_amt = reagent_source.reagents.get_reagent_amount(/datum/reagent/consumable/ms13/water) * transfer_amount / reagent_source.reagents.total_volume
+			if(reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water, 1))
+				var/water_amt = reagent_source.reagents.get_reagent_amount(/singleton/reagent/consumable/ms13/water) * transfer_amount / reagent_source.reagents.total_volume
 				H.adjust_waterlevel(round(water_amt))
-				reagent_source.reagents.remove_reagent(/datum/reagent/consumable/ms13/water, water_amt)
-			if(reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/unfiltered, 1))
-				var/water_amt = reagent_source.reagents.get_reagent_amount(/datum/reagent/consumable/ms13/water/unfiltered) * transfer_amount / reagent_source.reagents.total_volume
+				reagent_source.reagents.remove_reagent(/singleton/reagent/consumable/ms13/water, water_amt)
+			if(reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water/unfiltered, 1))
+				var/water_amt = reagent_source.reagents.get_reagent_amount(/singleton/reagent/consumable/ms13/water/unfiltered) * transfer_amount / reagent_source.reagents.total_volume
 				H.adjust_waterlevel(round(water_amt))
-				reagent_source.reagents.remove_reagent(/datum/reagent/consumable/ms13/water/unfiltered, water_amt)
-			if(reagent_source.reagents.has_reagent(/datum/reagent/consumable/ms13/water/dirty, 1))
-				var/water_amt = reagent_source.reagents.get_reagent_amount(/datum/reagent/consumable/ms13/water/dirty) * transfer_amount / reagent_source.reagents.total_volume
+				reagent_source.reagents.remove_reagent(/singleton/reagent/consumable/ms13/water/unfiltered, water_amt)
+			if(reagent_source.reagents.has_reagent(/singleton/reagent/consumable/ms13/water/dirty, 1))
+				var/water_amt = reagent_source.reagents.get_reagent_amount(/singleton/reagent/consumable/ms13/water/dirty) * transfer_amount / reagent_source.reagents.total_volume
 				H.adjust_waterlevel(round(water_amt))
-				reagent_source.reagents.remove_reagent(/datum/reagent/consumable/ms13/water/dirty, water_amt)
+				reagent_source.reagents.remove_reagent(/singleton/reagent/consumable/ms13/water/dirty, water_amt)
 			reagent_source.reagents.trans_to(H.reagents, transfer_amount, transfered_by = user)
 			lastuser = WEAKREF(user)
 			if(IS_EDIBLE(reagent_source) || istype(reagent_source, /obj/item/reagent_containers/pill))

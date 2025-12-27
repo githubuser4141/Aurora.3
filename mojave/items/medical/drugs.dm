@@ -7,7 +7,7 @@
 	base_icon_state = "psycho"
 	volume = 20
 	amount_per_transfer_from_this = 20
-	reagents_to_add = list(/datum/reagent/ms13/psycho = 20)
+	reagents_to_add = list(/singleton/reagent/ms13/psycho = 20)
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/overdrive
 	name = "overdrive injector"
@@ -16,7 +16,7 @@
 	base_icon_state = "overdrive"
 	volume = 25
 	amount_per_transfer_from_this = 25
-	reagents_to_add = list(/datum/reagent/ms13/overdrive = 25)
+	reagents_to_add = list(/singleton/reagent/ms13/overdrive = 25)
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/calmex
 	name = "calmex injector"
@@ -25,7 +25,7 @@
 	base_icon_state = "calmex"
 	volume = 20
 	amount_per_transfer_from_this = 20
-	reagents_to_add = list(/datum/reagent/ms13/calmex = 20)
+	reagents_to_add = list(/singleton/reagent/ms13/calmex = 20)
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/medx
 	name = "med-x injector"
@@ -34,7 +34,7 @@
 	base_icon_state = "medx"
 	volume = 20
 	amount_per_transfer_from_this = 20
-	reagents_to_add = list(/datum/reagent/ms13/medx = 20)
+	reagents_to_add = list(/singleton/reagent/ms13/medx = 20)
 
 /obj/item/reagent_containers/hypospray/medipen/ms13/addictol
 	name = "addictol injector"
@@ -43,7 +43,7 @@
 	base_icon_state = "addictol"
 	volume = 8
 	amount_per_transfer_from_this = 8
-	reagents_to_add = list(/datum/reagent/ms13/addictol = 8)
+	reagents_to_add = list(/singleton/reagent/ms13/addictol = 8)
 
 
 // Huffables
@@ -80,7 +80,7 @@
 		return FALSE
 	//Always log attemped inhales for admins
 	var/list/inhaled = list()
-	for(var/datum/reagent/inhaled_reagent in reagents.reagent_list)
+	for(var/singleton/reagent/inhaled_reagent in reagents.reagent_list)
 		inhaled += inhaled_reagent.name
 	var/contained = english_list(inhaled)
 	log_combat(user, affected_mob, "attempted to make inhale", src, "([contained])")
@@ -121,7 +121,7 @@
 	base_icon_state = "jet"
 	volume = 15
 	amount_per_transfer_from_this = 15
-	reagents_to_add = list(/datum/reagent/ms13/jet = 15)
+	reagents_to_add = list(/singleton/reagent/ms13/jet = 15)
 
 /obj/item/reagent_containers/ms13/inhaler/rocket
 	name = "rocket inhaler"
@@ -130,7 +130,7 @@
 	base_icon_state = "rocket"
 	volume = 20
 	amount_per_transfer_from_this = 20
-	reagents_to_add = list(/datum/reagent/ms13/rocket = 20)
+	reagents_to_add = list(/singleton/reagent/ms13/rocket = 20)
 
 /obj/item/reagent_containers/ms13/inhaler/turbo
 	name = "turbo inhaler"
@@ -139,7 +139,7 @@
 	base_icon_state = "turbo"
 	volume = 15
 	amount_per_transfer_from_this = 15
-	reagents_to_add = list(/datum/reagent/ms13/turbo = 15)
+	reagents_to_add = list(/singleton/reagent/ms13/turbo = 15)
 
 
 /obj/item/reagent_containers/ms13/inhaler/hydra
@@ -149,7 +149,7 @@
 	base_icon_state = "hydra"
 	volume = 15
 	amount_per_transfer_from_this = 15
-	reagents_to_add = list(/datum/reagent/ms13/hydra = 15)
+	reagents_to_add = list(/singleton/reagent/ms13/hydra = 15)
 
 // Pills
 
@@ -174,27 +174,27 @@
 /obj/item/reagent_containers/pill/ms13/mentat
 	desc = "A small red pill that is partially depressed in the center. Otherwise unnoteworthy."
 	icon_state = "mentats"
-	reagents_to_add = list(/datum/reagent/ms13/mentats = 10)
+	reagents_to_add = list(/singleton/reagent/ms13/mentats = 10)
 
 /obj/item/reagent_containers/pill/ms13/buffout
 	desc = "A green pill. It has a large 'X' cut across the face of it."
 	icon_state = "buffout"
-	reagents_to_add = list(/datum/reagent/ms13/buffout = 10)
+	reagents_to_add = list(/singleton/reagent/ms13/buffout = 10)
 
 /obj/item/reagent_containers/pill/ms13/cateye
 	desc = "A green pill. It has an engraved ellipse across the face of it."
 	icon_state = "cateye"
-	reagents_to_add = list(/datum/reagent/ms13/cateye = 10)
+	reagents_to_add = list(/singleton/reagent/ms13/cateye = 10)
 
 /obj/item/reagent_containers/pill/ms13/day_tripper
 	desc = "A blue and white capsule."
 	icon_state = "daytripper"
-	reagents_to_add = list(/datum/reagent/ms13/day_tripper = 10)
+	reagents_to_add = list(/singleton/reagent/ms13/day_tripper = 10)
 
 /obj/item/reagent_containers/pill/ms13/radx
 	desc = "A white and red capsule."
 	icon_state = "radx"
-	reagents_to_add = list(/datum/reagent/ms13/radx = 10)
+	reagents_to_add = list(/singleton/reagent/ms13/radx = 10)
 
 // Pill bottles //
 

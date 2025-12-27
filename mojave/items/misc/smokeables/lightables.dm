@@ -303,7 +303,7 @@
 	. = ..()
 	var/fuel_start = rand(10, max_fuel)
 	create_reagents(fuel_start)
-	reagents.add_reagent(/datum/reagent/fuel, fuel_start)
+	reagents.add_reagent(/singleton/reagent/fuel, fuel_start)
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/tools/lightables_inventory.dmi', world_state, inventory_state)
 	update_appearance()
 
@@ -312,7 +312,7 @@
 	. += "<span class='notice'>Use it to open, use again to ignite. Right Click/Use to close.</span>"
 
 /obj/item/lighter/ms13/proc/get_fuel()
-	return reagents.get_reagent_amount(/datum/reagent/fuel)
+	return reagents.get_reagent_amount(/singleton/reagent/fuel)
 
 /obj/item/lighter/ms13/zippo/update_overlays()
 	if(lit && item_flags & IN_INVENTORY)
@@ -330,7 +330,7 @@
 		world_state = "zippo"
 		return
 	if(lit)
-		reagents.remove_reagent(/datum/reagent/fuel, 0.05)
+		reagents.remove_reagent(/singleton/reagent/fuel, 0.05)
 		update_appearance()
 		update_overlays()
 		update_icon()
@@ -392,10 +392,10 @@
 /obj/item/lighter/ms13/zippo/attackby(obj/item/I, mob/user, params)
 	. = ..()
 	if(istype(I, /obj/item/reagent_containers/ms13/lighterfluid) && is_open)
-		if(!I.reagents.has_reagent(/datum/reagent/fuel))
+		if(!I.reagents.has_reagent(/singleton/reagent/fuel))
 			to_chat(user, SPAN_WARNING("[src] is out of fluid!"))
 			return
-		if(reagents.has_reagent(/datum/reagent/fuel, max_fuel))
+		if(reagents.has_reagent(/singleton/reagent/fuel, max_fuel))
 			to_chat(user, SPAN_WARNING("Your [name] is already full!"))
 			return
 		I.reagents.trans_to(src, max_fuel, transfered_by = user)
@@ -434,7 +434,7 @@
 	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	inhand_icon_state = "butane"
 	volume = 100 // 2 and half welder refills
-	reagents_to_add = list(/datum/reagent/fuel = 100)
+	reagents_to_add = list(/singleton/reagent/fuel = 100)
 	grid_width = 32
 	grid_height = 64
 

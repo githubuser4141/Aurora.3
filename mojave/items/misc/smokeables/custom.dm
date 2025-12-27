@@ -77,32 +77,32 @@
 	switch(filling_identifier)
 		if("xx")
 			//brute heal medium, high smoke damage
-			reagents_to_add = list(/datum/reagent/ms13/medicine/concentrated_xander = 10)
+			reagents_to_add = list(/singleton/reagent/ms13/medicine/concentrated_xander = 10)
 			nicotine_potency = 0
 			smoking_damage = 0.2
 		if("xb", "bx")
 			//weaker bitter drink, medium smoke damage
-			reagents_to_add = list(/datum/reagent/ms13/medicine/bitter_mix = 18)
+			reagents_to_add = list(/singleton/reagent/ms13/medicine/bitter_mix = 18)
 			nicotine_potency = 0
 			smoking_damage = 0.1
 		if("xt", "tx")
 			//half nic, brute heal minor
-			reagents_to_add = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_xander = 7)
+			reagents_to_add = list(/singleton/reagent/ms13/nicotine = 7, /singleton/reagent/ms13/medicine/dried_xander = 7)
 			nicotine_potency = 0.05
 			smoking_damage = 0.05
 		if("bb")
 			//burn heal medium, high smoke damage
-			reagents_to_add = list(/datum/reagent/ms13/medicine/concentrated_broc = 10)
+			reagents_to_add = list(/singleton/reagent/ms13/medicine/concentrated_broc = 10)
 			nicotine_potency = 0
 			smoking_damage = 0.2
 		if("bt", "tb")
 			//half nic, burn heal minor
-			reagents_to_add = list(/datum/reagent/ms13/nicotine = 7, /datum/reagent/ms13/medicine/dried_broc = 7)
+			reagents_to_add = list(/singleton/reagent/ms13/nicotine = 7, /singleton/reagent/ms13/medicine/dried_broc = 7)
 			nicotine_potency = 0.05
 			smoking_damage = 0.05
 		if("tt")
 			//slightly more potent rollie
-			reagents_to_add = list(/datum/reagent/ms13/nicotine = 24)
+			reagents_to_add = list(/singleton/reagent/ms13/nicotine = 24)
 			nicotine_potency = 0.16
 			smoking_damage = 0.006
 	reagents.add_reagent_list(reagents_to_add)

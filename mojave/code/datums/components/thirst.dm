@@ -58,11 +58,11 @@ GLOBAL_LIST_INIT(dehydration_stage_alerts, list(
 	modify_thirst(modify_by = rate_of_thirst)
 	//Nice and hardcoded for now, probably
 	var/mob/living/the_parent = parent
-	if(the_parent.has_reagent(/datum/reagent/water) && the_parent.reagents.get_reagent(/datum/reagent/water))
-		var/datum/reagent/water/water = the_parent.reagents.get_reagent(/datum/reagent/water) //Modify metabolism rate here so don't need to edit base files
+	if(the_parent.has_reagent(/singleton/reagent/water) && the_parent.reagents.get_reagent(/singleton/reagent/water))
+		var/singleton/reagent/water/water = the_parent.reagents.get_reagent(/singleton/reagent/water) //Modify metabolism rate here so don't need to edit base files
 		water.metabolization_rate = 0 // Stop water metabolization, we'll take it from here
-		modify_thirst(modify_by = min(the_parent.reagents.get_reagent_amount(/datum/reagent/water) * SECONDS_OF_LIFE_PER_WATER_U, SECONDS_OF_LIFE_PER_WATER_U * 5)) //NO MICRODOSING, "metabolizes" 5 units of water per 1 second for +25 thirst
-		the_parent.reagents.remove_reagent(/datum/reagent/water, 5)
+		modify_thirst(modify_by = min(the_parent.reagents.get_reagent_amount(/singleton/reagent/water) * SECONDS_OF_LIFE_PER_WATER_U, SECONDS_OF_LIFE_PER_WATER_U * 5)) //NO MICRODOSING, "metabolizes" 5 units of water per 1 second for +25 thirst
+		the_parent.reagents.remove_reagent(/singleton/reagent/water, 5)
 
 	//Last stage of dehydration, you're basicall going to die now
 	if(stage_of_dehydration == length(GLOB.dehydration_stage_alerts))

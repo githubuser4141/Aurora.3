@@ -25,20 +25,20 @@
 	icon = 'mojave/icons/structure/miscellaneous.dmi'
 	icon_state = "sink"
 	desc = "An old sink, typically dispensing clean water. Hard to really tell if it's the case anymore, though."
-	dispensedreagent = /datum/reagent/consumable/ms13/water/unfiltered
+	dispensedreagent = /singleton/reagent/consumable/ms13/water/unfiltered
 	buildstacktype = /obj/item/stack/sheet/ms13/ceramic
 	has_water_reclaimer = TRUE
 	reclaim_rate = 0.1
 
 /obj/structure/sink/ms13/vile
 	desc = "An old sink. There doesn't seem to be any water flow. Whatever is in it... is probably disgusting and old."
-	dispensedreagent = /datum/reagent/consumable/ms13/water/dirty
+	dispensedreagent = /singleton/reagent/consumable/ms13/water/dirty
 
 /obj/structure/sink/ms13/functional
 	name = "sink"
 	icon_state = "sink"
 	desc = "A sink. This one looks pretty alright, and might even give you some decent water!"
-	dispensedreagent = /datum/reagent/consumable/ms13/water
+	dispensedreagent = /singleton/reagent/consumable/ms13/water
 	has_water_reclaimer = TRUE
 	reclaim_rate = 1
 
@@ -46,7 +46,7 @@
 	name = "sink"
 	icon_state = "sink"
 	desc = "A sink. This one seems to function well, but there's a gross buildup around the faucet end."
-	dispensedreagent = /datum/reagent/consumable/ms13/water/unfiltered
+	dispensedreagent = /singleton/reagent/consumable/ms13/water/unfiltered
 
 /obj/machinery/shower/ms13
 	name = "shower"

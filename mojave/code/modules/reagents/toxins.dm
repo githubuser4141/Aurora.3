@@ -1,17 +1,17 @@
-/datum/reagent/toxin/ms13
+/singleton/reagent/toxin/ms13
 	name = "generic MS13 toxin"
 	description = "Don't breathe this in."
 	color = "#42330a"
 	taste_description = "burning chemical taste"
 
-/datum/reagent/toxin/ms13/fiberglass
+/singleton/reagent/toxin/ms13/fiberglass
 	name = "fiberglass"
 	description = "Literally just incredibly small particles of glass."
 	color = "#00eeff4e"
 	taste_description = "sharp particles"
 	toxpwr = 0.5
 
-/datum/reagent/toxin/ms13/fiberglass/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/toxin/ms13/fiberglass/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	. = ..()
 	var/static/list/valid_organ_slots = list(
 		ORGAN_SLOT_STOMACH,
@@ -31,7 +31,7 @@
 
 // Dark Datura //
 
-/datum/reagent/toxin/ms13/dark_datura
+/singleton/reagent/toxin/ms13/dark_datura
 	name = "Dark Datura"
 	description = "An infamous poison made using concentrated Datura Flowers and Radrose. A Wasteland assassin's best friend."
 	reagent_state = LIQUID
@@ -40,7 +40,7 @@
 	metabolization_rate = 0.55 * REAGENTS_METABOLISM //0.11 per second
 	toxpwr = 2.5
 
-/datum/reagent/toxin/ms13/dark_datura/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/toxin/ms13/dark_datura/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	if(DT_PROB(14, delta_time))
 		M.hallucination += 8
 		M.losebreath += 2
@@ -56,7 +56,7 @@
 	return ..()
 
 /// From fly amanita fungus
-/datum/reagent/toxin/ms13/flyamanita
+/singleton/reagent/toxin/ms13/flyamanita
 	name = "fly amanita toxin"
 	description = "A potent poison extracted from the iconic fly amanita fungus."
 	reagent_state = LIQUID
@@ -66,7 +66,7 @@
 	toxpwr = 1.5
 
 /// Liquid gunpowder from Gremlin Stool shrooms, can be dried out into gunpowder for ammo
-/datum/reagent/toxin/ms13/gunpowder
+/singleton/reagent/toxin/ms13/gunpowder
 	name = "liquid gunpowder"
 	description = "Gunpowder diluted in a nondescript solvent."
 	reagent_state = LIQUID

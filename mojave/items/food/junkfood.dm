@@ -16,7 +16,6 @@
     AddComponent(/datum/component/edible,\
                 initial_reagents = food_reagents,\
                 food_flags = food_flags,\
-                //foodtypes = //foodtypes,\
                 volume = max_volume,\
                 eat_time = eat_time,\
                 tastes = tastes,\
@@ -92,7 +91,7 @@
 	icon_state = "porknbean"
 	//foodtypes = MEAT | VEGETABLES | JUNKFOOD
 	tastes = list("meaty" = 3, "savory" = 2, "buttery" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/protein = 15)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 10, /singleton/reagent/consumable/nutriment/protein = 15)
 	max_volume = 25
 	bite_consumption = 5
 	trash_type = /obj/item/trash/ms13/cans/porknbeans
@@ -103,7 +102,7 @@
 	icon_state = "cajunrice"
 	//foodtypes = VEGETABLES | JUNKFOOD | GRAIN
 	tastes = list("savory" = 2, "earthy" = 2, "spicy" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/consumable/nutriment/protein = 8)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 8, /singleton/reagent/consumable/nutriment/protein = 8)
 	max_volume = 16
 	bite_consumption = 8
 	trash_type = /obj/item/trash/ms13/cans/cajunrice
@@ -114,7 +113,7 @@
 	icon_state = "dogfood"
 	//foodtypes = MEAT | VEGETABLES | GROSS | JUNKFOOD
 	tastes = list("meaty" = 3, "sour" = 1, "old" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/consumable/nutriment/protein = 8)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 12, /singleton/reagent/consumable/nutriment/protein = 8)
 	max_volume = 20
 	bite_consumption = 5
 	trash_type = /obj/item/trash/ms13/cans/dogfood
@@ -125,7 +124,7 @@
 	icon_state = "seafood"
 	//foodtypes = MEAT | GROSS
 	tastes = list("sweet" = 2, "meaty" = 3, "slimey" = 4, "pungent" = 2, "spicy" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 15, /datum/reagent/consumable/nutriment/protein = 5)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 15, /singleton/reagent/consumable/nutriment/protein = 5)
 	max_volume = 20
 	bite_consumption = 10
 	trash_type = /obj/item/trash/ms13/cans/seafood
@@ -138,7 +137,7 @@
 	icon_state = "salisbury"
 	//foodtypes = MEAT | JUNKFOOD | GRAIN
 	tastes = list("meaty" = 5, "savory" = 3, "salty" = 1, "old" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/protein = 15)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 5, /singleton/reagent/consumable/nutriment/protein = 15)
 	max_volume = 20
 	bite_consumption = 10
 	trash_type = /obj/item/trash/ms13/packaging/salisbury
@@ -149,7 +148,7 @@
 	icon_state = "crisps"
 	//foodtypes = VEGETABLES | JUNKFOOD
 	tastes = list("earthy" = 1, "salty" = 2, "savory" = 2)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 12)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 12)
 	max_volume = 12
 	bite_consumption = 4
 	trash_type = /obj/item/trash/ms13/packaging/crisps
@@ -162,7 +161,7 @@
 	icon_state = "macncheese"
 	//foodtypes = JUNKFOOD | GRAIN | DAIRY
 	tastes = list("salty" = 1, "cheesy" = 3, "savory" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 14, /datum/reagent/consumable/nutriment/protein = 2)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 14, /singleton/reagent/consumable/nutriment/protein = 2)
 	max_volume = 20
 	bite_consumption = 5
 	trash_type = /obj/item/trash/ms13/packaging/macncheese
@@ -175,7 +174,7 @@
 	icon_state = "poofs"
 	//foodtypes = MEAT | VEGETABLES | GROSS | JUNKFOOD | GRAIN | FRUIT | DAIRY
 	tastes = list("cheesy" = 9, "salty" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 12)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 12)
 	max_volume = 12
 	bite_consumption = 3
 	trash_type = /obj/item/trash/ms13/packaging/poofs
@@ -188,7 +187,7 @@
 	icon_state = "sugarbombs"
 	//foodtypes = JUNKFOOD | GRAIN | SUGAR
 	tastes = list("sweet" = 5, "harsh" = 5)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 16, /datum/reagent/consumable/sugar = 8)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 16, /singleton/reagent/consumable/sugar = 8)
 	max_volume = 24
 	bite_consumption = 6
 	trash_type = /obj/item/trash/ms13/packaging/sugarbombs
@@ -201,7 +200,7 @@
 	icon_state = "yumegg"
 	//foodtypes = MEAT | JUNKFOOD
 	tastes = list("salty" = 1, "creamy" = 1, "buttery" = 1, "old" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/nutriment/protein = 6)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 10, /singleton/reagent/consumable/nutriment/protein = 6)
 	max_volume = 16
 	bite_consumption = 4
 	trash_type = /obj/item/trash/ms13/packaging/yumegg
@@ -214,7 +213,7 @@
 	icon_state = "dandy"
 	//foodtypes = VEGETABLES | JUNKFOOD | FRUIT | SUGAR
 	tastes = list("sweet" = 5, "bitter" = 1, "fruity" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/sugar = 10)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 5, /singleton/reagent/consumable/sugar = 10)
 	max_volume = 15
 	bite_consumption = 5
 	trash_type = /obj/item/trash/ms13/packaging/dandy
@@ -225,7 +224,7 @@
 	icon_state = "snackcake"
 	//foodtypes = JUNKFOOD | SUGAR
 	tastes = list("sweet" = 5, "old" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 10, /datum/reagent/consumable/sugar = 20)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 10, /singleton/reagent/consumable/sugar = 20)
 	max_volume = 30
 	bite_consumption = 5
 	trash_type = /obj/item/trash/ms13/packaging/snackcake
@@ -236,7 +235,7 @@
 	icon_state = "instamash"
 	//foodtypes = VEGETABLES | JUNKFOOD | GRAIN
 	tastes = list("starchy" = 2, "salty" = 1)
-	food_reagents = list(/datum/reagent/consumable/nutriment = 16)
+	food_reagents = list(/singleton/reagent/consumable/nutriment = 16)
 	max_volume = 16
 	bite_consumption = 8
 	trash_type = /obj/item/trash/ms13/packaging/instamash

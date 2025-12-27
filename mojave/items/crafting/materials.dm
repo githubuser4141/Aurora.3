@@ -159,17 +159,16 @@ GLOBAL_LIST_INIT(ceramic_recipes, list ( \
 	w_class = WEIGHT_CLASS_TINY
 	novariants = FALSE
 	grind_results = list(
-		/datum/reagent/toxin/ms13/fiberglass = 10,
+		/singleton/reagent/toxin/ms13/fiberglass = 10,
 	)
 
 /obj/item/stack/sheet/ms13/glass/Initialize()
 	. = ..()
 	var/static/list/food_results = list(
-		/datum/reagent/toxin/ms13/fiberglass = 10,
+		/singleton/reagent/toxin/ms13/fiberglass = 10,
 	)
 	AddComponent(/datum/component/edible,\
 				initial_reagents = food_results,\
-				//foodtypes = GROSS,\
 				after_eat = CALLBACK(src, PROC_REF(on_bite)), \
 				volume = INFINITY)
 
@@ -429,7 +428,7 @@ GLOBAL_LIST_INIT(ms13cloth_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/cotton
 	max_amount = 30
 	loom_result = /obj/item/stack/sheet/cloth //ms13
-	grind_results = list(/datum/reagent/cellulose = 20)
+	grind_results = list(/singleton/reagent/cellulose = 20)
 
 /obj/item/stack/sheet/cotton/ms13/ten
 	amount = 10

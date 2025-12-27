@@ -4,9 +4,9 @@
 	icon_state = "fatty_roasted"
 	tastes = list("gamey meat" = 1)
 	food_reagents = list(
-		/datum/reagent/consumable/nutriment/organ_tissue = 4,
-		/datum/reagent/consumable/nutriment/protein = 4,
-		/datum/reagent/consumable/nutriment/vitamin = 1,
+		/singleton/reagent/consumable/nutriment/organ_tissue = 4,
+		/singleton/reagent/consumable/nutriment/protein = 4,
+		/singleton/reagent/consumable/nutriment/vitamin = 1,
 	)
 	color = COLOR_DARK_ORANGE
 
@@ -27,8 +27,8 @@
 	icon = 'mojave/icons/objects/organs/organs_inventory.dmi'
 	icon_state = "brain"
 	food_reagents = list(
-		/datum/reagent/consumable/nutriment/organ_tissue = 4,
-		/datum/reagent/consumable/nutriment/protein = 4,
-		/datum/reagent/consumable/nutriment/protein/prions = 2,
-		/datum/reagent/consumable/nutriment/vitamin = 1,
+		/singleton/reagent/consumable/nutriment/organ_tissue = 4,
+		/singleton/reagent/consumable/nutriment/protein = 4,
+		/singleton/reagent/consumable/nutriment/protein/prions = 2,
+		/singleton/reagent/consumable/nutriment/vitamin = 1,
 	)

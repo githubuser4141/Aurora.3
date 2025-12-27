@@ -7,7 +7,7 @@
 	desc = "The most generic of ms13 eggs, shoot the admin that spawned this."
 	icon = 'mojave/icons/mob/animalproduce.dmi'
 	icon_state = "egg"
-	food_reagents = list(/datum/reagent/consumable/eggyolk = 2, /datum/reagent/consumable/eggwhite = 4)
+	food_reagents = list(/singleton/reagent/consumable/eggyolk = 2, /singleton/reagent/consumable/eggwhite = 4)
 	//foodtypes = GROSS | TOXIC
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
 
@@ -32,7 +32,7 @@
 	name = "gecko egg"
 	desc = "The smooth egg of a gecko, extremely nutritious."
 	color = "#383e47"
-	food_reagents = list(/datum/reagent/consumable/eggyolk = 5, /datum/reagent/consumable/eggwhite = 15)
+	food_reagents = list(/singleton/reagent/consumable/eggyolk = 5, /singleton/reagent/consumable/eggwhite = 15)
 
 /obj/item/food/ms13/egg/ms13/mirelurk
 	name = "mirelurk egg"
@@ -50,4 +50,4 @@
 	name = "nightstalker egg"
 	desc = "The huge egg of a nightstalker, extremely nutritious."
 	color = "#006370"
-	food_reagents = list(/datum/reagent/consumable/eggyolk = 15, /datum/reagent/consumable/eggwhite = 35)
+	food_reagents = list(/singleton/reagent/consumable/eggyolk = 15, /singleton/reagent/consumable/eggwhite = 35)

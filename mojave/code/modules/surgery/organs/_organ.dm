@@ -1,7 +1,7 @@
 /obj/item/organ
 	food_reagents = list(
-		/datum/reagent/consumable/nutriment/organ_tissue = 5,
-		/datum/reagent/consumable/nutriment/protein = 1,
+		/singleton/reagent/consumable/nutriment/organ_tissue = 5,
+		/singleton/reagent/consumable/nutriment/protein = 1,
 	)
 	/// Type of food we turn into when grilled, should probably keep it as what it is here
 	var/grilled_type = /obj/item/food/meat/steak/plain/ms13/organ
