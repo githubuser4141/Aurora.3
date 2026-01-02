@@ -4,10 +4,10 @@
 	name = "brass knuckle"
 	desc = "A very small brass knuckle meant to be held in your hand to assist in making your punches quite a bit more dangerous."
 	icon = 'mojave/icons/objects/melee/melee_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
-	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
-	worn_icon_state = "empty_placeholder"
+	//lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
+	//worn_icon = 'mojave/icons/mob/worn_melee.dmi'
+	//worn_icon_state = "empty_placeholder"
 	attack_verb_continuous = list("punches", "jabs", "clocks", "nails", "bludgeons", "whacks", "bonks")
 	attack_verb_simple = list("punch", "jab", "clock", "nail", "bludgeon", "whack", "bonk")
 	icon_state = "knuckles"
@@ -58,8 +58,8 @@
 	name = "power fist"
 	desc = "A heavy, advanced glove that packs a hefty extra punch thanks to pneumatic mechanisms in the glove. Can break bones like a stick."
 	icon = 'mojave/icons/objects/melee/melee_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
 	icon_state = "powerfist"
 	item_state = "powerfist"
 	hitsound = list('mojave/sound/ms13weapons/meleesounds/powerfist_hit1.ogg', 'mojave/sound/ms13weapons/meleesounds/powerfist_hit2.ogg', 'mojave/sound/ms13weapons/meleesounds/powerfist_hit3.ogg')

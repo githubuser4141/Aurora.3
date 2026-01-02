@@ -10,8 +10,8 @@
 	name = "frag grenade"
 	desc = "The average frag grenade, if you could even say that. Utilizing an explosive payload to blast shrapnel around a large area. Great for clearing rooms."
 	icon = 'mojave/icons/objects/throwables/grenades_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_left.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_right.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_left.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_right.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	throwforce = 10
 	display_timer = FALSE
@@ -65,8 +65,8 @@
 	name = "molotov cocktail"
 	desc = "The firestarters best friend, a very simple grenade consisting of a rag and a bottle of alcohol. Light those suckers up."
 	icon = 'mojave/icons/objects/throwables/grenades_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_left.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_right.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_left.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/weapons/grenades_inhand_right.dmi'
 	icon_state = "molotov"
 	throwforce = 10
 	throw_speed = 1.5

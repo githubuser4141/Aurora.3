@@ -4,10 +4,10 @@
 	name = "hatchet"
 	desc = "A compact but deadly axe. Useful for chopping wood or heads in a pinch."
 	icon = 'mojave/icons/objects/melee/melee_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
-	worn_icon = 'mojave/icons/mob/worn_melee.dmi'
-	worn_icon_state = "empty_placeholder"
+	//lefthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_left.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/weapons/melee_inhand_right.dmi'
+	//worn_icon = 'mojave/icons/mob/worn_melee.dmi'
+	//worn_icon_state = "empty_placeholder"
 	icon_state = "hatchet"
 	item_state = "hatchet"
 	pickup_sound = 'mojave/sound/ms13weapons/meleesounds/wooden_pickup.ogg'

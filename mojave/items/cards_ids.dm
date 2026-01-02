@@ -10,7 +10,7 @@
 	desc = "A simple identification tag. This is a base class and you shouldn't be seeing it."
 	icon = 'mojave/icons/objects/identification/dogtags_inventory.dmi'
 	icon_state = "bos_holotag"
-	worn_icon_state = null
+	//worn_icon_state = null
 	var/shows_age = TRUE
 
 /obj/item/card/id/examine(mob/user)

@@ -2,7 +2,7 @@
 	name = "brown cloak"
 	desc = "This shouldn't really exist"
 	icon = 'mojave/icons/objects/clothing/clothing_world/neck_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/neck.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/neck.dmi'
 	icon_state = "qmcloak"
 	item_state = "qmcloak"
 	equip_delay_self = 1 SECONDS

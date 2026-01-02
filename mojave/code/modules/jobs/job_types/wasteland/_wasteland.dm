@@ -1,6 +1,6 @@
 /datum/job/ms13/wasteland
 	selection_color = "#e08960"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/wasteland,
 	)
 	guestbook_flags = NONE //by default, wasteland jobs should not know each other

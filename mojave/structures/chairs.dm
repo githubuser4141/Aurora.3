@@ -231,8 +231,8 @@
 	icon = 'mojave/icons/structure/chairs.dmi'
 	icon_state = "metal_chair_toppled"
 	item_state = "metal_chair"
-	lefthand_file = 'mojave/icons/mob/inhands/misc/chairs_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/chairs_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/chairs_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/chairs_righthand.dmi'
 	custom_materials = null
 	origin_type = /obj/structure/chair/ms13
 	break_chance = 0

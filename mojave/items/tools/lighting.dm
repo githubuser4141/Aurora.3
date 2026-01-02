@@ -4,8 +4,8 @@
 	name = "flashlight"
 	desc = "A common flashlight. An essential tool for any tomfoolery in the unknown."
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "flashlight_old"
 	item_state = "flashlight_old"
 	light_range = 3.75
@@ -40,8 +40,8 @@
 	name = "flare"
 	desc = "A red flare, quite simple."
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "flare"
 	item_state = "flare"
 	light_range = 3.5

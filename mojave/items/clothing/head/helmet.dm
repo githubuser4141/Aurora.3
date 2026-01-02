@@ -2,12 +2,12 @@
 	name = "generic ms13 helmet"
 	desc = "You shouldn't be seeing this helmet."
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR, BOMB = ARMOR_BOMB_MINOR, BIO = ARMOR_BIO_MINOR)
-	dynamic_hair_suffix = "+generic"
-	dynamic_fhair_suffix = "+generic"
+	//dynamic_hair_suffix = "+generic"
+	//dynamic_fhair_suffix = "+generic"
 	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
 	max_integrity = 150
@@ -31,14 +31,14 @@
 	name = "generic ms13 hood"
 	desc = "We in this."
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
 	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	max_integrity = 150
 	grid_width = 64
 	grid_height = 64
@@ -61,22 +61,22 @@
 	name = "generic ms13 suit hood"
 	desc = "Gamer phone home. Something is wrong."
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR)
 	flags_inv = BLOCKHEADHAIR
 	flags_cover = 0
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/soft/ms13
 	name = "generic ms13 flip cap"
 	desc = "Now you flipped dawg."
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0)
 	grid_width = 32
 	grid_height = 64
@@ -86,7 +86,7 @@
 	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/hats_inventory.dmi')
 
 /obj/item/clothing/head/helmet/ms13/tall
-	worn_icon = 'mojave/icons/mob/clothing/32x64.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/32x64.dmi'
 	worn_x_dimension = 32
 	worn_y_dimension = 32
 
@@ -112,8 +112,8 @@
 	item_state = "combathelmet_mk2"
 	max_integrity = 260
 	armor = list(MELEE = ARMOR_MELEE_KNIVES, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -181,8 +181,8 @@
 	item_state = "weldingoff"
 	max_integrity = 325
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
@@ -197,8 +197,8 @@
 	item_state = "combathelmet_mk2"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	has_fov = TRUE
 	fov_angle = 60
@@ -245,9 +245,9 @@
 	light_power = 0.75
 	light_range = 3.75
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	item_state = "hazmat"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
@@ -259,9 +259,9 @@
 	desc = "A durable and fireproof face shield to help keep your eyes when welding."
 	icon_state = "welding"
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	item_state = "welding"
 	resistance_flags = FIRE_PROOF
 	max_integrity = 325
@@ -526,7 +526,7 @@
 	resistance_flags = NONE
 	flags_inv = BLOCKHEADHAIR
 	armor = list(MELEE = 10, BULLET = 10, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 5)
-	dynamic_hair_suffix = ""
+	//dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/helmet/ms13/tall/cone/attack_self(mob/user)
 	weldingvisortoggle(user)
@@ -742,8 +742,8 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -770,8 +770,8 @@
 	item_state = "riotgearhelmet"
 	armor = list(MELEE = 50, BULLET = 40, LASER = 35, ENERGY = 25, BOMB = 50, BIO = 25)
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/ms13/enforcer
 	name = "padded black hat and mask"
@@ -791,8 +791,8 @@
 	fov_angle = 90
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 
 /obj/item/clothing/head/helmet/ms13/snowguard
 	name = "visored helmet"
@@ -820,8 +820,8 @@
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	has_fov = TRUE
 	fov_angle = 90
 	equip_delay_self = 2 SECONDS
@@ -845,8 +845,8 @@
 	icon_state = "radsuithood"
 	item_state = "radsuithood"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0) //No wound armor
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	has_fov = TRUE
 	fov_angle = 90
@@ -862,8 +862,8 @@
 	desc = "The hood to a hazmat suit. You'll want to keep this close if you want the suit to actually do anything for you."
 	icon_state = "hazmathood"
 	item_state = "hazmat"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	resistance_flags = ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
@@ -871,13 +871,13 @@
 	name = "space helmet"
 	desc = "A near pristine space helmet. Not a single crack in the glass found. It's probably still good to go!"
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	icon_state = "spacehelmet"
 	item_state = "spacehelmet"
 	armor = list(MELEE = 15, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 5, BIO = 75)
 	flags_inv = BLOCKHEADHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 
 // NCR Helmets //
 
@@ -1109,7 +1109,7 @@
 	name = "\improper Desert Ranger hat"
 	desc = "A sylish hat, often worn by Desert Rangers. Made with some thick leather and small internal layer of kevlar."
 	icon_state = "ranger_hat"
-	worn_icon_state = "ranger_hat"
+	//worn_icon_state = "ranger_hat"
 	max_integrity = 200
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0) //No wound armor
 
@@ -1119,8 +1119,8 @@
 	name = "base type drylander hood"
 	desc = "You shouldn't be seeing this."
 	flags_inv = HIDEEARS|HIDEFACE|BLOCKHEADHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 
@@ -1128,7 +1128,7 @@
 	name = "\improper Drylander hunter hood"
 	desc = "A lightly padded hood worn by Drylander hunters."
 	icon_state = "hunter_dry"
-	worn_icon_state = "hunter_dry"
+	//worn_icon_state = "hunter_dry"
 	max_integrity = 200
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
@@ -1138,7 +1138,7 @@
 	name = "\improper Drylander Headtaker hood"
 	desc = "A protective hood worn by Headtakers of the Drylander tribe. The sight alone strikes fear into the locals."
 	icon_state = "headtaker"
-	worn_icon_state = "headtaker"
+	//worn_icon_state = "headtaker"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
@@ -1148,7 +1148,7 @@
 	name = "\improper Drylander shaman hood"
 	desc = "A lightly padded hood worn by the shaman of the Drylander tribe."
 	icon_state = "shaman"
-	worn_icon_state = "shaman"
+	//worn_icon_state = "shaman"
 	max_integrity = 200
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
@@ -1158,7 +1158,7 @@
 	name = "cracked Deathclaw skull helmet"
 	desc = "A hollowed out Deathclaw skull with padding to be fashioned into a sturdy helmet. It has a sizeable crack over the left eye. Perhaps one day it can be returned to it's former glory."
 	icon_state = "chieftain"
-	worn_icon_state = "chieftain"
+	//worn_icon_state = "chieftain"
 	max_integrity = 260
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0)
 	has_fov = TRUE
@@ -1213,8 +1213,8 @@
 	desc = "A heavy duty gas mask that doubles as a protective helmet. Likely used by the pre-war military for operations in hazardous areas."
 	icon_state = "mon_captain"
 	item_state = "metalhelmet"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 	fov_angle = 120 //So basically just a combat helmet with a worse FOV
 
 /obj/item/clothing/head/hooded/ms13/mon_city
@@ -1222,8 +1222,8 @@
 	desc = "The hood to a green winter hoodie. Has some light protective padding on the inside."
 	icon_state = "mon_marksmanhood"
 	item_state = "fedora"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	//dynamic_hair_suffix = ""
+	//dynamic_fhair_suffix = ""
 
 // goldman Hats //
 

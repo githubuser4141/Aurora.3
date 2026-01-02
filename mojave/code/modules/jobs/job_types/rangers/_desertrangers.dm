@@ -1,10 +1,10 @@
 /datum/job/ms13/ranger
 	selection_color = "#bdbc76"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/rangers,
 	)
-	exp_granted_type = EXP_TYPE_RANGERS
-	exp_required_type = EXP_TYPE_RANGERS
+	//exp_granted_type = EXP_TYPE_RANGERS
+	//exp_required_type = EXP_TYPE_RANGERS
 	forbid = "The Desert Rangers forbid hostility towards the innocent, Inebriation on duty, and excessive cruelty."
 	enforce = "The Desert Rangers stand for the public and defend those who can not defend themselves. Protect the needy and help them as situations arise."
 

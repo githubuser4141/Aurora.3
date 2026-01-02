@@ -1,6 +1,6 @@
 /datum/job/ms13/drylander
 	selection_color = "#412d09"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/drylander,
 	)
 	forbid = "The tribe forbids: Betrayal of the tribe."

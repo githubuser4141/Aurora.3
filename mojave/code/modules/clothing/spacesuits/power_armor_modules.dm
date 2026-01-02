@@ -6,8 +6,8 @@
 	icon = 'icons/obj/module.dmi'
 	icon_state = "circuit_map"
 	item_state = "electronic"
-	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
+	//lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
+	//righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	var/class_type = MAIN_MODULE_PA
 	var/list/actions_modules = null

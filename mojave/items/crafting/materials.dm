@@ -4,8 +4,8 @@
 
 /obj/item/stack/sheet/ms13
 	icon = 'mojave/icons/objects/crafting/materials_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	force = 0
 	throwforce = 0
 	merge_type = /obj/item/stack/sheet/ms13

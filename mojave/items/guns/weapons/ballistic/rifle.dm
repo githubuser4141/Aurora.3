@@ -63,7 +63,7 @@
 
 /obj/item/gun/ballistic/rifle/ms13/varmint/update_icon_state()
 	. = ..()
-	worn_icon_state = "[initial(icon_state)]"
+	//worn_icon_state = "[initial(icon_state)]"
 	if(!chambered && magazine) //this makes all our rifles empty, the state with a magazine, rifle not necassarily empty just not chambered
 		icon_state = "[initial(icon_state)]_mag_empty"
 
@@ -132,7 +132,7 @@
 
 /obj/item/gun/ballistic/rifle/ms13/hunting/scoped/amr/update_icon_state()
 	. = ..()
-	worn_icon_state = "[initial(icon_state)]"
+	//worn_icon_state = "[initial(icon_state)]"
 	if(!chambered && magazine) //this makes all our rifles empty, the state with a magazine, rifle not necassarily empty just not chambered
 		icon_state = "[initial(icon_state)]_mag_empty"
 

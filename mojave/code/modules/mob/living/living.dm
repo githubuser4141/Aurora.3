@@ -38,3 +38,84 @@
 	var/message = speech_args[SPEECH_MESSAGE]
 	if(message[1] != "*")
 		speech_args[SPEECH_MESSAGE] = stars(message, 40)
+
+
+/// Updates canmove, lying and icons. Could perhaps do with a rename but I can't think of anything to describe it.
+/mob/proc/update_canmove()
+	if(in_neck_grab())
+		lying = FALSE
+		for(var/obj/item/grab/G in grabbed_by)
+			if(G.force_down)
+				lying = TRUE
+				break
+	else if(!resting && cannot_stand() && can_stand_overridden())
+		lying = FALSE
+		lying_is_intentional = FALSE
+		canmove = TRUE
+	else
+		if(istype(buckled_to, /obj/vehicle))
+			var/obj/vehicle/V = buckled_to
+			if(is_physically_disabled() && !HAS_TRAIT(src, TRAIT_FORCED_STANDING))
+				lying = TRUE
+				lying_is_intentional = FALSE
+				canmove = FALSE
+				pixel_y = V.mob_offset_y - 5
+			else
+				if(buckled_to.buckle_lying != -1) lying = buckled_to.buckle_lying
+				lying_is_intentional = FALSE
+				canmove = TRUE
+				pixel_y = V.mob_offset_y
+		else if(buckled_to)
+			anchored = TRUE
+			canmove = FALSE
+			if(isobj(buckled_to))
+				if(buckled_to.buckle_lying != -1)
+					lying = buckled_to.buckle_lying
+					lying_is_intentional = FALSE
+				if(buckled_to.buckle_movable)
+					anchored = FALSE
+					canmove = TRUE
+		else if(captured)
+			anchored = TRUE
+			canmove = FALSE
+			lying = FALSE
+		else if(m_intent == M_LAY && !incapacitated() && !HAS_TRAIT(src, TRAIT_FORCED_STANDING))
+			lying = TRUE
+			lying_is_intentional = TRUE
+			canmove = TRUE
+		else if(sleeping && !HAS_TRAIT(src, TRAIT_FORCED_STANDING))
+			lying = resting || is_dead() || (MOB_IS_INCAPACITATED(INCAPACITATION_KNOCKDOWN) && sleeps_horizontal()) // Vaurca, IPCs and Diona sleep standing up, unless they were already lying down
+			lying_is_intentional = FALSE
+			canmove = !MOB_IS_INCAPACITATED(INCAPACITATION_KNOCKOUT) && !weakened
+		else if(!HAS_TRAIT(src, TRAIT_FORCED_STANDING))
+			lying = resting || is_dead() || MOB_IS_INCAPACITATED(INCAPACITATION_KNOCKDOWN) && !recently_slept
+			lying_is_intentional = FALSE
+			canmove = !MOB_IS_INCAPACITATED(INCAPACITATION_KNOCKOUT) && !weakened
+
+	if(lying)
+		ADD_TRAIT(src, TRAIT_UNDENSE, TRAIT_SOURCE_LYING_DOWN)
+		if(!lying_is_intentional)
+			if(l_hand) unEquip(l_hand)
+			if(r_hand) unEquip(r_hand)
+	else
+		REMOVE_TRAIT(src, TRAIT_UNDENSE, TRAIT_SOURCE_LYING_DOWN)
+
+	for(var/obj/item/grab/G in grabbed_by)
+		if(G.wielded)
+			canmove = FALSE
+			lying = TRUE
+			break
+		if(G.state >= GRAB_AGGRESSIVE)
+			canmove = 0
+			break
+
+	//Temporarily moved here from the various life() procs
+	//I'm fixing stuff incrementally so this will likely find a better home.
+	//It just makes sense for now. ~Carn
+	if( update_icon )	//forces a full overlay update
+		update_icon = 0
+		regenerate_icons()
+	else if( lying != lying_prev )
+		update_icon()
+
+	return canmove

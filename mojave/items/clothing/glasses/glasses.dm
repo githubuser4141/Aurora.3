@@ -6,9 +6,9 @@
 	desc = "this doesn't even exist"
 	item_state = "sunglasses"
 	icon = 'mojave/icons/objects/clothing/clothing_world/glasses_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/eyes.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/eyes.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	grid_width = 32
 	grid_height = 32
 	equip_delay_self = 0.25 SECONDS

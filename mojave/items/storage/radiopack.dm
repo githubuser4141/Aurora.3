@@ -4,9 +4,9 @@
 	icon = 'mojave/icons/objects/clothing/clothing_inventory/backpack_inventory.dmi'
 	icon_state = "radiopack"
 	item_state = "radiopack"
-	worn_icon = 'mojave/icons/mob/clothing/back.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/equipment/backpack_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/equipment/backpack_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/back.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/equipment/backpack_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/equipment/backpack_righthand.dmi'
 
 	component_type = /datum/component/storage/concrete/ms13/rad_pack
 	storage_flags = 0

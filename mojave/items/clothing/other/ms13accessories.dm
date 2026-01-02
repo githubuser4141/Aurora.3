@@ -1,6 +1,6 @@
 /obj/item/clothing/accessory/armband/ms13
 	icon = 'mojave/icons/objects/clothing/clothing_world/accessories_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/accessories.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/accessories.dmi'
 
 /obj/item/clothing/accessory/armband/ms13/Initialize(mapload)
 	. = ..()

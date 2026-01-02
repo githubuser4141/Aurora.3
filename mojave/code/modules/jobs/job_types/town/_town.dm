@@ -1,6 +1,6 @@
 /datum/job/ms13/town
 	selection_color = "#4feb64"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/town,
 	)
 	forbid = "The laws of Snowcrest forbid: Gambling, the usage or possession of drugs (excluding Med-x and similar medical drugs), public intoxication, the brandishing of weapons or reckless discharge of firearms, slavery or human trafficking (except in the case of penal labor)."

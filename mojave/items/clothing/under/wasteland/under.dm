@@ -6,15 +6,15 @@
 	random_sensor = FALSE
 	sensor_mode = NO_SENSORS
 	icon = 'mojave/icons/objects/clothing/clothing_world/uniforms_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/uniform.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/uniform.dmi'
 	item_state = null
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_width = 64
 	grid_height = 96
 	///Icon file for left hand inhand overlays
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	repairable_by = /obj/item/stack/sheet/ms13/cloth
 	limb_integrity = 100
 	max_integrity = 350
@@ -474,7 +474,7 @@
 			span_hear("You hear chains rattling with an abrupt stop."))
 		playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 		icon_state = initial(icon_state)+"_snatched"
-		worn_icon_state = initial(icon_state)+"_snatched"
+		//worn_icon_state = initial(icon_state)+"_snatched"
 		update_appearance(updates = UPDATE_ICON)
 		user.update_inv_w_uniform()
 		user.update_body()
@@ -498,7 +498,7 @@
 				SPAN_NOTICE("You hang some gains on \the [src]"),
 				span_hear("You hear cloth moving around with chains rattling."))
 			icon_state = initial(icon_state)
-			worn_icon_state = initial(icon_state)
+			//worn_icon_state = initial(icon_state)
 			update_appearance(updates = UPDATE_ICON)
 			user.update_inv_w_uniform()
 			user.update_body()

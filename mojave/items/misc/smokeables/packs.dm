@@ -7,8 +7,8 @@
 	icon_state = "generic"
 	inventory_state = "generic_pack"
 	world_state = "generic"
-	lefthand_file = 'mojave/icons/mob/inhands/misc/smokeables_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/smokeables_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/smokeables_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/smokeables_righthand.dmi'
 	item_state = "lucky"
 	w_class = WEIGHT_CLASS_SMALL
 	gender = PLURAL

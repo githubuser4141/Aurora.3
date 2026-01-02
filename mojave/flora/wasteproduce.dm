@@ -27,8 +27,8 @@
 /obj/item/food/grown/ms13
 	icon = 'mojave/icons/hydroponics/harvest/harvest_world.dmi'
 	item_state = "plant"
-	lefthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	can_distill = TRUE
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32

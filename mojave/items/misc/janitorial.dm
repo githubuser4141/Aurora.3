@@ -3,8 +3,8 @@
 	desc = "An old mop. Essential for attempting to clean up the unspeakable."
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
 	icon_state = "mop"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	force = 10
 	throwforce = 10
 	throw_speed = 3
@@ -25,8 +25,8 @@
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
 	icon_state = "bucket"
 	item_state = "bucket"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	custom_materials = list(/datum/material/iron=200)
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_width = 96

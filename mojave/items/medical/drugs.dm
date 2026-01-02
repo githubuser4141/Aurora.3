@@ -157,11 +157,11 @@
 	name = "pill"
 	desc = "A tablet or capsule."
 	icon = 'mojave/icons/objects/drugs.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	worn_icon = 'mojave/icons/mob/worn_misc.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/worn_misc.dmi'
 	icon_state = ""
-	worn_icon_state = ""
+	//worn_icon_state = ""
 	volume = 10
 	grind_results = list()
 	self_delay = 0.5
@@ -204,8 +204,8 @@
 	icon = 'mojave/icons/objects/drugs.dmi'
 	icon_state = "bottle_closed"
 	item_state = "contsolid"
-	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	//lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
+	//righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	component_type = /datum/component/storage/concrete/ms13/pillbottle
 	grid_height = 64

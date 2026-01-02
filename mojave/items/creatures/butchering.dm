@@ -12,8 +12,8 @@
 	icon = 'mojave/icons/mob/skinning.dmi'
 	icon_state = null
 	item_state = null
-	lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
 	throw_range = 3
 	w_class = WEIGHT_CLASS_BULKY
 	grid_height = 96
@@ -140,8 +140,8 @@
 	icon = 'mojave/icons/mob/skinning.dmi'
 	icon_state = null
 	item_state = null
-	lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
 	throw_range = 2
 	w_class = WEIGHT_CLASS_BULKY
 	food_reagents = null
@@ -368,8 +368,8 @@
 	icon = 'mojave/icons/mob/animalproduce.dmi'
 	icon_state = null
 	item_state = null
-	lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/butchering_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/butchering_righthand.dmi'
 	throw_range = 5
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_height = 64

@@ -162,8 +162,8 @@
 	name = "rug"
 	desc = "A common rug, used to cover your boring floor. It's currently rolled up, but peeking through you can see it's blue."
 	icon = 'mojave/icons/objects/clutter/clutter_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "rug"
 	item_state = "rug"
 	throw_range = 2

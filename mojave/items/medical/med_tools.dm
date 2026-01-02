@@ -5,8 +5,8 @@
 	desc = "A surgical tool primarily used for clamping and grasping during surgery."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "hemostat"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "hemostat"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -21,8 +21,8 @@
 	desc = "A surgical tool normally used for holding open a wound or incision."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "retractor"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "retractor"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -37,8 +37,8 @@
 	desc = "A pre-war bone saw. Useful for amputations or cutting open a rib cage."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "bonesaw"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "bonesaw"
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_width = 96
@@ -58,8 +58,8 @@
 	desc = "A cautery used for stopping bleeding or closing wounds."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "cautery"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "cautery"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -74,8 +74,8 @@
 	desc = "A sharp surgical tool used for making incisions."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "scalpel"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "scalpel"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -92,8 +92,8 @@
 	desc = "A surgical tool used for setting bones back into place."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "bonesetter"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "bonesetter"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -107,8 +107,8 @@
 	desc = "Surgical drapes used to provide optimal safety and infection control when operating on a patient."
 	icon = 'mojave/icons/objects/medical/medical_world.dmi'
 	icon_state = "surgical_drapes"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	item_state = "surgical_drapes"
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
@@ -126,8 +126,8 @@
 	desc = "An advanced medical gel used to treat and help to repair broken bones. Direct application possible but not advised."
 	icon = 'mojave/icons/objects/medical/medical_inventory.dmi'
 	icon_state = "bone_gel"
-	lefthand_file = null
-	righthand_file = null //No in-hand for now, the TG bone gel looks way too different to justify it as a placeholder - Hekzder
+	//lefthand_file = null
+	//righthand_file = null //No in-hand for now, the TG bone gel looks way too different to justify it as a placeholder - Hekzder
 	amount = 5
 	max_amount = 5
 	self_delay = 3 SECONDS

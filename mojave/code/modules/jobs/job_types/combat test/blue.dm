@@ -6,7 +6,7 @@
 	description = "Blast those red suckas away! This is YOUR turf!"
 
 	outfit = /obj/outfit/job/ms13/combattest/blue
-	departments_list = list(/datum/job_department/command)
+	departments = list(/datum/job_department/command)
 	display_order = JOB_DISPLAY_ORDER_MS13_BLUE
 
 /obj/outfit/job/ms13/combattest/blue

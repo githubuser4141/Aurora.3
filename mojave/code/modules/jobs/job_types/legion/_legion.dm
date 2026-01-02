@@ -1,10 +1,10 @@
 /datum/job/ms13/legion
 	selection_color = "#9c0000"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/legion,
 	)
-	exp_granted_type = EXP_TYPE_LEGION
-	exp_required_type = EXP_TYPE_LEGION
+	//exp_granted_type = EXP_TYPE_LEGION
+	//exp_required_type = EXP_TYPE_LEGION
 	forbid = "Caesar's Legion forbids: chem usage, over-reliance on technology of all forms."
 
 /obj/outfit/job/ms13/legion

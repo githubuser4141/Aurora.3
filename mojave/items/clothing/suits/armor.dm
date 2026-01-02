@@ -2,14 +2,14 @@
 	name = "generic ms13 armor"
 	desc = "You shouldn't be seeing this."
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_MINOR, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR, BOMB = ARMOR_BOMB_MINOR)
 	max_integrity = 400
 	///Icon file for left hand inhand overlays
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	grid_width = 96
 	grid_height = 96
 	equip_delay_self = 2.5 SECONDS
@@ -23,9 +23,9 @@
 	name = "generic ms13 hooded clothing"
 	desc = "BASE CLASE BASE CLASS. AAAAAAAAAAAAAAA"
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	hoodtype = /obj/item/clothing/head/hooded/ms13
 	armor = list(MELEE = ARMOR_MELEE_MINOR, BULLET = ARMOR_BALLISTIC_TINY, LASER = ARMOR_LASER_MINOR, ENERGY = ARMOR_ENERGY_MINOR, BOMB = ARMOR_BOMB_MINOR)
 	grid_width = 64
@@ -362,7 +362,7 @@
 	name = "\improper Space suit"
 	desc = "A state of the art genuine space suit. I hope you didn't go into orbit to get this. Built to last, is up to standard for the harsh climate of space itself."
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "spacesuit"
 	item_state = "spacesuit"
 	armor = list(MELEE = 25, BULLET = 15, LASER = 25, ENERGY = 25, BOMB = 5)
@@ -549,7 +549,7 @@
 	name = "\improper Desert Ranger combat armor"
 	desc = "A set of Desert Ranger combat armor. The thick materials hold up well against attacks, while keeping the wearer agile."
 	icon_state = "patrol_armor"
-	worn_icon_state = "patrol_armor"
+	//worn_icon_state = "patrol_armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	slowdown = 0.15
 	max_integrity = 500
@@ -562,7 +562,7 @@
 	name = "\improper Elite Desert Ranger armor"
 	desc = "A set of Elite Desert Ranger armor. Heavy kevlar padding in a duster, with a metal breastplate in the front. Built to last through the worst."
 	icon_state = "elite_ranger"
-	worn_icon_state = "elite_ranger"
+	//worn_icon_state = "elite_ranger"
 	item_state = "riotgear"
 	slowdown = 0.5
 	equip_delay_self = 4 SECONDS

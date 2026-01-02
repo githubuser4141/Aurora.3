@@ -4,7 +4,7 @@
 	name = "stealthboy"
 	desc = "A RobCo Industries Stealth Boy 3001, a device capable of rendering the wearer nearly transparent for a period of time."
 	icon = 'mojave/items/stealth/stealthboy_world.dmi'
-	worn_icon = 'mojave/items/stealth/stealthboy_worn.dmi' //Currently an empty placeholder, needs a sprite!
+	//worn_icon = 'mojave/items/stealth/stealthboy_worn.dmi' //Currently an empty placeholder, needs a sprite!
 	icon_state = "stealthboy"
 	throwforce = 5.0
 	throw_speed = 1

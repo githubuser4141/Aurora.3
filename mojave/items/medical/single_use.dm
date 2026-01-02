@@ -19,8 +19,8 @@
 	desc = "A stury leather belt. You could probably tie it around a limb to prevent the flow of blood."
 	singular_name = "belt"
 	icon_state = "belt"
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	self_delay = 7 SECONDS
 	other_delay = 4 SECONDS
 	stop_bleeding = 0.6

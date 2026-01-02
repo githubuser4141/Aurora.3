@@ -10,8 +10,8 @@
 	inventory_state = "matchbox"
 	world_state = "matchbox"
 	component_type = /datum/component/storage/concrete/ms13/matchbox
-	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	item_state = "matchbox"
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = null
@@ -66,7 +66,7 @@
 		W.update_appearance()
 		W.update_overlays()
 		W.update_icon()
-		W.build_worn_icon()
+		W.build_//worn_icon()
 		user.update_inv_hands()
 		W.set_light_on(TRUE)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
@@ -167,8 +167,8 @@
 	icon_state = "match"
 	inventory_state = "match"
 	world_state = "match"
-	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	item_state = "match"
 	smoketime = 45 SECONDS
 	grind_results = null
@@ -291,8 +291,8 @@
 	icon_state = "zippo"
 	inventory_state = "zippo"
 	world_state = "zippo"
-	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	item_state = "zippo"
 	slot_flags = null
 	var/max_fuel = 50
@@ -430,8 +430,8 @@
 	icon_state = "butane"
 	inventory_state = "butane"
 	world_state = "butane"
-	lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/misc/lightables_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/misc/lightables_righthand.dmi'
 	item_state = "butane"
 	volume = 100 // 2 and half welder refills
 	reagents_to_add = list(/singleton/reagent/fuel = 100)

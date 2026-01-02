@@ -123,7 +123,7 @@
 	grid_height = 64
 
 /obj/item/gun/ballistic/automatic/ms13/semi/battle/update_icon_state()
-	worn_icon_state = "[initial(icon_state)]"
+	//worn_icon_state = "[initial(icon_state)]"
 	if(!chambered && magazine) //this makes the sks empty, the state with a magazine, not necassarily empty just not chambered
 		icon_state = "[initial(icon_state)]_mag_empty"
 

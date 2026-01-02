@@ -2,10 +2,10 @@
 	name = "Generic ms13 medipen moment"
 	desc = "Shove it into your arm. Go ahead."
 	icon = 'mojave/icons/objects/drugs.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
-	worn_icon = 'mojave/icons/mob/worn_misc.dmi'
-	worn_icon_state = "empty_placeholder"
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/worn_misc.dmi'
+	//worn_icon_state = "empty_placeholder"
 	slot_flags = ITEM_SLOT_BELT
 	reagent_flags = null
 	grid_height = 32

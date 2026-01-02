@@ -1,6 +1,6 @@
 /datum/job/ms13/raiders
 	selection_color = "#30389c"
-	departments_list = list(
+	departments = list(
 		/datum/job_department/raiders,
 	)
 

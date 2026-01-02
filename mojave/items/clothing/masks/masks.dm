@@ -2,9 +2,9 @@
 	name = "generic ms13 mask"
 	desc = "this doesn't even exist"
 	icon = 'mojave/icons/objects/clothing/clothing_world/masks_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/mask.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/mask.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	w_class = WEIGHT_CLASS_TINY
 	grid_width = 32
 	grid_height = 32
@@ -167,7 +167,7 @@
 	name = "gas mask"
 	desc = "An old gas mask. Hypothetically speaking, breathing through it is safer than breathing without it. The filters are questionable at best."
 	icon = 'mojave/icons/objects/clothing/clothing_world/masks_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/mask.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/mask.dmi'
 	icon_state = "gasmaskmodern"
 	item_state = "gasmask"
 	var/adjusted = FALSE
@@ -200,27 +200,27 @@
 /obj/item/clothing/mask/gas/ms13/ranger
 	desc = "A heavy duty gas mask, perfect for filtering the air of a very tainted world."
 	icon_state = "ranger_mask"
-	worn_icon_state = "ranger_mask"
+	//worn_icon_state = "ranger_mask"
 	adjustable = FALSE
 
 /obj/item/clothing/mask/gas/ms13/mon_city
 	name = "antique gas mask"
 	desc = "This gas mask seems to be old even by pre-war standards. But it does still work, right?"
 	icon_state = "mon_gasmask"
-	worn_icon_state = "mon_gasmask"
+	//worn_icon_state = "mon_gasmask"
 	adjustable = FALSE
 	flags_inv = BLOCKHEADHAIR
 
 /obj/item/clothing/mask/gas/ms13/mon_city/full
 	desc = "A very old gas mask, seemingly even more uncommon. This one has a long snorkel like tube with a filter on the end."
 	icon_state = "mon_gasmaskfull"
-	worn_icon_state = "mon_gasmaskfull"
+	//worn_icon_state = "mon_gasmaskfull"
 
 /obj/item/clothing/mask/gas/ms13/mon_city/pointer
 	name = "crude gas mask"
 	desc = "A makeshift gas mask that is no doubt a creation of the post-apocalypse. Looks a bit intimidating, and you're not sure who would really want to put this on their head."
 	icon_state = "mon_pointer"
-	worn_icon_state = "mon_pointer"
+	//worn_icon_state = "mon_pointer"
 	flags_inv = null
 
 /obj/item/clothing/mask/gas/ms13/Initialize()

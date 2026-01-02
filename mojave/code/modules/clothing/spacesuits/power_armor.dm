@@ -3,7 +3,7 @@
 	name = "Generic Power Armor Helmet"
 	desc = "A helmet belonging to Power Armor"
 	icon = 'mojave/icons/mob/large-worn-icons/32x48/head.dmi'
-	worn_icon = 'mojave/icons/mob/large-worn-icons/32x48/head.dmi'
+	//worn_icon = 'mojave/icons/mob/large-worn-icons/32x48/head.dmi'
 	icon_state = "null"
 	basestate = "helmet"
 	strip_delay = 15 SECONDS
@@ -128,9 +128,9 @@
 	name = "Power Armor"
 	desc = "A power armour frame. It is capable of accepting any armor module with a bit of elbow grease."
 	icon = 'mojave/icons/mob/large-worn-icons/32x48/armor.dmi'
-	worn_icon = 'mojave/icons/mob/large-worn-icons/32x48/armor.dmi'
+	//worn_icon = 'mojave/icons/mob/large-worn-icons/32x48/armor.dmi'
 	icon_state = "frame"
-	worn_icon_state = "frame"
+	//worn_icon_state = "frame"
 	density = TRUE //It's a suit of armor man
 	anchored = TRUE
 	strip_delay = 15 SECONDS
@@ -138,15 +138,6 @@
 	max_integrity = 450
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
-	//subarmor = list(SUBARMOR_FLAGS = NONE, \
-					EDGE_PROTECTION = CLASS2_EDGE, \
-					CRUSHING = CLASS2_CRUSH, \
-					CUTTING = CLASS2_CUT, \
-					PIERCING = CLASS2_PIERCE, \
-					IMPALING = CLASS2_STAB, \
-					LASER = CLASS2_LASER, \
-					ENERGY = CLASS1_PLASMA, \
-					FIRE = CLASS2_FIRE)
 
 	var/list/module_armor = list(
 		BODY_ZONE_HEAD = null,
@@ -163,7 +154,7 @@
 	clothing_traits = list()
 	item_flags = NO_PIXEL_RANDOM_DROP
 	ms13_flags_1 = LOCKABLE_1
-	clothing_flags = LARGE_WORN_ICON | STOPSPRESSUREDAMAGE | THICKMATERIAL | SNUG_FIT | BLOCKS_SHOVE_KNOCKDOWN
+	clothing_flags = LARGE_//worn_icon | STOPSPRESSUREDAMAGE | THICKMATERIAL | SNUG_FIT | BLOCKS_SHOVE_KNOCKDOWN
 	slowdown = 1.55
 	/// Literally just whether or not we allow fatties to wear this power armor
 	var/no_fatties = TRUE
@@ -233,7 +224,7 @@
 		var/icon/PA = new(icon, icon_state = PA_part.icon_state_pa)
 		add_overlay(PA)
 
-/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/build_worn_icon(default_layer, default_icon_file, isinhands, femaleuniform, override_state)
+/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/build_//worn_icon(default_layer, default_icon_file, isinhands, femaleuniform, override_state)
 	var/mutable_appearance/standing = ..()
 	for(var/i in module_armor)
 		if(isnull(module_armor[i]))
@@ -635,15 +626,6 @@
 	light_color = "#d1c58d"
 	max_integrity = 340
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t51
-	//subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS4_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/t51
 	module_armor = list(
@@ -670,15 +652,6 @@
 	light_color = "#dabc7c"
 	max_integrity = 240
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/t45
-	//subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS4_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS4_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS3_LASER, \
-                ENERGY = CLASS3_PLASMA, \
-                FIRE = CLASS5_FIRE)
 
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/t45
@@ -702,15 +675,6 @@
 	hardsuit_type = "advanced" //Determines used sprites: hardsuit[on]-[type]
 	actions_types = null // No light for this one. When we get our NV working, we can make it a module and make them usually come with it, though.
 	radiotype = /obj/item/radio/headset/ms13/powerarmor/advanced
-	//subarmor = list(SUBARMOR_FLAGS = NONE, \
-                EDGE_PROTECTION = CLASS4_EDGE, \
-                CRUSHING = CLASS5_CRUSH, \
-                CUTTING = CLASS5_CUT, \
-                PIERCING = CLASS5_PIERCE, \
-                IMPALING = CLASS5_STAB, \
-                LASER = CLASS5_LASER, \
-                ENERGY = CLASS4_PLASMA, \
-                FIRE = CLASS5_FIRE)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/advanced
 	module_armor = list(

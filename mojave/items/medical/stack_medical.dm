@@ -33,11 +33,7 @@
 	icon_state = "suture"
 	max_amount = 12
 	amount = 12
-	self_delay = 3.5 SECONDS
-	other_delay = 2 SECONDS
-	repeating = FALSE
 	heal_brute = 5
-	stop_bleeding = 0.75
 	gender = NEUTER //So examine text says "This is a suture" instead of "These are some suture"
 	merge_type = /obj/item/stack/medical/suture/ms13
 
@@ -56,8 +52,8 @@
 	desc = "A basic bottle of ointment meant to be applied to burn wounds."
 	singular_name = "use" //This is so that examine text says "X uses left in the stack" instead of "X OINTMENTS left in the stack"
 	icon = 'mojave/icons/objects/medical/medical_inventory.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "ointment"
 	item_state = "ointment"
 	amount = 12
@@ -90,13 +86,12 @@
 	desc = "A roll of cloth intended for soaking up blood from bleeding wounds or making sure burn wounds stay clean."
 	singular_name = "rolls of gauze"
 	icon = 'mojave/icons/objects/medical/medical_inventory.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	icon_state = "bandage"
 	item_state = "bandage"
 	max_amount = 12
 	amount = 12
-	novariants = TRUE
 	gauze_type = /datum/bodypart_aid/gauze/ms13
 
 /obj/item/stack/medical/gauze/ms13/attackby(obj/item/I, mob/user, params)
@@ -120,7 +115,6 @@
 	desc = "A sterile and elastic roll of gauze with a handle used to help pin the dressing down. Very good at soaking up blood from wounds."
 	icon_state = "bandage_m"
 	item_state = "bandage_m"
-	burn_cleanliness_bonus = 0.3 //Lower = better
 	merge_type = /obj/item/stack/medical/gauze/ms13/military
 	gauze_type = /datum/bodypart_aid/gauze/ms13/military
 
@@ -130,15 +124,12 @@
 	name = "metal splint"
 	desc = "A medical grade metal splint designed to fasten a limb with ease, perfect for stabilizing broken bones and torn muscles. "
 	icon = 'mojave/icons/objects/medical/medical_inventory.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	singular_name = "medical splint"
 	icon_state = "splint_metal"
-	self_delay = 5 SECONDS
-	other_delay = 3 SECONDS
 	max_amount = 1
 	amount = 1
-	merge_type = /obj/item/stack/medical/splint/ms13
 	splint_type = /datum/bodypart_aid/splint/ms13
 	novariants = TRUE
 	w_class = WEIGHT_CLASS_SMALL
@@ -159,7 +150,6 @@
 	icon_state = "splint_wood"
 	self_delay = 6 SECONDS
 	other_delay = 4 SECONDS
-	merge_type = /obj/item/stack/medical/splint/ms13/wooden
 	splint_type = /datum/bodypart_aid/splint/ms13/wooden
 
 // Healing Powder //
@@ -169,14 +159,10 @@
 	desc = "A bag of healing powder, comprised of a mixture of broc flower and xander root."
 	singular_name = "bag of healing powder"
 	icon_state = "healing_powder"
-	self_delay = 2.5 SECONDS
-	other_delay = 2 SECONDS
 	amount = 5
 	max_amount = 5
 	heal_brute = 10
 	heal_burn = 3
-	novariants = TRUE
-	merge_type = /obj/item/stack/medical/ms13/healing_powder
 
 /obj/item/stack/medical/ms13/healing_powder/Initialize()
 	. = ..()
@@ -206,8 +192,6 @@
 	amount = 5
 	max_amount = 5
 	heal_burn = 12
-	flesh_regeneration = 1.5
-	sanitization = 0.35
 	merge_type = /obj/item/stack/medical/ms13/healing_powder/burn
 
 /obj/item/stack/medical/ms13/balm
@@ -215,16 +199,10 @@
 	desc = "A potent healing balm pouch, containing a mixture of various chemicals. The back says something about danger and keeping it away from the eyes."
 	singular_name = "balm pouch"
 	icon_state = "balm"
-	self_delay = 2.5 SECONDS
-	other_delay = 2 SECONDS
 	amount = 8
 	max_amount = 8
 	heal_brute = 12
 	heal_burn = 12
-	flesh_regeneration = 1.5
-	sanitization = 0.15
-	merge_type = /obj/item/stack/medical/ms13/balm
-	novariants = TRUE
 
 /obj/item/stack/medical/ms13/balm/Initialize()
 	. = ..()

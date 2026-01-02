@@ -2,15 +2,15 @@
 	name = "generic ms13 suit"
 	desc = "You shouldn't be seeing this. It do be lookin' kinda clean doe."
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	max_integrity = 325
 	///Icon file for left inhand overlays
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 	grid_width = 64
@@ -26,14 +26,14 @@
 	icon_state = "winterjacketorange"
 	item_state = "winter"
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0,  FIRE = 0, ACID = 0, WOUND = 0)
 	///Icon file for left inhand overlays
-	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
-	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 	grid_width = 64
@@ -671,7 +671,7 @@
 	name = "doctor's coat"
 	desc = "The medical coat of a typical wasteland doctor."
 	icon = 'mojave/icons/objects/clothing/clothing_world/suits_world.dmi'
-	worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
+	//worn_icon = 'mojave/icons/mob/clothing/suit.dmi'
 	icon_state = "followers"
 	item_state = "shirt"
 	//subarmor = list(SUBARMOR_FLAGS = NONE, \
@@ -879,7 +879,7 @@
 			span_hear("You hear chains rattling with an abrupt stop."))
 		playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 		icon_state = initial(icon_state)+"_snatched"
-		worn_icon_state = initial(icon_state)+"_snatched"
+		//worn_icon_state = initial(icon_state)+"_snatched"
 		update_appearance(updates = UPDATE_ICON)
 		user.update_inv_wear_suit()
 		user.update_body()
@@ -901,7 +901,7 @@
 				SPAN_NOTICE("You hang some gains on \the [src]"),
 				span_hear("You hear cloth moving around with chains rattling."))
 			icon_state = initial(icon_state)
-			worn_icon_state = initial(icon_state)
+			//worn_icon_state = initial(icon_state)
 			update_appearance(updates = UPDATE_ICON)
 			user.update_inv_wear_suit()
 			user.update_body()

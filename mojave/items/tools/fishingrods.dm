@@ -6,8 +6,8 @@
 	tool_behaviour = TOOL_FISHINGROD
 	w_class = WEIGHT_CLASS_BULKY
 	icon = 'mojave/icons/objects/tools/tools_world.dmi'
-	lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
-	righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
+	//lefthand_file = 'mojave/icons/mob/inhands/items_lefthand.dmi'
+	//righthand_file = 'mojave/icons/mob/inhands/items_righthand.dmi'
 	grid_width = 192
 	grid_height = 32
 
