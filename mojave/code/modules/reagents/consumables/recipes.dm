@@ -38,51 +38,51 @@
 // Alcohols //
 
 /datum/chemical_reaction/drink/ms13/rum_nuka
-	result = list(/singleton/reagent/consumable/ethanol/ms13/rum_nuka = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
+	result = list(/singleton/reagent/alcohol/ms13/rum_nuka = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
 
 /datum/chemical_reaction/drink/ms13/whiskey_nuka
-	result = list(/singleton/reagent/consumable/ethanol/ms13/whiskey_nuka = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/whiskey = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
+	result = list(/singleton/reagent/alcohol/ms13/whiskey_nuka = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/whiskey = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
 
 /datum/chemical_reaction/drink/ms13/commie_bomb
-	result = list(/singleton/reagent/consumable/ethanol/ms13/commie_bomb = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/vodka = 1, /singleton/reagent/consumable/ms13/nuka_quantum = 2)
+	result = list(/singleton/reagent/alcohol/ms13/commie_bomb = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/vodka = 1, /singleton/reagent/consumable/ms13/nuka_quantum = 2)
 
 /*/datum/chemical_reaction/drink/ms13/mammoth_bait                  //Soot flower + Prickly Pear juice needed
-	result = list(	/singleton/reagent/consumable/ethanol/ms13/mammoth_bait = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/vodka = 1, /singleton/reagent/consumable/ethanol/ms13/champagne = 1)
+	result = list(	/singleton/reagent/alcohol/ms13/mammoth_bait = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/vodka = 1, /singleton/reagent/alcohol/ms13/champagne = 1)
 
 /datum/chemical_reaction/drink/ms13/atomic_cocktail                //Mentat Powder needed
-	result = list(	/singleton/reagent/consumable/ethanol/ms13/atomic_cocktail  = 3)
-	required_reagents = list(/singleton/reagent/consumable/ms13/nuka_victory = 1, /singleton/reagent/consumable/ethanol/ms13/vodka = 2)*/
+	result = list(	/singleton/reagent/alcohol/ms13/atomic_cocktail  = 3)
+	required_reagents = list(/singleton/reagent/consumable/ms13/nuka_victory = 1, /singleton/reagent/alcohol/ms13/vodka = 2)*/
 
 /datum/chemical_reaction/drink/ms13/necromancer                     //Ash blossom powder needed
-	result = list(/singleton/reagent/consumable/ethanol/ms13/necromancer = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/rum = 1, /singleton/reagent/consumable/ethanol/ms13/vodka = 1)
+	result = list(/singleton/reagent/alcohol/ms13/necromancer = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/rum = 1, /singleton/reagent/alcohol/ms13/vodka = 1)
 
 /*/datum/chemical_reaction/drink/ms13/dirty_wastelander 				// Mutfruit juice needed, too
-	result = list(	/singleton/reagent/consumable/ethanol/ms13/dirty_wastelander = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/whiskey = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1) */
+	result = list(	/singleton/reagent/alcohol/ms13/dirty_wastelander = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/whiskey = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1) */
 
 /datum/chemical_reaction/drink/ms13/nawlins_sazerac 				// Tobacco powder needed
-	result = list(/singleton/reagent/consumable/ethanol/ms13/nawlins_sazerac = 2)
-	required_reagents = list(	/singleton/reagent/consumable/ethanol/ms13/absinthe = 1, /singleton/reagent/consumable/ethanol/ms13/cognac = 1)
+	result = list(/singleton/reagent/alcohol/ms13/nawlins_sazerac = 2)
+	required_reagents = list(	/singleton/reagent/alcohol/ms13/absinthe = 1, /singleton/reagent/alcohol/ms13/cognac = 1)
 
 /datum/chemical_reaction/drink/ms13/clogged_pump
-	result = list(/singleton/reagent/consumable/ethanol/ms13/clogged_pump = 3)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/rad_ant_lager = 1, /singleton/reagent/consumable/ms13/nuka_cola = 2)
+	result = list(/singleton/reagent/alcohol/ms13/clogged_pump = 3)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/rad_ant_lager = 1, /singleton/reagent/consumable/ms13/nuka_cola = 2)
 
 //// "Custom brews". IE: Just mixed drinks with a different vibe to it. Theoretically being made less in the bar itself. ////
 
 /*/datum/chemical_reaction/drink/ms13/ballistic_bock 					// Need Gunpowder reagent or alternative
-	result = list(/singleton/reagent/consumable/ethanol/ms13/ballistic_bock = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/waster_beer = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
+	result = list(/singleton/reagent/alcohol/ms13/ballistic_bock = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/waster_beer = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
 
 /datum/chemical_reaction/drink/ms13/rad_ant_lager						// Ground up ant matter REQUIRED.
-	result = list(	/singleton/reagent/consumable/ethanol/ms13/rad_ant_lager = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
+	result = list(	/singleton/reagent/alcohol/ms13/rad_ant_lager = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)
 
 /datum/chemical_reaction/drink/ms13/swift_recovery						// Brain fungus and Tato
-	result = list(/singleton/reagent/consumable/ethanol/ms13/swift_recovery = 2)
-	required_reagents = list(/singleton/reagent/consumable/ethanol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)*/
+	result = list(/singleton/reagent/alcohol/ms13/swift_recovery = 2)
+	required_reagents = list(/singleton/reagent/alcohol/ms13/rum = 1, /singleton/reagent/consumable/ms13/nuka_cola = 1)*/

@@ -5,20 +5,20 @@
 	item_state = "m79"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	slot_flags = null
-	mag_type = /obj/item/ammo_box/magazine/internal/ms13/m79
+	magazine_type = /obj/item/ammo_box/magazine/internal/ms13/m79
 	bolt_wording = "chamber"
-	rack_sound = 'mojave/sound/ms13weapons/breakaction_open2.ogg'
+	//rack_sound = 'mojave/sound/ms13weapons/breakaction_open2.ogg'
 	lock_back_sound = 'mojave/sound/ms13weapons/breakaction_open2.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/breakaction_close2.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/breakaction_close2.ogg'
 	fire_sound = 'mojave/sound/ms13weapons/hunting_rifle.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/hunting_rifle.ogg' //placeholder sounds for now
-	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/antique_sniper/antique_load.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/antique_sniper/antique_load.ogg'
+	//load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/antique_sniper/antique_load.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/antique_sniper/antique_load.ogg'
 	fire_delay = 1 SECONDS
 	rack_delay = 1 SECONDS
-	spread = 0
+	//spread 0
 	recoil = 2.65
 	grid_height = 32
 	grid_width = 224

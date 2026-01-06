@@ -33,7 +33,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	grid_height = 32
 	grid_width = 32
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/brew_sludge
+	distill_reagent = /singleton/reagent/alcohol/ms13/brew_sludge
 	decomp_type = /obj/item/food/badrecipe/moldy/ms13
 	var/can_dry = FALSE //used for drying racks
 	var/dry_time = 600 // 10 Minutes
@@ -77,7 +77,7 @@
 	//foodtypes = FRUIT | TOXIC
 	icon_state = "barrelcactus"
 	filling_color = "#a6b115"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/barrel_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/barrel_wine
 	tastes = list("sourness"= 10, "burning"= 1)
 
 ///////////////////// MUTFRUIT /////////////////////////
@@ -109,7 +109,7 @@
 	//foodtypes = FRUIT
 	icon_state = "mutfruit"
 	filling_color = "#5f035f"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/mutfruit_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/mutfruit_wine
 	tastes = list("warmth"= 5, "sweetness"= 2)
 
 //CRUNCHY MUTFRUITx
@@ -140,7 +140,7 @@
 	bite_consumption_mod = 2
 	icon_state = "cmutfruit"
 	filling_color = "#7c3e04"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/mutfruit_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/mutfruit_wine
 	tastes = list("sourness"= 5, "sweetness"= 1)
 
 //APPLEx
@@ -171,7 +171,7 @@
 	//foodtypes = FRUIT
 	icon_state = "apple"
 	filling_color = "#9b7470"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/apple_cider
+	distill_reagent = /singleton/reagent/alcohol/ms13/apple_cider
 	tastes = list("apple"= 1)
 
 ///////////////////// PRICKLY PEAR /////////////////////////
@@ -203,7 +203,7 @@
 	filling_color = "#8a0483"
 	//foodtypes = FRUIT
 	bite_consumption_mod = 2
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/pricklypear_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/pricklypear_wine
 	tastes = list("sweetness"= 1)
 
 /obj/item/food/grown/ms13/pricklypear/pickup(mob/living/user)
@@ -251,7 +251,7 @@
 	bite_consumption_mod = 2
 	//foodtypes = FRUIT | TOXIC
 	filling_color = "#695d19"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/punga_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/punga_wine
 	tastes = list("sourness"= 6, "warmth"= 1)
 
 //refined punga
@@ -282,7 +282,7 @@
 	bite_consumption_mod = 2
 	//foodtypes = FRUIT | TOXIC
 	filling_color = "#55ff06"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/geigpunga_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/geigpunga_wine
 	tastes = list("acid"= 6, "burning"= 5)
 
 ///////////////////// SNAPTAIL /////////////////////////x
@@ -312,7 +312,7 @@
 	bite_consumption_mod = 1
 	//foodtypes = SUGAR | GROSS
 	filling_color = "#caa3a3"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/snaptail_rum
+	distill_reagent = /singleton/reagent/alcohol/ms13/snaptail_rum
 	tastes = list("sugar"= 5, "reed"= 5)
 
 ///////////////////// TARBERRY /////////////////////////x
@@ -345,7 +345,7 @@
 	//foodtypes = FRUIT | GROSS
 	icon_state = "tarberry"
 	filling_color = "#2f2525ff"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tarberry_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/tarberry_wine
 	tastes = list("oil"= 5, "stale berries"= 1)
 
 //BLACKBERRYx
@@ -378,7 +378,7 @@
 	//foodtypes = FRUIT
 	icon_state = "blackberry"
 	filling_color = "#15172a"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/blackberry_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/blackberry_wine
 	tastes = list("berries"= 5, "juice"= 1)
 
 //RADBERRYx
@@ -410,7 +410,7 @@
 	bite_consumption_mod = 1
 	//foodtypes = FRUIT | GROSS
 	filling_color = "#00ff2a"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/radberry_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/radberry_wine
 	tastes = list("metal"= 5, "sweetness"= 1)
 
 ///////////////////// YUCCA /////////////////////////
@@ -439,7 +439,7 @@
 	bite_consumption_mod = 4
 	//foodtypes = FRUIT
 	filling_color = "#b4a031ff"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/yucca_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/yucca_wine
 	tastes = list("sweet" = 5, "starch" = 2)
 
 //TOMATO
@@ -471,7 +471,7 @@
 	//foodtypes = FRUIT | VEGETABLES
 	icon_state = "tomato"
 	filling_color = "#8d1d1d"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tomato_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/tomato_wine
 	tastes = list("sweetness" = 3, "tangy acid" = 2)
 
 /////////////////////////////////////////////////////////////
@@ -507,7 +507,7 @@
 	//foodtypes = VEGETABLES | GROSS
 	icon_state = "tato"
 	filling_color = "#4b2727"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/tato_liquor
+	distill_reagent = /singleton/reagent/alcohol/ms13/tato_liquor
 	tastes = list("raw eggs"= 5)
 
 //POTATO
@@ -536,7 +536,7 @@
 	//foodtypes = VEGETABLES | GROSS
 	icon_state = "potato"
 	filling_color = "#ada876"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_vodka
+	distill_reagent = /singleton/reagent/alcohol/ms13/waster_vodka
 	tastes = list("starch"= 5)
 
 ////////////////////// JALEPENO /////////////////////////////
@@ -722,7 +722,7 @@
 	//foodtypes = VEGETABLES
 	icon_state = "carrot"
 	filling_color = "#815c1f"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/carrot_wine
+	distill_reagent = /singleton/reagent/alcohol/ms13/carrot_wine
 	tastes = list("sweetness"= 1)
 
 //////////////////////// RAZORGRAIN /////////////////////////
@@ -752,7 +752,7 @@
 	//foodtypes = GRAIN | GROSS
 	icon_state = "razorgrain"
 	filling_color = "#8f905b"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_beer
+	distill_reagent = /singleton/reagent/alcohol/ms13/waster_beer
 	tastes = list("chalky grain"= 5)
 
 //////////////////////// BAIFAN /////////////////////////////
@@ -782,7 +782,7 @@
 	//foodtypes = GRAIN | GROSS
 	icon_state = "baifan"
 	filling_color = "#505749"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_sake
+	distill_reagent = /singleton/reagent/alcohol/ms13/waster_sake
 	tastes = list("chalky grain"= 2, "raw rice"= 5)
 
 /////////////////////// CABBAGE /////////////////////////////
@@ -930,7 +930,7 @@
 	//foodtypes = VEGETABLES | GRAIN
 	icon_state = "maize"
 	filling_color = "#bbb81c"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_whiskey
+	distill_reagent = /singleton/reagent/alcohol/ms13/waster_whiskey
 	tastes = list("corn"= 5)
 
 /////////////////////////////////////////////////////////////
@@ -1288,7 +1288,7 @@
 	bite_consumption_mod = 1
 	icon_state = "agave"
 	filling_color = "#37524e"
-	distill_reagent = /singleton/reagent/consumable/ethanol/ms13/waster_tequila
+	distill_reagent = /singleton/reagent/alcohol/ms13/waster_tequila
 	tastes = list("bitterness"= 5)
 
 /////////////////////// BROC FLOWER /////////////////////////

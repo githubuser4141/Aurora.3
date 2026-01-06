@@ -35,7 +35,7 @@
 /obj/item/storage/ms13/radiopack/AltClick(var/mob/living/carbon/user)
 	if(src.loc == user)
 		if(!held)
-			if(user.get_item_by_slot(ITEM_SLOT_BACK) == src)
+			if(user.get_item_by_slot(SLOT_BACK ) == src)
 				held = 1
 				if(!user.put_in_hands(radio))
 					held = 0

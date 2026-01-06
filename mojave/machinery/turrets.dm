@@ -44,4 +44,4 @@
 	subtractible_armour_penetration = 10
 	wound_bonus = 10
 	bare_wound_bonus = 5
-	spread = 20
+	//spread 20

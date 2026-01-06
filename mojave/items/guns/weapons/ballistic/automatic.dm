@@ -1,25 +1,29 @@
+/obj/item/gun/ballistic/automatic/ms13
+	var///rack_sound = /singleton/sound_category/shotgun_pump
+	var/rack_verb = "pump"
+
 //Guns
 /obj/item/gun/ballistic/automatic/ms13/semi/service
 	name = "service rifle"
 	desc = "A 5.56 semi-automatic rifle manufactured by and for the NCR."
 	icon_state = "service"
 	item_state = "service"
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/service/service_3.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/service.ogg'
 	fire_delay = 0.45 SECONDS
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
 	spread = 5
 	recoil = 0.75
 	slowdown = 0.75
 //	zoomable = FALSE
-	mag_type = /obj/item/ammo_box/magazine/ms13/r20
+	magazine_type = /obj/item/ammo_box/magazine/ms13/r20
 	grid_width = 192
 	grid_height = 64
 
@@ -36,21 +40,21 @@
 	desc = "A semi-automatic and high powered but bulky .308 sniper rifle. Perfect weapon for a determined assassin."
 	icon_state = "sniper"
 	item_state = "sniper"
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/sniper/sniperrack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/sniper/sniperrack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg' //placeholder
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/sniper/sniperrack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/sniper/sniperrack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg' //placeholder
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg' //placeholder
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_unload.ogg' //placeholder
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_unload.ogg' //placeholder
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/sniper/sniper2.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/sniper.ogg'
 	fire_delay = 0.65 SECONDS
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
 	spread = 2
 	recoil = 1.5
 	slowdown = 1
-	mag_type = /obj/item/ammo_box/magazine/ms13/r308
+	magazine_type = /obj/item/ammo_box/magazine/ms13/r308
 	has_scope = TRUE
 	scope_range = 3.5
 	grid_width = 224
@@ -71,10 +75,10 @@
 	desc = "A 5.56 marksman carbine with a scope attached to help in long range combat."
 	icon_state = "marksman"
 	item_state = "marksman"
-	mag_type = /obj/item/ammo_box/magazine/ms13/r20
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
+	magazine_type = /obj/item/ammo_box/magazine/ms13/r20
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
@@ -82,7 +86,7 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/marksman.ogg'
 	can_suppress = FALSE
 	fire_delay = 0.5 SECONDS
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
 	spread = 2
 	recoil = 0.6
@@ -104,21 +108,21 @@
 	desc = "A very old but also very reliable semi-automatic rifle chambered for .308. From long before the war, but still packs a very heavy punch."
 	icon_state = "battler"
 	item_state = "battler"
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg'
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/battle_rifle/battle_unload.ogg'
 	fire_sound = 'mojave/sound/ms13weapons/battlerifle.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/battlerifle.ogg'
 	fire_delay = 0.6 SECONDS
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
 	spread = 4
 	recoil = 1.75
 	slowdown = 0.75
-	mag_type = /obj/item/ammo_box/magazine/ms13/r308_10
+	magazine_type = /obj/item/ammo_box/magazine/ms13/r308_10
 	grid_width = 192
 	grid_height = 64
 
@@ -148,6 +152,9 @@
 	recoil = 1.5
 	slowdown = 1
 
+#warn Commented out all ms13 gun sounds (bolt, rack, load / load empty, eject) becaose of aurora primitive guncode.
+
+#warn Also commented out SPREAD. Aurora guncode is extremely primitive jfc.
 // And now I will be switching the firearm to fully semi-automatic mode. //
 
 /obj/item/gun/ballistic/automatic/ms13/full/smg45
@@ -156,12 +163,12 @@
 	icon_state = "smg45"
 	item_state = "smg45"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/ms13/smgm45
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/45/45smg_rack.ogg' //placeholder - this is pretty bad
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/45/45smg_rack.ogg' //placeholder - this is pretty bad
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
+	//weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK
+	magazine_type = /obj/item/ammo_box/magazine/ms13/smgm45
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/45/45smg_rack.ogg' //placeholder - this is pretty bad
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/45/45smg_rack.ogg' //placeholder - this is pretty bad
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg' //placeholder
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg' //placeholder
@@ -181,12 +188,12 @@
 	icon_state = "smg22"
 	item_state = "smg22"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/ms13/smgm22
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg'
+	//weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK
+	magazine_type = /obj/item/ammo_box/magazine/ms13/smgm22
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg'
@@ -205,11 +212,11 @@
 	icon_state = "smg10mm"
 	item_state = "smg10mm"
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	mag_type = /obj/item/ammo_box/magazine/ms13/smgm10mm
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_load2.ogg'
+	//weapon_weight = WEAPON_MEDIUM
+	magazine_type = /obj/item/ammo_box/magazine/ms13/smgm10mm
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_load2.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_load2.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_unload2.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_unload2.ogg'
@@ -229,11 +236,11 @@
 	icon_state = "smg9mm"
 	item_state = "smg9mm"
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	mag_type = /obj/item/ammo_box/magazine/ms13/smgm9mm
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgrack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgrack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgload.ogg'
+	//weapon_weight = WEAPON_MEDIUM
+	magazine_type = /obj/item/ammo_box/magazine/ms13/smgm9mm
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgrack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgrack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgload.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgload.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgunload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smgunload.ogg'
@@ -254,11 +261,11 @@
 	icon_state = "smg12mm"
 	item_state = "smg12mm"
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	mag_type = /obj/item/ammo_box/magazine/ms13/smg12mm
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
+	//weapon_weight = WEAPON_MEDIUM
+	magazine_type = /obj/item/ammo_box/magazine/ms13/smg12mm
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/10mmsmg/smg_rack2.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_load.ogg' //placeholder
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg' //placeholder
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/22/22smg_unload.ogg' //placeholder
@@ -278,11 +285,11 @@
 	desc = "A general purpose, standard automatic assault rifle chambered in 5.56. Commonly used by pre-war US military forces."
 	icon_state = "assaultrifle"
 	item_state = "assaultrifle"
-	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/ms13/r20
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arrack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arrack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arload2.ogg'
+	slot_flags = SLOT_BACK
+	magazine_type = /obj/item/ammo_box/magazine/ms13/r20
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arrack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arrack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arload2.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arload2.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arunload2.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/assault/arunload2.ogg'
@@ -290,7 +297,7 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/arfire.ogg'
 	fire_delay = 0.25 SECONDS
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	spread = 8
 	recoil = 0.6
 	slowdown = 0.75
@@ -302,9 +309,9 @@
 	desc = "A relatively new and improved modern service rifle sporting full auto capabilities and a generally improved rate of fire at the cost of some accuracy."
 	icon_state = "protoservice"
 	item_state = "protoservice"
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
@@ -333,9 +340,9 @@
 	desc = "A stripped and heavily modified assault rifle. Faster rate of fire, but with substantially less accuracy and much more recoil. An unstable and dangerous weapon made for an unstable and dangerous individual."
 	icon_state = "m16stripped"
 	item_state = "m16stripped"
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/service/ar_unload.ogg'
@@ -358,10 +365,10 @@
 	desc = "A Chinese made assault rifle chambered in the heavier 7.62 round, packs a bigger punch in exchange for higher recoil and a slower rate of fire."
 	icon_state = "chinesear"
 	item_state = "chinesear"
-	mag_type = /obj/item/ammo_box/magazine/ms13/ar762
-	rack_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_rack.ogg'
-	bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_rack.ogg'
-	load_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_load.ogg'
+	magazine_type = /obj/item/ammo_box/magazine/ms13/ar762
+	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_rack.ogg'
+	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_rack.ogg'
+	//load_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_load.ogg'
 	load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_load.ogg'
 	eject_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_unload.ogg'
 	eject_empty_sound = 'mojave/sound/ms13weapons/gunsounds/chinese/ak_unload.ogg'

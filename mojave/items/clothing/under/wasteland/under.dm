@@ -1,3 +1,4 @@
+/*
 /obj/item/clothing/under/ms13
 	fitted = NO_FEMALE_UNIFORM
 	///femstatics destroyed (Also stops it going invisible when someone dosent make a thottiana version.)
@@ -60,7 +61,7 @@
 
 /obj/item/clothing/under/ms13/wasteland
 	can_adjust = FALSE
-
+*/
 // pants //
 
 /obj/item/clothing/under/ms13/wasteland/caravanpants

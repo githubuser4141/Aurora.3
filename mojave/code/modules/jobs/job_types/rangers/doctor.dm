@@ -49,7 +49,7 @@
 		stacker_casing = ammo_stack.get_round(keep = FALSE)
 		qdel(stacker_casing)
 	H.put_in_hands(ammo_stack)
-	var/obj/item/backpack = H.get_item_by_slot(ITEM_SLOT_BACK)
+	var/obj/item/backpack = H.get_item_by_slot(SLOT_BACK )
 	if(!backpack)
 		return
 	SEND_SIGNAL(backpack, COMSIG_TRY_STORAGE_INSERT, ammo_stack, null, TRUE, TRUE, FALSE)

@@ -1,4 +1,4 @@
-/singleton/reagent/consumable/ethanol/ms13
+/singleton/reagent/alcohol/ms13
 	name = "Ethanol"
 	description = "Pure, unrestricted... 95% ethanol."
 	color = "#dadacb"
@@ -10,7 +10,7 @@
 
 //// Basic pre-war alcohols ////
 
-/singleton/reagent/consumable/ethanol/ms13/absinthe
+/singleton/reagent/alcohol/ms13/absinthe
 	name = "absinthe"
 	description = "An old popular drink. Very strong."
 	color = "#cecbc5"
@@ -19,7 +19,7 @@
 	glass_name = "glass of clear green liquid"
 	glass_desc = "A clear green liquid with an intense alcoholic smell. Vaguely sweet herb aroma."
 
-/singleton/reagent/consumable/ethanol/ms13/moonshine
+/singleton/reagent/alcohol/ms13/moonshine
 	name = "moonshine"
 	description = "A bland alcohol. Basically a party gimmick unless you're a masochist."
 	color = "#cecbc5"
@@ -28,7 +28,7 @@
 	glass_name = "glass of clear liquid"
 	glass_desc = "A clear liquid with an intense alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/whiskey
+/singleton/reagent/alcohol/ms13/whiskey
 	name = "whiskey"
 	description = "Cinnamon hinted alcohol, and that's about it."
 	//quality = DRINK_NICE
@@ -38,7 +38,7 @@
 	glass_name = "glass of clear pale orange liquid"
 	glass_desc = "A clear orange liquid with a moderate alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/vodka
+/singleton/reagent/alcohol/ms13/vodka
 	name = "vodka"
 	description = "Another bland yet strong alcohol. This one is a classic ingredient."
 	color = "#e7e5e1"
@@ -47,7 +47,7 @@
 	glass_name = "glass of clear liquid"
 	glass_desc = "A clear liquid with no smell. Nothing out of the ordinary." // ☻
 
-/singleton/reagent/consumable/ethanol/ms13/tequila
+/singleton/reagent/alcohol/ms13/tequila
 	name = "tequila"
 	description = "Tequila, made before the war. It's got nothin' on the recent home brews, but it's still good."
 	color = "#c4c486"
@@ -56,7 +56,7 @@
 	glass_name = "glass of pale yellow-ish liquid"
 	glass_desc = "A faint pale yellow liquid with a familiar distant agave smell to it. Smells decently alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/wine
+/singleton/reagent/alcohol/ms13/wine
 	name = "wine"
 	description = "Old grape-based liquor. Not much to say."
 	color = "#af444a"
@@ -65,7 +65,7 @@
 	glass_name = "glass of clear red liquid"
 	glass_desc = "A clear red liquid with a faint alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/champagne
+/singleton/reagent/alcohol/ms13/champagne
 	name = "champagne"
 	description = "An uncommonly found type of wine. Nobody knows what the name means."
 	//quality = DRINK_NICE
@@ -75,7 +75,7 @@
 	glass_name = "glass of clear pale yellow liquid"
 	glass_desc = "A clear pale yellow liquid with an occasional bubble found rising to the top. There is a light alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/cognac
+/singleton/reagent/alcohol/ms13/cognac
 	name = "cognac"
 	description = "Old distilled wine. Delicious and prized to this day, due to limited supply."
 	//quality = DRINK_GOOD
@@ -85,7 +85,7 @@
 	glass_name = "glass of clear orange-red liquid"
 	glass_desc = "A clear orange-red liquid with a moderate alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/beer // The only beer variant other than waster beer. They all taste the same. Fight me.
+/singleton/reagent/alcohol/ms13/beer // The only beer variant other than waster beer. They all taste the same. Fight me.
 	name = "beer"
 	description = "A generic ale brew. It could be anything, really."
 	//quality = DRINK_GOOD
@@ -95,7 +95,7 @@
 	glass_name = "glass of dark liquid"
 	glass_desc = "A dark liquid with a bland alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/gin
+/singleton/reagent/alcohol/ms13/gin
 	name = "gin"
 	description = "An alcohol. Something to do with berries. Who cares? It's pretty good."
 	//quality = DRINK_GOOD
@@ -105,7 +105,7 @@
 	glass_name = "glass of clear off-white liquid"
 	glass_desc = "A clear off-white liquid with an alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/sake
+/singleton/reagent/alcohol/ms13/sake
 	name = "sake"
 	description = "Sake, a sterotype of the east. Appreciated a bit more today than two hundred years ago."
 	color = "#b9b9b9"
@@ -114,7 +114,7 @@
 	glass_name = "glass of clear liquid"
 	glass_desc = "A clear murky liquid that gives of a moderate alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/vermouth
+/singleton/reagent/alcohol/ms13/vermouth
 	name = "vermouth"
 	description = "A spicy, sweet, and earthy herb infused grape wine. High class!"
 	color = "#d67c7c"
@@ -123,7 +123,7 @@
 	glass_name = "glass of clear light red liquid"
 	glass_desc = "A clear light red liquid that gives of a moderate sweet and spiced alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/triple_sec
+/singleton/reagent/alcohol/ms13/triple_sec
 	name = "triple sec"
 	description = "A spicy, sweet, and earthy herb infused grape wine. High class!"
 	color = "#e49328"
@@ -132,7 +132,7 @@
 	glass_name = "glass of clear orange liquid"
 	glass_desc = "A clear light orange that gives of a sweet fruity smell, followed by alcohol."
 
-/singleton/reagent/consumable/ethanol/ms13/kaluha
+/singleton/reagent/alcohol/ms13/kaluha
 	name = "kaluha"
 	description = "A coffee liqueur. At least it once was. It's pretty bland these days."
 	//quality = DRINK_FANTASTIC
@@ -142,7 +142,7 @@
 	glass_name = "glass of cream colored liquid"
 	glass_desc = "A cream colored liquid with an alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/rum
+/singleton/reagent/alcohol/ms13/rum
 	name = "rum"
 	description = "A classic rum, with a nice sugary molasses taste. Can't go wrong."
 	color = "#6b3811"
@@ -151,7 +151,7 @@
 	glass_name = "glass of clear dark orange liquid"
 	glass_desc = "A clear orange liquid with an alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/nuka_dark
+/singleton/reagent/alcohol/ms13/nuka_dark
 	name = "Nuka-Dark"
 	description = "A blend of Nuka-Cola and a some unknown alcohol. Overrated."
 	color = "#3E1B00"
@@ -162,7 +162,7 @@
 
 //// Mixed Drinks ////
 
-/singleton/reagent/consumable/ethanol/ms13/rum_nuka // Rum and Nuka
+/singleton/reagent/alcohol/ms13/rum_nuka // Rum and Nuka
 	name = "rum and nuka"
 	description = "Rum mixed with Nuka-Cola. Not much to be said."
 	//quality = DRINK_GOOD
@@ -172,7 +172,7 @@
 	glass_name = "glass of dark fizzing liquid"
 	glass_desc = "A dark fizzing liquid with a fair alcohlic smell to it."
 
-/singleton/reagent/consumable/ethanol/ms13/whiskey_nuka //Whiskey and Nuka
+/singleton/reagent/alcohol/ms13/whiskey_nuka //Whiskey and Nuka
 	name = "whiskey and nuka"
 	description = "Whiskey, mixed with Nuka-Cola. Surprisingly refreshing."
 	color = "#3E1B00"
@@ -182,7 +182,7 @@
 	glass_name = "glass of dark fizzing liquid"
 	glass_desc = "A dark fizzing liquid with a hint of spice and a decent alcohlic smell to it."
 
-/singleton/reagent/consumable/ethanol/ms13/commie_bomb // Vodka, Nuka Quartz
+/singleton/reagent/alcohol/ms13/commie_bomb // Vodka, Nuka Quartz
 	name = "commie bomb"
 	description = "A post-war drink devoded to the obvious victory over the communist threat."
 	//quality = DRINK_GOOD
@@ -192,7 +192,7 @@
 	glass_name = "glass of brown fizzing liquid"
 	glass_desc = "A brown fizzing liquid with a sharp alcohlic smell to it."
 
-/singleton/reagent/consumable/ethanol/ms13/mammoth_bait // Mutfruit wine / Champagne / Something mushroom
+/singleton/reagent/alcohol/ms13/mammoth_bait // Mutfruit wine / Champagne / Something mushroom
 	name = "Mammoth bait"
 	description = "A recipe passed down through the generations in Mammoth. Best served warm."
 	//quality = DRINK_FANTASTIC
@@ -202,7 +202,7 @@
 	glass_name = "glass of dull pink liquid"
 	glass_desc = "A dull pink bubbly liquid with a strange smell- Vaguely alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/atomic_cocktail // Mentat powder / Nuka Victory / Vodka
+/singleton/reagent/alcohol/ms13/atomic_cocktail // Mentat powder / Nuka Victory / Vodka
 	name = "Atomic Cocktail"
 	description = "A favourite from old Nevada."
 	//quality = DRINK_FANTASTIC
@@ -212,7 +212,7 @@
 	glass_name = "glass of pale green liquid"
 	glass_desc = "A pale green liquid with a strange smell. Based on smell, definitely has alcohol."
 
-/singleton/reagent/consumable/ethanol/ms13/necromancer // Vodka / Rum / Ash Blossom powder
+/singleton/reagent/alcohol/ms13/necromancer // Vodka / Rum / Ash Blossom powder
 	name = "Necromancer"
 	description = "Strong enough to wake the dead.."
 	//quality = DRINK_NICE
@@ -222,12 +222,12 @@
 	glass_name = "glass of dark red liquid"
 	glass_desc = "A dark red liquid with particles floating around in it. Intense alcoholic aroma."
 
-/*/singleton/reagent/consumable/ethanol/ms13/necromancer/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/*/singleton/reagent/alcohol/ms13/necromancer/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	M.drowsyness = max(0,M.drowsyness-3)
 	..()
 	. = 1 */
 
-/singleton/reagent/consumable/ethanol/ms13/dirty_wastelander // Mutfruit juice / Nuka / Whiskey
+/singleton/reagent/alcohol/ms13/dirty_wastelander // Mutfruit juice / Nuka / Whiskey
 	name = "Dirty Wastelander"
 	description = "A pre-war classic adapted to the post-war world."
 	//quality = DRINK_VERYGOOD
@@ -237,7 +237,7 @@
 	glass_name = "glass of dull orange liquid"
 	glass_desc = "A dull orange liquid with a spiced fruity smell to it. Has alcohol in it, though the amount is uncertain."
 
-/singleton/reagent/consumable/ethanol/ms13/nawlins_sazerac // Cognac / Coyote tobacco powder / Absinthe
+/singleton/reagent/alcohol/ms13/nawlins_sazerac // Cognac / Coyote tobacco powder / Absinthe
 	name = "Nawlins Sazerac"
 	description = "A favourite from Nawlins, way down South. Not to be confused with the New Orleans version."
 	//quality = DRINK_VERYGOOD
@@ -247,7 +247,7 @@
 	glass_name = "glass of orange liquid"
 	glass_desc = "A orange liquid with small leaf bits floating around in it. Decent alcoholic smell."
 
-/singleton/reagent/consumable/ethanol/ms13/clogged_pump //nuka-cola / rad-ant lager
+/singleton/reagent/alcohol/ms13/clogged_pump //nuka-cola / rad-ant lager
 	name = "Clogged pump"
 	description = "Nuka-Cola and brewed ant meat. Interesting."
 	//quality = DRINK_VERYGOOD
@@ -261,7 +261,7 @@
 
 // Basic Brews/Distilling //
 
-/singleton/reagent/consumable/ethanol/ms13/barrel_wine // Barrel Fruit
+/singleton/reagent/alcohol/ms13/barrel_wine // Barrel Fruit
 	name = "barrel cactus wine"
 	description = "Wine brewed from a barrel cactus fruit. Tangy."
 	//quality = DRINK_GOOD
@@ -271,7 +271,7 @@
 	glass_name = "glass of yellow liquid"
 	glass_desc = "A yellow liquid with a bland aroma. Smells vaguely alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/mutfruit_wine // Mutfruit / Crunchy Mutfruit
+/singleton/reagent/alcohol/ms13/mutfruit_wine // Mutfruit / Crunchy Mutfruit
 	name = "mutfruit wine"
 	description = "A sweet mutfruit wine. Best served with seeds in it."
 	//quality = DRINK_NICE
@@ -281,7 +281,7 @@
 	glass_name = "glass of dark purple liquid"
 	glass_desc = "A dark purple liquid with tiny black seeds drifting around it. Smells vaguely alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/apple_cider // Apple
+/singleton/reagent/alcohol/ms13/apple_cider // Apple
 	name = "hard apple cider"
 	description = "A sweet apple cider."
 	//quality = DRINK_NICE
@@ -291,7 +291,7 @@
 	glass_name = "glass of murky yellow liquid"
 	glass_desc = "A murky yellow liquid. A sweet smell accompanied by an alcoholic follower."
 
-/singleton/reagent/consumable/ethanol/ms13/pricklypear_wine // Prickly Pear
+/singleton/reagent/alcohol/ms13/pricklypear_wine // Prickly Pear
 	name = "prickly pear wine"
 	description = "A sweet prickly pear wine."
 	//quality = DRINK_NICE
@@ -301,7 +301,7 @@
 	glass_name = "glass of bright purple liquid"
 	glass_desc = "A bright and murky purple liquid. Smells vaguely alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/punga_wine // Punga Fruit
+/singleton/reagent/alcohol/ms13/punga_wine // Punga Fruit
 	name = "punga fruit wine"
 	description = "Wine made from punga fruit. Delicious."
 	//quality = DRINK_NICE
@@ -311,7 +311,7 @@
 	glass_name = "glass of green liquid"
 	glass_desc = "A green murky liquid. Heavy alcoholic aromas waft from it."
 
-/singleton/reagent/consumable/ethanol/ms13/geigpunga_wine // Geigpunga Fruit
+/singleton/reagent/alcohol/ms13/geigpunga_wine // Geigpunga Fruit
 	name = "geigpunga fruit wine"
 	description = "An acidic wine. You could almost melt something with it"
 	//quality = DRINK_NICE
@@ -321,7 +321,7 @@
 	glass_name = "glass of green liquid"
 	glass_desc = "A bright green murky liquid. Heavy alcoholic aromas waft from it."
 
-/singleton/reagent/consumable/ethanol/ms13/snaptail_rum // Snaptail
+/singleton/reagent/alcohol/ms13/snaptail_rum // Snaptail
 	name = "snaptail rum"
 	description = "A sweet rum, brewed locally!"
 	//quality = DRINK_NICE
@@ -331,7 +331,7 @@
 	glass_name = "glass of clear tinted liquid"
 	glass_desc = "A clear liquid with a subtle tint. Definitely smells of alcohol."
 
-/singleton/reagent/consumable/ethanol/ms13/tarberry_wine // Tarberry
+/singleton/reagent/alcohol/ms13/tarberry_wine // Tarberry
 	name = "tarberry wine"
 	description = "Wine made from tarberries. Delicious."
 	//quality = DRINK_NICE
@@ -341,7 +341,7 @@
 	glass_name = "glass of bright purple liquid"
 	glass_desc = "A bright purple liquid. Bitter smell, with an alcoholic afterburn."
 
-/singleton/reagent/consumable/ethanol/ms13/blackberry_wine // Blackberry
+/singleton/reagent/alcohol/ms13/blackberry_wine // Blackberry
 	name = "blackberry wine"
 	description = "Wine made from blackberries. Delicious."
 	//quality = DRINK_NICE
@@ -351,7 +351,7 @@
 	glass_name = "glass of purple liquid"
 	glass_desc = "A purple liquid. Sweet smell, with an alcoholic afterburn."
 
-/singleton/reagent/consumable/ethanol/ms13/radberry_wine // Radberry
+/singleton/reagent/alcohol/ms13/radberry_wine // Radberry
 	name = "radberry wine"
 	description = "Wine made from radberries. Delicious."
 	//quality = DRINK_NICE
@@ -361,7 +361,7 @@
 	glass_name = "glass of dull green liquid"
 	glass_desc = "A dull green liquid Sometimes, you can see a shimmer in it. Sweet smell, with an alcoholic afterburn."
 
-/singleton/reagent/consumable/ethanol/ms13/yucca_wine // Yucca
+/singleton/reagent/alcohol/ms13/yucca_wine // Yucca
 	name = "yucca wine"
 	description = ""
 	//quality = DRINK_NICE
@@ -371,7 +371,7 @@
 	glass_name = "glass of pale clear liquid"
 	glass_desc = "A faint pale yellow liquid with a familiar distant agave smell to it. Smells pretty alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/tato_liquor // Tato
+/singleton/reagent/alcohol/ms13/tato_liquor // Tato
 	name = "tato liquor"
 	description = "liquor made from tatos. Not delicious at all."
 	//quality = null
@@ -381,7 +381,7 @@
 	glass_name = "glass of red-orange liquid"
 	glass_desc = "A red-orange liquid, with pieces of plant still floating around in it. Gives off a sickening smell. Definitely alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/waster_vodka // Potato???
+/singleton/reagent/alcohol/ms13/waster_vodka // Potato???
 	name = "wasteland vodka"
 	description = "A modern version of an ancient alcohol. Not commonly found."
 	color = "#dfddd5"
@@ -390,7 +390,7 @@
 	glass_name = "glass of clear liquid"
 	glass_desc = "A clear liquid that gives of a strong alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/tomato_wine // Tomato???
+/singleton/reagent/alcohol/ms13/tomato_wine // Tomato???
 	name = "tomato wine"
 	description = "A wine brewed from a tomato. Not exactly desired."
 	color = "#c57f73"
@@ -399,7 +399,7 @@
 	glass_name = "glass of faintly red liquid"
 	glass_desc = "A nearly clear red liquid. It gives of a moderate alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/waster_beer // Razorgrain
+/singleton/reagent/alcohol/ms13/waster_beer // Razorgrain
 	name = "wasteland beer"
 	description = "A homebrew beer from razorgrain. About as generic as you can get."
 	color = "#442b1b"
@@ -408,7 +408,7 @@
 	glass_name = "glass of dark brown liquid"
 	glass_desc = "A dark brown liquid that gives of a moderate alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/waster_sake // Baifan
+/singleton/reagent/alcohol/ms13/waster_sake // Baifan
 	name = "baifan brew"
 	description = "A homebrew sake from baifan grain. Strong alcoholic content."
 	color = "#ada9a6"
@@ -417,7 +417,7 @@
 	glass_name = "glass of clear murky liquid"
 	glass_desc = "A clear murky liquid that gives of a strong alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/waster_tequila // Agave
+/singleton/reagent/alcohol/ms13/waster_tequila // Agave
 	name = "wasteland tequila"
 	description = "A rough-and-ready tequila born of the wasteland."
 	color = "#b6b687"
@@ -426,7 +426,7 @@
 	glass_name = "glass of pale yellow-ish liquid"
 	glass_desc = "A faint pale yellow liquid with a familiar distant agave smell to it. Smells pretty alcoholic."
 
-/singleton/reagent/consumable/ethanol/ms13/waster_tequila/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/waster_tequila/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	if(M.getToxLoss() && prob(20))
 		M.adjustToxLoss(-1*REM, 0)
 		. = 1
@@ -434,7 +434,7 @@
 		holder.remove_reagent(/singleton/reagent/toxin, 0.5)
 	..()
 
-/singleton/reagent/consumable/ethanol/ms13/waster_whiskey // Maize
+/singleton/reagent/alcohol/ms13/waster_whiskey // Maize
 	name = "wasteland whiskey"
 	description = "A homemade whiskey. Some argue better than the pre-war bottles."
 	color = "#8f5b1f"
@@ -443,7 +443,7 @@
 	glass_name = "glass of clear brown liquid"
 	glass_desc = "A clear brown liquid that gives of a strong alcoholic odor."
 
-/singleton/reagent/consumable/ethanol/ms13/carrot_wine // Carrots
+/singleton/reagent/alcohol/ms13/carrot_wine // Carrots
 	name = "carrot wine"
 	description = "Wine. From. Carrots. How exotic!"
 	color = "#c99355"
@@ -452,7 +452,7 @@
 	glass_name = "glass of clear orange liquid"
 	glass_desc = "A clear orange liquid with a sweet subtle smell with some alcohol definitely present."
 
-/singleton/reagent/consumable/ethanol/ms13/brew_sludge // Anything random
+/singleton/reagent/alcohol/ms13/brew_sludge // Anything random
 	name = "brew sludge"
 	description = "The result of trying to brew something questionable. Curiosity doesn't always bear fruit. Sometimes it bears this."
 	color = "#462814"
@@ -461,14 +461,14 @@
 	glass_name = "glass of murky brown liquid"
 	glass_desc = "A murky brown liquid with a gross smell to it. You can ALMOST pick up the faint smell of alcohol."
 
-/singleton/reagent/consumable/ethanol/ms13/brew_sludge/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/brew_sludge/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	M.adjustOrganLoss(ORGAN_SLOT_STOMACH, rand(1,2))
 	M.adjust_disgust(15)
 	..()
 
 //// Combination Brews ////
 
-/singleton/reagent/consumable/ethanol/ms13/ballistic_bock // Gunpowder, Waster beer
+/singleton/reagent/alcohol/ms13/ballistic_bock // Gunpowder, Waster beer
 	name = "ballistic Bock"
 	description = "A dark, malty ale complemented perfectly with gunpowder."
 	color = "#5D0F0C"
@@ -477,7 +477,7 @@
 	glass_name = "glass of dark liquid"
 	glass_desc = "A dark and liquid. It smells faintly of alcohol and gunpowder."
 
-/singleton/reagent/consumable/ethanol/ms13/rad_ant_lager // Rad ant pulp, Waster beer
+/singleton/reagent/alcohol/ms13/rad_ant_lager // Rad ant pulp, Waster beer
 	name = "rad ant lager"
 	description = "A light, hoppy beer complemented exquisitely with Rad Ant meat."
 	color = "#864b49"
@@ -486,7 +486,7 @@
 	glass_name = "glass of pale red liquid"
 	glass_desc = "A faint pale red liquid with a slight meat-y smell. Strange. You can also pick up hints of alcohol in it."
 
-/singleton/reagent/consumable/ethanol/ms13/swift_recovery // Brain fungus and Tato
+/singleton/reagent/alcohol/ms13/swift_recovery // Brain fungus and Tato
 	name = "swift recovery brew"
 	description = "A flavorful and light beer. Reeks of fungus."
 	//quality = DRINK_NICE
@@ -496,14 +496,14 @@
 	glass_name = "glass of pale orange liquid"
 	glass_desc = "A pale orange liquid. It reeks of fungus and has hints of tato."
 
-/singleton/reagent/consumable/ethanol/ms13/swift_recovery/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/swift_recovery/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(-5,-1))
 	if(M.getToxLoss() && prob(20))
 		M.adjustToxLoss(1*REM, 0)
 		. = 1
 	..()
 
-/singleton/reagent/consumable/ethanol/ms13/fire_wine // Firecap and xander
+/singleton/reagent/alcohol/ms13/fire_wine // Firecap and xander
 	name = "fire Wine"
 	description = "Perfect for warming yourself in the harsh winters."
 	//quality = DRINK_NICE
@@ -513,7 +513,7 @@
 	glass_name = "glass of deep red liquid"
 	glass_desc = "A deep red liquid with a spiced aroma. Smelling it brings a comforting aura."
 
-/singleton/reagent/consumable/ethanol/ms13/fire_wine/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/fire_wine/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	M.adjust_bodytemperature(25 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, M.get_body_temp_normal())
 	..()
 	. = 1
@@ -528,7 +528,7 @@
 	glass_name = "glass of pale blue fizzy liquid"
 	glass_desc = "A pale blue fizzy liquid with a slighty sweet smell."
 
-/singleton/reagent/consumable/ethanol/ms13/lead_champagne // lead powder / Champagne - What a cruel joke.
+/singleton/reagent/alcohol/ms13/lead_champagne // lead powder / Champagne - What a cruel joke.
 	name = "lead champagne"
 	description = "Are you sure this is safe to drink?"
 	//quality = DRINK_NICE
@@ -538,12 +538,12 @@
 	glass_name = "glass of a reddish-purple liquid"
 	glass_desc = "A reddish-purple liquid with a distant fruit aroma to it, occasional black flakes can be seen floating around. Alcohol is present in it, albeit not too strong."
 
-/singleton/reagent/consumable/ethanol/ms13/lead_champagne/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/lead_champagne/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	if(prob(20))
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, rand(1,5))
 	..() // Not positive this works right. Radiation is when you unscuff it :tm:
 
-/singleton/reagent/consumable/ethanol/ms13/nukashine //this stuff makes you harder to stun, but liver hurtie.
+/singleton/reagent/alcohol/ms13/nukashine //this stuff makes you harder to stun, but liver hurtie.
 	name = "Nukashine"
 	description = "The best drink a college freshman could ask for."
 	color = "#48c2be"
@@ -553,17 +553,17 @@
 	glass_name = "glass of bright blue fizzy liquid"
 	glass_desc = "A bright blue fizzy liquid with a overwealming alcoholic smell. You feel like you get a hangover from the fumes itself."
 
-/singleton/reagent/consumable/ethanol/ms13/nukashine/on_mob_metabolize(mob/living/L)
+/singleton/reagent/alcohol/ms13/nukashine/on_mob_metabolize(mob/living/L)
 	..()
 	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/ephedrine)
 	to_chat(L, (SPAN_WARNING("Your stomach burns with pain as you drink the Nukashine, your heart beating faster.")))
 
-/singleton/reagent/consumable/ethanol/ms13/nukashine/on_mob_end_metabolize(mob/living/L)
+/singleton/reagent/alcohol/ms13/nukashine/on_mob_end_metabolize(mob/living/L)
 	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/ephedrine)
 	to_chat(L, (SPAN_DANGER("Against it all odds, it looks like the pain faded...")))
 	..()
 
-/singleton/reagent/consumable/ethanol/ms13/nukashine/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+/singleton/reagent/alcohol/ms13/nukashine/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	M.AdjustStun(-20, FALSE)
 	M.AdjustKnockdown(-20, FALSE)
 	M.adjustStaminaLoss(-5, 0)

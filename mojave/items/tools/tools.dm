@@ -313,7 +313,7 @@
 	attack_verb_simple = list("smack", "slash", "jab", "slap", "pound", "beat", "bonk", "dig")
 	sharpness = NONE
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = SLOT_BACK 
 	log_pickup_and_drop = TRUE
 	grid_width = 64
 	grid_height = 128

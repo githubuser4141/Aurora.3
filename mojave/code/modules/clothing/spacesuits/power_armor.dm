@@ -574,7 +574,7 @@
 		return
 
 	//Nothing can possibly go wrong
-	user.dna.species.no_equip += ITEM_SLOT_BACK
+	user.dna.species.no_equip += SLOT_BACK 
 	user.dna.species.no_equip += ITEM_SLOT_BELT
 
 	density = FALSE
@@ -599,7 +599,7 @@
 	density = TRUE
 	anchored = TRUE
 	//Nothing can possibly go wrong
-	user.dna.species.no_equip -= ITEM_SLOT_BACK
+	user.dna.species.no_equip -= SLOT_BACK 
 	user.dna.species.no_equip -= ITEM_SLOT_BELT
 	var/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/helmet2 = helmet
 	if(helmet2?.radio)

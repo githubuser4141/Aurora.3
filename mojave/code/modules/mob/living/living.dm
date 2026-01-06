@@ -1,6 +1,9 @@
 /mob/living
 	var/voice_type
 
+	var/slot = list(BP_BRAIN, BP_HEART, BP_LUNGS, BP_APPENDIX,
+	BP_EYES, BP_EARS, BP_TONGUE, BP_LIVER, BP_STOMACH)
+
 /mob/living/Initialize(mapload)
 	. = ..()
 	update_nv()

@@ -11,7 +11,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/stan_rifle)
 	cell_type = /obj/item/cell/ms13/mfc
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	force = 15
 	fire_delay = 0.65 SECONDS
@@ -59,13 +59,13 @@
 	icon_state = "rcw"
 	item_state = "rcw"
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/lasrcw/rcw_5.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/rcw.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/las_rcw)
 	cell_type = /obj/item/cell/ms13/ecp
 	fire_delay = 0.25 SECONDS
-	spread = 4
+	//spread 4
 	slowdown = 0.75
 	grid_width = 160
 	grid_height = 64
@@ -85,7 +85,7 @@
 	base_icon_state = "lasershotgun"
 	item_state = "lasershotgun"
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/scatter)
 	cell_type = /obj/item/cell/ms13/mfc
 	fire_delay = 0.7 SECONDS
@@ -106,12 +106,12 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/plasma_3.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/plas_rifle)
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = ITEM_SLOT_BACK
+	////weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK 
 	force = 15
 	fire_delay = 0.65 SECONDS
 	slowdown = 0.75
-	spread = 2
+	//spread 2
 	recoil = 0.75
 	grid_width = 192
 	grid_height = 64
@@ -126,7 +126,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/plas_carbine)
 	w_class = WEIGHT_CLASS_BULKY
 	fire_delay = 0.6 SECONDS
-	spread = 5
+	//spread 5
 	recoil = 0.65
 	grid_width = 160
 	grid_height = 64
@@ -141,8 +141,8 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/plasma_1.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/scatter)
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = ITEM_SLOT_BACK
+	////weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK 
 	fire_delay = 0.7 SECONDS
 	slowdown = 0.75
 	recoil = 0.75

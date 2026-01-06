@@ -78,13 +78,13 @@
 					to_chat(owner, "<span class='danger'>[pick("You feel exhausted.", "You feel completely out of it.")]</span>")
 	switch(chain_smokah)
 		if(9 to 11.9) //3 cigarettes
-			owner.adjustOrganLoss(ORGAN_SLOT_LUNGS, 0.01)
+			owner.adjustOrganLoss(BP_LUNGS, 0.01)
 			if(prob(1))
 				to_chat(owner, "<span class='danger'>[pick("Your head hurts.", "Your mouth feels acrid.")]</span>")
 			if(prob(5))
 				owner.emote(pick("cough","yawn"))
 		if(12 to 14.9) //4 cigarettes
-			owner.adjustOrganLoss(ORGAN_SLOT_LUNGS, 0.02)
+			owner.adjustOrganLoss(BP_LUNGS, 0.02)
 			if(prob(1))
 				to_chat(owner, "<span class='danger'>[pick("You feel sick.", "You feel lightheaded.")]</span>")
 			if(prob(5))
@@ -92,7 +92,7 @@
 			if(prob(1))
 				owner.Jitter(8)
 		if(15 to 17.9) //5 cigarettes
-			owner.adjustOrganLoss(ORGAN_SLOT_LUNGS, 0.03)
+			owner.adjustOrganLoss(BP_LUNGS, 0.03)
 			if(prob(1))
 				to_chat(owner, "<span class='userdanger'>[pick("Your head hurts like hell.", "Your eyes feel very dry.")]</span>")
 				owner.emote("cough")

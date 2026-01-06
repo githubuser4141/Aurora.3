@@ -113,7 +113,7 @@
 	can_suppress = FALSE
 	tac_reloads = FALSE
 	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	force = 15
 	wound_bonus = 0
@@ -343,10 +343,10 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	desc = "The M134 is a 7.62×51mm, six-barrel rotary machine gun with a rate of fire between 2,000 and 6,000 rounds per minute."
 	icon_state = "arg"
 	item_state = "arg"
-	mag_type = /obj/item/ammo_box/magazine/tommygunm45
+	magazine_type = /obj/item/ammo_box/magazine/tommygunm45
 	fire_sound = 'mojave/sound/ms13weapons/10mm_fire_03.ogg'
 	fire_delay = 0.2
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/ballistic/automatic/ms13/shotgun/pancor
 	name = "Pancor Jackhammer"
@@ -354,9 +354,9 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	icon_state = "pancor"
 	item_state = "cshotgun1"
 	fire_sound = 'mojave/sound/ms13weapons/repeater_fire.ogg'
-	mag_type = /obj/item/ammo_box/magazine/d12g
+	magazine_type = /obj/item/ammo_box/magazine/d12g
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/ballistic/automatic/ms13/shotgun/caws
 	name = "HK CAWS"
@@ -364,10 +364,10 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	icon_state = "caws"
 	item_state = "cshotgun1"
 	fire_sound = 'mojave/sound/ms13weapons/repeater_fire.ogg'
-	mag_type = /obj/item/ammo_box/magazine/d12g
+	magazine_type = /obj/item/ammo_box/magazine/d12g
 	fire_delay = 4
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 
 
 /obj/item/gun/ballistic/automatic/ms13/bozar
@@ -375,11 +375,11 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	desc = "The ultimate refinement of the sniper's art, the Bozar is a scoped, accurate, light machine gun that will make nice big holes in your enemy. Uses 5.56."
 	icon_state = "bozar"
 	item_state = "sniper"
-	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/r20
+	slot_flags = SLOT_BACK 
+	magazine_type = /obj/item/ammo_box/magazine/r20
 	fire_delay = 2
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 	fire_sound = 'mojave/sound/ms13weapons/bozar_fire.ogg'
 	zoomable = TRUE
 	zoom_amt = 10
@@ -390,8 +390,8 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	desc = "The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed... and pierce almost any obstacle. Its range, accuracy and stopping power is almost unparalleled."
 	icon = 'mojave/icons/objects/guns/projectile.dmi'
 	item_state = "shotgun"
-	slot_flags = ITEM_SLOT_BACK
-	mag_type = /obj/item/ammo_box/magazine/m2mm
+	slot_flags = SLOT_BACK 
+	magazine_type = /obj/item/ammo_box/magazine/m2mm
 	fire_sound = 'mojave/sound/ms13weapons/gauss_rifle.ogg'
 	can_suppress = FALSE
 	fire_delay = 3
@@ -399,7 +399,7 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	zoom_amt = 10
 	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY
+	////weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/ballistic/automatic/ms13/lsw
 	name = "L86A1 LSW"
@@ -407,12 +407,12 @@ obj/item/gun/ballistic/rifle/ms13/attackby(obj/item/item, mob/user, params)
 	icon_state = "lsw"
 	item_state = "l6closedmag"
 	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/m556
+	magazine_type = /obj/item/ammo_box/magazine/m556
 	fire_sound = 'mojave/sound/ms13weapons/assaultrifle_fire.ogg'
 	can_suppress = FALSE
 	fire_delay = 0.3
 	w_class = WEIGHT_CLASS_HUGE
-	weapon_weight = WEAPON_HEAVY */
+	////weapon_weight = WEAPON_HEAVY */
 
 
 //Mojave Sun

@@ -9,7 +9,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_1.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/laser_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
+	////weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/stan_pistol)
 	cell_type = /obj/item/cell/ms13/ec
@@ -87,12 +87,12 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/plaspistol/plasma_3.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/plasma_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
+	////weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/stan_pistol)
 	force = 10
 	fire_delay = 0.6 SECONDS
-	spread = 6
+	//spread 6
 	recoil = 0.5
 	slowdown = 0.5
 	grid_width = 64
@@ -114,5 +114,5 @@
 	item_state = "plasmadefender"
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/plas_defender)
 	fire_delay = 0.5 SECONDS
-	spread = 4
+	//spread 4
 	recoil = 0.25
