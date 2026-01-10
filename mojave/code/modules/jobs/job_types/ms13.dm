@@ -8,8 +8,7 @@ Mojave Sun Job Base Class
 	forbid = "N/A - please note down what the role shout NOT be doing in your dataum/job/ms13/yourjob file"
 	enforce = "N/A - please note down what the role should be doing in dataum/job/ms13/yourjob file"
 	faction = FACTION_STATION // this has to be faction station for it to work properly with the prefs menu.
-	paycheck = null
-	paycheck_department = null
+	economic_modifier = null
 //	job_flags = JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS
 
 /obj/outfit/job/ms13

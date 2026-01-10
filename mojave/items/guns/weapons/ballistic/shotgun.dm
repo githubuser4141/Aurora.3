@@ -14,7 +14,7 @@
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/shotgun_lever.ogg'
 	bolt_wording = "lever"
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	force = 25
 	subtractible_armour_penetration = 5
 	fire_delay = 0.6 SECONDS
@@ -48,7 +48,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/huntingshot/huntingshot2.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/shotgun_hunting.ogg'
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	force = 30
 	subtractible_armour_penetration = 10
 	fire_delay = 0.6 SECONDS
@@ -75,7 +75,7 @@
 	item_state = "trail"
 	magazine_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube44
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterrack.ogg'
 	//load_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
 	//load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
@@ -99,7 +99,7 @@
 	item_state = "cowboy"
 	magazine_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube357
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterrack.ogg'
 	//load_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
 	//load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
@@ -123,7 +123,7 @@
 	item_state = "brush"
 	magazine_type = /obj/item/ammo_box/magazine/internal/shot/ms13/tube4570
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterrack.ogg'
 	//load_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
 	//load_empty_sound = 'mojave/sound/ms13weapons/gunsounds/repeater/repeaterload.ogg'
@@ -147,7 +147,7 @@
 	item_state = "sks"
 	magazine_type = /obj/item/ammo_box/magazine/internal/shot/ms13/sks
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/sks/sks_rack.ogg'
 	lock_back_sound = 'mojave/sound/ms13weapons/gunsounds/sks/sks_rack.ogg'
 	//bolt_drop_sound = 'mojave/sound/ms13weapons/gunsounds/sks/sks_rack.ogg'

@@ -229,11 +229,11 @@
 	screen_start_x = 6
 	screen_start_y = 5
 	var/rustle_sounds = list(
-		'sound/effects/rustle1.ogg',
-		'sound/effects/rustle2.ogg',
-		'sound/effects/rustle3.ogg',
-		'sound/effects/rustle4.ogg',
-		'sound/effects/rustle5.ogg',
+		'mojave/sound/effects/rustle1.ogg',
+		'mojave/sound/effects/rustle2.ogg',
+		'mojave/sound/effects/rustle3.ogg',
+		'mojave/sound/effects/rustle4.ogg',
+		'mojave/sound/effects/rustle5.ogg',
 	)
 	/// Exactly what it sounds like, this makes it use the new RE4-like inventory system
 	var/grid = FALSE

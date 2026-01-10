@@ -19,7 +19,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/caravan/caravan.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/shotgun.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	grid_width = 160
 	grid_height = 64
 	wield_info = /datum/wield_info/default/inhands
@@ -36,7 +36,7 @@
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	slowdown = 0.5
 	w_class = WEIGHT_CLASS_NORMAL
-	////weapon_weight = WEAPON_MEDIUM
+	//weapon_weight = WEAPON_MEDIUM
 	grid_width = 96
 	grid_height = 64
 
@@ -60,7 +60,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/caravan/caravan2.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/shotgun.ogg'
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	grid_width = 192
 	grid_height = 32
 	wield_info = /datum/wield_info/default/inhands
@@ -71,7 +71,7 @@
 	icon_state = "revrifle"
 	item_state = "revrifle"
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/mts
 	//load_sound = 'mojave/sound/ms13weapons/gunsounds/caravan/caravanload3.ogg'
@@ -95,7 +95,7 @@
 	icon_state = "revrifle_shorty"
 	item_state = "revrifle_shorty"
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/ms13/mts
 	force = 25

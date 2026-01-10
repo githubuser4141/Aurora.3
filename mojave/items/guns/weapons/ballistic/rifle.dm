@@ -15,7 +15,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/hunting_rifle.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/hunting_rifle.ogg'
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	fire_delay = 0.75 SECONDS
 	rack_delay = 0.75 SECONDS
@@ -41,7 +41,7 @@
 	icon_state = "varmint"
 	item_state = "varmint"
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	//rack_sound = 'mojave/sound/ms13weapons/gunsounds/rifle/rifleback.ogg'
 	lock_back_sound = 'mojave/sound/ms13weapons/gunsounds/rifle/rifleback.ogg'
@@ -179,7 +179,7 @@
 	item_state = "jezzail"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	magazine_type = /obj/item/ammo_box/magazine/internal/ms13/jezzail
 	bolt_wording = "chamber"
@@ -204,7 +204,7 @@
 	item_state = "antique"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK 
 	magazine_type = /obj/item/ammo_box/magazine/internal/ms13/antique
 	bolt_wording = "trap"

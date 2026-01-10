@@ -44,3 +44,6 @@
 	return A.display_order - B.display_order
 
 #warn description and display_order are not connected to anything
+
+#define FACTION_NONE "None"
+#define FACTION_STATION "Station"

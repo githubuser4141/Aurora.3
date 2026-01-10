@@ -5,7 +5,7 @@
 	item_state = "m79"
 	internal_magazine = TRUE
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = null
 	magazine_type = /obj/item/ammo_box/magazine/internal/ms13/m79
 	bolt_wording = "chamber"

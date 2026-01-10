@@ -601,8 +601,6 @@ GLOBAL_LIST_EMPTY(cached_storage_typecaches)
 		return
 	if(!over_object)
 		return
-	if(ismecha(M.loc)) // stops inventory actions in a mech
-		return
 	if(M.incapacitated() || !M.canUseStorage())
 		return
 	var/atom/A = parent

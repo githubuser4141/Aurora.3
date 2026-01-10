@@ -9,7 +9,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/laspistol/las_pistol_1.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/laser_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	////weapon_weight = WEAPON_MEDIUM
+	//weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser/stan_pistol)
 	cell_type = /obj/item/cell/ms13/ec
@@ -87,7 +87,7 @@
 	fire_sound = 'mojave/sound/ms13weapons/gunsounds/plaspistol/plasma_3.ogg'
 	far_fire_sound = 'mojave/sound/ms13weapons/distant_shots/plasma_pistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
-	////weapon_weight = WEAPON_MEDIUM
+	//weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma/stan_pistol)
 	force = 10

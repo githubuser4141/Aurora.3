@@ -51,7 +51,7 @@
 		cell = AM
 		if (display_message)
 			to_chat(user, "<span class='notice'>You load a new [AM] into \the [src].</span>")
-			playsound(src, //load_sound, //load_sound_volume, //load_sound_vary)
+//			playsound(src, load_sound, load_sound_volume, load_sound_vary)
 		update_icon()
 		return TRUE
 	else
@@ -63,7 +63,7 @@
 	if(cell)
 		cell.forceMove(drop_location())
 		var/obj/item/cell/ms13/old_mag = cell
-		playsound(src, un//load_sound, //load_sound_volume, //load_sound_vary)
+//		playsound(src, unload_sound, load_sound_volume, load_sound_vary)
 		if (tac_load)
 			if (insert_magazine(user, tac_load, FALSE))
 				to_chat(user, "<span class='notice'>You perform a tactical reload on \the [src].</span>")
@@ -109,7 +109,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/laser)
 	cell_type = /obj/item/cell/ms13/mfc
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	extra_damage = 0
 	extra_penetration = 0
@@ -123,7 +123,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/plasma)
 	cell_type = /obj/item/cell/ms13/pc
 	w_class = WEIGHT_CLASS_BULKY
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	extra_damage = 0
 	extra_penetration = 0

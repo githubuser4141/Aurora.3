@@ -8,7 +8,7 @@
 	//load_sound = 'mojave/sound/ms13weapons/gunsounds/gauss/gauss_reload.ogg'
 	un//load_sound = 'mojave/sound/ms13weapons/gunsounds/gauss/gauss_unload.ogg'
 	w_class = WEIGHT_CLASS_HUGE
-	////weapon_weight = WEAPON_HEAVY
+	//weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_SUITSTORE
 	force = 15
 	cell_type = /obj/item/cell/ms13/gauss
@@ -55,7 +55,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/ms13/gauss/pistol)
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
-	////weapon_weight = WEAPON_MEDIUM
+	//weapon_weight = WEAPON_MEDIUM
 	force = 10
 	recoil = 1.25
 	//spread 6
