@@ -56,9 +56,9 @@
 	else icon_state = "trashbag3"
 
 /obj/item/storage/bag/trash/attackby(obj/item/attacking_item, mob/user)
-	if (istype (attacking_item, /obj/item/device/lightreplacer))
+	if (istype (attacking_item, /obj/item/lightreplacer))
 		var/count = 0
-		var/obj/item/device/lightreplacer/R = attacking_item
+		var/obj/item/lightreplacer/R = attacking_item
 		var/bagfull = 0
 		if (R.store_broken)
 			for(var/obj/item/light/L in R.contents)
@@ -108,7 +108,7 @@
 	item_state = "plasticbag"
 	storage_slots = null
 	w_class = WEIGHT_CLASS_BULKY
-	max_w_class = WEIGHT_CLASS_SMALL
+	storage_slots = DEFAULT_LARGEBOX_STORAGE
 	can_hold = null // any
 	cant_hold = list(/obj/item/disk/nuclear)
 	drop_sound = 'sound/items/drop/wrapper.ogg'

@@ -90,7 +90,7 @@
 	/// Wires datum.
 	var/datum/wires/airlock/wires
 	/// Any active brace.
-	var/obj/item/device/magnetic_lock/bracer
+	var/obj/item/magnetic_lock/bracer
 	/// If the panel is visible when open.
 	var/panel_visible_while_open = FALSE
 
@@ -282,7 +282,7 @@
 	if(ishuman(usr))
 		var/mob/living/carbon/human/H = usr
 		var/list/modifiers = params2list(params)
-		var/obj/item/device/paint_sprayer/paint_sprayer = H.get_active_hand()
+		var/obj/item/paint_sprayer/paint_sprayer = H.get_active_hand()
 		if(istype(paint_sprayer))
 			if(!istype(H.buckled_to))
 				H.face_atom(src)
@@ -402,8 +402,8 @@
 	icon_state = "maintenance"
 	assembly_type = /obj/structure/door_assembly/door_assembly_mai
 	paintable = AIRLOCK_PAINTABLE_MAIN | AIRLOCK_PAINTABLE_STRIPE
-	door_color = "#4d4d4d"
-	stripe_color = "#a88029"
+	door_color = "#4a4a4a"
+	stripe_color = "#ab812B"
 
 /obj/machinery/door/airlock/generic/maintenance/external//for connecting to the horizons hull, duh
 	door_frame_color = "#81838b"//Meant to connect to external scc spaceship walls like the horizon hull
@@ -844,7 +844,7 @@ About the new airlock wires panel:
 *		one wire for opening the door. Sending a pulse through this while the door has power makes it open the door if no access is required.
 *		one wire for AI control. If allowed by the door setup, sending a pulse through this toggles whether AI can bolt the door (shows as green light in dialogue if it can bolt, orange if it can't, red when emagged and thus inoperable by AI). Cutting this prevents the AI from controlling the door unless it has hacked the door through the power connection (which takes about a minute). If both main and backup power are cut, as well as this wire, then the AI cannot operate or hack the door at all.
 *		one wire for electrifying the door. Sending a pulse through this electrifies the door for 30 seconds. Cutting this wire electrifies the door, so that the next person to touch the door without insulated gloves gets electrocuted. (Currently it is also STAYING electrified until someone mends the wire)
-*		one wire for controling door safetys.  When active, door does not close on someone.  When cut, door will ruin someone's shit.  When pulsed, door will immedately ruin someone's shit.
+*		one wire for controling door safeties.  When active, door does not close on someone.  When cut, door will ruin someone's shit.  When pulsed, door will immedately ruin someone's shit.
 *		one wire for controlling door speed.  When active, door closes at normal rate.  When cut, door does not close manually.  When pulsed, door attempts to close every tick.
 */
 
@@ -1493,7 +1493,7 @@ About the new airlock wires panel:
 	var/cut_sound
 	var/cutting = FALSE
 
-	if(tool.iswelder())
+	if(tool.tool_behaviour == TOOL_WELDER)
 		var/obj/item/weldingtool/WT = tool
 		if(!WT.isOn())
 			return
@@ -1511,7 +1511,7 @@ About the new airlock wires panel:
 		cutting = TRUE
 	else if(istype(tool,/obj/item/melee/energy/blade) || istype(tool,/obj/item/melee/energy/sword))
 		cut_verb = "slicing"
-		cut_sound = /singleton/sound_category/spark_sound
+		cut_sound = SFX_SPARKS
 		cut_delay *= 1
 		cutting = TRUE
 	else if(istype(tool,/obj/item/surgery/circular_saw))
@@ -1753,14 +1753,14 @@ About the new airlock wires panel:
 		if (!cut_bolts(attacking_item,user))
 			return ..()
 		return TRUE
-	if (istype(attacking_item, /obj/item/device/magnetic_lock))
+	if (istype(attacking_item, /obj/item/magnetic_lock))
 		if (bracer)
 			to_chat(user, SPAN_NOTICE("There is already a [bracer] on [src]!"))
 			return TRUE
-		var/obj/item/device/magnetic_lock/newbracer = attacking_item
+		var/obj/item/magnetic_lock/newbracer = attacking_item
 		newbracer.attachto(src, user)
 		return TRUE
-	if(!repairing && (attacking_item.iswelder() && !( src.operating > 0 ) && src.density))
+	if(!repairing && (attacking_item.tool_behaviour == TOOL_WELDER && !( src.operating > 0 ) && src.density))
 		var/obj/item/weldingtool/WT = attacking_item
 		if(WT.isOn())
 			user.visible_message(
@@ -1778,7 +1778,7 @@ About the new airlock wires panel:
 			welded = !welded
 			update_icon()
 		return TRUE
-	else if(attacking_item.isscrewdriver())
+	else if(attacking_item.tool_behaviour == TOOL_SCREWDRIVER)
 		if (src.p_open)
 			if (stat & BROKEN)
 				to_chat(user, SPAN_WARNING("The panel is broken and cannot be closed."))
@@ -1790,19 +1790,19 @@ About the new airlock wires panel:
 			to_chat(user, SPAN_NOTICE("You carefully unscrew the panel on \the [src]"))
 		src.update_icon()
 		return TRUE
-	else if(attacking_item.iswirecutter())
+	else if(attacking_item.tool_behaviour == TOOL_WIRECUTTER)
 		return src.attack_hand(user)
-	else if(attacking_item.ismultitool())
+	else if(attacking_item.tool_behaviour == TOOL_MULTITOOL)
 		return src.attack_hand(user)
-	else if(istype(attacking_item, /obj/item/device/assembly/signaler))
+	else if(istype(attacking_item, /obj/item/assembly/signaler))
 		return src.attack_hand(user)
-	else if(istype(attacking_item, /obj/item/device/paint_sprayer))
+	else if(istype(attacking_item, /obj/item/paint_sprayer))
 		return FALSE
 	else if(istype(attacking_item, /obj/item/pai_cable))	// -- TLE
 		var/obj/item/pai_cable/cable = attacking_item
 		cable.plugin(src, user)
 		return TRUE
-	else if(!repairing && attacking_item.iscrowbar())
+	else if(!repairing && attacking_item.tool_behaviour == TOOL_CROWBAR)
 		if(istype(attacking_item, /obj/item/melee/arm_blade))
 			if(arePowerSystemsOn() &&!(stat & BROKEN))
 				..()
@@ -1860,7 +1860,7 @@ About the new airlock wires panel:
 				else
 					to_chat(user, SPAN_WARNING("You need to be wielding \the [attacking_item] to do that."))
 		return TRUE
-	else if(attacking_item.ishammer() && !arePowerSystemsOn())
+	else if(attacking_item.tool_behaviour == TOOL_HAMMER && !arePowerSystemsOn())
 		if(locked && user.a_intent != I_HURT)
 			to_chat(user, SPAN_NOTICE("The airlock's bolts prevent it from being forced."))
 		else if(locked && user.a_intent == I_HURT)
@@ -2155,7 +2155,7 @@ About the new airlock wires panel:
 		// The door lost power - Disable electrification and close it.
 		electrified_until = 0
 		INVOKE_ASYNC(src, TYPE_PROC_REF(/obj/machinery/door, close), 1)
-	else if(revert_powerloss_manual_override)
+	else if(revert_powerloss_manual_override && arePowerSystemsOn())
 		// The door regained power and the powerless override was used - Close the door again.
 		revert_powerloss_manual_override = FALSE
 		INVOKE_ASYNC(src, TYPE_PROC_REF(/obj/machinery/door, close), 1)

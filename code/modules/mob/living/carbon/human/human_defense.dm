@@ -13,11 +13,11 @@ emp_act
 	if(species_check)
 		return species_check
 
-	if(!is_physically_disabled())
+	if(!MOB_IS_INCAPACITATED(INCAPACITATION_DISABLED))
 		var/deflection_chance = check_martial_deflection_chance()
 		if(prob(deflection_chance))
 			visible_message(SPAN_WARNING("\The [src] deftly dodges \the [hitting_projectile]!"), SPAN_NOTICE("You deftly dodge \the [hitting_projectile]!"))
-			playsound(src, /singleton/sound_category/bulletflyby_sound, 75, TRUE)
+			playsound(src, SFX_BULLET_MISS, 75, TRUE)
 			return BULLET_ACT_FORCE_PIERCE
 
 	def_zone = check_zone(def_zone)

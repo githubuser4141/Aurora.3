@@ -208,6 +208,20 @@
 	groupable = TRUE
 	spawn_amount = 1
 
+/singleton/cargo_item/prarifle
+	category = "weaponry"
+	name = "Tsarrayut'yan automatic rifle"
+	supplier = "zharkov"
+	description = "An Adhomian assault rifle from the People's Republic of Adhomai."
+	price = 1450
+	items = list(
+		/obj/item/gun/projectile/automatic/rifle/adhomian
+	)
+	access = ACCESS_ARMORY
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
 /singleton/cargo_item/derringer
 	category = "weaponry"
 	name = "derringer"
@@ -406,6 +420,48 @@
 	groupable = TRUE
 	spawn_amount = 1
 
+/singleton/cargo_item/clip_68
+	category = "weaponry"
+	name = "rifle clip (6.8mm)"
+	supplier = "zharkov"
+	description = "A clip of 6.8mm for Adhomian rifles."
+	price = 30
+	items = list(
+		/obj/item/ammo_magazine/boltaction/adhomai
+	)
+	access = ACCESS_SECURITY
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/magazine_68
+	category = "weaponry"
+	name = "rifle magazine (6.8mm)"
+	supplier = "zharkov"
+	description = "A 6.8mm rifle magazine."
+	price = 65
+	items = list(
+		/obj/item/ammo_magazine/a68
+	)
+	access = ACCESS_SECURITY
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/magazine_68ap
+	category = "weaponry"
+	name = "sniper rifle magazine (6.8mm AP)"
+	supplier = "zharkov"
+	description = "An AP 6.8mm rifle magazine."
+	price = 70
+	items = list(
+		/obj/item/ammo_magazine/a68/hotaki
+	)
+	access = ACCESS_SECURITY
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
 /singleton/cargo_item/magazine_9
 	category = "weaponry"
 	name = "pistol magazine (9mm)"
@@ -511,7 +567,7 @@
 	description = "A box of 40mm AP ammo for the francisca rotary cannon."
 	price = 850
 	items = list(
-		/obj/item/ship_ammunition/grauwolf_bundle/ap
+		/obj/item/ship_ammunition/francisca/ap
 	)
 	access = ACCESS_CARGO
 	container_type = "crate"
@@ -525,7 +581,21 @@
 	description = "A box of 40mm FMJ ammo for a Francisca-type rotary cannon."
 	price = 800
 	items = list(
-		/obj/item/ship_ammunition/grauwolf_bundle
+		/obj/item/ship_ammunition/francisca
+	)
+	access = ACCESS_CARGO
+	container_type = "crate"
+	groupable = TRUE
+	spawn_amount = 1
+
+/singleton/cargo_item/franciscafmjammo
+	category = "weaponry"
+	name = "francisca rotary cannon fragmentation ammunition box"
+	supplier = "zavodskoi"
+	description = "A box of 40mm fragmentation ammo for a Francisca-type rotary cannon."
+	price = 800
+	items = list(
+		/obj/item/ship_ammunition/francisca/frag
 	)
 	access = ACCESS_CARGO
 	container_type = "crate"

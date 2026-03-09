@@ -75,7 +75,7 @@
 		/mob/living/carbon/human/proc/check_tag,
 		/mob/living/carbon/human/proc/tie_hair)
 
-	bodyfall_sound = /singleton/sound_category/bodyfall_sound
+	bodyfall_sound = SFX_BODYFALL
 	use_alt_hair_layer = FALSE
 
 /datum/species/machine/shell/get_species(var/reference, var/mob/living/carbon/human/H, var/records)
@@ -584,7 +584,7 @@
 	eyes = "zenghu_eyes"
 	brute_mod = 1.5
 
-	slowdown = -0.8
+	slowdown = -0.6
 	sprint_speed_factor = 0.6
 	sprint_cost_factor = 2
 	move_charge_factor = 2

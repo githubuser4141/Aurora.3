@@ -510,10 +510,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	var/y = min(world.maxy, max(1, A.y + dy))
 	return locate(x,y,A.z)
 
-/// Makes sure MIDDLE is between LOW and HIGH. If not, it adjusts it. Returns the adjusted value.
-/proc/between(var/low, var/middle, var/high)
-	return max(min(middle, high), low)
-
 /// Returns random gauss number
 /proc/GaussRand(var/sigma)
 	var/x,y,rsq
@@ -914,7 +910,7 @@ GLOBAL_LIST_INIT(common_tools, list(
 	/obj/item/wirecutters,
 	/obj/item/powerdrill,
 	/obj/item/combitool,
-	/obj/item/device/multitool,
+	/obj/item/multitool,
 	/obj/item/crowbar))
 
 /proc/istool(O)
@@ -1005,7 +1001,7 @@ GLOBAL_LIST_INIT(common_tools, list(
 GLOBAL_LIST_INIT(wall_items, typecacheof(list(
 	/obj/machinery/power/apc,
 	/obj/machinery/alarm,
-	/obj/item/device/radio/intercom,
+	/obj/item/radio/intercom,
 	/obj/structure/extinguisher_cabinet,
 	/obj/structure/reagent_dispensers/peppertank,
 	/obj/machinery/status_display,

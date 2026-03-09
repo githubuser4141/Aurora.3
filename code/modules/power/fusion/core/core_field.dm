@@ -80,7 +80,7 @@
 
 	var/animating_ripple = FALSE
 
-	var/obj/item/device/radio/radio
+	var/obj/item/radio/radio
 	var/safe_alert = "NOTICE: INDRA reactor stabilizing."
 	var/safe_warned = FALSE
 	var/public_alert = FALSE
@@ -177,7 +177,7 @@
 /obj/effect/fusion_em_field/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(update_light_colors)), 10 SECONDS, TIMER_LOOP)
-	radio = new /obj/item/device/radio{channels=list("Engineering")}(src)
+	radio = new /obj/item/radio{channels=list("Engineering")}(src)
 
 /**
  * What are we doing every tick? A lot.
@@ -221,7 +221,7 @@
 	output_archive_2 = output_archive_1
 	output_archive_1 = power_output
 	output_avg = ((output_archive_1 + output_archive_2 + output_archive_3 + output_archive_4 + output_archive_5 ) / 5)
-	owned_core.add_avail(power_output)
+	ADD_TO_POWERNET(owned_core, power_output)
 
 	// Roundstart update
 	if(field_strength < 20)

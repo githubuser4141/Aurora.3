@@ -43,8 +43,10 @@
 	QDEL_NULL(bloodstr)
 	QDEL_NULL(dna)
 	QDEL_NULL(breathing)
-	for(var/guts in internal_organs)
-		qdel(guts)
+	// Delete and null a direct list of references to our internal organs (such as brain, lungs, heart, etc).
+	QDEL_LIST(internal_organs)
+	// Null an Associative list of String = Reference to the same organs.
+	internal_organs_by_name = null
 	return ..()
 
 /mob/living/carbon/rejuvenate()
@@ -145,7 +147,7 @@
 		return 0
 
 	src.apply_damage(shock_damage, DAMAGE_BURN, def_zone, used_weapon="Electrocution")
-	playsound(loc, /singleton/sound_category/spark_sound, 50, 1, -1)
+	playsound(loc, SFX_SPARKS, 50, 1, -1)
 	if(shock_damage > 15 || tesla_shock)
 		src.visible_message(
 			SPAN_WARNING("[src] was shocked by the [source]!"), \
@@ -413,11 +415,6 @@
 		willfully_sleeping = TRUE
 		usr.sleeping = 20 // Short nap.
 		usr.eye_blurry = 20
-
-/mob/living/carbon/sleeps_horizontal()
-	if(species && species.sleeps_upright)
-		return FALSE
-	return ..()
 
 /verb/toggle_indefinite_sleep()
 	set name = "Toggle Indefinite Sleep"

@@ -27,14 +27,15 @@
 	min_broken_damage = 10
 
 /obj/item/organ/internal/Destroy()
-	if(owner)
+	if(owner && owner.internal_organs)
 		owner.internal_organs.Remove(src)
 		owner.internal_organs_by_name[organ_tag] = null
 		owner.internal_organs_by_name -= organ_tag
 		while(null in owner.internal_organs)
 			owner.internal_organs -= null
-		var/obj/item/organ/external/E = owner.organs_by_name[parent_organ]
-		if(istype(E)) E.internal_organs -= src
+		if(parent_organ in owner.organs_by_name)
+			var/obj/item/organ/external/E = astype(owner.organs_by_name[parent_organ])
+			E?.internal_organs -= src
 	return ..()
 
 /// Sets the internal organ as belonging to the targeted external organ, and matches the target's species/robotness. Also updates all organ lists belonging to the owner.
@@ -75,7 +76,7 @@
 /obj/item/organ/internal/proc/get_scarring_results()
 	var/scar_level = get_scarring_level()
 	if(scar_level > 0.01)
-		. += "[get_wound_severity(get_scarring_level())] scarring"
+		. += "[get_wound_severity(get_scarring_level(), FALSE, FALSE)] scarring"
 
 /obj/item/organ/internal/is_usable()
 	if(robotize_type)

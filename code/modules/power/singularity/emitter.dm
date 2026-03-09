@@ -92,7 +92,7 @@
 
 /obj/machinery/power/emitter/update_icon()
 	ClearOverlays()
-	if(active && powernet && avail(active_power_usage))
+	if(active && powernet && POWER_AVAIL(src))
 		AddOverlays(emissive_appearance(icon, "[icon_state]_lights"))
 		AddOverlays("[icon_state]_lights")
 
@@ -149,7 +149,8 @@
 		update_icon()
 		return
 	if(((last_shot + fire_delay) <= world.time) && active)
-		var/actual_load = draw_power(active_power_usage)
+		var/actual_load = POWER_DRAW(src, active_power_usage)
+		DRAW_POWER(src, actual_load)
 		if(actual_load >= active_power_usage) //does the laser have enough power to shoot?
 			if(!powered)
 				powered = TRUE
@@ -189,7 +190,7 @@
 		shot_counter++
 
 /obj/machinery/power/emitter/attackby(obj/item/attacking_item, mob/user)
-	if(attacking_item.iswrench())
+	if(attacking_item.tool_behaviour == TOOL_WRENCH)
 		if(active)
 			to_chat(user, SPAN_WARNING("You cannot unbolt \the [src] while it's active."))
 			return
@@ -212,7 +213,7 @@
 				to_chat(user, SPAN_WARNING("\The [src] needs to be unwelded from the floor."))
 		return
 
-	if(attacking_item.iswelder())
+	if(attacking_item.tool_behaviour == TOOL_WELDER)
 		var/obj/item/weldingtool/WT = attacking_item
 		if(active)
 			to_chat(user, SPAN_NOTICE("You cannot unweld \the [src] while it's active."))

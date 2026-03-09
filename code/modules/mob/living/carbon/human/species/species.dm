@@ -238,7 +238,7 @@
 	var/heat_level_2 = 400
 	/// Heat damage level 3 above this point
 	var/heat_level_3 = 1000
-	/// Species will gain this much temperature every second
+	/// Species will gain this much temperature (in degrees kelvin per second)
 	var/passive_temp_gain = 0
 	/// Dangerously high pressure
 	var/hazard_high_pressure = HAZARD_HIGH_PRESSURE
@@ -420,10 +420,9 @@
 	/// What zombie species they become
 	var/zombie_type
 	/// Default, can be used for species specific falling sounds
-	var/bodyfall_sound = /singleton/sound_category/bodyfall_sound
+	var/bodyfall_sound = SFX_BODYFALL
 	/// Same as above but for footsteps without shoes
-	var/footsound = /singleton/sound_category/blank_footsteps
-
+	var/footsound = SFX_FOOTSTEP_BLANK
 	/// Sets the base "tint" of the species' sprite, which is then adjusted by the skin tone
 	var/list/character_color_presets
 
@@ -541,6 +540,7 @@
 /datum/species/proc/create_organs(var/mob/living/carbon/human/H) //Handles creation of mob organs.
 	for(var/obj/item/organ/organ in H.contents)
 		if((organ in H.organs) || (organ in H.internal_organs))
+			H.drop_from_inventory(organ, null, FALSE, TRUE)
 			qdel(organ)
 
 	if(H.organs)                  H.organs.Cut()
@@ -996,7 +996,9 @@
 /datum/species/proc/handle_stance_damage(var/mob/living/carbon/human/H, var/damage_only = FALSE)
 	var/static/support_limbs = list(
 		BP_L_LEG = BP_R_LEG,
-		BP_L_FOOT = BP_R_FOOT
+		BP_L_FOOT = BP_R_FOOT,
+		BP_R_LEG = BP_L_LEG,
+		BP_R_FOOT = BP_L_FOOT
 	)
 
 	var/has_opposite_limb = FALSE
@@ -1078,5 +1080,5 @@
  * This proc handles the species temperature regulation. By default, it just adds `passive_temp_gain` to the human's bodytemperature.
  * Can be overridden for more complex calculations.
  */
-/datum/species/proc/handle_temperature_regulation(mob/living/carbon/human/human)
-	human.bodytemperature += passive_temp_gain
+/datum/species/proc/handle_temperature_regulation(mob/living/carbon/human/human, seconds_per_tick)
+	human.bodytemperature += passive_temp_gain * seconds_per_tick

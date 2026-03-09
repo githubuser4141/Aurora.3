@@ -34,7 +34,7 @@
 	density = 1
 	anchored = 1
 	use_power = POWER_USE_OFF
-	clicksound = /singleton/sound_category/switch_sound
+	clicksound = SFX_SWITCH
 
 	var/health = 500
 	/// this it to prevent the damage text from playing repeatedly
@@ -175,13 +175,6 @@
 		return TRUE
 	return FALSE
 
-/obj/machinery/power/smes/add_avail(var/amount)
-	if(..(amount))
-		powernet.smes_newavail += amount
-		return 1
-	return 0
-
-
 /obj/machinery/power/smes/disconnect_terminal()
 	if(terminal)
 		terminal.master = null
@@ -236,7 +229,8 @@
 	var/inputted_power = target_load * (percentage/100)
 	inputted_power = between(0, inputted_power, target_load)
 	if(terminal && terminal.powernet)
-		inputted_power = terminal.powernet.draw_power(inputted_power)
+		inputted_power = TERMINAL_POWER_DRAW(inputted_power)
+		TERMINAL_DRAW_POWER(inputted_power)
 		charge += inputted_power * SMESRATE
 		input_taken = inputted_power
 		if(percentage == 100)
@@ -295,7 +289,7 @@
 	if(output_attempt && (!output_pulsed && !output_cut) && powernet && charge)
 		output_used = min( charge/SMESRATE, output_level)		//limit output to that stored
 		charge -= output_used*SMESRATE		// reduce the storage (may be recovered in /restore() if excessive)
-		add_avail(output_used)				// add output to powernet (smes side)
+		SMES_ADD_TO_POWERNET(src, output_used)				// add output to powernet (smes side)
 		outputting = 2
 	else if(!powernet || !charge)
 		outputting = 1
@@ -358,12 +352,6 @@
 		return 0
 	return 1
 
-
-/obj/machinery/power/smes/draw_power(var/amount)
-	if(terminal && terminal.powernet)
-		return terminal.powernet.draw_power(amount)
-	return FALSE
-
 /obj/machinery/power/smes/attack_ai(mob/user)
 	if(!ai_can_interact(user))
 		return
@@ -375,7 +363,7 @@
 	ui_interact(user)
 
 /obj/machinery/power/smes/attackby(obj/item/attacking_item, mob/user)
-	if(attacking_item.isscrewdriver())
+	if(attacking_item.tool_behaviour == TOOL_SCREWDRIVER)
 		if(!open_hatch)
 			if(is_badly_damaged())
 				to_chat(user, SPAN_WARNING("\The [src]'s maintenance panel is broken open!"))
@@ -398,7 +386,7 @@
 		to_chat(user, SPAN_WARNING("You need to open access hatch on [src] first!"))
 		return 0
 
-	if(attacking_item.iscoil() && !terminal && !building_terminal)
+	if(attacking_item.tool_behaviour == TOOL_CABLECOIL && !terminal && !building_terminal)
 		building_terminal = 1
 		var/obj/item/stack/cable_coil/CC = attacking_item
 		if (CC.get_amount() <= 10)
@@ -417,7 +405,7 @@
 		stat = 0
 		return 0
 
-	else if(attacking_item.iswirecutter() && terminal && !building_terminal)
+	else if(attacking_item.tool_behaviour == TOOL_WIRECUTTER && terminal && !building_terminal)
 		building_terminal = 1
 		var/turf/tempTDir = terminal.loc
 		if (istype(tempTDir))

@@ -15,10 +15,10 @@
 
 	relative_size = 85
 
-	/// The type of 'robotic brain'. Must be a subtype of /obj/item/device/mmi/digital.
-	var/robotic_brain_type = /obj/item/device/mmi/digital/posibrain
+	/// The type of 'robotic brain'. Must be a subtype of /obj/item/mmi/digital.
+	var/robotic_brain_type = /obj/item/mmi/digital/posibrain
 	/// The stored MMI object.
-	var/obj/item/device/mmi/stored_mmi
+	var/obj/item/mmi/stored_mmi
 	/// The cooldown between each alarm warning.
 	var/heat_alarm_cooldown = 0
 	/// The cooldown between each integrity alarm warning.
@@ -365,14 +365,14 @@
 	else
 		owner.robot_pain.icon_state = null
 
-/obj/item/organ/internal/machine/posibrain/low_integrity_damage(integrity)
+/obj/item/organ/internal/machine/posibrain/low_integrity_damage(integrity, seconds_per_tick)
 	var/damage_probability = get_integrity_damage_probability(integrity)
-	if(prob(damage_probability))
+	if(SPT_PROB(damage_probability, seconds_per_tick))
 		to_chat(owner, SPAN_MACHINE_WARNING("Neural pathway error located at block 0x[generate_hex()]."))
 		take_internal_damage(2)
 	. = ..()
 
-/obj/item/organ/internal/machine/posibrain/medium_integrity_damage(integrity)
+/obj/item/organ/internal/machine/posibrain/medium_integrity_damage(integrity, seconds_per_tick)
 	var/damage_probability = get_integrity_damage_probability(integrity)
 	var/list/static/medium_integrity_damage_messages = list(
 		"Your neural subroutines' alarms are all going off at once.",
@@ -381,14 +381,14 @@
 		"Your software warns you of dangerously low neural coherence.",
 		"Your self-preservation subroutines threaten to kick in. [SPAN_DANGER("WARNING. WARNING.")]"
 	)
-	if(prob(damage_probability))
+	if(SPT_PROB(damage_probability, seconds_per_tick))
 		to_chat(owner, SPAN_MACHINE_WARNING(pick(medium_integrity_damage_messages)))
 		take_internal_damage(2)
 	. = ..()
 
-/obj/item/organ/internal/machine/posibrain/high_integrity_damage(integrity)
+/obj/item/organ/internal/machine/posibrain/high_integrity_damage(integrity, seconds_per_tick)
 	var/damage_probability = get_integrity_damage_probability(integrity)
-	if(prob(damage_probability))
+	if(SPT_PROB(damage_probability, seconds_per_tick))
 		var/damage_roll = rand(1, 50)
 		switch(damage_roll)
 			if(1 to 10)
@@ -487,7 +487,7 @@
 /obj/item/organ/internal/machine/posibrain/circuit
 	name = "robotic intelligence circuit"
 	desc = "The pinnacle of artifical intelligence which can be achieved using classical computer science."
-	robotic_brain_type = /obj/item/device/mmi/digital/robot
+	robotic_brain_type = /obj/item/mmi/digital/robot
 
 /obj/item/organ/internal/machine/posibrain/terminator
 	name = "advanced positronic brain"

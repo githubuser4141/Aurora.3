@@ -185,10 +185,11 @@
 	affect_ingest(M, alien, removed, holder)
 
 /singleton/reagent/radioactive_waste/affect_blood(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	M.apply_effect(25 * removed, DAMAGE_RADIATION, blocked = 0)
+	var/rad_damage = min(75, 40 * removed)
+	M.apply_effect(rad_damage, DAMAGE_RADIATION, blocked = 0)
 
 /singleton/reagent/radioactive_waste/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
-	if(amount >= 5)
+	if(amount >= 3)
 		if(!istype(T, /turf/space))
 			var/obj/effect/decal/cleanable/greenglow/glow = locate(/obj/effect/decal/cleanable/greenglow, T)
 			if(!glow)
@@ -641,25 +642,19 @@
 
 	to_chat(M, SPAN_WARNING("You seem back to your normal self."))
 
-/singleton/reagent/fuel/zoragel
-	name = "Inert Gel"
-	description = "A particularly adhesive but otherwise inert and harmless gel."
-	reagent_state = LIQUID
-	color = "#D35908"
-	touch_met = 50
-	taste_description = "plhegm"
-
 /singleton/reagent/fuel/napalm
-	name = "Zo'rane Fire"
-	description = "A highly flammable and cohesive gel once used commonly in the tunnels of Sedantis. Napalm sticks to kids."
+	name = "napalm"
+	description = "A flammable gel used in warfare."
 	reagent_state = LIQUID
 	color = "#D35908"
 	touch_met = 50
 	taste_description = "fiery death"
 	taste_mult = 20
+	accelerant_quality = 20
+	flamethrower_effect = /obj/effect/decal/cleanable/napalm
 
 /singleton/reagent/fuel/napalm/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
-	new /obj/effect/decal/cleanable/liquid_fuel/napalm(T, amount/3)
+	new /obj/effect/decal/cleanable/napalm(T, amount/3)
 	for(var/mob/living/L in T)
 		L.adjust_fire_stacks(amount / 10)
 	remove_self(amount, holder)
@@ -669,7 +664,41 @@
 	. = ..()
 	if(istype(L))
 		L.adjust_fire_stacks(amount / 10) // Splashing people with welding fuel to make them easy to ignite!
-		new /obj/effect/decal/cleanable/liquid_fuel/napalm(get_turf(L), amount/3)
+		new /obj/effect/decal/cleanable/napalm(get_turf(L), amount/3)
+		L.adjustFireLoss(amount / 10)
+		remove_self(amount, holder)
+
+/singleton/reagent/fuel/zoragel
+	name = "Inert Gel"
+	description = "A particularly adhesive but otherwise inert and harmless gel."
+	reagent_state = LIQUID
+	color = "#D35908"
+	touch_met = 50
+	taste_description = "plhegm"
+
+/singleton/reagent/fuel/zorane_fire
+	name = "Zo'rane fire"
+	description = "A highly flammable and cohesive gel once used commonly in the tunnels of Sedantis."
+	reagent_state = LIQUID
+	color = "#FA00AF"
+	touch_met = 50
+	taste_description = "fiery death"
+	taste_mult = 20
+	accelerant_quality = 40
+	flamethrower_effect = /obj/effect/decal/cleanable/napalm/zorane_fire
+
+/singleton/reagent/fuel/zorane_fire/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
+	new /obj/effect/decal/cleanable/napalm/zorane_fire(T, amount/3)
+	for(var/mob/living/L in T)
+		L.adjust_fire_stacks(amount / 10)
+	remove_self(amount, holder)
+	return
+
+/singleton/reagent/fuel/zorane_fire/touch_mob(var/mob/living/L, var/amount, var/datum/reagents/holder)
+	. = ..()
+	if(istype(L))
+		L.adjust_fire_stacks(amount / 10) // Splashing people with welding fuel to make them easy to ignite!
+		new /obj/effect/decal/cleanable/napalm/zorane_fire(get_turf(L), amount/3)
 		L.adjustFireLoss(amount / 10)
 		remove_self(amount, holder)
 

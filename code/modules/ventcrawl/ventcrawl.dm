@@ -5,9 +5,9 @@ GLOBAL_LIST_INIT(ventcrawl_machinery, list(
 
 /// Vent crawling whitelisted items, whoo
 GLOBAL_LIST_INIT(can_enter_vent_with, list(
-	/obj/item/device/mmi,
+	/obj/item/mmi,
 	/obj/item/implant,
-	/obj/item/device/radio/borg,
+	/obj/item/radio/borg,
 	/obj/item/holder,
 	/obj/machinery/camera,
 	/mob/living/simple_animal/borer,
@@ -108,7 +108,7 @@ GLOBAL_LIST_INIT(can_enter_vent_with, list(
 /mob/living/proc/vent_trap_check(var/status, var/atom/location)
 	switch (status)
 		if ("departing")
-			for (var/obj/item/device/assembly/mousetrap/S in location.loc)
+			for (var/obj/item/assembly/mousetrap/S in location.loc)
 				if (prob(25))
 					visible_message(SPAN_DANGER("[src] gets caught in the mousetrap while trying to crawl into the vent!"),
 									SPAN_DANGER("You get caught in the mousetrap while trying to crawl into the vent!"))
@@ -116,7 +116,7 @@ GLOBAL_LIST_INIT(can_enter_vent_with, list(
 					S.Crossed(src) // Triggers mousetrap
 					forceMove(location.loc)
 		if ("arriving")
-			for (var/obj/item/device/assembly/mousetrap/S in location.loc)
+			for (var/obj/item/assembly/mousetrap/S in location.loc)
 				if (prob(75))
 					S.Crossed(src) // Triggers mousetrap
 		else
@@ -174,7 +174,7 @@ GLOBAL_LIST_INIT(can_enter_vent_with, list(
 							if(BODYTEMP_HEAT_DAMAGE_LIMIT to INFINITY)
 								to_chat(src, SPAN_DANGER("You feel a searing heat coming from the vent!"))
 
-						switch(vent_found.air_contents.return_pressure())
+						switch(XGM_PRESSURE(vent_found.air_contents))
 							if(0 to HAZARD_LOW_PRESSURE)
 								to_chat(src, SPAN_DANGER("You feel a rushing draw pulling you into the vent!"))
 							if(HAZARD_LOW_PRESSURE to WARNING_LOW_PRESSURE)

@@ -36,7 +36,7 @@
 	if(default_part_replacement(user, attacking_item))
 		return
 
-	if(attacking_item.iswrench())
+	if(attacking_item.tool_behaviour == TOOL_WRENCH)
 		attacking_item.play_tool_sound(get_turf(src), 50)
 		to_chat(user, SPAN_NOTICE("You [anchored ? "unfasten" : "fasten"] [src] to the flooring."))
 		anchored = !anchored
@@ -53,7 +53,7 @@
 		//don't lose arc power when it's not connected to anything
 		//please place tesla coils all around the station to maximize effectiveness
 		var/power_produced = powernet ? power / power_loss : power
-		add_avail(power_produced*input_power_multiplier)
+		ADD_TO_POWERNET(src, power_produced*input_power_multiplier)
 		flick("coilhit", src)
 		playsound(src.loc, 'sound/magic/LightningShock.ogg', 100, 1, extrarange = 5)
 		tesla_zap(src, 5, power_produced)
@@ -90,7 +90,7 @@
 	if(default_part_replacement(user, attacking_item))
 		return
 
-	if(attacking_item.iswrench())
+	if(attacking_item.tool_behaviour == TOOL_WRENCH)
 		attacking_item.play_tool_sound(get_turf(src), 50)
 		to_chat(user, SPAN_NOTICE("You [anchored ? "unfasten" : "fasten"] [src] to the flooring."))
 		anchored = !anchored

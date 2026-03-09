@@ -60,7 +60,7 @@
 		for(var/g in trace_gas){\
 			other_moles += environment.gas[g];\
 		}\
-		ALARM_GET_DANGER_LEVEL(pressure_dangerlevel, environment.return_pressure(), TLV["pressure"]);\
+		ALARM_GET_DANGER_LEVEL(pressure_dangerlevel, XGM_PRESSURE(environment), TLV["pressure"]);\
 		ALARM_GET_DANGER_LEVEL(oxygen_dangerlevel, environment.gas[GAS_OXYGEN]*partial_pressure, TLV[GAS_OXYGEN]);\
 		ALARM_GET_DANGER_LEVEL(co2_dangerlevel, environment.gas[GAS_CO2]*partial_pressure, TLV[GAS_CO2]);\
 		ALARM_GET_DANGER_LEVEL(phoron_dangerlevel, environment.gas[GAS_PHORON]*partial_pressure, TLV[GAS_PHORON]);\
@@ -112,7 +112,7 @@ pixel_x = 10;
 	active_power_usage = 1500 //For heating/cooling rooms. 1000 joules equates to about 1 degree every 2 seconds for a single tile of air.
 	power_channel = AREA_USAGE_ENVIRON
 	req_one_access = list(ACCESS_ATMOSPHERICS, ACCESS_ENGINE_EQUIP)
-	clicksound = /singleton/sound_category/button_sound
+	clicksound = SFX_BUTTON
 	clickvol = 30
 	obj_flags = OBJ_FLAG_MOVES_UNSUPPORTED
 
@@ -474,7 +474,7 @@ pixel_x = 10;
 			mode = AALARM_MODE_OFF
 			apply_mode()
 
-	if (mode==AALARM_MODE_CYCLE && environment.return_pressure()<ONE_ATMOSPHERE*0.05)
+	if (mode==AALARM_MODE_CYCLE && XGM_PRESSURE(environment)<ONE_ATMOSPHERE*0.05)
 		mode=AALARM_MODE_FILL
 		apply_mode()
 
@@ -554,7 +554,7 @@ pixel_x = 10;
 		return 0
 
 	var/datum/gas_mixture/environment = location.return_air()
-	var/environment_pressure = environment.return_pressure()
+	var/environment_pressure = XGM_PRESSURE(environment)
 	var/pressure_levels = TLV["pressure"]
 
 	if (environment_pressure <= pressure_levels[1])		//low pressures
@@ -755,7 +755,7 @@ pixel_x = 10;
 	var/list/environment_data = new
 	data["has_environment"] = total
 	if(total)
-		var/pressure = environment.return_pressure()
+		var/pressure = XGM_PRESSURE(environment)
 		environment_data[++environment_data.len] = list("name" = "Pressure", "value" = pressure, "unit" = "kPa", "danger_level" = pressure_dangerlevel)
 		environment_data[++environment_data.len] = list("name" = "Oxygen", "value" = environment.gas[GAS_OXYGEN] / total * 100, "unit" = "%", "danger_level" = oxygen_dangerlevel)
 		environment_data[++environment_data.len] = list("name" = "Carbon Dioxide", "value" = environment.gas[GAS_CO2] / total * 100, "unit" = "%", "danger_level" = co2_dangerlevel)
@@ -1017,13 +1017,13 @@ pixel_x = 10;
 
 	switch(buildstage)
 		if(2)
-			if(attacking_item.isscrewdriver())  // Opening that Air Alarm up.
+			if(attacking_item.tool_behaviour == TOOL_SCREWDRIVER)  // Opening that Air Alarm up.
 				panel_open = !panel_open
 				to_chat(user, SPAN_NOTICE("You [panel_open ? "open" : "close"] the maintenance panel."))
 				update_icon()
 				return TRUE
 
-			if (panel_open && attacking_item.iswirecutter())
+			if (panel_open && attacking_item.tool_behaviour == TOOL_WIRECUTTER)
 				user.visible_message(SPAN_WARNING("[user] has cut the wires inside \the [src]!"), "You cut the wires inside \the [src].")
 				playsound(src.loc, 'sound/items/Wirecutter.ogg', 50, 1)
 				new/obj/item/stack/cable_coil(get_turf(src), 5)
@@ -1032,7 +1032,7 @@ pixel_x = 10;
 				return TRUE
 
 		if(1)
-			if(attacking_item.iscoil())
+			if(attacking_item.tool_behaviour == TOOL_CABLECOIL)
 				var/obj/item/stack/cable_coil/C = attacking_item
 				if (C.use(5))
 					to_chat(user, SPAN_NOTICE("You wire \the [src]."))
@@ -1044,7 +1044,7 @@ pixel_x = 10;
 					to_chat(user, SPAN_WARNING("You need 5 pieces of cable to do wire \the [src]."))
 				return TRUE
 
-			else if(attacking_item.iscrowbar())
+			else if(attacking_item.tool_behaviour == TOOL_CROWBAR)
 				to_chat(user, "You start prying out the circuit.")
 				if(attacking_item.use_tool(src, user, 20, volume = 50))
 					to_chat(user, "You pry out the circuit!")
@@ -1062,7 +1062,7 @@ pixel_x = 10;
 				update_icon()
 				return TRUE
 
-			else if(attacking_item.iswrench())
+			else if(attacking_item.tool_behaviour == TOOL_WRENCH)
 				to_chat(user, "You remove the air alarm assembly from the wall!")
 				new /obj/item/frame/air_alarm(get_turf(user))
 				attacking_item.play_tool_sound(src.loc, 50)

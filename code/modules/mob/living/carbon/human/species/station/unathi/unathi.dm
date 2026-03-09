@@ -46,8 +46,8 @@
 	stamina	=	120			  // Unathi have the shortest but fastest sprint of all
 	stamina_recovery = 5
 
-	sprint_cost_factor = 1.45
-	sprint_speed_factor = 3.2
+	sprint_cost_factor = 1.75
+	sprint_speed_factor = 1.6
 	exhaust_threshold = 65
 	bp_base_systolic = 80 // Default 120
 	bp_base_disatolic = 50 // Default 80
@@ -107,7 +107,7 @@
 		"Your scales bristle against the cold."
 		)
 
-	footsound = /singleton/sound_category/footstep_unathi_sound
+	footsound = SFX_FOOTSTEP_UNATHI
 
 	has_organ = list(
 		BP_BRAIN =    /obj/item/organ/internal/brain/unathi,
